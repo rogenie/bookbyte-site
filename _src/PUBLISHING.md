@@ -42,7 +42,7 @@ Never publish an item dated in the future, and never skip ahead to the next item
 1. List every rate, dollar threshold, percentage, deadline, form number and rule the article states.
 2. Confirm each one on an official source fetched during this run. Confirm the tax year, not just the number.
 3. If an item can't be confirmed, remove it or rewrite the sentence without it.
-4. If the article can't stand without an unconfirmed item, don't publish. Set the item's status to `held`, add a `note` explaining why, commit and push only that calendar change, and report "HELD" with the reason.
+4. If the article can't stand without an unconfirmed item, don't publish. Set the item's status to `held`, add a `note` explaining why, add a run record with `"result": "held"` and the reason (see "Run log"), run `python3 _src/build.py`, commit and push only those changes (`_src/calendar.json`, `_src/runs.json`, `status.json`), and report "HELD" with the reason.
 5. Re-read the finished HTML once against the "Never" list above.
 
 ## Publish
@@ -53,7 +53,20 @@ Never publish an item dated in the future, and never skip ahead to the next item
 4. Verify: wait for the latest GitHub Pages run to show `completed` / `success` using `https://api.github.com/repos/rogenie/bookbyte-site/actions/runs?per_page=1`, then fetch the live page once to confirm the title appears.
 5. Write a LinkedIn post for the Computatio company page and save it as `_src/social/linkedin/<date>-<slug>.md` in the same commit (or a follow-up commit). Rules: 120–200 words, a first line that names a specific problem, 3 short takeaways from the guide, then the link `https://bookbytellc.com<path>?utm_source=linkedin&utm_medium=social&utm_campaign=<slug>`. Keep the same "Never" rules. No hashtag walls (3 at most). Write in first person plural ("we") as Computatio.
 6. Save a review copy to Google Drive. Run `python3 _src/export_docx.py <date>` (needs `pandoc`; if it's missing, `apt-get install -y pandoc` or `pip install --break-system-packages pypandoc_binary`). Upload the `.docx` it prints with the Google Drive connector's create_file tool. Use parentId `1FeqmZTfDW38R1wsP5hH6fDqaMdITYqjr` (folder "BookByte Articles"), the file name as title, contentMimeType `application/vnd.openxmlformats-officedocument.wordprocessingml.document`, `disableConversionToGoogleType: true`, and the contents of `/tmp/bookbyte_drive/<date>.b64` as the base64 content. Never let Drive convert it to a Google Doc: conversion deletes dollar amounts. If the Drive connector isn't available in this run, say so in the summary and continue; the article is still live.
-7. Finish with a short summary: the title, the live URL, the facts that were checked, anything removed for lack of a source, whether the Drive copy was saved, and the full LinkedIn post text.
+7. Add a run record (see "Run log"), run `python3 _src/build.py` again so `status.json` includes it, then commit with the message `Run log: <date>` and push.
+8. Finish with a short summary: the title, the live URL, the facts that were checked, anything removed for lack of a source, whether the Drive copy was saved, and the full LinkedIn post text.
+
+## Run log
+
+Every run that reaches "Publish" or holds an item appends one record to the JSON list in `_src/runs.json`. The SEO scorecard at rogeniecordero.com/computatio reads it to show whether each scheduled guide went out. Never edit or delete earlier records.
+
+```json
+{"date": "YYYY-MM-DD", "at": "<ISO time with Pacific offset, when you finished>", "result": "published" | "held",
+ "path": "<the item's path>", "facts_checked": <number of facts confirmed>, "removed": <number removed for lack of a source>,
+ "live_verified": true | false, "linkedin_post": true | false, "drive_copy": true | false, "note": "<one line: hold reason, or anything that failed>"}
+```
+
+`live_verified` is true only if the live page showed the title in step 4. `drive_copy` is true only if the Drive upload in step 6 succeeded. If a step failed but the guide is live, keep `result` as `published` and say what failed in `note`.
 
 ## Newsletter
 

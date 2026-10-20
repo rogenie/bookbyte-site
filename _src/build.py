@@ -137,7 +137,9 @@ def main():
         if i["path"] in live_paths:
             row.update(title=html.unescape(re.sub(r"<[^>]+>", "", i["title"])), url=SITE["url"] + i["path"])
         items.append(row)
-    json.dump({"built": TODAY, "cadence": cal.get("cadence"), "items": items},
+    runs_path = os.path.join(ROOT, "_src", "runs.json")
+    runs = json.load(open(runs_path, encoding="utf-8")) if os.path.exists(runs_path) else []
+    json.dump({"built": TODAY, "cadence": cal.get("cadence"), "items": items, "runs": runs},
               open(os.path.join(ROOT, "status.json"), "w", encoding="utf-8"), indent=1)
     print("built", len(pages), "pages;", len(live), "live guides; today", TODAY)
 if __name__=="__main__": main()
