@@ -125,5 +125,19 @@ def main():
         f"<title>BookByte</title><link>{SITE['url']}/</link><description>{esc(SITE['desc'])}</description><language>en-us</language>"
         + items + "</channel></rss>\n")
     open(os.path.join(ROOT,"robots.txt"),"w").write(f"User-agent: *\nAllow: /\n\nSitemap: {SITE['url']}/sitemap.xml\n")
+    # status.json: read by the Computatio SEO dashboard (rogeniecordero.com/computatio).
+    # Future guides list date, topic and writing status only; titles appear once live.
+    import json
+    cal = json.load(open(os.path.join(ROOT, "_src", "calendar.json"), encoding="utf-8"))
+    written = {a["path"] for a in ARTICLES}
+    items = []
+    for i in cal["items"]:
+        st = "held" if i.get("status") == "held" else ("written" if i["path"] in written or i.get("status") in ("written", "published") else "todo")
+        row = {"date": i["date"], "hub": i["hub"], "status": st}
+        if i["path"] in live_paths:
+            row.update(title=html.unescape(re.sub(r"<[^>]+>", "", i["title"])), url=SITE["url"] + i["path"])
+        items.append(row)
+    json.dump({"built": TODAY, "cadence": cal.get("cadence"), "items": items},
+              open(os.path.join(ROOT, "status.json"), "w", encoding="utf-8"), indent=1)
     print("built", len(pages), "pages;", len(live), "live guides; today", TODAY)
 if __name__=="__main__": main()

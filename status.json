@@ -1,0 +1,186 @@
+{
+ "built": "2026-10-19",
+ "cadence": "Mon/Wed/Fri",
+ "items": [
+  {
+   "date": "2026-10-21",
+   "hub": "ai-accounting",
+   "status": "written"
+  },
+  {
+   "date": "2026-10-23",
+   "hub": "estimated-taxes",
+   "status": "written"
+  },
+  {
+   "date": "2026-10-26",
+   "hub": "ai-accounting",
+   "status": "todo"
+  },
+  {
+   "date": "2026-10-28",
+   "hub": "ai-accounting",
+   "status": "todo"
+  },
+  {
+   "date": "2026-10-30",
+   "hub": "ai-accounting",
+   "status": "todo"
+  },
+  {
+   "date": "2026-11-02",
+   "hub": "business-structure",
+   "status": "written"
+  },
+  {
+   "date": "2026-11-04",
+   "hub": "ai-accounting",
+   "status": "todo"
+  },
+  {
+   "date": "2026-11-06",
+   "hub": "ai-accounting",
+   "status": "todo"
+  },
+  {
+   "date": "2026-11-09",
+   "hub": "ai-accounting",
+   "status": "todo"
+  },
+  {
+   "date": "2026-11-11",
+   "hub": "ai-accounting",
+   "status": "todo"
+  },
+  {
+   "date": "2026-11-13",
+   "hub": "ai-accounting",
+   "status": "todo"
+  },
+  {
+   "date": "2026-11-16",
+   "hub": "bookkeeping",
+   "status": "written"
+  },
+  {
+   "date": "2026-11-18",
+   "hub": "ai-accounting",
+   "status": "todo"
+  },
+  {
+   "date": "2026-11-20",
+   "hub": "ai-accounting",
+   "status": "todo"
+  },
+  {
+   "date": "2026-11-23",
+   "hub": "ai-accounting",
+   "status": "todo"
+  },
+  {
+   "date": "2026-11-25",
+   "hub": "bookkeeping",
+   "status": "todo"
+  },
+  {
+   "date": "2026-11-27",
+   "hub": "ai-accounting",
+   "status": "todo"
+  },
+  {
+   "date": "2026-11-30",
+   "hub": "deductions",
+   "status": "todo"
+  },
+  {
+   "date": "2026-12-02",
+   "hub": "ai-accounting",
+   "status": "todo"
+  },
+  {
+   "date": "2026-12-04",
+   "hub": "ai-accounting",
+   "status": "todo"
+  },
+  {
+   "date": "2026-12-07",
+   "hub": "ai-accounting",
+   "status": "todo"
+  },
+  {
+   "date": "2026-12-09",
+   "hub": "estimated-taxes",
+   "status": "todo"
+  },
+  {
+   "date": "2026-12-11",
+   "hub": "ai-accounting",
+   "status": "todo"
+  },
+  {
+   "date": "2026-12-14",
+   "hub": "ai-accounting",
+   "status": "todo"
+  },
+  {
+   "date": "2026-12-16",
+   "hub": "ai-accounting",
+   "status": "todo"
+  },
+  {
+   "date": "2026-12-18",
+   "hub": "ai-accounting",
+   "status": "todo"
+  },
+  {
+   "date": "2026-12-21",
+   "hub": "ai-accounting",
+   "status": "todo"
+  },
+  {
+   "date": "2026-12-23",
+   "hub": "ai-accounting",
+   "status": "todo"
+  },
+  {
+   "date": "2026-12-25",
+   "hub": "ai-accounting",
+   "status": "todo"
+  },
+  {
+   "date": "2026-12-28",
+   "hub": "bookkeeping",
+   "status": "todo"
+  },
+  {
+   "date": "2026-12-30",
+   "hub": "deductions",
+   "status": "todo"
+  },
+  {
+   "date": "2027-01-01",
+   "hub": "ai-accounting",
+   "status": "todo"
+  },
+  {
+   "date": "2027-01-04",
+   "hub": "ai-accounting",
+   "status": "todo"
+  },
+  {
+   "date": "2027-01-06",
+   "hub": "ai-accounting",
+   "status": "todo"
+  },
+  {
+   "date": "2027-01-08",
+   "hub": "ai-accounting",
+   "status": "todo"
+  },
+  {
+   "date": "2027-01-11",
+   "hub": "deductions",
+   "status": "todo"
+  }
+ ]
+}
