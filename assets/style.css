@@ -54,3 +54,7 @@ footer.site b{color:#fff}
  h2{font-size:25px}
  section{padding:40px 0}
 }
+.tbl{border-collapse:collapse;width:100%;margin:16px 0;font-size:15px}
+.tbl th,.tbl td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+.tbl th{background:var(--soft)}
+.hero .eyebrow a:hover{text-decoration:underline}
