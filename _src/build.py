@@ -25,7 +25,7 @@ def layout(p):
         ld.append({"@context":"https://schema.org","@type":"WebSite","name":SITE["name"],"url":SITE["url"]+"/","description":SITE["desc"]})
     if p.get("article"):
         ld.append({"@context":"https://schema.org","@type":"Article","headline":p["h1"],"description":p["desc"],
-                   "author":{"@type":"Person","name":SITE["author"]},"publisher":{"@type":"Organization","name":SITE["name"]},
+                   "author":{"@type":"Person","name":SITE["author"],"url":SITE["url"]+"/about/","sameAs":["https://www.linkedin.com/in/rogenie"]},"publisher":{"@type":"Organization","name":SITE["name"]},
                    "datePublished":p["published"],"dateModified":p.get("reviewed",p["published"]),"mainEntityOfPage":url})
     nav = "".join(f'<a href="{h}"{" aria-current=\"page\"" if p["path"].startswith(h) else ""}>{esc(n)}</a>' for h,n in SITE["nav"])
     robots = '<meta name="robots" content="noindex">' if p.get("noindex") else ""
