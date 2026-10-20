@@ -168,7 +168,7 @@ article("/business-structure/s-corp-vs-sole-proprietor-california/","/business-s
   ("IRS: Self-employment tax","https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes"),
   ("LLC University: California AB 85 expired","https://www.llcuniversity.com/california-llc/annual-llc-tax-exemption-ab-85/")],
  "s-corp-vs-sole-proprietor-california"),
-article("/ai-bookkeeping/how-to-use-ai-for-bookkeeping/","/ai-bookkeeping/","AI for Bookkeeping",
+article("/ai-accounting/how-to-use-ai-for-bookkeeping/","/ai-accounting/","AI for Accounting",
  "How to Use AI for Bookkeeping (and Keep Your Books Accurate)",
  "How to use AI for bookkeeping, and keep your books accurate",
  "A practical, safe workflow for using AI tools to categorize transactions, read receipts and prepare for month-end and tax season, plus what AI still gets wrong.",

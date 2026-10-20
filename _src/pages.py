@@ -4,7 +4,7 @@ SITE = {
   "desc": "Plain-English bookkeeping and tax guides for California's self-employed: freelancers, contractors, creators and single-owner LLCs and S-corps.",
   "author": "Rogenie Cordero",
   "cta_url": "https://computatio.io/?",
-  "ai": ("/ai-bookkeeping/","AI for Bookkeeping"),
+  "ai": ("/ai-accounting/","AI for Accounting"),
   "nav": [("/bookkeeping/","Bookkeeping"),("/estimated-taxes/","Estimated taxes"),("/deductions/","Deductions"),("/business-structure/","Business structure"),("/about/","About")],
 }
 
@@ -28,14 +28,14 @@ PAGES = [
 <a class="btn" href="/bookkeeping/">Start with bookkeeping</a>
 </div></section>
 <section class="aiband"><div class="wrap aiflex">
-<div><p class="eyebrow">New</p><h2>Use AI on your books, without the mistakes</h2>
+<div><p class="eyebrow">New</p><h2>Use AI for your accounting, without the mistakes</h2>
 <p>How to use AI tools to categorize transactions, read receipts and prepare for tax season, plus where AI still gets it wrong and how to check its work.</p></div>
-<a class="ai-btn big" href="/ai-bookkeeping/">AI for Bookkeeping guides</a>
+<a class="ai-btn big" href="/ai-accounting/">AI for Accounting guides</a>
 </div></section>
 <section><div class="wrap">
 <h2>Pick a topic</h2>
 <div class="cards">
-<a class="card ai" href="/ai-bookkeeping/"><h3>AI for Bookkeeping</h3><p>Use AI to speed up categorizing, receipts and month-end, and learn how to check its work.</p></a>
+<a class="card ai" href="/ai-accounting/"><h3>AI for Accounting</h3><p>Use AI to speed up bookkeeping, receipts, month-end and tax prep, and learn how to check its work.</p></a>
 <a class="card" href="/bookkeeping/"><h3>Bookkeeping</h3><p>Set up your books, categorize transactions, reconcile accounts and catch up when you&rsquo;re behind. Includes guides for specific trades.</p></a>
 <a class="card" href="/estimated-taxes/"><h3>Estimated taxes</h3><p>How much to pay, when, and how. Covers California&rsquo;s uneven 30/40/0/30 schedule.</p></a>
 <a class="card" href="/deductions/"><h3>Deductions</h3><p>What you can write off, how to prove it, and where California&rsquo;s rules differ from federal.</p></a>
@@ -50,10 +50,10 @@ PAGES = [
 </ul>
 <p><a href="/about/">More about BookByte</a></p>
 </div></section>'''},
- hub("/ai-bookkeeping/","AI for Bookkeeping","AI for Bookkeeping: Guides for the Self-Employed | BookByte",
-     "How to use AI for bookkeeping and accounting tasks as a freelancer or owner-operator: categorizing, receipts, month-end and tax prep, done accurately and safely.",
-     "AI can cut hours of bookkeeping to minutes, but only if you know where it&rsquo;s reliable and where it isn&rsquo;t. These guides show you how to use it and how to check its work.",
-     ["How to use AI to categorize business transactions, and check its work","AI receipt scanning: what to look for in a tool","Can AI do your bookkeeping? What it gets right and wrong","Ready-to-use prompts for monthly bookkeeping tasks","Keeping your financial data safe when you use AI","Using AI to get ready for tax season","AI, a bookkeeper, or doing it yourself: time and cost compared"]),
+ hub("/ai-accounting/","AI for Accounting","AI for Accounting: Guides for the Self-Employed | BookByte",
+     "How to use AI for accounting as a freelancer or owner-operator: bookkeeping, receipts, month-end and tax prep, done accurately and safely.",
+     "AI can turn hours of bookkeeping and tax prep into minutes, but only if you know where it&rsquo;s reliable and where it isn&rsquo;t. These guides show you how to use it and how to check its work.",
+     ["How to use AI for bookkeeping, and keep your books accurate","How to use AI to categorize business transactions, and check its work","AI receipt scanning: what to look for in a tool","Can AI do your accounting? What it gets right and wrong","Ready-to-use prompts for monthly bookkeeping tasks","Keeping your financial data safe when you use AI","Using AI to get ready for tax season","AI, a bookkeeper, or doing it yourself: time and cost compared"]),
  hub("/bookkeeping/","Bookkeeping","Bookkeeping Guides for the Self-Employed | BookByte",
      "Do-it-yourself bookkeeping for California freelancers and owner-operators: setup, categorizing, reconciling, catching up and trade-specific guides.",
      "Keep accurate books without an accounting degree. Start with the basics, then find the guide for your trade.",
