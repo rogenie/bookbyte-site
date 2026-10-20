@@ -52,6 +52,7 @@ def layout(p):
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=Inter:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="/assets/style.css">
+<link rel="alternate" type="application/rss+xml" title="BookByte" href="/feed.xml">
 <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>
 </head>
 <body>
@@ -65,7 +66,7 @@ def layout(p):
 </main>
 <footer class="site"><div class="wrap">
 <div class="fgrid">
-<div><b>BookByte</b><p>Plain-English bookkeeping, tax and AI accounting guides for the self-employed.</p></div>
+<div><b>BookByte</b><p>Plain-English bookkeeping, tax and AI accounting guides for the self-employed.</p><a href="{SITE["newsletter"]}?utm_source=bookbyte&amp;utm_medium=referral&amp;utm_campaign=footer">Free guide: 47 write-offs</a><a href="/feed.xml">RSS feed</a></div>
 <div><b>Guides</b><a href="{SITE["ai"][0]}">{esc(SITE["ai"][1])}</a>{"".join(f'<a href="{h}">{esc(n)}</a>' for h,n in SITE["nav"][:4])}</div>
 <div><b>Would rather not do it yourself?</b><p><a href="{SITE["cta_url"]}utm_source=bookbyte&amp;utm_medium=referral&amp;utm_campaign=footer">Computatio</a> keeps your books and prepares your return, with a person reviewing every account.</p></div>
 </div>
@@ -113,6 +114,14 @@ def main():
     sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + \
          "".join(f"  <url><loc>{u}</loc><lastmod>{d}</lastmod></url>\n" for u,d in urls) + "</urlset>\n"
     open(os.path.join(ROOT,"sitemap.xml"),"w").write(sm)
+    items = "".join(
+        f"<item><title>{esc(html.unescape(a['h1']))}</title><link>{SITE['url']}{a['path']}</link><guid>{SITE['url']}{a['path']}</guid>"
+        f"<pubDate>{datetime.datetime.fromisoformat(a['published']).strftime('%a, %d %b %Y 06:00:00 -0800')}</pubDate>"
+        f"<description>{esc(html.unescape(a['desc']))}</description></item>" for a in live[:30])
+    open(os.path.join(ROOT,"feed.xml"),"w",encoding="utf-8").write(
+        '<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel>'
+        f"<title>BookByte</title><link>{SITE['url']}/</link><description>{esc(SITE['desc'])}</description><language>en-us</language>"
+        + items + "</channel></rss>\n")
     open(os.path.join(ROOT,"robots.txt"),"w").write(f"User-agent: *\nAllow: /\n\nSitemap: {SITE['url']}/sitemap.xml\n")
     print("built", len(pages), "pages;", len(live), "live guides; today", TODAY)
 if __name__=="__main__": main()

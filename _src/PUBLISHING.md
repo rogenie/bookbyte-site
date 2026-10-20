@@ -51,4 +51,9 @@ Never publish an item dated in the future, and never skip ahead to the next item
 2. Set the calendar item's status to `published` and add `"url": "https://bookbytellc.com<path>"`.
 3. Commit with author `Rogenie Cordero <rogenie@gmail.com>` and the message `Publish: <title>`, then push to `main`.
 4. Verify: wait for the latest GitHub Pages run to show `completed` / `success` using `https://api.github.com/repos/rogenie/bookbyte-site/actions/runs?per_page=1`, then fetch the live page once to confirm the title appears.
-5. Finish with a short summary: the title, the live URL, the facts that were checked, and anything removed for lack of a source.
+5. Write a LinkedIn post for the Computatio company page and save it as `_src/social/linkedin/<date>-<slug>.md` in the same commit (or a follow-up commit). Rules: 120–200 words, a first line that names a specific problem, 3 short takeaways from the guide, then the link `https://bookbytellc.com<path>?utm_source=linkedin&utm_medium=social&utm_campaign=<slug>`. Keep the same "Never" rules. No hashtag walls (3 at most). Write in first person plural ("we") as Computatio.
+6. Finish with a short summary: the title, the live URL, the facts that were checked, anything removed for lack of a source, and the full LinkedIn post text.
+
+## Newsletter
+
+Every guide already carries the free "47 write-offs" download box through the `article()` helper. Don't add another newsletter link to the body.

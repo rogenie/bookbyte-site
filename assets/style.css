@@ -72,3 +72,6 @@ footer.site b{color:#fff}
 @media(max-width:700px){.ai-btn{margin:8px 0 0}}
 .btn.ghost{background:transparent;border:1px solid var(--gold);color:var(--gold)}
 .hero .ai-btn.big{margin-right:6px}
+.nlband{background:var(--soft);padding:36px 0;border-bottom:1px solid var(--line)}
+.nlband h2{margin:0 0 6px}
+.nlband p{margin:0;color:var(--muted);max-width:640px}
