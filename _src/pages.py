@@ -1,7 +1,7 @@
 SITE = {
   "name": "BookByte",
   "url": "https://bookbytellc.com",
-  "desc": "Plain-English bookkeeping and tax guides for California's self-employed: freelancers, contractors, creators and single-owner LLCs and S-corps.",
+  "desc": "Plain-English bookkeeping and tax guides for the self-employed: freelancers, contractors, creators and single-owner LLCs and S-corps.",
   "author": "Rogenie Cordero",
   "cta_url": "https://computatio.io/?",
   "ai": ("/ai-accounting/","AI for Accounting"),
@@ -19,12 +19,12 @@ def hub(path, name, title, desc, intro, covers):
     return {"path":path,"title":title,"desc":desc,"h1":name,"body":body}
 
 PAGES = [
- {"path":"/","title":"BookByte | Bookkeeping and Tax Guides for California's Self-Employed","h1":"BookByte",
-  "desc":"Step-by-step bookkeeping and tax guides for California freelancers, contractors, creators and single-owner LLCs and S-corps. Do it yourself, the right way.",
+ {"path":"/","title":"BookByte | Bookkeeping, Tax and AI Accounting Guides for the Self-Employed","h1":"BookByte",
+  "desc":"Step-by-step bookkeeping, tax and AI accounting guides for freelancers, contractors, creators and single-owner LLCs and S-corps. Do it yourself, the right way.",
   "body":'''<section class="hero"><div class="wrap">
-<p class="eyebrow">For California&rsquo;s self-employed</p>
+<p class="eyebrow">For the self-employed</p>
 <h1>Do your own books and taxes, <span>the right way.</span></h1>
-<p class="lede">Plain-English, step-by-step guides for freelancers, contractors, creators and single-owner LLCs and S-corps. Every guide covers both the IRS and California rules, and is checked against official sources.</p>
+<p class="lede">Plain-English, step-by-step guides for freelancers, contractors, creators and single-owner LLCs and S-corps. Every guide is checked against official IRS and state sources, with notes where state rules differ.</p>
 <a class="btn" href="/bookkeeping/">Start with bookkeeping</a>
 </div></section>
 <section class="aiband"><div class="wrap aiflex">
@@ -37,14 +37,14 @@ PAGES = [
 <div class="cards">
 <a class="card ai" href="/ai-accounting/"><h3>AI for Accounting</h3><p>Use AI to speed up bookkeeping, receipts, month-end and tax prep, and learn how to check its work.</p></a>
 <a class="card" href="/bookkeeping/"><h3>Bookkeeping</h3><p>Set up your books, categorize transactions, reconcile accounts and catch up when you&rsquo;re behind. Includes guides for specific trades.</p></a>
-<a class="card" href="/estimated-taxes/"><h3>Estimated taxes</h3><p>How much to pay, when, and how. Covers California&rsquo;s uneven 30/40/0/30 schedule.</p></a>
-<a class="card" href="/deductions/"><h3>Deductions</h3><p>What you can write off, how to prove it, and where California&rsquo;s rules differ from federal.</p></a>
-<a class="card" href="/business-structure/"><h3>Business structure</h3><p>Sole proprietor, LLC or S-corp, plus California&rsquo;s $800 annual tax.</p></a>
+<a class="card" href="/estimated-taxes/"><h3>Estimated taxes</h3><p>How much to pay, when, and how. Covers IRS dates and state schedules that differ.</p></a>
+<a class="card" href="/deductions/"><h3>Deductions</h3><p>What you can write off, how to prove it, and where state rules differ from federal.</p></a>
+<a class="card" href="/business-structure/"><h3>Business structure</h3><p>Sole proprietor, LLC or S-corp, plus state taxes to check before you choose.</p></a>
 </div></div></section>
 <section class="alt"><div class="wrap narrow">
 <h2>How we write these guides</h2>
 <ul class="ticks">
-<li>Every rule, rate and deadline is checked against IRS, FTB or CDTFA sources, which are listed at the end of each guide.</li>
+<li>Every rule, rate and deadline is checked against the IRS or the relevant state tax agency, and sources are listed at the end of each guide.</li>
 <li>Each guide shows the date it was last reviewed. Tax-year guides are refreshed every January.</li>
 <li>Examples use made-up numbers and are labeled as examples.</li>
 </ul>
@@ -55,30 +55,30 @@ PAGES = [
      "AI can turn hours of bookkeeping and tax prep into minutes, but only if you know where it&rsquo;s reliable and where it isn&rsquo;t. These guides show you how to use it and how to check its work.",
      ["How to use AI for bookkeeping, and keep your books accurate","How to use AI to categorize business transactions, and check its work","AI receipt scanning: what to look for in a tool","Can AI do your accounting? What it gets right and wrong","Ready-to-use prompts for monthly bookkeeping tasks","Keeping your financial data safe when you use AI","Using AI to get ready for tax season","AI, a bookkeeper, or doing it yourself: time and cost compared"]),
  hub("/bookkeeping/","Bookkeeping","Bookkeeping Guides for the Self-Employed | BookByte",
-     "Do-it-yourself bookkeeping for California freelancers and owner-operators: setup, categorizing, reconciling, catching up and trade-specific guides.",
+     "Do-it-yourself bookkeeping for freelancers and owner-operators: setup, categorizing, reconciling, catching up and trade-specific guides.",
      "Keep accurate books without an accounting degree. Start with the basics, then find the guide for your trade.",
      ["Setting up your books and separating business from personal money","Categorizing transactions with a simple chart of accounts","Reconciling bank and card accounts each month","Catching up when your books are months behind","What receipts to keep, and for how long","Guides for contractors, real estate agents, creators, drivers, consultants and online sellers"]),
- hub("/estimated-taxes/","Estimated taxes","Quarterly Estimated Tax Guides for California | BookByte",
-     "Quarterly estimated taxes for California's self-employed: who has to pay, how much, the IRS and FTB due dates, and how to pay online.",
-     "If no one withholds tax from your pay, you pay it yourself during the year. These guides walk through the IRS and California rules.",
-     ["Whether you need to make estimated payments","How to calculate each payment, with a worked example","IRS due dates, and California&rsquo;s different 30/40/0/30 schedule","Paying online through IRS Direct Pay and FTB Web Pay","What to do if you missed a payment"]),
- hub("/deductions/","Deductions","Self-Employed Tax Deduction Guides for California | BookByte",
-     "Self-employed tax deductions explained: mileage, home office, health insurance, retirement and more, including where California differs from federal rules.",
-     "Lower your tax the legitimate way. Each guide explains what qualifies, how to document it, and where California&rsquo;s rules differ.",
-     ["Mileage, vehicles and the current IRS rate","Home office: simplified vs. regular method","Health insurance and retirement contributions","Schedule C, line by line","1099-NEC and 1099-K forms and thresholds","Federal deductions California doesn&rsquo;t allow"]),
- hub("/business-structure/","Business structure","Sole Proprietor, LLC or S-Corp in California | BookByte",
-     "Choosing a business structure in California: sole proprietor vs. LLC vs. S-corp, the $800 annual tax, and paying yourself a reasonable salary.",
-     "Your business structure changes how you&rsquo;re taxed. These guides explain the California-specific costs before you file anything.",
+ hub("/estimated-taxes/","Estimated taxes","Quarterly Estimated Tax Guides for the Self-Employed | BookByte",
+     "Quarterly estimated taxes for the self-employed: who has to pay, how much, IRS and state due dates, and how to pay online.",
+     "If no one withholds tax from your pay, you pay it yourself during the year. These guides walk through the IRS rules and the state rules that differ, starting with California.",
+     ["Whether you need to make estimated payments","How to calculate each payment, with a worked example","IRS due dates, and state schedules that differ, such as California&rsquo;s 30/40/0/30","Paying online through IRS Direct Pay and state payment sites","What to do if you missed a payment"]),
+ hub("/deductions/","Deductions","Self-Employed Tax Deduction Guides | BookByte",
+     "Self-employed tax deductions explained: mileage, home office, health insurance, retirement and more, including where state rules differ from federal.",
+     "Lower your tax the legitimate way. Each guide explains what qualifies, how to document it, and where state rules differ.",
+     ["Mileage, vehicles and the current IRS rate","Home office: simplified vs. regular method","Health insurance and retirement contributions","Schedule C, line by line","1099-NEC and 1099-K forms and thresholds","Federal deductions some states don&rsquo;t allow, such as California and the QBI deduction"]),
+ hub("/business-structure/","Business structure","Sole Proprietor, LLC or S-Corp: Choosing a Structure | BookByte",
+     "Choosing a business structure: sole proprietor vs. LLC vs. S-corp, state taxes like California's $800 minimum, and paying yourself a reasonable salary.",
+     "Your business structure changes how you&rsquo;re taxed. These guides explain the federal rules and the state costs to check before you file anything.",
      ["Sole proprietor vs. S-corp: when the switch pays off","California&rsquo;s $800 annual LLC and corporation tax","Paying yourself from an S-corp: reasonable salary","When an LLC makes sense, and when it doesn&rsquo;t"]),
  {"path":"/about/","title":"About BookByte","h1":"About BookByte",
   "desc":"Who writes BookByte, how each guide is checked, and where to get bookkeeping and tax help if you'd rather not do it yourself.",
   "body":'''<section class="hero small"><div class="wrap"><h1>About BookByte</h1>
-<p class="lede">Clear, accurate guides for people who run their own business in California and want to handle their own books and taxes.</p></div></section>
+<p class="lede">Clear, accurate guides for people who run their own business and want to handle their own books and taxes.</p></div></section>
 <section><div class="wrap narrow prose">
 <h2>Who writes the guides</h2>
-<p>BookByte is written by Rogenie Cordero, founder of Computatio, a bookkeeping and tax service for self-employed owners.</p>
+<p>BookByte is written by Rogenie Cordero, founder of Computatio, a bookkeeping and tax service for self-employed owners across the US. Rogenie has 20 years of experience in bookkeeping, tax and finance, a dual degree with a minor in computer science, and more than 20 years of building businesses across industries, both for-profit and nonprofit.<!-- LINKEDIN --></p>
 <h2>How we check them</h2>
-<p>Every rate, threshold and deadline is checked against an official source: the IRS, the California Franchise Tax Board (FTB) or the California Department of Tax and Fee Administration (CDTFA). Sources are listed at the end of each guide, along with the date it was last reviewed. When a rule changes, the guide is updated.</p>
+<p>Every rate, threshold and deadline is checked against an official source: the IRS or the relevant state tax agency, such as California&rsquo;s Franchise Tax Board (FTB). Sources are listed at the end of each guide, along with the date it was last reviewed. When a rule changes, the guide is updated.</p>
 <h2>What BookByte is not</h2>
 <p>These guides are general information for doing the work yourself. They aren&rsquo;t tax or legal advice for your situation. If something is unclear or the stakes are high, talk to a tax professional.</p>
 <h2>If you&rsquo;d rather not do it yourself</h2>

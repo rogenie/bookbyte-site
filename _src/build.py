@@ -62,7 +62,7 @@ def layout(p):
 </main>
 <footer class="site"><div class="wrap">
 <div class="fgrid">
-<div><b>BookByte</b><p>Plain-English bookkeeping and tax guides for California&rsquo;s self-employed.</p></div>
+<div><b>BookByte</b><p>Plain-English bookkeeping, tax and AI accounting guides for the self-employed.</p></div>
 <div><b>Guides</b><a href="{SITE["ai"][0]}">{esc(SITE["ai"][1])}</a>{"".join(f'<a href="{h}">{esc(n)}</a>' for h,n in SITE["nav"][:4])}</div>
 <div><b>Would rather not do it yourself?</b><p><a href="{SITE["cta_url"]}utm_source=bookbyte&amp;utm_medium=referral&amp;utm_campaign=footer">Computatio</a> keeps your books and prepares your return, with a person reviewing every account.</p></div>
 </div>
