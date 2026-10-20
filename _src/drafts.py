@@ -168,4 +168,61 @@ article("/business-structure/s-corp-vs-sole-proprietor-california/","/business-s
   ("IRS: Self-employment tax","https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes"),
   ("LLC University: California AB 85 expired","https://www.llcuniversity.com/california-llc/annual-llc-tax-exemption-ab-85/")],
  "s-corp-vs-sole-proprietor-california"),
+article("/ai-bookkeeping/how-to-use-ai-for-bookkeeping/","/ai-bookkeeping/","AI for Bookkeeping",
+ "How to Use AI for Bookkeeping (and Keep Your Books Accurate)",
+ "How to use AI for bookkeeping, and keep your books accurate",
+ "A practical, safe workflow for using AI tools to categorize transactions, read receipts and prepare for month-end and tax season, plus what AI still gets wrong.",
+ "2026-10-26",
+ "AI can do the slowest parts of bookkeeping in minutes: sorting transactions, reading receipts, drafting summaries. It also makes confident mistakes. Here&rsquo;s how to get the speed without the errors.",
+ '''<h2>What AI is good at</h2>
+<ul>
+<li><b>Categorizing transactions</b> from the bank description, once you give it your category list and a few rules.</li>
+<li><b>Reading receipts and invoices</b> and pulling out the date, vendor, amount and what was bought.</li>
+<li><b>Spotting oddities</b> such as duplicate charges, a subscription that doubled, or a payment with no matching invoice.</li>
+<li><b>Explaining your reports</b> in plain English, such as why profit dropped this month.</li>
+<li><b>Drafting routine writing</b> like invoice reminders and notes for your tax preparer.</li>
+</ul>
+
+<h2>What AI gets wrong</h2>
+<ul>
+<li><b>It can&rsquo;t know your context.</b> A charge at a warehouse store might be office supplies or groceries. Only you know.</li>
+<li><b>It states tax rules confidently, even when they&rsquo;re outdated or wrong.</b> Rates, thresholds and deadlines change every year. Check any rule against an IRS or FTB page.</li>
+<li><b>It can slip on arithmetic</b> across long tables. Totals should come from your bookkeeping software or spreadsheet, not from a chat answer.</li>
+<li><b>It doesn&rsquo;t reconcile.</b> Matching your books to your bank statement is still your job, or your bookkeeper&rsquo;s.</li>
+</ul>
+
+<h2>A safe workflow for categorizing with AI</h2>
+<ol>
+<li><b>Export</b> last month&rsquo;s transactions from your bank or bookkeeping software as a spreadsheet file.</li>
+<li><b>Remove sensitive details</b> such as full account numbers before you paste or upload anything.</li>
+<li><b>Give it your categories.</b> Use the expense lines from Schedule C plus &ldquo;owner draw&rdquo; and &ldquo;owner contribution.&rdquo; Our <a href="/bookkeeping/do-your-own-bookkeeping/">bookkeeping guide</a> explains why.</li>
+<li><b>Ask for a reason and a confidence level</b> for each category, using the prompt below.</li>
+<li><b>Review</b> every low-confidence item and anything over an amount you choose, such as $200.</li>
+<li><b>Reconcile</b> the month against your bank statement in your bookkeeping system. If the totals don&rsquo;t match, the categories don&rsquo;t matter yet.</li>
+<li><b>Keep the receipts.</b> AI summaries don&rsquo;t replace the records the IRS expects you to keep.</li>
+</ol>
+
+<div class="callout"><b>Prompt you can copy:</b><br>&ldquo;You are helping me categorize transactions for a self-employed business. Use only these categories: [paste your list]. Rules: [for example, &lsquo;Shell, Chevron = car and truck expenses&rsquo;; &lsquo;transfers to savings = owner draw&rsquo;]. For each transaction, return the date, description, amount, category, a confidence level (high, medium or low) and a one-line reason. Mark anything that could be personal as low confidence. Don&rsquo;t total anything.&rdquo;</div>
+
+<h2>Keep your data safe</h2>
+<ul>
+<li>Never paste Social Security numbers, full bank or card numbers, or passwords into an AI chat.</li>
+<li>Check the tool&rsquo;s data settings, including whether your inputs can be used to train its models, and turn that off where you can.</li>
+<li>If you handle other people&rsquo;s financial information, such as clients or employees, use a business plan with a clear data agreement, or leave that data out.</li>
+</ul>
+
+<h2>You&rsquo;re still responsible for the result</h2>
+<p>The IRS holds taxpayers responsible for what&rsquo;s on their return, whoever, or whatever, prepared it. Treat AI like a fast assistant whose work you check, not a replacement for checking.</p>
+
+<h2>A realistic monthly routine with AI</h2>
+<ul>
+<li><b>Weekly:</b> snap receipts and let AI extract the details.</li>
+<li><b>Month-end:</b> run the categorizing prompt, review the flagged items, then reconcile.</li>
+<li><b>Quarterly:</b> ask AI to summarize the quarter&rsquo;s profit, then check the numbers against your profit and loss report before you make <a href="/estimated-taxes/quarterly-estimated-taxes-california/">estimated tax payments</a>.</li>
+</ul>''',
+ 'This is how <a href="CTAURL">Computatio</a> works: AI does the sorting and reconciling, and a person reviews and signs off on every account. Monthly Books is $500 a month.',
+ [("IRS Fact Sheet FS-14-11: Choosing a tax return preparer","https://www.irs.gov/pub/irs-news/FS-14-11.pdf"),
+  ("IRS: How long should I keep records?","https://www.irs.gov/businesses/small-businesses-self-employed/how-long-should-i-keep-records"),
+  ("IRS: About Schedule C (Form 1040)","https://www.irs.gov/forms-pubs/about-schedule-c-form-1040")],
+ "how-to-use-ai-for-bookkeeping"),
 ]

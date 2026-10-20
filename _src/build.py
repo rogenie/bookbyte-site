@@ -11,6 +11,8 @@ TODAY = datetime.date.today().isoformat()
 
 def esc(s): return html.escape(s, quote=True)
 
+SPARK = '<svg class="spark" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.2 6.3L20.5 10.5l-6.3 2.2L12 19l-2.2-6.3L3.5 10.5l6.3-2.2zM19 15l.9 2.1L22 18l-2.1.9L19 21l-.9-2.1L16 18l2.1-.9z" fill="currentColor"/></svg>'
+
 def layout(p):
     url = SITE["url"] + p["path"]
     crumbs = [{"@type":"ListItem","position":1,"name":"Home","item":SITE["url"]+"/"}]
@@ -53,7 +55,7 @@ def layout(p):
 <a class="skip" href="#main">Skip to content</a>
 <header class="site"><div class="wrap bar">
 <a class="brand" href="/"><img src="/assets/favicon.svg" alt="" width="32" height="32"><span>BookByte</span></a>
-<nav aria-label="Main">{nav}</nav>
+<nav aria-label="Main">{nav}<a class="ai-btn{" on" if p["path"].startswith(SITE["ai"][0]) else ""}" href="{SITE["ai"][0]}">{SPARK}{esc(SITE["ai"][1])}</a></nav>
 </div></header>
 <main id="main">
 {p["body"]}
@@ -61,7 +63,7 @@ def layout(p):
 <footer class="site"><div class="wrap">
 <div class="fgrid">
 <div><b>BookByte</b><p>Plain-English bookkeeping and tax guides for California&rsquo;s self-employed.</p></div>
-<div><b>Guides</b>{"".join(f'<a href="{h}">{esc(n)}</a>' for h,n in SITE["nav"][:4])}</div>
+<div><b>Guides</b><a href="{SITE["ai"][0]}">{esc(SITE["ai"][1])}</a>{"".join(f'<a href="{h}">{esc(n)}</a>' for h,n in SITE["nav"][:4])}</div>
 <div><b>Would rather not do it yourself?</b><p><a href="{SITE["cta_url"]}utm_source=bookbyte&amp;utm_medium=referral&amp;utm_campaign=footer">Computatio</a> keeps your books and prepares your return, with a person reviewing every account.</p></div>
 </div>
 <p class="legal">Guides are general information, not tax or legal advice. Rules change; check the date on each guide. &middot; <a href="/about/">About</a> &middot; <a href="/privacy/">Privacy</a> &middot; &copy; {datetime.date.today().year} BookByte</p>
