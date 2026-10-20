@@ -70,3 +70,5 @@ footer.site b{color:#fff}
 .aiflex{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
 .card.ai{border-top-color:#D4A017;background:#FFFBF0}
 @media(max-width:700px){.ai-btn{margin:8px 0 0}}
+.btn.ghost{background:transparent;border:1px solid var(--gold);color:var(--gold)}
+.hero .ai-btn.big{margin-right:6px}

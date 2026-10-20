@@ -19,18 +19,13 @@ def hub(path, name, title, desc, intro, covers):
     return {"path":path,"title":title,"desc":desc,"h1":name,"body":body}
 
 PAGES = [
- {"path":"/","title":"BookByte | Bookkeeping, Tax and AI Accounting Guides for the Self-Employed","h1":"BookByte",
-  "desc":"Step-by-step bookkeeping, tax and AI accounting guides for freelancers, contractors, creators and single-owner LLCs and S-corps. Do it yourself, the right way.",
+ {"path":"/","title":"BookByte | AI for Accounting: Guides for the Self-Employed","h1":"BookByte",
+  "desc":"How to use AI for bookkeeping, taxes and accounting tasks, step by step. Practical guides for freelancers, contractors, creators and small-business owners.",
   "body":'''<section class="hero"><div class="wrap">
-<p class="eyebrow">For the self-employed</p>
-<h1>Do your own books and taxes, <span>the right way.</span></h1>
-<p class="lede">Plain-English, step-by-step guides for freelancers, contractors, creators and single-owner LLCs and S-corps. Every guide is checked against official IRS and state sources, with notes where state rules differ.</p>
-<a class="btn" href="/bookkeeping/">Start with bookkeeping</a>
-</div></section>
-<section class="aiband"><div class="wrap aiflex">
-<div><p class="eyebrow">New</p><h2>Use AI for your accounting, without the mistakes</h2>
-<p>How to use AI tools to categorize transactions, read receipts and prepare for tax season, plus where AI still gets it wrong and how to check its work.</p></div>
-<a class="ai-btn big" href="/ai-accounting/">AI for Accounting guides</a>
+<p class="eyebrow">AI for accounting, for the self-employed</p>
+<h1>Use AI to do your own books and taxes, <span>the right way.</span></h1>
+<p class="lede">Prompts, workflows and checks that let AI do the slow parts of bookkeeping and tax prep, without the mistakes. Every rule is checked against official IRS and state sources.</p>
+<a class="ai-btn big" href="/ai-accounting/">Start with AI for Accounting</a> &nbsp; <a class="btn ghost" href="/bookkeeping/">Bookkeeping basics</a>
 </div></section>
 <section><div class="wrap">
 <h2>Pick a topic</h2>
