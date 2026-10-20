@@ -89,7 +89,7 @@ PAGES = [
 </div></section>'''},
  {"path":"/privacy/","title":"Privacy Policy | BookByte","h1":"Privacy policy",
   "desc":"How BookByte handles information when you visit the site.",
-  "body":'''<section class="hero small"><div class="wrap"><h1>Privacy policy</h1><p class="lede">Last updated October 19, 2026.</p></div></section>
+  "body":'''<section class="hero small"><div class="wrap"><h1>Privacy policy</h1><p class="lede">Last updated October 20, 2026.</p></div></section>
 <section><div class="wrap narrow prose">
 <h2>What we collect</h2>
 <p>BookByte has no accounts, forms or comments, and doesn&rsquo;t set its own cookies. We don&rsquo;t sell or share personal information.</p>
@@ -97,8 +97,10 @@ PAGES = [
 <p>If you sign up for the free write-offs guide, your email address is collected by beehiiv, the service that runs the Computatio newsletter, under its own privacy policy. You can unsubscribe from any email.</p>
 <h2>Services that load with the site</h2>
 <p>The site is hosted on GitHub Pages and loads fonts from Google Fonts. Like any web server, these services receive your IP address and basic browser information when you load a page, under their own privacy policies.</p>
+<h2>Visit counts</h2>
+<p>We count page visits with GoatCounter, a privacy-friendly analytics service. It sets no cookies and doesn&rsquo;t track you across sites. It records the page you visited, the site that sent you, and general details such as browser, screen size and country. It doesn&rsquo;t store your IP address.</p>
 <h2>Changes</h2>
-<p>If we add analytics or another form, this page will be updated first and will say what is collected and why.</p>
+<p>If we add another analytics service or a form, this page will be updated first and will say what is collected and why.</p>
 <h2>Contact</h2>
 <p>Questions about this policy can be sent through <a href="https://computatio.io/#book">computatio.io</a>.</p>
 </div></section>'''},

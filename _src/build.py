@@ -72,6 +72,8 @@ def layout(p):
 </div>
 <p class="legal">Guides are general information, not tax or legal advice. Rules change; check the date on each guide. &middot; <a href="/about/">About</a> &middot; <a href="/privacy/">Privacy</a> &middot; &copy; {datetime.date.today().year} BookByte</p>
 </div></footer>
+<script>window.goatcounter={{path:function(p){{return location.host+p}}}}</script>
+<script data-goatcounter="https://computatio.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </body>
 </html>
 '''
