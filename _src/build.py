@@ -5,9 +5,12 @@ Jekyll ignores folders starting with "_", so _src is not published."""
 import os, json, html, datetime, sys
 sys.path.insert(0, os.path.dirname(__file__))
 from pages import SITE, PAGES
+from articles import ARTICLES
+import re
+from zoneinfo import ZoneInfo
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-TODAY = datetime.date.today().isoformat()
+TODAY = os.environ.get("BOOKBYTE_TODAY") or datetime.datetime.now(ZoneInfo("America/Los_Angeles")).date().isoformat()
 
 def esc(s): return html.escape(s, quote=True)
 
@@ -72,9 +75,37 @@ def layout(p):
 </html>
 '''
 
+def card_list(arts):
+    return '<div class="cards">' + "".join(
+        f'<a class="card" href="{a["path"]}"><h3>{a["h1"]}</h3><p>{a["desc"]}</p></a>' for a in arts) + '</div>'
+
 def main():
-    urls=[]
+    live = sorted([a for a in ARTICLES if a["published"] <= TODAY], key=lambda a: a["published"], reverse=True)
+    live_paths = {a["path"] for a in live}
+    all_paths = {a["path"] for a in ARTICLES}
+    def unlink_future(body):
+        # turn links to not-yet-published guides into plain text
+        def f(m):
+            return m.group(2) if (m.group(1) in all_paths and m.group(1) not in live_paths) else m.group(0)
+        return re.sub(r'<a href="(/[^"]+)">(.*?)</a>', f, body)
+    pages = []
     for p in PAGES:
+        p = dict(p)
+        if "<!--HUB_ARTICLES-->" in p["body"]:
+            mine = [a for a in live if a["hub"] == p["path"]]
+            p["body"] = p["body"].replace("<!--HUB_ARTICLES-->", ("<h2>Guides</h2>" + card_list(mine)) if mine else "")
+        if "<!--LATEST-->" in p["body"]:
+            p["body"] = p["body"].replace("<!--LATEST-->", ('<section><div class="wrap"><h2>Latest guides</h2>' + card_list(live[:6]) + '</div></section>') if live else "")
+        pages.append(p)
+    for a in live:
+        a = dict(a); a["body"] = unlink_future(a["body"]); pages.append(a)
+    # remove pages for articles that are not live (e.g. date moved later)
+    for a in ARTICLES:
+        if a["path"] not in live_paths:
+            f = os.path.join(ROOT, a["path"].strip("/"), "index.html")
+            if os.path.exists(f): os.remove(f)
+    urls=[]
+    for p in pages:
         out = os.path.join(ROOT, p["path"].strip("/"), "index.html") if p["path"]!="/404" else os.path.join(ROOT,"404.html")
         os.makedirs(os.path.dirname(out), exist_ok=True)
         open(out,"w",encoding="utf-8").write(layout(p))
@@ -83,5 +114,5 @@ def main():
          "".join(f"  <url><loc>{u}</loc><lastmod>{d}</lastmod></url>\n" for u,d in urls) + "</urlset>\n"
     open(os.path.join(ROOT,"sitemap.xml"),"w").write(sm)
     open(os.path.join(ROOT,"robots.txt"),"w").write(f"User-agent: *\nAllow: /\n\nSitemap: {SITE['url']}/sitemap.xml\n")
-    print("built", len(PAGES), "pages")
+    print("built", len(pages), "pages;", len(live), "live guides; today", TODAY)
 if __name__=="__main__": main()

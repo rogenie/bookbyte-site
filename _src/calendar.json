@@ -1,0 +1,257 @@
+{
+ "cadence": "Mon/Wed/Fri",
+ "items": [
+  {
+   "date": "2026-10-21",
+   "hub": "ai-accounting",
+   "path": "/ai-accounting/how-to-use-ai-for-bookkeeping/",
+   "title": "How to use AI for bookkeeping, and keep your books accurate",
+   "status": "written"
+  },
+  {
+   "date": "2026-10-23",
+   "hub": "estimated-taxes",
+   "path": "/estimated-taxes/quarterly-estimated-taxes-california/",
+   "title": "Quarterly estimated taxes in California: a 2026 guide",
+   "status": "written"
+  },
+  {
+   "date": "2026-10-26",
+   "hub": "ai-accounting",
+   "path": "/ai-accounting/ai-prompts-categorize-transactions/",
+   "title": "AI prompts for categorizing business transactions (copy-and-paste library)",
+   "status": "todo"
+  },
+  {
+   "date": "2026-10-28",
+   "hub": "ai-accounting",
+   "path": "/ai-accounting/ai-bank-reconciliation/",
+   "title": "How to use AI to reconcile your bank account, and what it can't do",
+   "status": "todo"
+  },
+  {
+   "date": "2026-10-30",
+   "hub": "ai-accounting",
+   "path": "/ai-accounting/can-ai-do-your-accounting/",
+   "title": "Can AI do your accounting? What it gets right and wrong",
+   "status": "todo"
+  },
+  {
+   "date": "2026-11-02",
+   "hub": "business-structure",
+   "path": "/business-structure/s-corp-vs-sole-proprietor-california/",
+   "title": "S-corp vs. sole proprietor: when the switch pays off",
+   "status": "written"
+  },
+  {
+   "date": "2026-11-04",
+   "hub": "ai-accounting",
+   "path": "/ai-accounting/ai-receipt-scanning/",
+   "title": "AI receipt scanning: turn phone photos into bookkeeping records",
+   "status": "todo"
+  },
+  {
+   "date": "2026-11-06",
+   "hub": "ai-accounting",
+   "path": "/ai-accounting/financial-data-safety-ai/",
+   "title": "How to keep your financial data safe when you use AI",
+   "status": "todo"
+  },
+  {
+   "date": "2026-11-09",
+   "hub": "ai-accounting",
+   "path": "/ai-accounting/chart-of-accounts-with-ai/",
+   "title": "How to build a chart of accounts with AI (free template)",
+   "status": "todo"
+  },
+  {
+   "date": "2026-11-11",
+   "hub": "ai-accounting",
+   "path": "/ai-accounting/catch-up-bookkeeping-with-ai/",
+   "title": "How to catch up on months of bookkeeping with AI",
+   "status": "todo"
+  },
+  {
+   "date": "2026-11-13",
+   "hub": "ai-accounting",
+   "path": "/ai-accounting/read-profit-and-loss-with-ai/",
+   "title": "How to use AI to read your profit and loss statement",
+   "status": "todo"
+  },
+  {
+   "date": "2026-11-16",
+   "hub": "bookkeeping",
+   "path": "/bookkeeping/do-your-own-bookkeeping/",
+   "title": "How to do your own bookkeeping when you're self-employed",
+   "status": "written"
+  },
+  {
+   "date": "2026-11-18",
+   "hub": "ai-accounting",
+   "path": "/ai-accounting/chatgpt-vs-claude-vs-gemini-bookkeeping/",
+   "title": "ChatGPT vs. Claude vs. Gemini for bookkeeping tasks: a 2026 test",
+   "status": "todo"
+  },
+  {
+   "date": "2026-11-20",
+   "hub": "ai-accounting",
+   "path": "/ai-accounting/ai-invoices-payment-reminders/",
+   "title": "AI for invoices and payment reminders",
+   "status": "todo"
+  },
+  {
+   "date": "2026-11-23",
+   "hub": "ai-accounting",
+   "path": "/ai-accounting/ai-excel-google-sheets-bookkeeping/",
+   "title": "How to use AI in Excel or Google Sheets for bookkeeping",
+   "status": "todo"
+  },
+  {
+   "date": "2026-11-25",
+   "hub": "bookkeeping",
+   "path": "/bookkeeping/year-end-bookkeeping-checklist-ai/",
+   "title": "Year-end bookkeeping checklist, with AI prompts for each step",
+   "status": "todo"
+  },
+  {
+   "date": "2026-11-27",
+   "hub": "ai-accounting",
+   "path": "/ai-accounting/find-missed-deductions-with-ai/",
+   "title": "How to use AI to find missed deductions, and verify them",
+   "status": "todo"
+  },
+  {
+   "date": "2026-11-30",
+   "hub": "deductions",
+   "path": "/deductions/1099-nec-2000-threshold/",
+   "title": "The new $2,000 1099-NEC threshold for 2026, explained",
+   "status": "todo"
+  },
+  {
+   "date": "2026-12-02",
+   "hub": "ai-accounting",
+   "path": "/ai-accounting/estimate-quarterly-taxes-with-ai/",
+   "title": "How to use AI to estimate quarterly taxes, and check the math",
+   "status": "todo"
+  },
+  {
+   "date": "2026-12-04",
+   "hub": "ai-accounting",
+   "path": "/ai-accounting/ai-mileage-logs/",
+   "title": "AI mileage logs: what to track and what the IRS expects",
+   "status": "todo"
+  },
+  {
+   "date": "2026-12-07",
+   "hub": "ai-accounting",
+   "path": "/ai-accounting/tax-appointment-prep-with-ai/",
+   "title": "How to prepare for your tax appointment with AI",
+   "status": "todo"
+  },
+  {
+   "date": "2026-12-09",
+   "hub": "estimated-taxes",
+   "path": "/estimated-taxes/q4-estimated-payment-january-15-2027/",
+   "title": "Your Q4 estimated payment is due January 15, 2027: a checklist",
+   "status": "todo"
+  },
+  {
+   "date": "2026-12-11",
+   "hub": "ai-accounting",
+   "path": "/ai-accounting/ai-for-contractors-job-costing/",
+   "title": "AI for contractors: job costing and materials tracking",
+   "status": "todo"
+  },
+  {
+   "date": "2026-12-14",
+   "hub": "ai-accounting",
+   "path": "/ai-accounting/ai-for-real-estate-agents/",
+   "title": "AI for real estate agents: commissions and expenses",
+   "status": "todo"
+  },
+  {
+   "date": "2026-12-16",
+   "hub": "ai-accounting",
+   "path": "/ai-accounting/ai-for-content-creators/",
+   "title": "AI for content creators: sponsorships, 1099s and expenses",
+   "status": "todo"
+  },
+  {
+   "date": "2026-12-18",
+   "hub": "ai-accounting",
+   "path": "/ai-accounting/ai-bookkeeping-mistakes/",
+   "title": "Common AI bookkeeping mistakes, and how to catch them",
+   "status": "todo"
+  },
+  {
+   "date": "2026-12-21",
+   "hub": "ai-accounting",
+   "path": "/ai-accounting/bookkeeping-routine-sop-with-ai/",
+   "title": "How to write a bookkeeping routine (SOP) with AI",
+   "status": "todo"
+  },
+  {
+   "date": "2026-12-23",
+   "hub": "ai-accounting",
+   "path": "/ai-accounting/ai-for-online-sellers-payouts/",
+   "title": "AI for online sellers: reconciling platform payouts",
+   "status": "todo"
+  },
+  {
+   "date": "2026-12-25",
+   "hub": "ai-accounting",
+   "path": "/ai-accounting/ai-duplicate-charges-subscriptions/",
+   "title": "How to use AI to spot duplicate charges and subscription creep",
+   "status": "todo"
+  },
+  {
+   "date": "2026-12-28",
+   "hub": "bookkeeping",
+   "path": "/bookkeeping/monthly-close-checklist-ai/",
+   "title": "A monthly close checklist, with AI prompts",
+   "status": "todo"
+  },
+  {
+   "date": "2026-12-30",
+   "hub": "deductions",
+   "path": "/deductions/send-1099-nec-by-january-31/",
+   "title": "How to send 1099-NECs to your contractors by January 31",
+   "status": "todo"
+  },
+  {
+   "date": "2027-01-01",
+   "hub": "ai-accounting",
+   "path": "/ai-accounting/organize-tax-documents-with-ai/",
+   "title": "How to use AI to organize your tax documents",
+   "status": "todo"
+  },
+  {
+   "date": "2027-01-04",
+   "hub": "ai-accounting",
+   "path": "/ai-accounting/ai-for-rideshare-delivery-drivers/",
+   "title": "AI for rideshare and delivery drivers",
+   "status": "todo"
+  },
+  {
+   "date": "2027-01-06",
+   "hub": "ai-accounting",
+   "path": "/ai-accounting/should-you-trust-ai-with-taxes/",
+   "title": "Should you trust AI with your taxes?",
+   "status": "todo"
+  },
+  {
+   "date": "2027-01-08",
+   "hub": "ai-accounting",
+   "path": "/ai-accounting/ai-vs-bookkeeper-vs-diy/",
+   "title": "AI, a bookkeeper, or doing it yourself: time and cost compared",
+   "status": "todo"
+  },
+  {
+   "date": "2027-01-11",
+   "hub": "deductions",
+   "path": "/deductions/tax-documents-checklist-2026/",
+   "title": "Tax documents checklist: what to gather before filing your 2026 return",
+   "status": "todo"
+  }
+ ]
+}

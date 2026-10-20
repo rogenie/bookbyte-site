@@ -13,6 +13,7 @@ def hub(path, name, title, desc, intro, covers):
     body = f'''<section class="hero small"><div class="wrap">
 <p class="eyebrow">Guides</p><h1>{name}</h1><p class="lede">{intro}</p></div></section>
 <section><div class="wrap narrow">
+<!--HUB_ARTICLES-->
 <h2>What this section covers</h2><ul class="ticks">{lis}</ul>
 <p class="muted">New guides are added every week. Each one shows the date it was last checked against official sources.</p>
 </div></section>'''
@@ -27,6 +28,7 @@ PAGES = [
 <p class="lede">Prompts, workflows and checks that let AI do the slow parts of bookkeeping and tax prep, without the mistakes. Every rule is checked against official IRS and state sources.</p>
 <a class="ai-btn big" href="/ai-accounting/">Start with AI for Accounting</a> &nbsp; <a class="btn ghost" href="/bookkeeping/">Bookkeeping basics</a>
 </div></section>
+<!--LATEST-->
 <section><div class="wrap">
 <h2>Pick a topic</h2>
 <div class="cards">

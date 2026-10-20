@@ -1,4 +1,5 @@
-# Week 1 drafts. Move an entry into PAGES (pages.py) to publish it.
+# All guides. build.py publishes an article only when its "published" date (Pacific time) has arrived.
+# Scheduled runs append new article(...) entries to ARTICLES. See _src/PUBLISHING.md.
 CTA = "https://computatio.io/?utm_source=bookbyte&amp;utm_medium=referral&amp;utm_campaign="
 
 def article(path, hub, hub_name, title, h1, desc, published, intro, sections, cta_html, sources, slug):
@@ -18,12 +19,12 @@ def article(path, hub, hub_name, title, h1, desc, published, intro, sections, ct
     return {"path":path,"hub":hub,"hub_name":hub_name,"title":title,"h1":h1,"desc":desc,"body":body,
             "article":True,"published":published,"reviewed":published}
 
-DRAFTS = [
+ARTICLES = [
 article("/bookkeeping/do-your-own-bookkeeping/","/bookkeeping/","Bookkeeping",
  "How to Do Your Own Bookkeeping When You're Self-Employed",
  "How to do your own bookkeeping when you&rsquo;re self-employed",
  "A step-by-step bookkeeping routine for freelancers and owner-operators: separate accounts, simple categories, monthly reconciling, receipts and tax set-asides.",
- "2026-10-26",
+ "2026-11-16",
  "Bookkeeping for a one-person business comes down to eight habits. Set them up once, spend about an hour a month, and your books will be ready when tax time comes.",
  '''<h2>1. Open a separate business account</h2>
 <p>Use one checking account and, if you need one, one credit card for business only. You don&rsquo;t need an LLC to do this; a second personal account used only for business works. Mixing business and personal spending is the most common reason books take hours to fix later.</p>
@@ -71,7 +72,7 @@ article("/estimated-taxes/quarterly-estimated-taxes-california/","/estimated-tax
  "Quarterly Estimated Taxes in California: 2026 Guide",
  "Quarterly estimated taxes in California: a 2026 guide",
  "Who must pay estimated taxes in California, how much, the IRS and FTB due dates for 2026, the 30/40/0/30 schedule and safe harbor rules, with a worked example.",
- "2026-10-28",
+ "2026-10-23",
  "When you&rsquo;re self-employed, no one withholds tax from your income, so you pay it during the year in installments. California and the IRS both expect payments, but on different schedules.",
  '''<h2>Do you need to pay estimated tax?</h2>
 <p><b>Federal:</b> you generally must pay estimated tax if you expect to owe at least $1,000 for the year after withholding and refundable credits.</p>
@@ -125,7 +126,7 @@ article("/business-structure/s-corp-vs-sole-proprietor-california/","/business-s
  "S Corp vs Sole Proprietor in California: When to Switch",
  "S-corp vs. sole proprietor in California: when the switch pays off",
  "How an S-corp can lower self-employment tax, what it costs in California (1.5% tax, $800 minimum, payroll), and a worked example to see where the break-even is.",
- "2026-10-30",
+ "2026-11-02",
  "An S-corp can lower your self-employment tax, but in California it also adds costs. Whether it pays off depends on your profit, the salary you pay yourself, and what the extra paperwork costs you.",
  '''<h2>How each one is taxed</h2>
 <p><b>Sole proprietor</b> (including a single-member LLC taxed the default way): all of your net profit is subject to self-employment tax of 15.3% on 92.35% of net earnings (the Social Security part only up to $184,500 in 2026), plus income tax.</p>
@@ -172,7 +173,7 @@ article("/ai-accounting/how-to-use-ai-for-bookkeeping/","/ai-accounting/","AI fo
  "How to Use AI for Bookkeeping (and Keep Your Books Accurate)",
  "How to use AI for bookkeeping, and keep your books accurate",
  "A practical, safe workflow for using AI tools to categorize transactions, read receipts and prepare for month-end and tax season, plus what AI still gets wrong.",
- "2026-10-26",
+ "2026-10-21",
  "AI can do the slowest parts of bookkeeping in minutes: sorting transactions, reading receipts, drafting summaries. It also makes confident mistakes. Here&rsquo;s how to get the speed without the errors.",
  '''<h2>What AI is good at</h2>
 <ul>
