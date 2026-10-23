@@ -37,6 +37,25 @@ If anything stops the run before a due guide is live (a fetch or push is refused
   - business structure or complex situations: a free 20-minute call with Computatio
 - **Sources:** 2–5 official sources (irs.gov, state tax agencies, ssa.gov) as `(title, url)` pairs. Use a non-government source only when no official page exists.
 
+## Article structure (direct-response, every article)
+
+Rogenie wants every guide written in a direct-response marketing style (the Sam Ovens school): one reader, one problem, one promise, one next step. Use this skeleton in this order. Don't name Sam Ovens or any marketer on the site.
+
+1. **Headline (title and H1):** a specific outcome the reader wants, under 60 characters. Name the result, not the topic ("Reconcile your bank account in 20 minutes with AI" beats "AI bank reconciliation"). Only promise what the steps truly deliver.
+2. **Hook (the `intro`, 2–3 short sentences):** name the exact pain in the reader's words and the cost of leaving it alone (time, stress, penalties, bad numbers). No throat-clearing.
+3. **The old way vs. the new way:** a short section showing why the usual approach fails (shoebox, guessing, year-end panic) and what changes with the method in this guide.
+4. **The method, named:** give the method a plain name ("the 3-pass review", "the 30-minute close") and walk it as numbered steps. This is the body: prompts in callouts, the made-up example, and how to check the output.
+5. **Example story:** a short before-and-after for a made-up owner, labeled "Example (made-up data)". Never present it as a real client.
+6. **Objections:** answer the 2–3 doubts the reader has right now ("Is it safe to upload my bank data?", "What if the AI is wrong?", "I'm not technical"). Honest answers, including the limits.
+7. **Recap:** 3–5 bullets the reader can act on today.
+8. **One call to action:** the `cta_html`, framed as the done-for-you version of the method ("Want this done every month without lifting a finger?"). One offer only.
+
+**Voice:** talk to "you". Short paragraphs (1–3 sentences), short sentences, strong verbs, concrete numbers from official sources. Bold the one line per section a skimmer must not miss. Subheads say what the reader gets, not what the section is.
+
+**Where this style stops:** the "Never" list wins every time. No hype words ("secret", "hack", "guaranteed", "skyrocket"), no fake urgency or scarcity, no income or savings claims, no invented testimonials, results or statistics. On tax and money topics, accuracy beats persuasion: if a sentence sells harder than the facts allow, cut it.
+
+Items with status `written` were drafted before this structure existed: restructure them to match before publishing (the fact check still applies).
+
 ## Never
 
 - Use "CPA" in any form, or call Rogenie or Computatio an accountant or accounting firm.
