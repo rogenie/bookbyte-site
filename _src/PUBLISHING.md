@@ -5,14 +5,21 @@ Scheduled runs follow this file to publish one guide per scheduled day. Rogenie 
 ## Each run
 
 1. Get today's date in America/Los_Angeles.
-2. Open `_src/calendar.json` and find the item whose `date` is today.
-   - No item for today: stop. Make no commits and send no message.
-   - Status `published`: stop. It is already done.
-   - Status `held`: stop. It is waiting for Rogenie.
-3. If the status is `written`, the article is already in `_src/articles.py` with today's date. Go to "Publish".
-4. If the status is `todo`, write the article (below), pass the fact check, and add it to the end of the `ARTICLES` list in `_src/articles.py` using the `article(...)` helper, with `published` set to today. Then go to "Publish".
+2. Open `_src/calendar.json` and list every item whose `date` is today **or earlier** and whose status is `written` or `todo`. These are due. Items marked `published` are done; items marked `held` wait for Rogenie. Skip both.
+   - Nothing due: stop. Make no commits and send no message.
+3. Work through the due items oldest first, one at a time, running the full process below (fact check, Publish, run log) for each before starting the next. An earlier date means a scheduled run was missed; catch it up now. In its run record, say in `note` that it was a catch-up and on what date.
+4. If the status is `written`, the article is already in `_src/articles.py` with its scheduled date. Go to "Publish".
+5. If the status is `todo`, write the article (below), pass the fact check, and add it to the end of the `ARTICLES` list in `_src/articles.py` using the `article(...)` helper, with `published` set to the item's scheduled date (the build only publishes dates that have arrived). Then go to "Publish".
 
-Never publish an item dated in the future, and never skip ahead to the next item.
+Never publish an item dated in the future.
+
+## Fetching sources and pages
+
+Scheduled runs have nobody to approve a web fetch, and fetching a URL that didn't come from a search result is refused there. So: find each official page with a web search first (limit it to the official domain, for example `irs.gov` or `ftb.ca.gov`), then fetch the URL the search returned. Do the same for the live-page check: search `site:bookbytellc.com <title>` or fetch the URL only after a search has returned it; if that still fails, use the GitHub Pages run status as the live check and set `live_verified` to false.
+
+## If the run can't finish
+
+If anything stops the run before a due guide is live (a fetch or push is refused, the build fails, a tool is missing), send a push notification right away naming the guide, its date and what failed. Don't stop silently: the next run will retry any guide still due.
 
 ## Writing standards
 
@@ -50,7 +57,7 @@ Never publish an item dated in the future, and never skip ahead to the next item
 1. From the repo root, run `python3 _src/build.py`. Today's guide must appear in the output count.
 2. Set the calendar item's status to `published` and add `"url": "https://bookbytellc.com<path>"`.
 3. Commit with author `Rogenie Cordero <rogenie@gmail.com>` and the message `Publish: <title>`, then push to `main`.
-4. Verify: wait for the latest GitHub Pages run to show `completed` / `success` using `https://api.github.com/repos/rogenie/bookbyte-site/actions/runs?per_page=1`, then fetch the live page once to confirm the title appears.
+4. Verify: wait for the latest "pages build and deployment" run to show `completed` / `success` (GitHub connector, `actions_list` → `list_workflow_runs`, owner `rogenie`; the repo was renamed from `bookbyte` to `bookbyte-site`, so try whichever name the session allows). Then fetch the live page once, as described under "Fetching sources and pages", to confirm the title appears.
 5. Write a LinkedIn post for the Computatio company page and save it as `_src/social/linkedin/<date>-<slug>.md` in the same commit (or a follow-up commit). Rules: 120–200 words, a first line that names a specific problem, 3 short takeaways from the guide, then the link `https://bookbytellc.com<path>?utm_source=linkedin&utm_medium=social&utm_campaign=<slug>`. Keep the same "Never" rules. No hashtag walls (3 at most). Write in first person plural ("we") as Computatio.
 6. Save a review copy to Google Drive. Run `python3 _src/export_docx.py <date>` (needs `pandoc`; if it's missing, `apt-get install -y pandoc` or `pip install --break-system-packages pypandoc_binary`). Upload the `.docx` it prints with the Google Drive connector's create_file tool. Use parentId `1FeqmZTfDW38R1wsP5hH6fDqaMdITYqjr` (folder "BookByte Articles"), the file name as title, contentMimeType `application/vnd.openxmlformats-officedocument.wordprocessingml.document`, `disableConversionToGoogleType: true`, and the contents of `/tmp/bookbyte_drive/<date>.b64` as the base64 content. Never let Drive convert it to a Google Doc: conversion deletes dollar amounts. If the Drive connector isn't available in this run, say so in the summary and continue; the article is still live.
 7. Add a run record (see "Run log"), run `python3 _src/build.py` again so `status.json` includes it, then commit with the message `Run log: <date>` and push.
