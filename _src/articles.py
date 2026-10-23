@@ -93,64 +93,66 @@ article("/estimated-taxes/quarterly-estimated-taxes-california/","/estimated-tax
  "Quarterly estimated taxes in California: a 2026 guide",
  "Who must pay California estimated tax, IRS and FTB due dates for 2026, the 30/40/0/30 schedule and safe harbor rules, with a worked example.",
  "2026-10-23",
- "When you&rsquo;re self-employed, no one withholds tax from your income, so you pay it during the year in installments. California and the IRS both expect payments, but on different schedules.",
- '''<h2>Do you need to pay estimated tax?</h2>
-<p><b>Federal:</b> you generally must pay estimated tax if you expect to owe at least $1,000 for the year after withholding and refundable credits.</p>
-<p><b>California:</b> the threshold is lower. You generally must pay if you expect to owe at least $500 ($250 if married or in a registered domestic partnership filing separately).</p>
-<p>Your federal amount covers both income tax and self-employment tax. Self-employment tax is 15.3% (12.4% Social Security and 2.9% Medicare) on 92.35% of your net earnings. The Social Security part applies only up to the 2026 wage base of $184,500.</p>
+ "You&rsquo;re self-employed in California. Nobody withholds tax from your income, so you&rsquo;re supposed to pay it yourself during the year. But how much? When? And to whom: the IRS, the state, or both?",
+ '''<div class="callout"><b>Quick answer:</b> if you expect to owe at least <b>$1,000</b> to the IRS or <b>$500</b> to California for 2026, you generally must pay estimated tax. The IRS takes four equal payments (April 15, June 15, September 15, January 15, 2027). California takes <b>30% in April, 40% in June, nothing in September and 30% in January</b>. Paying 100% of last year&rsquo;s tax on time (110% if last year&rsquo;s AGI was over $150,000) avoids the underpayment penalty.</div>
 
-<h2>2026 due dates</h2>
+<h2>Two tax agencies, two different schedules</h2>
+<p>Here&rsquo;s the first problem. The IRS and California&rsquo;s Franchise Tax Board (FTB) both want estimated payments, but not on the same plan.</p>
 <table class="tbl"><tr><th>Payment</th><th>IRS</th><th>California (FTB)</th></tr>
 <tr><td>1</td><td>April 15, 2026: 25%</td><td>April 15, 2026: 30%</td></tr>
 <tr><td>2</td><td>June 15, 2026: 25%</td><td>June 15, 2026: 40%</td></tr>
 <tr><td>3</td><td>September 15, 2026: 25%</td><td>September 15, 2026: 0%</td></tr>
 <tr><td>4</td><td>January 15, 2027: 25%</td><td>January 15, 2027: 30%</td></tr></table>
-<p>California front-loads its payments: 70% of the year&rsquo;s estimate is due by June 15, and nothing is due in September.</p>
-<p>One federal exception: you can skip the January 15, 2027 IRS payment if you file your 2026 return by February 1, 2027 and pay the full balance with it.</p>
+<p><b>California wants 70% of the year&rsquo;s estimate by June 15, and nothing in September.</b> If you pay the state on the IRS schedule, you fall behind by June.</p>
 
-<h2>How much to pay: the safe harbor rules</h2>
-<p>You avoid an underpayment penalty if your payments (plus any withholding) cover the smaller of:</p>
+<h2>And you don&rsquo;t know how much to pay</h2>
+<p>The second problem: your income moves. A big client in March, a slow summer. You can&rsquo;t know this year&rsquo;s tax until the year is over, so any number feels like a guess.</p>
+<p>The federal amount isn&rsquo;t just income tax, either. It also covers self-employment tax: <b>15.3%</b> (12.4% Social Security and 2.9% Medicare) on 92.35% of your net earnings. The Social Security part applies only up to the 2026 wage base of $184,500.</p>
+
+<h2>What it costs to guess wrong</h2>
+<ul>
+<li><b>The penalty grows every day.</b> The federal underpayment penalty is figured separately for each due date, on the amount that was short and the number of days it stayed unpaid.</li>
+<li><b>Catching up late doesn&rsquo;t erase it.</b> A later payment is applied first to the earliest unpaid installment, so a short April payment keeps costing you until it&rsquo;s covered.</li>
+<li><b>The cash isn&rsquo;t there.</b> Guess low all year and you face one large bill in April, on top of the first payment for the new year.</li>
+</ul>
+
+<h2>Picture this instead</h2>
+<p>Four dates on your calendar. A tax savings account that already holds the money when each one arrives. Payments sized by a rule, not a guess. <b>No underpayment penalty, even in a year your income jumps.</b> That&rsquo;s what the method below sets up.</p>
+
+<h2>How much estimated tax to pay in California: the last-year method</h2>
+<p>The safe harbor rules give you a way to pay without predicting the future. You avoid the underpayment penalty if your payments (plus any withholding) cover the smaller of:</p>
 <ul>
 <li>90% of this year&rsquo;s tax, or</li>
 <li>100% of last year&rsquo;s tax, or 110% if last year&rsquo;s adjusted gross income was over $150,000 ($75,000 if married filing separately).</li>
 </ul>
 <p>California uses the same 90% / 100% / 110% tests, with one addition: if your California adjusted gross income this year is $1,000,000 or more ($500,000 if married or RDP filing separately), you must base payments on 90% of this year&rsquo;s tax.</p>
-<p>Using last year&rsquo;s tax is the simplest method for most people. It works even if your income grows, as long as you pay on time.</p>
+<p><b>California&rsquo;s threshold is lower:</b> you generally must pay if you expect to owe at least $500 ($250 if married or RDP filing separately). For the IRS it&rsquo;s $1,000.</p>
 
-<h2>Worked example (hypothetical)</h2>
-<p>Ana is a freelance designer in San Diego. Her 2025 adjusted gross income was under $150,000. Her 2025 returns showed $12,000 total federal tax and $3,000 California tax.</p>
-<ul>
-<li><b>Federal:</b> 100% of $12,000, split into four payments of $3,000.</li>
-<li><b>California:</b> 100% of $3,000 on the 30/40/0/30 schedule: $900 on April 15, $1,200 on June 15, nothing on September 15, $900 on January 15, 2027.</li>
-</ul>
-<p>If Ana&rsquo;s 2026 income is much higher, she&rsquo;ll still owe the difference when she files, but she won&rsquo;t owe an underpayment penalty.</p>
-
-<h2>How to pay</h2>
-<ul>
-<li><b>IRS:</b> IRS Direct Pay from your bank account at no cost, or the Electronic Federal Tax Payment System (EFTPS). Choose &ldquo;estimated tax&rdquo; and the 2026 tax year.</li>
-<li><b>California:</b> FTB Web Pay from your bank account. You can schedule a payment up to a year ahead. Paper payments use Form 540-ES vouchers.</li>
-</ul>
-<p>Keep the confirmation numbers. You&rsquo;ll enter the payments on your 2026 returns.</p>
-
-<div class="callout"><b>Next payment:</b> the fourth 2026 payment for both the IRS and California is due January 15, 2027.</div>
-
-<h2>Set the money aside as you earn it</h2>
-<p>The due dates are easy. Having the cash ready is the hard part. A simple routine:</p>
+<h3>Step by step</h3>
 <ol>
-<li>Open a separate savings account just for taxes.</li>
-<li>Each time a client pays you, move a fixed share of the payment into it. Pick the share from last year&rsquo;s total tax divided by last year&rsquo;s income.</li>
-<li>Once a month, <a href="/bookkeeping/do-your-own-bookkeeping/">update and reconcile your books</a> so your profit figure is current.</li>
-<li>A week before each due date, compare the savings balance with the payment you plan to make. Adjust your share if your income has changed.</li>
+<li><b>Find last year&rsquo;s total tax</b> on your 2025 federal and California returns.</li>
+<li><b>Multiply</b> by 100%, or 110% if your 2025 AGI was over $150,000.</li>
+<li><b>Split it:</b> four equal payments for the IRS; 30/40/0/30 for California.</li>
+<li><b>Put all four dates on your calendar</b> now.</li>
+<li><b>Open a separate savings account for taxes</b> and move a fixed share of every client payment into it. Pick the share from last year&rsquo;s total tax divided by last year&rsquo;s income.</li>
+<li><b>Once a month, <a href="/bookkeeping/do-your-own-bookkeeping/">update and reconcile your books</a></b> so you can see if this year is running far above last year.</li>
+<li><b>Pay on time.</b> IRS Direct Pay or EFTPS for the IRS; FTB Web Pay for California, which lets you schedule a payment up to a year ahead. Paper payments use Form 540-ES vouchers. Keep every confirmation number.</li>
 </ol>
-<p>If you use AI to project the year, check its math line by line. Our guide on <a href="/ai-accounting/estimate-quarterly-taxes-with-ai/">using AI to estimate quarterly taxes</a> shows how.</p>
 
-<h2>If you missed a payment</h2>
-<p>Pay as soon as you can. The federal underpayment penalty is figured separately for each due date, based on how much was short and how many days it stayed unpaid. So a late payment usually costs less than no payment. A later payment is applied first to the earliest unpaid installment.</p>
-<p>If your income came in unevenly, for example most of it late in the year, the annualized income method on Form 2210 may lower or remove the federal penalty.</p>
+<div class="callout"><b>Example (made-up data).</b> Ana is a freelance designer in San Diego. Her 2025 AGI was under $150,000, and her 2025 returns showed $12,000 total federal tax and $3,000 California tax.<br>
+<b>Federal:</b> 100% of $12,000 = four payments of $3,000.<br>
+<b>California:</b> 100% of $3,000 on the 30/40/0/30 schedule = $900 on April 15, $1,200 on June 15, nothing on September 15, $900 on January 15, 2027.<br>
+If Ana earns much more in 2026, she&rsquo;ll owe the difference when she files, but no underpayment penalty.</div>
 
-<h2>When estimated payments get large</h2>
-<p>If your profit keeps growing, look at how your business is set up. Some owners compare an S corporation with staying a sole proprietor. See <a href="/business-structure/s-corp-vs-sole-proprietor-california/">S-corp vs. sole proprietor</a>, and browse our other <a href="/estimated-taxes/">estimated tax guides</a>.</p>''',
- 'Monthly Books from <a href="CTAURL">Computatio</a> includes a quarterly estimate check, so you know what to pay before each deadline. $500 a month.',
+<div class="callout"><b>Next payment:</b> the fourth 2026 payment for both the IRS and California is due January 15, 2027. For the IRS only, you can skip it if you file your 2026 return by February 1, 2027 and pay the full balance with it.</div>
+
+<h2>What if I miss a California or IRS estimated payment?</h2>
+<p>Pay as soon as you can. Because the penalty is figured by the day, a late payment usually costs less than no payment. If most of your income came late in the year, the annualized income method on Form 2210 may lower or remove the federal penalty.</p>
+
+<h2>What if my estimated payments keep growing?</h2>
+<p>If your profit keeps climbing, look at how your business is set up. Some owners compare an S corporation with staying a sole proprietor. See <a href="/business-structure/s-corp-vs-sole-proprietor-california/">S-corp vs. sole proprietor</a>, or check your projection with <a href="/ai-accounting/estimate-quarterly-taxes-with-ai/">AI and a line-by-line math check</a>. More in our <a href="/estimated-taxes/">estimated tax guides</a>.</p>
+<p>Or hand the whole thing off:</p>''',
+ 'Want your estimates figured for you before every deadline? <a href="CTAURL">Computatio</a> Monthly Books keeps your books current and includes a quarterly estimate check, so you know what to pay the IRS and California each time. $500 a month.',
  [("IRS: 2026 Form 1040-ES, Estimated Tax for Individuals","https://www.irs.gov/pub/irs-pdf/f1040es.pdf"),
   ("FTB: 2026 Instructions for Form 540-ES","https://www.ftb.ca.gov/forms/2026/2026-540-es-instructions.html"),
   ("IRS: Self-employment tax (Social Security and Medicare taxes)","https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes"),
@@ -208,40 +210,50 @@ article("/business-structure/s-corp-vs-sole-proprietor-california/","/business-s
 article("/ai-accounting/how-to-use-ai-for-bookkeeping/","/ai-accounting/","AI for Accounting",
  "How to Use AI for Bookkeeping and Keep Your Books Accurate",
  "How to use AI for bookkeeping, and keep your books accurate",
- "A safe workflow for using AI to categorize transactions, read receipts and prepare for month-end and tax season, plus what AI still gets wrong.",
+ "Use AI for bookkeeping without wrong numbers: a 3-pass method to categorize transactions, read receipts and close the month, with a prompt to copy.",
  "2026-10-21",
- "AI can do the slowest parts of bookkeeping in minutes: sorting transactions, reading receipts, drafting summaries. It also makes confident mistakes. Here&rsquo;s how to get the speed without the errors.",
- '''<p>New to the topic? Start with our <a href="/ai-accounting/">AI for Accounting guides</a>, or see the <a href="/bookkeeping/">bookkeeping basics</a> first.</p>
+ "It&rsquo;s the end of the month. Your bank feed has a pile of transactions waiting, your receipts are scattered across your phone and your inbox, and you still don&rsquo;t know if the business made money. You&rsquo;ve heard AI can do bookkeeping now. You just don&rsquo;t trust it with your numbers.",
+ '''<div class="callout"><b>Quick answer:</b> use AI for bookkeeping to <b>sort transactions, read receipts and explain your reports</b>, but never to replace reconciling or keeping records. Give it your category list, make it show a reason and a confidence level for every line, review the low-confidence ones yourself, then reconcile to your bank statement. That&rsquo;s the 3-pass method below.</div>
 
-<h2>What AI is good at</h2>
+<h2>You&rsquo;re spending hours on bookkeeping that should take minutes</h2>
+<p>Most of bookkeeping is sorting. Which category does this charge go in? Is this receipt a business expense? Did I already record this one?</p>
+<p>Done by hand, every line is a small decision. A few hundred small decisions is a whole evening, every month. <b>That&rsquo;s the first problem: the work is slow, so it gets put off.</b></p>
+
+<h2>And when you try AI, you don&rsquo;t know if it&rsquo;s right</h2>
+<p>So you paste your transactions into a chatbot. It answers instantly, with total confidence. Then you notice it called a grocery run &ldquo;office supplies&rdquo; and added up a column wrong.</p>
+<p><b>That&rsquo;s the second problem: AI is fast, but it doesn&rsquo;t know your business, and it never says &ldquo;I&rsquo;m not sure.&rdquo;</b></p>
+
+<h2>What bad bookkeeping costs you</h2>
+<p>Put the two problems together and you get the worst of both: books that are late <i>and</i> wrong.</p>
 <ul>
-<li><b>Categorizing transactions</b> from the bank description, once you give it your category list and a few rules.</li>
-<li><b>Reading receipts and invoices</b> and pulling out the date, vendor, amount and what was bought.</li>
-<li><b>Spotting oddities</b> such as duplicate charges, a subscription that doubled, or a payment with no matching invoice.</li>
-<li><b>Explaining your reports</b> in plain English, such as why profit dropped this month.</li>
-<li><b>Drafting routine writing</b> like invoice reminders and notes for your tax preparer.</li>
+<li><b>Wrong categories become wrong tax numbers.</b> Your Schedule C is built from these categories. A personal charge filed as a business expense is a deduction you can&rsquo;t support.</li>
+<li><b>You&rsquo;re responsible either way.</b> The IRS holds you responsible for what&rsquo;s on your return, whoever, or whatever, prepared it.</li>
+<li><b>Missing records can&rsquo;t be fixed later.</b> If a deduction is questioned, you need the receipt or invoice behind it, not an AI summary of it.</li>
+<li><b>You fly blind.</b> If the books are months behind, you can&rsquo;t see profit, can&rsquo;t plan <a href="/estimated-taxes/quarterly-estimated-taxes-california/">estimated tax payments</a>, and find out about problems at tax time.</li>
 </ul>
 
-<h2>What AI gets wrong</h2>
-<ul>
-<li><b>It can&rsquo;t know your context.</b> A charge at a warehouse store might be office supplies or groceries. Only you know.</li>
-<li><b>It states tax rules confidently, even when they&rsquo;re outdated or wrong.</b> Rates, thresholds and deadlines change every year. Check any rule against an IRS or FTB page.</li>
-<li><b>It can slip on arithmetic</b> across long tables. Totals should come from your bookkeeping software or spreadsheet, not from a chat answer.</li>
-<li><b>It doesn&rsquo;t reconcile.</b> Matching your books to your bank statement is still your job, or your bookkeeper&rsquo;s.</li>
-</ul>
+<h2>Picture your books done in under an hour a month</h2>
+<p>Now imagine month-end looks like this. AI sorts every transaction and tells you which ones it isn&rsquo;t sure about. You check a short list, not the whole pile. Your books match your bank to the penny. Receipts are saved where you can find them.</p>
+<p><b>You know your profit for the month, and you trust the number.</b> That&rsquo;s the goal: AI&rsquo;s speed with a person&rsquo;s judgment.</p>
 
-<h2>A safe workflow for categorizing with AI</h2>
+<h2>How to use AI for bookkeeping: the 3-pass method</h2>
+<p>The method has three passes. AI does the first, you do the second, and the third is the check that makes the books trustworthy.</p>
+
+<h3>Pass 1: let AI sort</h3>
 <ol>
 <li><b>Export</b> last month&rsquo;s transactions from your bank or bookkeeping software as a spreadsheet file.</li>
 <li><b>Remove sensitive details</b> such as full account numbers before you paste or upload anything.</li>
 <li><b>Give it your categories.</b> Use the expense lines from Schedule C plus &ldquo;owner draw&rdquo; and &ldquo;owner contribution.&rdquo; Our <a href="/bookkeeping/do-your-own-bookkeeping/">bookkeeping guide</a> explains why.</li>
-<li><b>Ask for a reason and a confidence level</b> for each category, using the prompt below.</li>
-<li><b>Review</b> every low-confidence item and anything over an amount you choose, such as $200.</li>
-<li><b>Reconcile</b> the month against your bank statement in your bookkeeping system. If the totals don&rsquo;t match, the categories don&rsquo;t matter yet.</li>
-<li><b>Keep the receipts.</b> AI summaries don&rsquo;t replace the records the IRS expects you to keep.</li>
+<li><b>Run the prompt below.</b> It forces a reason and a confidence level for every line.</li>
 </ol>
 
 <div class="callout"><b>Prompt you can copy:</b><br>&ldquo;You are helping me categorize transactions for a self-employed business. Use only these categories: [paste your list]. Rules: [for example, &lsquo;Shell, Chevron = car and truck expenses&rsquo;; &lsquo;transfers to savings = owner draw&rsquo;]. For each transaction, return the date, description, amount, category, a confidence level (high, medium or low) and a one-line reason. Mark anything that could be personal as low confidence. Don&rsquo;t total anything.&rdquo;</div>
+
+<h3>Pass 2: you review the short list</h3>
+<ol start="5">
+<li><b>Review</b> every low-confidence line and anything over an amount you choose, such as $200. Accept the rest.</li>
+<li><b>Match receipts</b> to the lines you reviewed, and save them. AI summaries don&rsquo;t replace the records the IRS expects you to keep.</li>
+</ol>
 
 <div class="callout"><b>Example (made-up data).</b> Three lines a run of the prompt might return:<br>
 Oct 3 &middot; ADOBE *CREATIVE CLD &middot; $59.99 &rarr; Office expense &middot; high &middot; &ldquo;Recurring software subscription.&rdquo;<br>
@@ -249,23 +261,30 @@ Oct 9 &middot; COSTCO WHSE #0412 &middot; $214.37 &rarr; Supplies &middot; low &
 Oct 15 &middot; TRANSFER TO SAV 4471 &middot; $1,500.00 &rarr; Owner draw &middot; medium &middot; &ldquo;Transfer to savings; could be a tax set-aside.&rdquo;<br>
 <b>How to check it:</b> open the Costco receipt before accepting the category, confirm the transfer went to your own account, and make sure every line appears exactly once compared with your bank export.</div>
 
-<h2>Keep your data safe</h2>
+<h3>Pass 3: reconcile</h3>
+<ol start="7">
+<li><b>Reconcile</b> the month against your bank statement in your bookkeeping software. <b>If the totals don&rsquo;t match, the categories don&rsquo;t matter yet.</b> Totals come from your software or spreadsheet, never from a chat answer.</li>
+</ol>
+
+<h2>Is it safe to use AI with your financial data?</h2>
+<p>It can be, if you set it up right:</p>
 <ul>
 <li>Never paste Social Security numbers, full bank or card numbers, or passwords into an AI chat.</li>
 <li>Check the tool&rsquo;s data settings, including whether your inputs can be used to train its models, and turn that off where you can.</li>
 <li>If you handle other people&rsquo;s financial information, such as clients or employees, use a business plan with a clear data agreement, or leave that data out.</li>
 </ul>
 
-<h2>You&rsquo;re still responsible for the result</h2>
-<p>The IRS holds taxpayers responsible for what&rsquo;s on their return, whoever, or whatever, prepared it. Treat AI like a fast assistant whose work you check, not a replacement for checking.</p>
+<h2>What if the AI gets it wrong?</h2>
+<p>It will, sometimes. That&rsquo;s why the method never lets AI have the last word. It can&rsquo;t know your context, it can state outdated tax rules confidently, and it can slip on arithmetic across long tables. Check any tax rule against an IRS or state tax agency page, and let reconciliation catch the rest.</p>
 
-<h2>A realistic monthly routine with AI</h2>
+<h2>Your monthly AI bookkeeping routine</h2>
 <ul>
-<li><b>Weekly:</b> snap receipts and let AI extract the details.</li>
-<li><b>Month-end:</b> run the categorizing prompt, review the flagged items, then reconcile.</li>
-<li><b>Quarterly:</b> ask AI to summarize the quarter&rsquo;s profit, then check the numbers against your profit and loss report before you make <a href="/estimated-taxes/quarterly-estimated-taxes-california/">estimated tax payments</a>.</li>
-</ul>''',
- 'This is how <a href="CTAURL">Computatio</a> works: AI does the sorting and reconciling, and a person reviews and signs off on every account. Monthly Books is $500 a month.',
+<li><b>Weekly:</b> snap receipts and let AI pull out the date, vendor and amount.</li>
+<li><b>Month-end:</b> run the 3 passes: sort, review, reconcile.</li>
+<li><b>Quarterly:</b> ask AI to summarize the quarter&rsquo;s profit, then check it against your profit and loss report before you pay estimated taxes.</li>
+</ul>
+<p>More methods like this are in our <a href="/ai-accounting/">AI for Accounting guides</a>. Or skip the routine entirely:</p>''',
+ 'Want the 3-pass method done for you every month? At <a href="CTAURL">Computatio</a>, AI does the sorting and a person reviews and reconciles every account, so your books are current and checked. Monthly Books is $500 a month.',
  [("IRS: Choosing a reputable tax preparer is vital to tax security","https://www.irs.gov/newsroom/choosing-a-reputable-tax-preparer-is-vital-to-tax-security"),
   ("IRS: What kind of records should I keep","https://www.irs.gov/businesses/small-businesses-self-employed/what-kind-of-records-should-i-keep"),
   ("IRS: Instructions for Schedule C (Form 1040)","https://www.irs.gov/instructions/i1040sc"),
