@@ -27,6 +27,7 @@ If anything stops the run before a due guide is live (a fetch or push is refused
 - **AI articles** (most of the calendar): show the exact prompt in a callout, a sample run on made-up data labeled "Example (made-up data)", and how to check the output. Teach methods that work in any AI tool. Name a product only in comparison articles, check its features on the vendor's own pages that day, and date the article.
 - **Accounting substance:** every AI tip must rest on a correct bookkeeping or tax rule. AI never replaces reconciling, keeping receipts, or the taxpayer's responsibility for their return.
 - **Length:** 700–1,300 words. Short sentences and plain words. Use numbered steps where the reader follows along.
+- **Byline:** articles are credited "By: Computatio" (set in the `article()` helper). Never put Rogenie's name on an article; it appears only on the About page, as founder.
 - **Title:** under 60 characters. **Description:** under 155 characters.
 - **Links:** at least 3 links to BookByte guides or hubs. The build turns links to unpublished guides into plain text, so link freely to planned paths in the calendar.
 - **Call to action:** pass exactly one `cta_html` with `CTAURL` where the link goes. Match it to the topic:
