@@ -1,6 +1,14 @@
 # All guides. build.py publishes an article only when its "published" date (Pacific time) has arrived.
 # Scheduled runs append new article(...) entries to ARTICLES. See _src/PUBLISHING.md.
 CTA = "https://computatio.io/?utm_source=bookbyte&amp;utm_medium=referral&amp;utm_campaign="
+# Computatio's LinkedIn company page. Leave empty to hide the "Follow" link.
+LINKEDIN_PAGE = ""
+from urllib.parse import quote
+
+def linkedin_box(path):
+    share = "https://www.linkedin.com/sharing/share-offsite/?url=" + quote("https://bookbytellc.com" + path, safe="")
+    follow = f' &middot; <a href="{LINKEDIN_PAGE}" rel="noopener">Follow Computatio on LinkedIn</a>' if LINKEDIN_PAGE else ""
+    return f'<p class="muted"><a href="{share}" target="_blank" rel="noopener">Share this guide on LinkedIn</a>{follow}</p>'
 
 def article(path, hub, hub_name, title, h1, desc, published, intro, sections, cta_html, sources, slug):
     src = "".join(f'<li><a href="{u}">{t}</a></li>' for t,u in sources)
@@ -13,6 +21,7 @@ def article(path, hub, hub_name, title, h1, desc, published, intro, sections, ct
 <section><div class="wrap narrow prose">
 {sections}
 <div class="cta"><b>Short on time?</b> {cta_html.replace("CTAURL", CTA+slug)}</div>
+{linkedin_box(path)}
 <div class="callout"><b>Free download:</b> <a href="https://computatios-newsletter.beehiiv.com/?utm_source=bookbyte&amp;utm_medium=referral&amp;utm_campaign={slug}">47 write-offs for the self-employed</a>, a 42-page guide with the IRS rules behind each deduction. Free when you join the Computatio newsletter.</div>
 <h2>Sources</h2><ul>{src}</ul>
 <p class="muted">This guide is general information, not tax advice for your situation.</p>
