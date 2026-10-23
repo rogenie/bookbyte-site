@@ -1,6 +1,6 @@
 # BookByte publishing runbook
 
-Scheduled runs follow this file to publish one guide per scheduled day. Rogenie Cordero chose fully automatic publishing: nothing waits for review, so every run must pass the checks below before anything goes live.
+Scheduled runs (every weekday) follow this file to publish one guide per scheduled day. Rogenie Cordero chose fully automatic publishing: nothing waits for review, so every run must pass the checks below before anything goes live.
 
 ## Each run
 
@@ -24,6 +24,7 @@ If anything stops the run before a due guide is live (a fetch or push is refused
 ## Writing standards
 
 - **Audience:** self-employed people and small-business owners anywhere in the US. Add a state note (`<div class="callout"><b>State note.</b> …</div>`) where a state's rules differ. California is the usual example.
+- **AI update articles** (calendar items with `"kind": "ai-update"`, planned by the topic scout in `_src/TOPICS.md`): start from the item's `brief`. Re-check the feature on the vendor's own page that day (search the vendor's domain, then fetch). If it isn't live yet, or the vendor page no longer supports the brief, don't publish: move the item to the next empty Tue/Thu at least 2 days out and note why, or mark it `held` if it was pulled. These articles may name the product. Open with a dated line ("As of <Month D, YYYY>, ..."), say which plans get it, show the steps or prompt, a made-up example, and how to check the output against your books. Link the vendor's page in Sources.
 - **AI articles** (most of the calendar): show the exact prompt in a callout, a sample run on made-up data labeled "Example (made-up data)", and how to check the output. Teach methods that work in any AI tool. Name a product only in comparison articles, check its features on the vendor's own pages that day, and date the article.
 - **Accounting substance:** every AI tip must rest on a correct bookkeeping or tax rule. AI never replaces reconciling, keeping receipts, or the taxpayer's responsibility for their return.
 - **Length:** 700–1,300 words. Short sentences and plain words. Use numbered steps where the reader follows along.

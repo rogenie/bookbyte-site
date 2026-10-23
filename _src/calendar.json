@@ -1,5 +1,5 @@
 {
- "cadence": "Mon/Wed/Fri",
+ "cadence": "Weekdays: evergreen Mon/Wed/Fri, AI updates Tue/Thu (see _src/TOPICS.md)",
  "items": [
   {
    "date": "2026-10-21",
@@ -25,11 +25,55 @@
    "status": "todo"
   },
   {
+   "date": "2026-10-27",
+   "hub": "ai-accounting",
+   "path": "/ai-accounting/quickbooks-ai-banking-suggestions/",
+   "title": "QuickBooks AI banking suggestions: review before you post",
+   "status": "todo",
+   "kind": "ai-update",
+   "brief": {
+    "news": "QuickBooks Online's banking page now autofills payee and category with color-coded review signals (green, blue, orange); Essentials and up add 'Ready to post' batches.",
+    "source": "https://quickbooks.intuit.com/learn-support/en-us/help-article/matching-rules/learn-updates-new-ai-powered-banking-page/L0hR7A9Zf_US_en_US",
+    "source_date": "2026-10-11",
+    "who": "Suggestions on all QuickBooks Online versions; Ready to post and Requests for more information on Essentials, Plus and Advanced (US help site).",
+    "task": "Categorizing and matching bank and card transactions",
+    "angle": "What each review signal means, which ones to post in a batch and which to open first, how to spot a wrong match or duplicate, and a month-end check that the suggestions didn't drift (compare category totals to last month, then reconcile).",
+    "cta": "monthly-books",
+    "links": [
+     "/ai-accounting/ai-prompts-categorize-transactions/",
+     "/ai-accounting/ai-bank-reconciliation/",
+     "/ai-accounting/how-to-use-ai-for-bookkeeping/"
+    ]
+   }
+  },
+  {
    "date": "2026-10-28",
    "hub": "ai-accounting",
    "path": "/ai-accounting/ai-bank-reconciliation/",
    "title": "How to use AI to reconcile your bank account, and what it can't do",
    "status": "todo"
+  },
+  {
+   "date": "2026-10-29",
+   "hub": "ai-accounting",
+   "path": "/ai-accounting/gemini-small-business-finance-tools/",
+   "title": "Gemini's new small-business finance tools: what to check",
+   "status": "todo",
+   "kind": "ai-update",
+   "brief": {
+    "news": "Google announced a Gemini business hub that turns spreadsheets, receipts and purchase records into financial charts and models, plus connected apps including Xero and Workspace.",
+    "source": "https://blog.google/innovation-and-ai/products/gemini-app/new-tools-small-business-owners/",
+    "source_date": "2026-10-20",
+    "who": "All Gemini app users, rolling out globally 'in the coming days' as of Oct 20; confirm it is live before publishing.",
+    "task": "Turning receipts and spreadsheets into financial summaries and charts",
+    "angle": "How to give Gemini clean data (an export from your books, not raw bank PDFs), a prompt for a monthly income and expense summary, how to tie every chart total back to your profit and loss report, and what not to upload or connect.",
+    "cta": "monthly-books",
+    "links": [
+     "/ai-accounting/read-profit-and-loss-with-ai/",
+     "/ai-accounting/financial-data-safety-ai/",
+     "/ai-accounting/ai-excel-google-sheets-bookkeeping/"
+    ]
+   }
   },
   {
    "date": "2026-10-30",
