@@ -72,7 +72,7 @@ article("/bookkeeping/do-your-own-bookkeeping/","/bookkeeping/","Bookkeeping",
 article("/estimated-taxes/quarterly-estimated-taxes-california/","/estimated-taxes/","Estimated taxes",
  "Quarterly Estimated Taxes in California: 2026 Guide",
  "Quarterly estimated taxes in California: a 2026 guide",
- "Who must pay estimated taxes in California, how much, the IRS and FTB due dates for 2026, the 30/40/0/30 schedule and safe harbor rules, with a worked example.",
+ "Who must pay California estimated tax, IRS and FTB due dates for 2026, the 30/40/0/30 schedule and safe harbor rules, with a worked example.",
  "2026-10-23",
  "When you&rsquo;re self-employed, no one withholds tax from your income, so you pay it during the year in installments. California and the IRS both expect payments, but on different schedules.",
  '''<h2>Do you need to pay estimated tax?</h2>
@@ -87,6 +87,7 @@ article("/estimated-taxes/quarterly-estimated-taxes-california/","/estimated-tax
 <tr><td>3</td><td>September 15, 2026: 25%</td><td>September 15, 2026: 0%</td></tr>
 <tr><td>4</td><td>January 15, 2027: 25%</td><td>January 15, 2027: 30%</td></tr></table>
 <p>California front-loads its payments: 70% of the year&rsquo;s estimate is due by June 15, and nothing is due in September.</p>
+<p>One federal exception: you can skip the January 15, 2027 IRS payment if you file your 2026 return by February 1, 2027 and pay the full balance with it.</p>
 
 <h2>How much to pay: the safe harbor rules</h2>
 <p>You avoid an underpayment penalty if your payments (plus any withholding) cover the smaller of:</p>
@@ -108,19 +109,34 @@ article("/estimated-taxes/quarterly-estimated-taxes-california/","/estimated-tax
 <h2>How to pay</h2>
 <ul>
 <li><b>IRS:</b> IRS Direct Pay from your bank account at no cost, or the Electronic Federal Tax Payment System (EFTPS). Choose &ldquo;estimated tax&rdquo; and the 2026 tax year.</li>
-<li><b>California:</b> FTB Web Pay from your bank account at no cost. Paper payments use Form 540-ES vouchers.</li>
+<li><b>California:</b> FTB Web Pay from your bank account. You can schedule a payment up to a year ahead. Paper payments use Form 540-ES vouchers.</li>
 </ul>
 <p>Keep the confirmation numbers. You&rsquo;ll enter the payments on your 2026 returns.</p>
 
 <div class="callout"><b>Next payment:</b> the fourth 2026 payment for both the IRS and California is due January 15, 2027.</div>
 
+<h2>Set the money aside as you earn it</h2>
+<p>The due dates are easy. Having the cash ready is the hard part. A simple routine:</p>
+<ol>
+<li>Open a separate savings account just for taxes.</li>
+<li>Each time a client pays you, move a fixed share of the payment into it. Pick the share from last year&rsquo;s total tax divided by last year&rsquo;s income.</li>
+<li>Once a month, <a href="/bookkeeping/do-your-own-bookkeeping/">update and reconcile your books</a> so your profit figure is current.</li>
+<li>A week before each due date, compare the savings balance with the payment you plan to make. Adjust your share if your income has changed.</li>
+</ol>
+<p>If you use AI to project the year, check its math line by line. Our guide on <a href="/ai-accounting/estimate-quarterly-taxes-with-ai/">using AI to estimate quarterly taxes</a> shows how.</p>
+
 <h2>If you missed a payment</h2>
-<p>Pay as soon as you can. The underpayment penalty works like interest and grows with each day the payment is late, so a late payment costs less than no payment.</p>''',
+<p>Pay as soon as you can. The federal underpayment penalty is figured separately for each due date, based on how much was short and how many days it stayed unpaid. So a late payment usually costs less than no payment. A later payment is applied first to the earliest unpaid installment.</p>
+<p>If your income came in unevenly, for example most of it late in the year, the annualized income method on Form 2210 may lower or remove the federal penalty.</p>
+
+<h2>When estimated payments get large</h2>
+<p>If your profit keeps growing, look at how your business is set up. Some owners compare an S corporation with staying a sole proprietor. See <a href="/business-structure/s-corp-vs-sole-proprietor-california/">S-corp vs. sole proprietor</a>, and browse our other <a href="/estimated-taxes/">estimated tax guides</a>.</p>''',
  'Monthly Books from <a href="CTAURL">Computatio</a> includes a quarterly estimate check, so you know what to pay before each deadline. $500 a month.',
- [("IRS: Estimated tax FAQ","https://www.irs.gov/faqs/estimated-tax"),
-  ("FTB: Estimated tax payments","https://www.ftb.ca.gov/pay/estimated-tax-payments.html"),
-  ("IRS: Self-employment tax","https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes"),
-  ("Social Security wage base for 2026","https://www.maximizemysocialsecurity.com/blog/social-security-wage-base-changes-for-2026")],
+ [("IRS: 2026 Form 1040-ES, Estimated Tax for Individuals","https://www.irs.gov/pub/irs-pdf/f1040es.pdf"),
+  ("FTB: 2026 Instructions for Form 540-ES","https://www.ftb.ca.gov/forms/2026/2026-540-es-instructions.html"),
+  ("IRS: Self-employment tax (Social Security and Medicare taxes)","https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes"),
+  ("SSA: Contribution and benefit base","https://www.ssa.gov/oact/cola/cbb.html"),
+  ("IRS: Instructions for Form 2210","https://www.irs.gov/instructions/i2210")],
  "quarterly-estimated-taxes-california"),
 
 article("/business-structure/s-corp-vs-sole-proprietor-california/","/business-structure/","Business structure",
