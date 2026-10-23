@@ -2,7 +2,7 @@ SITE = {
   "name": "BookByte",
   "url": "https://bookbytellc.com",
   "desc": "Plain-English bookkeeping and tax guides for the self-employed: freelancers, contractors, creators and single-owner LLCs and S-corps.",
-  "author": "Rogenie Cordero",
+  "author": "Computatio",
   "cta_url": "https://computatio.io/?",
   "ai": ("/ai-accounting/","AI for Accounting"),
   "newsletter": "https://computatios-newsletter.beehiiv.com/",

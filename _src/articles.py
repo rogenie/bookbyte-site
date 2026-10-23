@@ -8,7 +8,7 @@ def article(path, hub, hub_name, title, h1, desc, published, intro, sections, ct
 <p class="eyebrow"><a href="{hub}" style="color:inherit;text-decoration:none">{hub_name}</a></p>
 <h1>{h1}</h1>
 <p class="lede">{intro}</p>
-<p class="muted" style="color:#bbb">By Rogenie Cordero &middot; Last reviewed {published}</p>
+<p class="muted" style="color:#bbb">By: Computatio &middot; Last reviewed {published}</p>
 </div></section>
 <section><div class="wrap narrow prose">
 {sections}
