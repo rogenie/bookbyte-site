@@ -1,1 +1,14 @@
-[]
+[
+ {
+  "date": "2026-10-21",
+  "at": "2026-10-22T21:31:28-07:00",
+  "result": "published",
+  "path": "/ai-accounting/how-to-use-ai-for-bookkeeping/",
+  "facts_checked": 3,
+  "removed": 0,
+  "live_verified": true,
+  "linkedin_post": true,
+  "drive_copy": true,
+  "note": "Catch-up publish on Oct 22; the scheduled 5:48 AM run on Oct 21 left no record."
+ }
+]
