@@ -10,5 +10,17 @@
   "linkedin_post": true,
   "drive_copy": true,
   "note": "Catch-up publish on Oct 22; the scheduled 5:48 AM run on Oct 21 left no record."
+ },
+ {
+  "date": "2026-10-23",
+  "at": "2026-10-23T06:02:13-07:00",
+  "result": "published",
+  "path": "/estimated-taxes/quarterly-estimated-taxes-california/",
+  "facts_checked": 17,
+  "removed": 1,
+  "live_verified": false,
+  "linkedin_post": true,
+  "drive_copy": false,
+  "note": "On-schedule publish. Live-page fetch refused in scheduled run (Pages deploy succeeded); Drive upload failed (base64 rejected). Pushed via rogenie/bookbyte remote; bookbyte-site URL was denied by git proxy."
  }
 ]
