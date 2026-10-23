@@ -1,11 +1,13 @@
 {
- "built": "2026-10-19",
+ "built": "2026-10-22",
  "cadence": "Mon/Wed/Fri",
  "items": [
   {
    "date": "2026-10-21",
    "hub": "ai-accounting",
-   "status": "written"
+   "status": "written",
+   "title": "How to use AI for bookkeeping and keep your books accurate",
+   "url": "https://bookbytellc.com/ai-accounting/how-to-use-ai-for-bookkeeping/"
   },
   {
    "date": "2026-10-23",

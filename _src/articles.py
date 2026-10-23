@@ -171,12 +171,14 @@ article("/business-structure/s-corp-vs-sole-proprietor-california/","/business-s
   ("LLC University: California AB 85 expired","https://www.llcuniversity.com/california-llc/annual-llc-tax-exemption-ab-85/")],
  "s-corp-vs-sole-proprietor-california"),
 article("/ai-accounting/how-to-use-ai-for-bookkeeping/","/ai-accounting/","AI for Accounting",
- "How to Use AI for Bookkeeping (and Keep Your Books Accurate)",
+ "How to Use AI for Bookkeeping and Keep Your Books Accurate",
  "How to use AI for bookkeeping, and keep your books accurate",
- "A practical, safe workflow for using AI tools to categorize transactions, read receipts and prepare for month-end and tax season, plus what AI still gets wrong.",
+ "A safe workflow for using AI to categorize transactions, read receipts and prepare for month-end and tax season, plus what AI still gets wrong.",
  "2026-10-21",
  "AI can do the slowest parts of bookkeeping in minutes: sorting transactions, reading receipts, drafting summaries. It also makes confident mistakes. Here&rsquo;s how to get the speed without the errors.",
- '''<h2>What AI is good at</h2>
+ '''<p>New to the topic? Start with our <a href="/ai-accounting/">AI for Accounting guides</a>, or see the <a href="/bookkeeping/">bookkeeping basics</a> first.</p>
+
+<h2>What AI is good at</h2>
 <ul>
 <li><b>Categorizing transactions</b> from the bank description, once you give it your category list and a few rules.</li>
 <li><b>Reading receipts and invoices</b> and pulling out the date, vendor, amount and what was bought.</li>
@@ -206,6 +208,12 @@ article("/ai-accounting/how-to-use-ai-for-bookkeeping/","/ai-accounting/","AI fo
 
 <div class="callout"><b>Prompt you can copy:</b><br>&ldquo;You are helping me categorize transactions for a self-employed business. Use only these categories: [paste your list]. Rules: [for example, &lsquo;Shell, Chevron = car and truck expenses&rsquo;; &lsquo;transfers to savings = owner draw&rsquo;]. For each transaction, return the date, description, amount, category, a confidence level (high, medium or low) and a one-line reason. Mark anything that could be personal as low confidence. Don&rsquo;t total anything.&rdquo;</div>
 
+<div class="callout"><b>Example (made-up data).</b> Three lines a run of the prompt might return:<br>
+Oct 3 &middot; ADOBE *CREATIVE CLD &middot; $59.99 &rarr; Office expense &middot; high &middot; &ldquo;Recurring software subscription.&rdquo;<br>
+Oct 9 &middot; COSTCO WHSE #0412 &middot; $214.37 &rarr; Supplies &middot; low &middot; &ldquo;Warehouse store; could be personal groceries.&rdquo;<br>
+Oct 15 &middot; TRANSFER TO SAV 4471 &middot; $1,500.00 &rarr; Owner draw &middot; medium &middot; &ldquo;Transfer to savings; could be a tax set-aside.&rdquo;<br>
+<b>How to check it:</b> open the Costco receipt before accepting the category, confirm the transfer went to your own account, and make sure every line appears exactly once compared with your bank export.</div>
+
 <h2>Keep your data safe</h2>
 <ul>
 <li>Never paste Social Security numbers, full bank or card numbers, or passwords into an AI chat.</li>
@@ -223,8 +231,9 @@ article("/ai-accounting/how-to-use-ai-for-bookkeeping/","/ai-accounting/","AI fo
 <li><b>Quarterly:</b> ask AI to summarize the quarter&rsquo;s profit, then check the numbers against your profit and loss report before you make <a href="/estimated-taxes/quarterly-estimated-taxes-california/">estimated tax payments</a>.</li>
 </ul>''',
  'This is how <a href="CTAURL">Computatio</a> works: AI does the sorting and reconciling, and a person reviews and signs off on every account. Monthly Books is $500 a month.',
- [("IRS Fact Sheet FS-14-11: Choosing a tax return preparer","https://www.irs.gov/pub/irs-news/FS-14-11.pdf"),
-  ("IRS: How long should I keep records?","https://www.irs.gov/businesses/small-businesses-self-employed/how-long-should-i-keep-records"),
+ [("IRS: Choosing a reputable tax preparer is vital to tax security","https://www.irs.gov/newsroom/choosing-a-reputable-tax-preparer-is-vital-to-tax-security"),
+  ("IRS: What kind of records should I keep","https://www.irs.gov/businesses/small-businesses-self-employed/what-kind-of-records-should-i-keep"),
+  ("IRS: Instructions for Schedule C (Form 1040)","https://www.irs.gov/instructions/i1040sc"),
   ("IRS: About Schedule C (Form 1040)","https://www.irs.gov/forms-pubs/about-schedule-c-form-1040")],
  "how-to-use-ai-for-bookkeeping"),
 ]
