@@ -1,2 +1,2 @@
 LinkedIn posts for the Computatio company page, one per published guide, written by the scheduled publishing runs.
-Each scheduled publishing run also auto-posts its post to the Computatio LinkedIn page through Metricool (see step 5a in `_src/PUBLISHING.md`). These guide posts are in addition to Computatio's regular LinkedIn posts from the social media agent. That agent keeps doing its own posts; it just shouldn't also post these files, or a guide would go out twice.
+These are drafts. Nothing posts them automatically; Rogenie posts them herself if she wants to.

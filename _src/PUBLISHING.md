@@ -60,15 +60,10 @@ If anything stops the run before a due guide is live (a fetch or push is refused
 3. Commit with author `Rogenie Cordero <rogenie@gmail.com>` and the message `Publish: <title>`, then push to `main`.
 4. Verify: wait for the latest "pages build and deployment" run to show `completed` / `success` (GitHub connector, `actions_list` → `list_workflow_runs`, owner `rogenie`; the repo was renamed from `bookbyte` to `bookbyte-site`, so try whichever name the session allows). Then fetch the live page once, as described under "Fetching sources and pages", to confirm the title appears.
 5. Write a LinkedIn post for the Computatio company page and save it as `_src/social/linkedin/<date>-<slug>.md` in the same commit (or a follow-up commit). Rules: 120–200 words, a first line that names a specific problem, 3 short takeaways from the guide, then the link `https://bookbytellc.com<path>?utm_source=linkedin&utm_medium=social&utm_campaign=<slug>`. Keep the same "Never" rules. No hashtag walls (3 at most). Write in first person plural ("we") as Computatio. Keep exactly one link in the post so LinkedIn shows a link preview.
-5a. Auto-post it to LinkedIn through Metricool. Rogenie approved this as a standing workflow on 2026-10-23: post without waiting for review, but only after step 4 shows the Pages deploy succeeded.
-   1. Load the Metricool connector's tools (search for "metricool"). Call getBrandSettings and use the brand labeled `computatio_` (id 6431543). Post only if its `linkedinData` is a company page (`urn:li:organization:...`). As of 2026-10-23 it is Rogenie's personal profile (`urn:li:person:...`), and she chose to wait for the company page rather than post there. While it is still a personal profile, don't post, set `linkedin_scheduled` to false with the note "Computatio LinkedIn page not connected in Metricool", and don't send a push notification for this alone. Once a company page appears, post every published guide not yet posted, as described in item 5.
-   2. Call getScheduledPosts and check that no post already contains this guide's URL. Never post the same guide twice.
-   3. Call createScheduledPost for that LinkedIn account only, with the exact text of the saved post file, a publish time about 15 minutes from now in America/Los_Angeles, and "show link preview" turned on if the tool offers it. No images.
-   4. Call getScheduledPosts again and confirm the post is listed. Record the result as `linkedin_scheduled` in the run record.
-   5. If the connector isn't available, refuses, or the post isn't listed, the guide stays live: send a push notification naming the guide and what failed, set `linkedin_scheduled` to false, and carry on. The next run posts any published guide that's still missing from Metricool (oldest first, at most 2 per run, spaced at least 2 hours apart).
+5a. Don't post it anywhere. On 2026-10-23 Rogenie decided against auto-posting guides to LinkedIn (Metricool can only reach her personal profile). The saved post is a draft she can post herself. Articles carry share buttons (LinkedIn, Facebook, X, email, copy link) from the `article()` helper; don't add other share links.
 6. Save a review copy to Google Drive. Run `python3 _src/export_docx.py <date>` (needs `pandoc`; if it's missing, `apt-get install -y pandoc` or `pip install --break-system-packages pypandoc_binary`). Upload the `.docx` it prints with the Google Drive connector's create_file tool. Use parentId `1FeqmZTfDW38R1wsP5hH6fDqaMdITYqjr` (folder "BookByte Articles"), the file name as title, contentMimeType `application/vnd.openxmlformats-officedocument.wordprocessingml.document`, `disableConversionToGoogleType: true`, and the contents of `/tmp/bookbyte_drive/<date>.b64` as the base64 content. Never let Drive convert it to a Google Doc: conversion deletes dollar amounts. If the Drive connector isn't available in this run, say so in the summary and continue; the article is still live.
 7. Add a run record (see "Run log"), run `python3 _src/build.py` again so `status.json` includes it, then commit with the message `Run log: <date>` and push.
-8. Finish with a short summary: the title, the live URL, the facts that were checked, anything removed for lack of a source, whether the Drive copy was saved, whether the LinkedIn post was scheduled in Metricool (and for when), and the full LinkedIn post text.
+8. Finish with a short summary: the title, the live URL, the facts that were checked, anything removed for lack of a source, whether the Drive copy was saved, and the full LinkedIn post text.
 
 ## Run log
 
@@ -77,10 +72,10 @@ Every run that reaches "Publish" or holds an item appends one record to the JSON
 ```json
 {"date": "YYYY-MM-DD", "at": "<ISO time with Pacific offset, when you finished>", "result": "published" | "held",
  "path": "<the item's path>", "facts_checked": <number of facts confirmed>, "removed": <number removed for lack of a source>,
- "live_verified": true | false, "linkedin_post": true | false, "linkedin_scheduled": true | false, "drive_copy": true | false, "note": "<one line: hold reason, or anything that failed>"}
+ "live_verified": true | false, "linkedin_post": true | false, "drive_copy": true | false, "note": "<one line: hold reason, or anything that failed>"}
 ```
 
-`live_verified` is true only if the live page showed the title in step 4. `linkedin_scheduled` is true only if step 5a confirmed the post in Metricool. `drive_copy` is true only if the Drive upload in step 6 succeeded. If a step failed but the guide is live, keep `result` as `published` and say what failed in `note`.
+`live_verified` is true only if the live page showed the title in step 4. `drive_copy` is true only if the Drive upload in step 6 succeeded. If a step failed but the guide is live, keep `result` as `published` and say what failed in `note`.
 
 ## Newsletter
 

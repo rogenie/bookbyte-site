@@ -1,14 +1,24 @@
 # All guides. build.py publishes an article only when its "published" date (Pacific time) has arrived.
 # Scheduled runs append new article(...) entries to ARTICLES. See _src/PUBLISHING.md.
 CTA = "https://computatio.io/?utm_source=bookbyte&amp;utm_medium=referral&amp;utm_campaign="
-# Computatio's LinkedIn company page. Leave empty to hide the "Follow" link.
-LINKEDIN_PAGE = ""
 from urllib.parse import quote
+from html import unescape
 
-def linkedin_box(path):
-    share = "https://www.linkedin.com/sharing/share-offsite/?url=" + quote("https://bookbytellc.com" + path, safe="")
-    follow = f' &middot; <a href="{LINKEDIN_PAGE}" rel="noopener">Follow Computatio on LinkedIn</a>' if LINKEDIN_PAGE else ""
-    return f'<p class="muted"><a href="{share}" target="_blank" rel="noopener">Share this guide on LinkedIn</a>{follow}</p>'
+def share_box(path, h1):
+    """Share buttons for an article: LinkedIn, Facebook, X, email, copy link."""
+    url = "https://bookbytellc.com" + path
+    u = quote(url, safe="")
+    t = quote(unescape(h1), safe="")
+    links = [
+        ("LinkedIn", f"https://www.linkedin.com/sharing/share-offsite/?url={u}"),
+        ("Facebook", f"https://www.facebook.com/sharer/sharer.php?u={u}"),
+        ("X", f"https://twitter.com/intent/tweet?url={u}&amp;text={t}"),
+        ("Email", f"mailto:?subject={t}&amp;body={u}"),
+    ]
+    a = "".join(f'<a href="{h}"{"" if n == "Email" else " target=\"_blank\" rel=\"noopener\""}>{n}</a>' for n, h in links)
+    copy = (f'<button type="button" data-url="{url}" onclick="var b=this;navigator.clipboard.writeText(b.dataset.url)'
+            f'.then(function(){{b.textContent=\'Link copied\'}},function(){{prompt(\'Copy this link:\',b.dataset.url)}})">Copy link</button>')
+    return f'<div class="share" aria-label="Share this guide"><b>Share this guide:</b> {a}{copy}</div>'
 
 def article(path, hub, hub_name, title, h1, desc, published, intro, sections, cta_html, sources, slug):
     src = "".join(f'<li><a href="{u}">{t}</a></li>' for t,u in sources)
@@ -21,7 +31,7 @@ def article(path, hub, hub_name, title, h1, desc, published, intro, sections, ct
 <section><div class="wrap narrow prose">
 {sections}
 <div class="cta"><b>Short on time?</b> {cta_html.replace("CTAURL", CTA+slug)}</div>
-{linkedin_box(path)}
+{share_box(path, h1)}
 <div class="callout"><b>Free download:</b> <a href="https://computatios-newsletter.beehiiv.com/?utm_source=bookbyte&amp;utm_medium=referral&amp;utm_campaign={slug}">47 write-offs for the self-employed</a>, a 42-page guide with the IRS rules behind each deduction. Free when you join the Computatio newsletter.</div>
 <h2>Sources</h2><ul>{src}</ul>
 <p class="muted">This guide is general information, not tax advice for your situation.</p>
