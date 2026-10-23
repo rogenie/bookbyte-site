@@ -32,7 +32,7 @@ If anything stops the run before a due guide is live (a fetch or push is refused
 - **Title:** under 60 characters. **Description:** under 155 characters.
 - **Links:** at least 3 links to BookByte guides or hubs. The build turns links to unpublished guides into plain text, so link freely to planned paths in the calendar.
 - **Call to action:** pass exactly one `cta_html` with `CTAURL` where the link goes. Match it to the topic:
-  - bookkeeping and AI workflow: Computatio Monthly Books, $500 a month; AI does the work and a person reviews every account
+  - bookkeeping and AI workflow: Computatio Monthly Books, $500 a month; AI does the work and an accountant reviews every account
   - tax returns: Simple Return $350, Self-Employed Return $600
   - business structure or complex situations: a free 20-minute call with Computatio
 - **Sources:** 2–5 official sources (irs.gov, state tax agencies, ssa.gov) as `(title, url)` pairs. Use a non-government source only when no official page exists.
@@ -66,8 +66,8 @@ Items with status `written` were drafted before this structure existed: restruct
 
 ## Never
 
-- Use "CPA" in any form, or call Rogenie or Computatio an accountant or accounting firm.
-- Use "PTIN preparer" or "licensed preparer".
+- Use "CPA" in any form, or call Computatio an accounting firm. When saying who reviews the work, say "an accountant" (Rogenie's choice, 2026-10-23).
+- Use "PTIN", "PTIN preparer" or "licensed preparer".
 - Describe Computatio's services as "accounting". Say bookkeeping and tax.
 - Promise refunds, savings, rankings or results.
 - Invent clients, results, testimonials, quotes or statistics.

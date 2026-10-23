@@ -34,7 +34,7 @@ def article(path, hub, hub_name, title, h1, desc, published, intro, sections, ct
 {share_box(path, h1)}
 <div class="callout"><b>Free download:</b> <a href="https://computatios-newsletter.beehiiv.com/?utm_source=bookbyte&amp;utm_medium=referral&amp;utm_campaign={slug}">47 write-offs for the self-employed</a>, a 42-page guide with the IRS rules behind each deduction. Free when you join the Computatio newsletter.</div>
 <h2>Sources</h2><ul>{src}</ul>
-<p class="muted">This guide is general information, not tax advice for your situation.</p>
+<p class="fine">This guide is general information, not financial, tax or legal advice for your situation. We work hard to get it right, but we can make mistakes, and rules change. Check the official sources above before you act.</p>
 </div></section>'''
     return {"path":path,"hub":hub,"hub_name":hub_name,"title":title,"h1":h1,"desc":desc,"body":body,
             "article":True,"published":published,"reviewed":published}
@@ -81,7 +81,7 @@ article("/bookkeeping/do-your-own-bookkeeping/","/bookkeeping/","Bookkeeping",
 <li><b>Quarterly:</b> make estimated tax payments.</li>
 <li><b>Yearly:</b> close the books, send 1099s, prepare your return.</li>
 </ul>''',
- 'If your books are already behind, or you&rsquo;d rather not spend the hour, <a href="CTAURL">Computatio</a> keeps your books current for $500 a month, with a person reviewing every account.',
+ 'If your books are already behind, or you&rsquo;d rather not spend the hour, <a href="CTAURL">Computatio</a> keeps your books current for $500 a month, with an accountant reviewing every account.',
  [("IRS: How long should I keep records?","https://www.irs.gov/businesses/small-businesses-self-employed/how-long-should-i-keep-records"),
   ("IRS: About Schedule C (Form 1040)","https://www.irs.gov/forms-pubs/about-schedule-c-form-1040"),
   ("Littler: 1099 reporting thresholds under the 2025 tax law","https://www.littler.com/news-analysis/asap/tax-bill-changes-1099-reporting-thresholds"),
@@ -284,7 +284,7 @@ Oct 15 &middot; TRANSFER TO SAV 4471 &middot; $1,500.00 &rarr; Owner draw &middo
 <li><b>Quarterly:</b> ask AI to summarize the quarter&rsquo;s profit, then check it against your profit and loss report before you pay estimated taxes.</li>
 </ul>
 <p>More methods like this are in our <a href="/ai-accounting/">AI for Accounting guides</a>. Or skip the routine entirely:</p>''',
- 'Want the 3-pass method done for you every month? At <a href="CTAURL">Computatio</a>, AI does the sorting and a person reviews and reconciles every account, so your books are current and checked. Monthly Books is $500 a month.',
+ 'Want the 3-pass method done for you every month? At <a href="CTAURL">Computatio</a>, AI does the sorting and an accountant reviews and reconciles every account, so your books are current and checked. Monthly Books is $500 a month.',
  [("IRS: Choosing a reputable tax preparer is vital to tax security","https://www.irs.gov/newsroom/choosing-a-reputable-tax-preparer-is-vital-to-tax-security"),
   ("IRS: What kind of records should I keep","https://www.irs.gov/businesses/small-businesses-self-employed/what-kind-of-records-should-i-keep"),
   ("IRS: Instructions for Schedule C (Form 1040)","https://www.irs.gov/instructions/i1040sc"),

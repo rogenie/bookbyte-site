@@ -78,7 +78,7 @@ def layout(p):
 <div><b>Guides</b><a href="{SITE["ai"][0]}">{esc(SITE["ai"][1])}</a>{"".join(f'<a href="{h}">{esc(n)}</a>' for h,n in SITE["nav"][:4])}</div>
 <div><b>Would rather not do it yourself?</b><p><a href="{SITE["cta_url"]}utm_source=bookbyte&amp;utm_medium=referral&amp;utm_campaign=footer">Computatio</a> keeps your books and prepares your return, with a person reviewing every account.</p></div>
 </div>
-<p class="legal">Guides are general information, not tax or legal advice. Rules change; check the date on each guide. &middot; <a href="/about/">About</a> &middot; <a href="/privacy/">Privacy</a> &middot; &copy; {datetime.date.today().year} BookByte</p>
+<p class="legal">Guides are general information, not financial, tax or legal advice. We can make mistakes and rules change; check the date and sources on each guide. &middot; <a href="/about/">About</a> &middot; <a href="/privacy/">Privacy</a> &middot; &copy; {datetime.date.today().year} BookByte</p>
 </div></footer>
 <script>window.goatcounter={{path:function(p){{return location.host+p}}}}</script>
 <script data-goatcounter="https://computatio.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
