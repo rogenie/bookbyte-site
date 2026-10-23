@@ -76,4 +76,4 @@ footer.site b{color:#fff}
 .nlband h2{margin:0 0 6px}
 .nlband p{margin:0;color:var(--muted);max-width:640px}
 
-.share{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:28px 0;font-size:15px}.share b{margin-right:4px}.share a,.share button{display:inline-block;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:inherit;font-weight:600;padding:7px 14px;border-radius:999px;text-decoration:none;cursor:pointer}.share a:hover,.share button:hover{border-color:var(--gold);color:var(--gold-dark)}
+.share{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:28px 0;font-size:15px}.share b{margin-right:4px}.share a,.share button{display:inline-block;border:1px solid var(--gold);background:var(--gold);color:var(--ink);font:inherit;font-weight:600;padding:7px 14px;border-radius:999px;text-decoration:none;cursor:pointer}.share a:hover,.share button:hover,.share a:focus-visible,.share button:focus-visible{background:var(--gold-dark);border-color:var(--gold-dark);color:#fff}
