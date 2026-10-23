@@ -46,6 +46,14 @@ def layout(p):
 <meta property="og:title" content="{esc(p["title"])}">
 <meta property="og:description" content="{esc(p["desc"])}">
 <meta property="og:url" content="{url}">
+<meta property="og:image" content="{SITE["url"]}{p.get("og_image", "/assets/og/default.png")}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{esc(html.unescape(re.sub(r"<[^>]+>", "", p["h1"])))}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{esc(p["title"])}">
+<meta name="twitter:description" content="{esc(p["desc"])}">
+<meta name="twitter:image" content="{SITE["url"]}{p.get("og_image", "/assets/og/default.png")}">
 <meta name="theme-color" content="#111111">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -100,8 +108,16 @@ def main():
         if "<!--LATEST-->" in p["body"]:
             p["body"] = p["body"].replace("<!--LATEST-->", ('<section><div class="wrap"><h2>Latest guides</h2>' + card_list(live[:6]) + '</div></section>') if live else "")
         pages.append(p)
+    # share images: one per live guide, plus a site default (see og.py)
+    from og import make_card
+    og_dir = os.path.join(ROOT, "assets", "og")
+    make_card(os.path.join(og_dir, "default.png"), "Plain-English bookkeeping and tax guides for the self-employed")
     for a in live:
-        a = dict(a); a["body"] = unlink_future(a["body"]); pages.append(a)
+        a = dict(a); a["body"] = unlink_future(a["body"])
+        img = a["path"].strip("/").split("/")[-1] + ".png"
+        if make_card(os.path.join(og_dir, img), a["h1"], a["hub_name"]) or os.path.exists(os.path.join(og_dir, img)):
+            a["og_image"] = "/assets/og/" + img
+        pages.append(a)
     # remove pages for articles that are not live (e.g. date moved later)
     for a in ARTICLES:
         if a["path"] not in live_paths:

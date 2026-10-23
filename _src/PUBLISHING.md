@@ -55,7 +55,7 @@ If anything stops the run before a due guide is live (a fetch or push is refused
 
 ## Publish
 
-1. From the repo root, run `python3 _src/build.py`. Today's guide must appear in the output count.
+1. From the repo root, run `python3 _src/build.py`. Today's guide must appear in the output count. The build also makes the guide's share image (`assets/og/<slug>.png`, used for link previews on LinkedIn, X and Facebook); it needs Pillow (`pip install --break-system-packages pillow` if missing). Commit the image with the guide.
 2. Set the calendar item's status to `published` and add `"url": "https://bookbytellc.com<path>"`.
 3. Commit with author `Rogenie Cordero <rogenie@gmail.com>` and the message `Publish: <title>`, then push to `main`.
 4. Verify: wait for the latest "pages build and deployment" run to show `completed` / `success` (GitHub connector, `actions_list` → `list_workflow_runs`, owner `rogenie`; the repo was renamed from `bookbyte` to `bookbyte-site`, so try whichever name the session allows). Then fetch the live page once, as described under "Fetching sources and pages", to confirm the title appears.
