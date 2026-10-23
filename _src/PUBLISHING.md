@@ -49,6 +49,13 @@ Rogenie wants every guide written in the Sam Ovens direct-response structure, in
 6. **The solution:** the method that gets them there, given a plain name and walked as numbered steps. This is the teaching core: prompts in callouts, the made-up example labeled "Example (made-up data)", how to check the output, and the limits. Answer the reader's main doubts here (safety, accuracy, "I'm not technical").
 7. **The pitch:** the `cta_html`, framed as the done-for-you version of the solution. One offer only. The "Short on time?" box is the pitch; end the body with a one-line bridge to it.
 
+**SEO comes first.** Ranking is the main goal, so where the structure and SEO pull apart, SEO wins:
+- The title, H1, description and URL lead with the search phrase people type (for example "quarterly estimated taxes California"), then the outcome. Never trade the keyword for a cleverer headline.
+- Answer the search question within the first 100 words, in a "Quick answer" callout right after the opening pain lines, so the page can win a featured snippet.
+- Put the search phrase or a close variant in at least two H2s. Phrase some H2s as the questions people search ("How much should I pay?", "What if I miss a payment?").
+- Keep tables, numbered steps and plain-English definitions; search engines lift them into results.
+- Don't change the title, H1 or URL of a live guide without a reason from Search Console data.
+
 Use section headings that speak to the reader (for example "You're guessing at categories", "What it costs you", "Picture this instead", "The 3-pass method"), not the labels above.
 
 **Voice:** talk to "you". Short paragraphs (1–3 sentences), short sentences, strong verbs, concrete numbers from official sources. Bold the one line per section a skimmer must not miss. Subheads say what the reader gets, not what the section is.
