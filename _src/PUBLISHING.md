@@ -39,16 +39,17 @@ If anything stops the run before a due guide is live (a fetch or push is refused
 
 ## Article structure (direct-response, every article)
 
-Rogenie wants every guide written in a direct-response marketing style (the Sam Ovens school): one reader, one problem, one promise, one next step. Use this skeleton in this order. Don't name Sam Ovens or any marketer on the site.
+Rogenie wants every guide written in the Sam Ovens direct-response structure, in exactly this order. Don't name Sam Ovens or any marketer on the site.
 
-1. **Headline (title and H1):** a specific outcome the reader wants, under 60 characters. Name the result, not the topic ("Reconcile your bank account in 20 minutes with AI" beats "AI bank reconciliation"). Only promise what the steps truly deliver.
-2. **Hook (the `intro`, 2–3 short sentences):** name the exact pain in the reader's words and the cost of leaving it alone (time, stress, penalties, bad numbers). No throat-clearing.
-3. **The old way vs. the new way:** a short section showing why the usual approach fails (shoebox, guessing, year-end panic) and what changes with the method in this guide.
-4. **The method, named:** give the method a plain name ("the 3-pass review", "the 30-minute close") and walk it as numbered steps. This is the body: prompts in callouts, the made-up example, and how to check the output.
-5. **Example story:** a short before-and-after for a made-up owner, labeled "Example (made-up data)". Never present it as a real client.
-6. **Objections:** answer the 2–3 doubts the reader has right now ("Is it safe to upload my bank data?", "What if the AI is wrong?", "I'm not technical"). Honest answers, including the limits.
-7. **Recap:** 3–5 bullets the reader can act on today.
-8. **One call to action:** the `cta_html`, framed as the done-for-you version of the method ("Want this done every month without lifting a finger?"). One offer only.
+1. **Headline (title and H1, under 60 characters):** the outcome the reader wants. Only promise what the steps truly deliver.
+2. **Pain point 1 (the `intro` plus the first section):** the reader's most immediate problem, in their own words.
+3. **Pain point 2:** a second, related problem they also feel.
+4. **Agitate:** make pain 1 and 2 concrete. What it costs if nothing changes (time, stress, penalties, wrong numbers), using only facts from official sources.
+5. **The dream:** what life looks like once it's solved. Specific and believable, no income or savings promises.
+6. **The solution:** the method that gets them there, given a plain name and walked as numbered steps. This is the teaching core: prompts in callouts, the made-up example labeled "Example (made-up data)", how to check the output, and the limits. Answer the reader's main doubts here (safety, accuracy, "I'm not technical").
+7. **The pitch:** the `cta_html`, framed as the done-for-you version of the solution. One offer only. The "Short on time?" box is the pitch; end the body with a one-line bridge to it.
+
+Use section headings that speak to the reader (for example "You're guessing at categories", "What it costs you", "Picture this instead", "The 3-pass method"), not the labels above.
 
 **Voice:** talk to "you". Short paragraphs (1–3 sentences), short sentences, strong verbs, concrete numbers from official sources. Bold the one line per section a skimmer must not miss. Subheads say what the reader gets, not what the section is.
 
