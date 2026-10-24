@@ -112,6 +112,12 @@ def main():
     from og import make_card
     og_dir = os.path.join(ROOT, "assets", "og")
     make_card(os.path.join(og_dir, "default.png"), "Plain-English bookkeeping and tax guides for the self-employed")
+    # section and info pages get their own card too (the home page keeps the default)
+    for p in pages:
+        if p["path"] not in ("/", "/404") and not p.get("noindex"):
+            img = "page-" + p["path"].strip("/").replace("/", "-") + ".png"
+            if make_card(os.path.join(og_dir, img), p["h1"], "Guides" if p["path"] in {h for h, _ in SITE["nav"]} | {SITE["ai"][0]} and p["path"] != "/about/" else "") or os.path.exists(os.path.join(og_dir, img)):
+                p["og_image"] = "/assets/og/" + img
     for a in live:
         a = dict(a); a["body"] = unlink_future(a["body"])
         img = a["path"].strip("/").split("/")[-1] + ".png"
