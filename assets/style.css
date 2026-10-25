@@ -44,7 +44,7 @@ footer.site a{color:#ddd;display:block;margin:4px 0}
 footer.site b{color:#fff}
 .fgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px}
 .legal{border-top:1px solid #222;margin-top:28px;padding-top:16px;font-size:13px}
-.legal a{display:inline;color:#ccc}
+footer.site .legal a{display:inline;margin:0;color:#ccc}
 @media(max-width:700px){
  body{font-size:16px}
  nav a{margin:0 16px 0 0;font-size:14px}
@@ -78,3 +78,22 @@ footer.site b{color:#fff}
 
 .share{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:28px 0;font-size:15px}.share b{margin-right:4px}.share a,.share button{display:inline-block;border:1px solid var(--gold);background:var(--gold);color:var(--ink);font:inherit;font-weight:600;padding:7px 14px;border-radius:999px;text-decoration:none;cursor:pointer}.share a:hover,.share button:hover,.share a:focus-visible,.share button:focus-visible{background:var(--gold-dark);border-color:var(--gold-dark);color:#fff}
 .fine{font-size:12px;line-height:1.5;color:var(--muted);margin-top:18px}
+
+.hero-dfy{margin:18px 0 0;font-size:16px;color:#ddd}
+.hero-dfy a{color:var(--gold);font-weight:600}
+.dfy{background:linear-gradient(120deg,#1b1406,#111 60%);color:#fff;padding:48px 0;border-top:1px solid #2a2210;border-bottom:1px solid #2a2210}
+.dfy h2{color:#fff;margin:0 0 14px}
+.dfy p{color:#d6d6d6}
+.dfy .eyebrow{color:var(--gold)}
+.dfy-grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:36px;align-items:start}
+.dfy-copy p{max-width:62ch}
+.dfy-offer{background:#fff;color:var(--ink);border-top:4px solid var(--gold);border-radius:3px;padding:24px}
+.dfy-offer .ticks li{color:var(--ink)}
+.dfy-name{margin:0;font-weight:700;letter-spacing:.04em;text-transform:uppercase;font-size:13px;color:var(--muted)!important}
+.dfy-price{margin:4px 0 14px;font-size:38px;font-weight:700;color:var(--ink)!important;line-height:1.1}
+.dfy-price span{font-size:16px;font-weight:400;color:var(--muted)}
+.dfy-offer .btn{margin:6px 8px 0 0}
+.dfy-offer .btn.ghost{color:var(--gold-dark,#8A6508);border-color:var(--gold)}
+.dfy-more{font-size:14px;color:var(--muted)!important;margin:16px 0 0}
+.dfy-more a{color:var(--gold-dark,#8A6508)}
+@media(max-width:820px){.dfy-grid{grid-template-columns:1fr}}

@@ -9,16 +9,20 @@ SITE = {
   "nav": [("/bookkeeping/","Bookkeeping"),("/estimated-taxes/","Estimated taxes"),("/deductions/","Deductions"),("/business-structure/","Business structure"),("/about/","About")],
 }
 
-def hub(path, name, title, desc, intro, covers):
+def hub(path, name, title, desc, intro, covers, hero_extra="", after_list=""):
     lis = "".join(f"<li>{c}</li>" for c in covers)
     body = f'''<section class="hero small"><div class="wrap">
-<p class="eyebrow">Guides</p><h1>{name}</h1><p class="lede">{intro}</p></div></section>
+<p class="eyebrow">Guides</p><h1>{name}</h1><p class="lede">{intro}</p>{hero_extra}</div></section>
 <section><div class="wrap narrow">
 <!--HUB_ARTICLES-->
+</div></section>{after_list}<section><div class="wrap narrow">
 <h2>What this section covers</h2><ul class="ticks">{lis}</ul>
 <p class="muted">New guides are added every week. Each one shows the date it was last checked against official sources.</p>
 </div></section>'''
     return {"path":path,"title":title,"desc":desc,"h1":name,"body":body}
+
+HERO_DFY = '\n<p class="hero-dfy">Short on time? <a href="https://computatio.io/?utm_source=bookbyte&amp;utm_medium=referral&amp;utm_campaign=ai-hub-hero#offers">Have Computatio do your books for you &rarr;</a></p>'
+PITCH_DFY = '\n<section class="dfy" id="done-for-you"><div class="wrap">\n<div class="dfy-grid">\n<div class="dfy-copy">\n<p class="eyebrow">Done for you</p>\n<h2>Rather spend your time on clients than on your books?</h2>\n<p>AI makes bookkeeping faster, but someone still has to run the prompts, check every category it guessed, chase the missing receipts and reconcile each account. For most owners that&rsquo;s still a few hours a month, usually late at night, and the month you skip it is the month that turns into a cleanup project before tax time.</p>\n<p>Picture this instead: your books are closed by the 15th of every month, you get a one-page summary in plain English, and a 30-minute call where you can ask anything about your numbers.</p>\n<p>That&rsquo;s Computatio. We use the same AI workflows these guides teach, and a person reviews and signs off on every account.</p>\n</div>\n<div class="dfy-offer">\n<p class="dfy-name">Monthly Books</p>\n<p class="dfy-price">$500<span> / month</span></p>\n<ul class="ticks">\n<li>Books closed monthly: profit and loss, balance sheet and cash summary</li>\n<li>One-page plain-English summary by the 15th</li>\n<li>30-minute monthly review call</li>\n<li>Month to month; cancel with 30 days&rsquo; notice</li>\n</ul>\n<a class="btn" href="https://computatio.io/?utm_source=bookbyte&amp;utm_medium=referral&amp;utm_campaign=ai-hub-monthly-books#offers">See Monthly Books</a>\n<a class="btn ghost" href="https://computatio.io/?utm_source=bookbyte&amp;utm_medium=referral&amp;utm_campaign=ai-hub-book-call#book">Book a call first</a>\n<p class="dfy-more">Books more than 2 months behind? Start with a <a href="https://computatio.io/?utm_source=bookbyte&amp;utm_medium=referral&amp;utm_campaign=ai-hub-cleanup#offers">books cleanup</a>. Need a tax return? Returns start at $350. <a href="https://computatio.io/?utm_source=bookbyte&amp;utm_medium=referral&amp;utm_campaign=ai-hub-returns#offers">See tax returns</a>.</p>\n</div>\n</div>\n</div></section>'
 
 PAGES = [
  {"path":"/","title":"BookByte | AI for Accounting: Guides for the Self-Employed","h1":"BookByte",
@@ -56,7 +60,8 @@ PAGES = [
  hub("/ai-accounting/","AI for Accounting","AI for Accounting: Guides for the Self-Employed | BookByte",
      "How to use AI for accounting as a freelancer or owner-operator: bookkeeping, receipts, month-end and tax prep, done accurately and safely.",
      "AI can turn hours of bookkeeping and tax prep into minutes, but only if you know where it&rsquo;s reliable and where it isn&rsquo;t. These guides show you how to use it and how to check its work.",
-     ["How to use AI for bookkeeping, and keep your books accurate","How to use AI to categorize business transactions, and check its work","AI receipt scanning: what to look for in a tool","Can AI do your accounting? What it gets right and wrong","Ready-to-use prompts for monthly bookkeeping tasks","Keeping your financial data safe when you use AI","Using AI to get ready for tax season","AI, a bookkeeper, or doing it yourself: time and cost compared"]),
+     ["How to use AI for bookkeeping, and keep your books accurate","How to use AI to categorize business transactions, and check its work","AI receipt scanning: what to look for in a tool","Can AI do your accounting? What it gets right and wrong","Ready-to-use prompts for monthly bookkeeping tasks","Keeping your financial data safe when you use AI","Using AI to get ready for tax season","AI, a bookkeeper, or doing it yourself: time and cost compared"],
+     hero_extra=HERO_DFY, after_list=PITCH_DFY),
  hub("/bookkeeping/","Bookkeeping","Bookkeeping Guides for the Self-Employed | BookByte",
      "Do-it-yourself bookkeeping for freelancers and owner-operators: setup, categorizing, reconciling, catching up and trade-specific guides.",
      "Keep accurate books without an accounting degree. Start with the basics, then find the guide for your trade.",
