@@ -32,7 +32,7 @@ def article(path, hub, hub_name, title, h1, desc, published, intro, sections, ct
 {sections}
 <div class="cta"><b>Short on time?</b> {cta_html.replace("CTAURL", CTA+slug)}</div>
 {share_box(path, h1)}
-<div class="callout"><b>Free download:</b> <a href="https://computatios-newsletter.beehiiv.com/?utm_source=bookbyte&amp;utm_medium=referral&amp;utm_campaign={slug}">47 write-offs for the self-employed</a>, a 42-page guide with the IRS rules behind each deduction. Free when you join the Computatio newsletter.</div>
+<div class="callout"><b>Free download:</b> <a href="https://computatio.io/free-guide/?utm_source=bookbyte&amp;utm_medium=referral&amp;utm_campaign={slug}">47 write-offs for the self-employed</a>, a 42-page guide with the IRS rules behind each deduction. Free when you join the Computatio newsletter.</div>
 <h2>Sources</h2><ul>{src}</ul>
 <p class="fine">This guide is general information, not financial, tax or legal advice for your situation. We work hard to get it right, but we can make mistakes, and rules change. Check the official sources above before you act.</p>
 </div></section>'''

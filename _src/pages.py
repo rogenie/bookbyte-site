@@ -5,7 +5,7 @@ SITE = {
   "author": "Computatio",
   "cta_url": "https://computatio.io/?",
   "ai": ("/ai-accounting/","AI for Accounting"),
-  "newsletter": "https://computatios-newsletter.beehiiv.com/",
+  "newsletter": "https://computatio.io/free-guide/",
   "nav": [("/bookkeeping/","Bookkeeping"),("/estimated-taxes/","Estimated taxes"),("/deductions/","Deductions"),("/business-structure/","Business structure"),("/about/","About")],
 }
 
@@ -36,7 +36,7 @@ PAGES = [
 <section class="nlband"><div class="wrap aiflex">
 <div><p class="eyebrow">Free download</p><h2>47 write-offs for the self-employed</h2>
 <p>A 42-page guide to 47 deductions, with the IRS rules behind each one. Free when you join the Computatio newsletter.</p></div>
-<a class="btn" href="https://computatios-newsletter.beehiiv.com/?utm_source=bookbyte&amp;utm_medium=referral&amp;utm_campaign=home">Get the free guide</a>
+<a class="btn" href="https://computatio.io/free-guide/?utm_source=bookbyte&amp;utm_medium=referral&amp;utm_campaign=home">Get the free guide</a>
 </div></section>
 <!--LATEST-->
 <section><div class="wrap">
@@ -94,12 +94,12 @@ PAGES = [
 </div></section>'''},
  {"path":"/privacy/","title":"Privacy Policy | BookByte","h1":"Privacy policy",
   "desc":"How BookByte handles information when you visit the site.",
-  "body":'''<section class="hero small"><div class="wrap"><h1>Privacy policy</h1><p class="lede">Last updated October 20, 2026.</p></div></section>
+  "body":'''<section class="hero small"><div class="wrap"><h1>Privacy policy</h1><p class="lede">Last updated October 25, 2026.</p></div></section>
 <section><div class="wrap narrow prose">
 <h2>What we collect</h2>
 <p>BookByte has no accounts, forms or comments, and doesn&rsquo;t set its own cookies. We don&rsquo;t sell or share personal information.</p>
 <h2>Newsletter</h2>
-<p>If you sign up for the free write-offs guide, your email address is collected by beehiiv, the service that runs the Computatio newsletter, under its own privacy policy. You can unsubscribe from any email.</p>
+<p>If you sign up for the free write-offs guide, your email address is collected by Kit, the service that runs the Computatio newsletter, under its own privacy policy, and by Computatio under the <a href="https://computatio.io/privacy/">Computatio privacy policy</a>. You can unsubscribe from any email.</p>
 <h2>Services that load with the site</h2>
 <p>The site is hosted on GitHub Pages and loads fonts from Google Fonts. Like any web server, these services receive your IP address and basic browser information when you load a page, under their own privacy policies.</p>
 <h2>Visit counts</h2>
