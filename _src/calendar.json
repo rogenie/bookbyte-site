@@ -90,11 +90,55 @@
    "status": "written"
   },
   {
+   "date": "2026-11-03",
+   "hub": "ai-accounting",
+   "path": "/ai-accounting/irs-iris-1099-e-filing-fire-retiring/",
+   "title": "IRS FIRE is closing: e-file 1099s with IRIS instead",
+   "status": "todo",
+   "kind": "ai-update",
+   "brief": {
+    "news": "The IRS is retiring the FIRE system for information returns; the last day to file through FIRE is Nov. 19, 2026, and tax year 2026 1099s must go through IRIS in the 2027 filing season.",
+    "source": "https://www.irs.gov/newsroom/irs-reminder-information-return-e-file-system-transitioning-to-a-new-platform",
+    "source_date": "2026-08-24",
+    "who": "Anyone who e-files Forms 1099 themselves (FIRE users must switch). The IRIS Taxpayer Portal is free, takes manual entry or a .csv upload, files up to 100 returns at a time, and needs an IRIS-only TCC (https://www.irs.gov/filing/e-file-information-returns-with-iris, updated 2026-10-22).",
+    "task": "Filing 1099-NECs and 1099-MISCs for contractors; keeping vendor records (names, TINs, totals) ready",
+    "angle": "Who this affects (FIRE users, and DIY filers who need a free e-file option), the key dates (Nov. 9 last day to change FIRE TCC applications, Nov. 19 FIRE closes), how to apply for an IRIS TCC now, and an AI prompt that turns a vendor-payments export into rows matching the IRS IRIS CSV template, with a check that each payee total ties to the vendor ledger and no TIN is pasted into a chatbot (mask it, fill it in locally). Re-confirm all dates on irs.gov before publishing; don't state TCC approval times unless the IRS page gives one.",
+    "cta": "call",
+    "links": [
+     "/deductions/send-1099-nec-by-january-31/",
+     "/deductions/1099-nec-2000-threshold/",
+     "/ai-accounting/financial-data-safety-ai/"
+    ]
+   }
+  },
+  {
    "date": "2026-11-04",
    "hub": "ai-accounting",
    "path": "/ai-accounting/ai-receipt-scanning/",
    "title": "AI receipt scanning: turn phone photos into bookkeeping records",
    "status": "todo"
+  },
+  {
+   "date": "2026-11-05",
+   "hub": "ai-accounting",
+   "path": "/ai-accounting/google-sheets-canvas-cash-flow-planner/",
+   "title": "Google Sheets canvas: build a cash flow what-if tool",
+   "status": "todo",
+   "kind": "ai-update",
+   "brief": {
+    "news": "Gemini in Google Sheets can turn a sheet into an interactive mini-app (Insert > Create a canvas), including financial forecast and scenario models that stay synced with the sheet.",
+    "source": "https://workspace.google.com/blog/product-announcements/turn-your-data-into-action-6-mini-apps-you-can-create-with-sheets-canvas",
+    "source_date": "2026-09-10",
+    "who": "Google AI Pro and Ultra personal plans; Workspace Business and Enterprise Standard and Plus; Google AI Pro for Education. Not listed for free Gmail or Business Starter. English only at launch (https://blog.google/products-and-platforms/products/workspace/sheets-canvas-for-google-sheets-spreadsheets/, 2026-08-13).",
+    "task": "Cash flow planning: testing what happens to your bank balance if sales, a big expense or a client's late payment changes",
+    "angle": "Start from a 13-week cash flow sheet built from your real books (opening balance from the reconciled bank account), a prompt that asks canvas for sliders on sales, expenses and payment timing, and checks: the canvas's base case must equal the sheet's totals, and the opening balance must match your last bank reconciliation. Note that a forecast is a planning tool, not a promise, and which plans include canvas. Re-check plan list and click path on Google's pages before publishing.",
+    "cta": "monthly-books",
+    "links": [
+     "/ai-accounting/ai-excel-google-sheets-bookkeeping/",
+     "/ai-accounting/read-profit-and-loss-with-ai/",
+     "/ai-accounting/ai-bank-reconciliation/"
+    ]
+   }
   },
   {
    "date": "2026-11-06",
