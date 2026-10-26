@@ -290,4 +290,79 @@ Oct 15 &middot; TRANSFER TO SAV 4471 &middot; $1,500.00 &rarr; Owner draw &middo
   ("IRS: Instructions for Schedule C (Form 1040)","https://www.irs.gov/instructions/i1040sc"),
   ("IRS: About Schedule C (Form 1040)","https://www.irs.gov/forms-pubs/about-schedule-c-form-1040")],
  "how-to-use-ai-for-bookkeeping"),
+article("/ai-accounting/ai-prompts-categorize-transactions/","/ai-accounting/","AI for Accounting",
+ "AI Prompts to Categorize Business Transactions",
+ "AI prompts to categorize business transactions (copy-paste)",
+ "Copy-and-paste AI prompts to categorize business transactions into Schedule C lines, flag personal charges and catch mistakes before they hit your books.",
+ "2026-10-26",
+ "You opened ChatGPT, pasted in your bank transactions and typed &ldquo;categorize these.&rdquo; What came back looked tidy. But half the categories were made up, and you can&rsquo;t tell which half.",
+ '''<div class="callout"><b>Quick answer:</b> the best AI prompts to categorize business transactions do four things. They <b>give the AI your exact category list</b> (for a sole proprietor, the Schedule C expense lines), state your own vendor rules, demand a confidence level and a reason for each line, and ban the AI from doing totals. Copy the five prompts below, run them in order, and review only what they flag.</div>
+
+<h2>Your AI invents categories you never use</h2>
+<p>Ask an AI to &ldquo;categorize&rdquo; with no list and it makes one up. You get &ldquo;Technology,&rdquo; &ldquo;Food &amp; Dining&rdquo; and &ldquo;Miscellaneous.&rdquo; None of those match the lines on your tax form.</p>
+<p><b>A category that doesn&rsquo;t map to your return is just a second sorting job for later.</b></p>
+
+<h2>And you don&rsquo;t know which answers to trust</h2>
+<p>Every line comes back with the same calm confidence. The coffee shop, the hardware store, the transfer to savings. Nothing says &ldquo;I guessed on this one.&rdquo;</p>
+<p>So you either check every line, which defeats the point, or check none, which is worse.</p>
+
+<h2>What sloppy categorizing costs you</h2>
+<ul>
+<li><b>Wrong lines on your return.</b> Schedule C has fixed expense lines, from line 8 (Advertising) to line 27b (Other expenses). Your categories should land on them.</li>
+<li><b>Meals at the wrong amount.</b> Business meals are generally only 50% deductible, so they need their own category, not a spot inside &ldquo;Supplies.&rdquo;</li>
+<li><b>Personal charges posing as business ones.</b> An expense must be ordinary and necessary for your business. If a car or phone is used for both, you split the cost by business use.</li>
+<li><b>Paying yourself recorded as an expense.</b> Amounts you pay yourself are not wages on Schedule C. They&rsquo;re owner draws.</li>
+<li><b>A bank line isn&rsquo;t proof.</b> The IRS says proof of payment alone doesn&rsquo;t show you&rsquo;re entitled to a deduction. You still need the invoice or receipt.</li>
+</ul>
+
+<h2>Picture month-end with a 10-line review list</h2>
+<p>You export the month. You paste one prompt. Back comes every transaction on a real Schedule C line, each with a reason. A short list is marked &ldquo;check this.&rdquo; You look at those, pull a few receipts, and reconcile.</p>
+<p><b>You review the 10 lines that need you, not the 200 that don&rsquo;t.</b></p>
+
+<h2>The copy-and-paste prompt library for categorizing transactions</h2>
+<p>Run these five prompts in order, in the same chat. They work in ChatGPT, Claude, Gemini or Copilot. Before you start, export the month as a spreadsheet and <b>delete full account and card numbers</b>. Our <a href="/ai-accounting/financial-data-safety-ai/">data safety guide</a> covers the rest.</p>
+
+<h3>Prompt 1: set the rules</h3>
+<div class="callout"><b>Prompt you can copy:</b><br>&ldquo;You will categorize transactions for my sole proprietorship. Use only these categories: Advertising; Car and truck expenses; Commissions and fees; Contract labor; Insurance (other than health); Interest; Legal and professional services; Office expense; Rent or lease; Repairs and maintenance; Supplies; Taxes and licenses; Travel; Meals; Utilities; Other expenses (name it); Owner draw; Owner contribution; Transfer between my accounts; Income; Needs review. Never invent a new category. If unsure, use Needs review. Reply &lsquo;ready&rsquo; and wait.&rdquo;</div>
+<p>Using a business entity, or have your own chart of accounts? Paste that list instead. Our <a href="/ai-accounting/chart-of-accounts-with-ai/">chart of accounts guide</a> shows how to build one.</p>
+
+<h3>Prompt 2: teach it your vendors</h3>
+<div class="callout"><b>Prompt you can copy:</b><br>&ldquo;Apply these rules before anything else: [vendor = category, for example &lsquo;GUSTO = Contract labor&rsquo;, &lsquo;transfers to account ending 4471 = Owner draw&rsquo;]. These are fixed. Mark lines you matched by a rule as &lsquo;rule.&rsquo;&rdquo;</div>
+
+<h3>Prompt 3: categorize with a confidence level</h3>
+<div class="callout"><b>Prompt you can copy:</b><br>&ldquo;Categorize the transactions below. Return a table: date, description, amount, category, confidence (high, medium, low), one-line reason. Mark as low anything that could be personal, any warehouse, grocery or big-box store, any restaurant, any payment to a person, and any transfer. Keep every row, in the same order. Don&rsquo;t add, merge or total anything. [paste transactions]&rdquo;</div>
+
+<h3>Prompt 4: hunt for problems</h3>
+<div class="callout"><b>Prompt you can copy:</b><br>&ldquo;Now list only the rows that may be wrong: possible personal spending, possible duplicates (same amount and vendor within 5 days), refunds coded as expenses, deposits that may not be income (loans, transfers, owner contributions), and anything in Other expenses. Say why for each.&rdquo;</div>
+
+<h3>Prompt 5: build your rules for next month</h3>
+<div class="callout"><b>Prompt you can copy:</b><br>&ldquo;From the rows I approved, write a list of vendor rules in the form &lsquo;vendor = category&rsquo;. Only include vendors that are always the same category. I&rsquo;ll paste this list into Prompt 2 next month.&rdquo;</div>
+<p><b>Prompt 5 is what makes this faster every month:</b> your rule list grows, and the review list shrinks.</p>
+
+<div class="callout"><b>Example (made-up data).</b> Four lines a run of Prompt 3 might return:<br>
+Oct 2 &middot; GOOGLE *WORKSPACE &middot; $14.00 &rarr; Office expense &middot; high &middot; &ldquo;Monthly business software.&rdquo;<br>
+Oct 8 &middot; HOME DEPOT #6621 &middot; $187.42 &rarr; Supplies &middot; low &middot; &ldquo;Big-box store; could be home repair.&rdquo;<br>
+Oct 14 &middot; BLUE BOTTLE COFFEE &middot; $23.50 &rarr; Meals &middot; low &middot; &ldquo;Restaurant; business purpose unknown.&rdquo;<br>
+Oct 20 &middot; ZELLE TO M RIVERA &middot; $600.00 &rarr; Needs review &middot; low &middot; &ldquo;Payment to a person; could be contract labor.&rdquo;<br>
+<b>How to check it:</b> open the Home Depot receipt, write down who you met and why for the coffee, and confirm the Zelle payment against an invoice. Then count rows: the AI&rsquo;s table should have exactly as many rows as your export.</div>
+
+<h2>How do you check AI&rsquo;s transaction categories?</h2>
+<ol>
+<li><b>Count the rows.</b> Same number in, same number out. A missing row is a missing expense.</li>
+<li><b>Review every low and medium line,</b> plus anything over an amount you pick, such as $200.</li>
+<li><b>Match receipts</b> for the lines you reviewed, and keep them. The IRS generally expects records for 3 years after you file, and longer in some cases.</li>
+<li><b>Post the categories in your bookkeeping software or spreadsheet,</b> then <a href="/ai-accounting/ai-bank-reconciliation/">reconcile to your bank statement</a>. <b>Totals come from your software, never from the chat.</b></li>
+</ol>
+
+<h2>What these prompts can&rsquo;t do</h2>
+<p>AI can&rsquo;t know why you bought something. It can&rsquo;t tell a client lunch from a personal one, or a work tool from a gift. It can also state a tax rule that is out of date. Treat its reason as a guess, and check tax rules on an IRS or state tax agency page. You&rsquo;re responsible for your return whoever, or whatever, sorted the numbers.</p>
+<p>Not technical? You don&rsquo;t need to be. If you can copy a spreadsheet and paste text, you can run all five prompts. For the full monthly routine around them, read <a href="/ai-accounting/how-to-use-ai-for-bookkeeping/">how to use AI for bookkeeping</a> and our <a href="/bookkeeping/do-your-own-bookkeeping/">guide to doing your own bookkeeping</a>.</p>
+<p>More prompt methods are in our <a href="/ai-accounting/">AI for Accounting guides</a> and the <a href="/bookkeeping/">bookkeeping hub</a>. Rather hand off the whole monthly job?</p>''',
+ 'Want the categorizing done for you? At <a href="CTAURL">Computatio</a>, AI does the sorting and an accountant reviews and reconciles every account each month. Monthly Books is $500 a month.',
+ [("IRS: 2025 Schedule C (Form 1040)","https://www.irs.gov/pub/irs-prior/f1040sc--2025.pdf"),
+  ("IRS: Instructions for Schedule C (Form 1040) (2025)","https://www.irs.gov/instructions/i1040sc"),
+  ("IRS: Publication 583, Starting a Business and Keeping Records","https://www.irs.gov/publications/p583"),
+  ("IRS: Publication 463 (2025), Travel, Gift, and Car Expenses","https://www.irs.gov/publications/p463"),
+  ("IRS: How long should I keep records?","https://www.irs.gov/businesses/small-businesses-self-employed/how-long-should-i-keep-records")],
+ "ai-prompts-categorize-transactions"),
 ]

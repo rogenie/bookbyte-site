@@ -94,6 +94,9 @@ def main():
     live = sorted([a for a in ARTICLES if a["published"] <= TODAY], key=lambda a: a["published"], reverse=True)
     live_paths = {a["path"] for a in live}
     all_paths = {a["path"] for a in ARTICLES}
+    # planned calendar guides that aren't live yet are unlinked too (see PUBLISHING.md "Links")
+    import json as _json
+    all_paths |= {i["path"] for i in _json.load(open(os.path.join(ROOT, "_src", "calendar.json"), encoding="utf-8"))["items"]}
     def unlink_future(body):
         # turn links to not-yet-published guides into plain text
         def f(m):
