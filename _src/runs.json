@@ -22,5 +22,17 @@
   "linkedin_post": true,
   "drive_copy": false,
   "note": "On-schedule publish. Live-page fetch refused in scheduled run (Pages deploy succeeded); Drive upload failed (base64 rejected). Pushed via rogenie/bookbyte remote; bookbyte-site URL was denied by git proxy."
+ },
+ {
+  "date": "2026-10-26",
+  "at": "2026-10-26T06:04:58-07:00",
+  "result": "published",
+  "path": "/ai-accounting/ai-prompts-categorize-transactions/",
+  "facts_checked": 11,
+  "removed": 0,
+  "live_verified": false,
+  "linkedin_post": true,
+  "drive_copy": true,
+  "note": "On-schedule publish. Live page not yet in search results, so not fetched; Pages deploy succeeded. Pushed via rogenie/bookbyte remote (bookbyte-site URL denied by git proxy). Build now unlinks planned calendar paths that aren't live, so links to future guides don't 404."
  }
 ]
