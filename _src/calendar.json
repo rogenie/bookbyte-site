@@ -30,7 +30,7 @@
    "hub": "ai-accounting",
    "path": "/ai-accounting/quickbooks-ai-banking-suggestions/",
    "title": "QuickBooks AI banking suggestions: review before you post",
-   "status": "todo",
+   "status": "published",
    "kind": "ai-update",
    "brief": {
     "news": "QuickBooks Online's banking page now autofills payee and category with color-coded review signals (green, blue, orange); Essentials and up add 'Ready to post' batches.",
@@ -45,7 +45,8 @@
      "/ai-accounting/ai-bank-reconciliation/",
      "/ai-accounting/how-to-use-ai-for-bookkeeping/"
     ]
-   }
+   },
+   "url": "https://bookbytellc.com/ai-accounting/quickbooks-ai-banking-suggestions/"
   },
   {
    "date": "2026-10-28",

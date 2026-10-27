@@ -365,4 +365,80 @@ Oct 20 &middot; ZELLE TO M RIVERA &middot; $600.00 &rarr; Needs review &middot; 
   ("IRS: Publication 463 (2025), Travel, Gift, and Car Expenses","https://www.irs.gov/publications/p463"),
   ("IRS: How long should I keep records?","https://www.irs.gov/businesses/small-businesses-self-employed/how-long-should-i-keep-records")],
  "ai-prompts-categorize-transactions"),
+article("/ai-accounting/quickbooks-ai-banking-suggestions/","/ai-accounting/","AI for Accounting",
+ "QuickBooks AI banking suggestions: review before you post",
+ "QuickBooks AI banking suggestions: review before you post",
+ "What the green, blue and orange QuickBooks AI banking signals mean, when to use Ready to post, and a month-end check that catches wrong matches.",
+ "2026-10-27",
+ "You open the QuickBooks banking page and every transaction already has a payee and a category. Some have a green check, some blue, some orange. It&rsquo;s tempting to select all and hit Post.",
+ '''<div class="callout"><b>Quick answer:</b> as of October 27, 2026, QuickBooks Online&rsquo;s new banking page fills in payee and category with AI and marks each with a review signal. <b>Green</b> means a strong pattern in your own history, <b>blue</b> means some support but similar transactions vary, and <b>orange</b> means little or no history. Batch-post greens after a quick scan, confirm blues, open every orange, and reconcile at month-end. Suggestions come on all QuickBooks Online versions; the &ldquo;Ready to post&rdquo; batch is on Essentials, Plus and Advanced in the US.</div>
+
+<h2>The suggestions look finished, but are they right?</h2>
+<p>The AI fills the From/To and Match or Categorize columns for you. Every row looks done. Nothing tells you at a glance which ones it guessed.</p>
+<p><b>A filled-in category is a suggestion, not a decision.</b> Posting it is the decision, and that part is still yours.</p>
+
+<h2>And a wrong match is harder to spot than a wrong category</h2>
+<p>A bad category is visible: the coffee shop says &ldquo;Rent.&rdquo; A bad match hides. The bank line gets tied to the wrong invoice or bill, or to nothing when it should have matched a record you already entered. That&rsquo;s how duplicates get in.</p>
+
+<h2>What posting without looking costs you</h2>
+<ul>
+<li><b>Duplicated expenses or income.</b> If you entered a bill and then categorize the bank payment as a new expense, it&rsquo;s counted twice.</li>
+<li><b>A habit copied forward.</b> Green signals come from your own history. If you coded something wrong for months, the AI learns the mistake and suggests it with confidence.</li>
+<li><b>A tax deduction with no backup.</b> The IRS says proof of payment alone doesn&rsquo;t show you&rsquo;re entitled to a deduction. A posted bank line still needs the receipt or invoice behind it.</li>
+<li><b>Messy fixes later.</b> Undoing a posted line is easy. Changing one that&rsquo;s already reconciled can throw off your balances.</li>
+</ul>
+
+<h2>Picture a 10-minute banking session</h2>
+<p>You open Pending. You review the Ready to post batch, untick two lines, and post the rest. You open the handful of orange rows, pull receipts, and fix them. At month-end your category totals look normal and the reconciliation ties out.</p>
+<p><b>Your time goes to the rows that need judgment, not the ones that repeat every month.</b></p>
+
+<h2>What the QuickBooks AI banking signals mean</h2>
+<p>Each pending row can show two signals: one for the category and one for the payee (From/To). Matches get their own green or blue badge.</p>
+<table>
+<tr><th>Signal</th><th>What QuickBooks says it means</th><th>What to do</th></tr>
+<tr><td>Green check</td><td>A strong, consistent pattern in your history, or a payee that matches an existing customer or vendor</td><td>Scan the amount and required fields, then post</td></tr>
+<tr><td>Blue info</td><td>Some support, but similar transactions were coded different ways. For payees, a new name pulled from the bank description</td><td>Confirm before posting; add a new payee only if it&rsquo;s real</td></tr>
+<tr><td>Orange alert</td><td>Little data, such as no similar transactions in your books</td><td>Open it, get the receipt, set the category yourself</td></tr>
+</table>
+<p>Select a signal, then <b>More info</b>, to open the Suggestions panel and see why it picked that answer. Orange doesn&rsquo;t apply to matches: low-confidence matches are hidden, so use <b>Find match</b> when you know a record exists.</p>
+
+<h2>The green-blue-orange method for QuickBooks AI banking suggestions</h2>
+<ol>
+<li><b>Open the page.</b> Go to All apps, then Accounting, then Bank transactions, and pick the <b>Pending</b> tab for the account.</li>
+<li><b>Set your Ready to post rules first (Essentials and up).</b> In the feature&rsquo;s policy settings, set an <b>Amount exceeds</b> limit, such as $500, so big items always wait for you. Choose whether payee, class and location are required. A transaction that fails any check is held for review instead.</li>
+<li><b>Review the batch.</b> Select <b>Review</b> on the banner, or filter to Ready to post. Untick anything that looks off: a personal-looking vendor, an odd amount, a payment to a person. Then post the rest.</li>
+<li><b>Confirm every blue.</b> Check the category against what you actually bought. For a new payee, make sure it&rsquo;s a real vendor before adding it to your list.</li>
+<li><b>Open every orange.</b> These are new to your books. Find the receipt, decide the category, and add a short memo.</li>
+<li><b>Heed the &ldquo;potential match&rdquo; warning.</b> When QuickBooks thinks a record already exists, it shows this instead of a category. Select Find match. If the bill or invoice is there, match it; categorizing it as new would double-count it.</li>
+<li><b>Fix mistakes from the Posted tab.</b> Find the line and select <b>Undo</b> in the Action column. It goes back to Pending. If it&rsquo;s already reconciled, stop and ask whoever reviews your books first.</li>
+</ol>
+<p>A rule you set in QuickBooks still wins: Intuit says the AI never overrides your bank rules or makes them auto-post. Our <a href="/ai-accounting/ai-prompts-categorize-transactions/">AI categorizing prompts</a> can help you decide what those rules should be.</p>
+
+<div class="callout"><b>Example (made-up data).</b> Five pending lines for a one-person design studio:<br>
+Oct 3 &middot; ADOBE *CREATIVE CLD &middot; $59.99 &rarr; Software &middot; green &middot; in the Ready to post batch. Post.<br>
+Oct 9 &middot; COSTCO WHSE #0412 &middot; $212.80 &rarr; Supplies &middot; blue. Receipt shows half was groceries. Split it: business part to Supplies, rest to Owner draw.<br>
+Oct 12 &middot; DEPOSIT ACME CO &middot; $1,800.00 &rarr; potential match warning. Find match shows open invoice #1043 for $1,800. Match it, don&rsquo;t categorize as new income.<br>
+Oct 18 &middot; SQ *RIVERSIDE PRINT &middot; $146.00 &rarr; Advertising &middot; orange. New vendor. Receipt confirms flyers. Post with a memo.<br>
+Oct 25 &middot; ADOBE *CREATIVE CLD &middot; $59.99 &rarr; Software &middot; green. Second charge this month. Check the card statement before posting: it could be a duplicate download.</div>
+
+<h2>How to check QuickBooks AI suggestions at month-end</h2>
+<ol>
+<li><b>Compare category totals to last month.</b> Run a profit and loss by month. A category that jumped or vanished usually means the AI picked a new habit.</li>
+<li><b>Scan Uncategorized and Ask My Accountant-type accounts.</b> They should be empty or explained.</li>
+<li><b>Look for repeats:</b> same vendor, same amount, a few days apart.</li>
+<li><b><a href="/ai-accounting/ai-bank-reconciliation/">Reconcile each account</a></b> to the bank statement. <b>If it doesn&rsquo;t tie out, something was posted wrong or twice.</b></li>
+<li><b>Keep the receipts.</b> The IRS generally expects records for 3 years after you file, and longer in some cases.</li>
+</ol>
+
+<h2>Is it safe to trust the AI, and what can&rsquo;t it do?</h2>
+<p>The suggestions use your own history and the bank&rsquo;s description. They can&rsquo;t know why you bought something, or whether a big-box purchase was half personal. New company files may not show green match badges until you&rsquo;ve accepted that kind of match a few times. Prefer the old screen? QuickBooks offers <b>Switch to previous version</b>.</p>
+<p>You don&rsquo;t need to be technical. If you can read three colors and open a receipt, you can run this method. For the bigger routine, see <a href="/ai-accounting/how-to-use-ai-for-bookkeeping/">how to use AI for bookkeeping</a> and our <a href="/bookkeeping/">bookkeeping guides</a>.</p>
+<p>Rather have someone else run the banking page every month?</p>''',
+ 'Want the review done for you? At <a href="CTAURL">Computatio</a>, AI does the first pass and an accountant reviews and reconciles every account each month. Monthly Books is $500 a month.',
+ [("Intuit QuickBooks: Learn about updates to the new AI-powered banking page","https://quickbooks.intuit.com/learn-support/en-us/help-article/matching-rules/learn-updates-new-ai-powered-banking-page/L0hR7A9Zf_US_en_US"),
+  ("Intuit QuickBooks: Use Ready to post in QuickBooks Online","https://quickbooks.intuit.com/learn-support/en-us/help-article/account-management/use-ready-post-quickbooks-online/L9jzjf8Xe_US_en_US"),
+  ("Intuit QuickBooks: How AI suggestions help match and categorize bank transactions","https://quickbooks.intuit.com/learn-support/en-us/help-article/bank-transactions/ai-suggestions-help-match-categorize-bank/L8FHOh4AD_US_en_US"),
+  ("Intuit QuickBooks: Unmatch or move downloaded bank transactions","https://quickbooks.intuit.com/learn-support/en-us/help-article/bank-registers/unmatch-downloaded-bank-transactions-move-another/L71oaBb86_US_en_US"),
+  ("IRS: Publication 583, Starting a Business and Keeping Records","https://www.irs.gov/publications/p583")],
+ "quickbooks-ai-banking-suggestions"),
 ]
