@@ -247,6 +247,18 @@
    "linkedin_post": true,
    "drive_copy": true,
    "note": "On-schedule publish. Live page not yet in search results, so not fetched; Pages deploy succeeded. Pushed via rogenie/bookbyte remote (bookbyte-site URL denied by git proxy). Build now unlinks planned calendar paths that aren't live, so links to future guides don't 404."
+  },
+  {
+   "date": "2026-10-27",
+   "at": "2026-10-27T05:57:38-07:00",
+   "result": "published",
+   "path": "/ai-accounting/quickbooks-ai-banking-suggestions/",
+   "facts_checked": 15,
+   "removed": 0,
+   "live_verified": false,
+   "linkedin_post": true,
+   "drive_copy": true,
+   "note": "On-schedule publish. Feature re-checked on Intuit help pages today. Live page not yet in search results, so not fetched; Pages deploy succeeded. Pushed via rogenie/bookbyte remote (bookbyte-site URL denied by git proxy)."
   }
  ]
 }
