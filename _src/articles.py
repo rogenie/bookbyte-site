@@ -441,4 +441,88 @@ Oct 25 &middot; ADOBE *CREATIVE CLD &middot; $59.99 &rarr; Software &middot; gre
   ("Intuit QuickBooks: Unmatch or move downloaded bank transactions","https://quickbooks.intuit.com/learn-support/en-us/help-article/bank-registers/unmatch-downloaded-bank-transactions-move-another/L71oaBb86_US_en_US"),
   ("IRS: Publication 583, Starting a Business and Keeping Records","https://www.irs.gov/publications/p583")],
  "quickbooks-ai-banking-suggestions"),
+article("/ai-accounting/ai-bank-reconciliation/","/ai-accounting/","AI for Accounting",
+ "AI Bank Reconciliation: How to Reconcile With AI",
+ "AI bank reconciliation: how to do it and what AI can&rsquo;t do",
+ "Use AI for bank reconciliation: copy-paste prompts to match your books to your statement, find missing and duplicate lines, and check the result yourself.",
+ "2026-10-28",
+ "Your bank says one number. Your books say another. You scroll both lists line by line, trying to spot the $43.17 that doesn&rsquo;t match, and an hour later you still can&rsquo;t find it.",
+ '''<div class="callout"><b>Quick answer:</b> AI bank reconciliation works best as a <b>matching assistant, not a calculator</b>. Export your bank statement and your book entries for the same month, remove account numbers, and ask the AI to pair each statement line with a book line and list everything left over. Then fix those items in your bookkeeping software and let the software confirm that the adjusted bank balance equals your book balance. The IRS recommends reconciling your checking account every month.</div>
+
+<h2>You can&rsquo;t find why the balances don&rsquo;t match</h2>
+<p>Two lists, a few hundred lines each, and a gap you can&rsquo;t explain. Is it a missing entry? A typo? A charge you recorded twice?</p>
+<p><b>A gap of a few dollars can hide several errors that partly cancel out.</b> That&rsquo;s why eyeballing totals rarely finds it.</p>
+
+<h2>And you&rsquo;re not sure AI can be trusted with numbers</h2>
+<p>You&rsquo;ve heard AI can read a bank statement in seconds. You&rsquo;ve also seen it add a column wrong with full confidence. So you don&rsquo;t know whether it saves you an hour or adds a new mistake.</p>
+<p>Both are true. The method below uses AI only for the part it&rsquo;s good at.</p>
+
+<h2>What skipping reconciliation costs you</h2>
+<ul>
+<li><b>Errors stay in your books.</b> The IRS describes reconciling as the way to confirm your balance, make sure bank charges are recorded, and correct mistakes. Skip it, and missing or doubled lines flow into your profit.</li>
+<li><b>Your tax return starts from wrong numbers.</b> A duplicated expense lowers your profit on paper. A missed deposit raises it. Either way, the return doesn&rsquo;t match reality.</li>
+<li><b>A bank line doesn&rsquo;t prove the deduction.</b> The IRS says proof of payment alone doesn&rsquo;t show you&rsquo;re entitled to a deduction. You still need the invoice or receipt behind it.</li>
+<li><b>Months pile up.</b> One month takes minutes. Six months of unreconciled accounts take days, and old charges are harder to remember.</li>
+</ul>
+
+<h2>Picture month-end in 20 minutes</h2>
+<p>The statement arrives. You export two files and paste one prompt. Back comes a short list: one deposit missing from your books, one charge entered twice, two checks that haven&rsquo;t cleared. You fix two lines, and the reconciliation ties out.</p>
+<p><b>You spend your time on the four lines that need you, not the 200 that already match.</b></p>
+
+<h2>Why bank and book balances differ</h2>
+<p>A difference doesn&rsquo;t always mean a mistake. The IRS lists three normal reasons your bank balance and your book balance can differ at month-end:</p>
+<ul>
+<li>bank charges you haven&rsquo;t recorded yet,</li>
+<li>deposits you made after the statement date, and</li>
+<li>checks you wrote that haven&rsquo;t cleared.</li>
+</ul>
+<p>Everything else, such as a missing entry, a duplicate or a wrong amount, is an error to fix. <b>AI bank reconciliation is about sorting every difference into one of those two groups.</b></p>
+
+<h2>The match-and-explain method for AI bank reconciliation</h2>
+<p>These prompts work in ChatGPT, Claude, Gemini or Copilot. You don&rsquo;t need to be technical: if you can download a file and paste text, you can do this.</p>
+<ol>
+<li><b>Export two files for the same month.</b> From your bank, download the statement as a CSV or spreadsheet. From your bookkeeping software or spreadsheet, export every entry for that account and month.</li>
+<li><b>Remove sensitive details.</b> Delete full account and card numbers, and keep only date, description and amount. Our <a href="/ai-accounting/financial-data-safety-ai/">data safety guide</a> covers the rest.</li>
+<li><b>Run Prompt 1</b> to pair the lines.</li>
+<li><b>Run Prompt 2</b> to sort what&rsquo;s left over.</li>
+<li><b>Fix the errors in your books,</b> not in the chat.</li>
+<li><b>Reconcile in your software,</b> and let it do the math.</li>
+</ol>
+
+<h3>Prompt 1: match the lines</h3>
+<div class="callout"><b>Prompt you can copy:</b><br>&ldquo;I&rsquo;m reconciling one bank account for [month]. List A is the bank statement. List B is my book entries. Match each line in A to one line in B with the same amount and a date within 5 days. Return three tables: matched pairs; lines only in A; lines only in B. Keep every row. Don&rsquo;t merge, round, total or add anything. If two lines could match, put both in a fourth table called &lsquo;unsure&rsquo;. List A: [paste]. List B: [paste].&rdquo;</div>
+
+<h3>Prompt 2: explain the leftovers</h3>
+<div class="callout"><b>Prompt you can copy:</b><br>&ldquo;For each line that only appears in one list, suggest the most likely reason: bank fee not yet recorded, deposit after the statement date, check not yet cleared, missing from my books, possible duplicate, or amount typo (same vendor, different amount). Give one line of reasoning each. Mark anything you&rsquo;re unsure about as &lsquo;needs review&rsquo;. Don&rsquo;t calculate balances.&rdquo;</div>
+<p><b>Notice what the prompts never ask for: a balance.</b> Matching and explaining are pattern work, which AI handles well. Arithmetic across long tables is where it slips.</p>
+
+<div class="callout"><b>Example (made-up data).</b> A one-person consulting business, September checking account. Prompt 1 matched 61 of 65 statement lines. Prompt 2 sorted the rest:<br>
+Sep 30 &middot; MONTHLY SERVICE FEE &middot; $12.00 &rarr; only on statement &middot; &ldquo;Bank fee not yet recorded.&rdquo;<br>
+Sep 18 &middot; DEPOSIT NORTHSIDE LLC &middot; $1,250.00 &rarr; only on statement &middot; &ldquo;Missing from books; check for an open invoice.&rdquo;<br>
+Sep 22 &middot; CANVA &middot; $15.00 &rarr; in books twice, on statement once &middot; &ldquo;Possible duplicate.&rdquo;<br>
+Sep 28 &middot; CHECK 1042 &middot; $400.00 &rarr; only in books &middot; &ldquo;Check not yet cleared.&rdquo;<br>
+<b>How to check it:</b> record the $12 fee, match the $1,250 deposit to the client&rsquo;s invoice, delete the second Canva entry after confirming one charge on the statement, and leave check 1042 as outstanding. Then reconcile in your software: the adjusted bank balance should equal your book balance.</div>
+
+<h2>How do you check an AI bank reconciliation?</h2>
+<ol>
+<li><b>Count the rows.</b> Matched pairs plus leftovers must equal the number of lines in each list. A missing row is a missing transaction.</li>
+<li><b>Spot-check five matched pairs</b> against the statement, including the largest one.</li>
+<li><b>Confirm every &ldquo;unsure&rdquo; and &ldquo;needs review&rdquo; line</b> yourself, with the receipt or invoice in hand.</li>
+<li><b>Let your software do the final math.</b> Following the IRS steps, the adjusted bank balance must equal your adjusted book balance. <b>If the software doesn&rsquo;t tie out, you&rsquo;re not done, whatever the chat said.</b></li>
+<li><b>Save the statement and your reconciliation report.</b> The IRS generally expects records for 3 years after you file, and longer in some cases. Electronic copies must meet the same standards as paper ones.</li>
+</ol>
+
+<h2>What AI can&rsquo;t do in bank reconciliation</h2>
+<ul>
+<li><b>It can&rsquo;t see your bank.</b> It only knows what you paste. A wrong export means a wrong answer.</li>
+<li><b>It can&rsquo;t sign off.</b> Reconciling is done when your books and the statement agree in your software, not when a chat says so.</li>
+<li><b>It can&rsquo;t tell you why you spent money.</b> A match proves a charge happened, not that it was a business expense.</li>
+<li><b>It can be confidently wrong.</b> Two $15 charges in one month may be a duplicate, or two real purchases. Only the statement and receipts settle it.</li>
+</ul>
+<p>Using QuickBooks? Its banking page can match transactions for you; see <a href="/ai-accounting/quickbooks-ai-banking-suggestions/">how to review QuickBooks AI banking suggestions</a>. Still sorting categories first? Start with our <a href="/ai-accounting/ai-prompts-categorize-transactions/">AI prompts to categorize transactions</a>, then come back here. For the whole monthly routine, read <a href="/ai-accounting/how-to-use-ai-for-bookkeeping/">how to use AI for bookkeeping</a>.</p>
+<p>Rather have someone else tie out every account each month?</p>''',
+ 'Want reconciliation done for you? At <a href="CTAURL">Computatio</a>, AI does the matching and an accountant reviews and reconciles every account each month. Monthly Books is $500 a month.',
+ [("IRS: Publication 583, Starting a Business and Keeping Records","https://www.irs.gov/publications/p583"),
+  ("IRS: How long should I keep records?","https://www.irs.gov/businesses/small-businesses-self-employed/how-long-should-i-keep-records")],
+ "ai-bank-reconciliation"),
 ]
