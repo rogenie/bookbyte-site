@@ -287,6 +287,18 @@
    "linkedin_post": false,
    "drive_copy": false,
    "note": "Not published: Google hasn't confirmed the Gemini business hub is live (Oct 20 post says rollout begins 'in the coming days'; not in release notes). Moved to 2026-11-10 per the AI-update rule."
+  },
+  {
+   "date": "2026-10-29",
+   "at": "2026-10-29T11:17:05-07:00",
+   "result": "published",
+   "path": "/ai-accounting/irs-iris-1099-e-filing-fire-retiring/",
+   "facts_checked": 19,
+   "removed": 1,
+   "live_verified": false,
+   "linkedin_post": true,
+   "drive_copy": false,
+   "note": "Swap at Rogenie's request: IRIS guide (was 2026-11-03) published in the 2026-10-29 slot in place of the held Gemini guide, now 2026-11-03 pending live confirmation. Removed 'up to 100 returns at a time' (IRS pages conflict: Pub 5717 says 250 records per CSV). Live page not yet in search results. Drive upload not done this run; docx sent to Rogenie in chat instead."
   }
  ]
 }
