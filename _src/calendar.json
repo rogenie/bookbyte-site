@@ -57,28 +57,6 @@
    "url": "https://bookbytellc.com/ai-accounting/ai-bank-reconciliation/"
   },
   {
-   "date": "2026-10-29",
-   "hub": "ai-accounting",
-   "path": "/ai-accounting/gemini-small-business-finance-tools/",
-   "title": "Gemini's new small-business finance tools: what to check",
-   "status": "todo",
-   "kind": "ai-update",
-   "brief": {
-    "news": "Google announced a Gemini business hub that turns spreadsheets, receipts and purchase records into financial charts and models, plus connected apps including Xero and Workspace.",
-    "source": "https://blog.google/innovation-and-ai/products/gemini-app/new-tools-small-business-owners/",
-    "source_date": "2026-10-20",
-    "who": "All Gemini app users, rolling out globally 'in the coming days' as of Oct 20; confirm it is live before publishing.",
-    "task": "Turning receipts and spreadsheets into financial summaries and charts",
-    "angle": "How to give Gemini clean data (an export from your books, not raw bank PDFs), a prompt for a monthly income and expense summary, how to tie every chart total back to your profit and loss report, and what not to upload or connect.",
-    "cta": "monthly-books",
-    "links": [
-     "/ai-accounting/read-profit-and-loss-with-ai/",
-     "/ai-accounting/financial-data-safety-ai/",
-     "/ai-accounting/ai-excel-google-sheets-bookkeeping/"
-    ]
-   }
-  },
-  {
    "date": "2026-10-30",
    "hub": "ai-accounting",
    "path": "/ai-accounting/can-ai-do-your-accounting/",
@@ -156,6 +134,29 @@
    "path": "/ai-accounting/chart-of-accounts-with-ai/",
    "title": "How to build a chart of accounts with AI (free template)",
    "status": "todo"
+  },
+  {
+   "date": "2026-11-10",
+   "hub": "ai-accounting",
+   "path": "/ai-accounting/gemini-small-business-finance-tools/",
+   "title": "Gemini's new small-business finance tools: what to check",
+   "status": "todo",
+   "kind": "ai-update",
+   "brief": {
+    "news": "Google announced a Gemini business hub that turns spreadsheets, receipts and purchase records into financial charts and models, plus connected apps including Xero and Workspace.",
+    "source": "https://blog.google/innovation-and-ai/products/gemini-app/new-tools-small-business-owners/",
+    "source_date": "2026-10-20",
+    "who": "All Gemini app users, rolling out globally 'in the coming days' as of Oct 20; confirm it is live before publishing.",
+    "task": "Turning receipts and spreadsheets into financial summaries and charts",
+    "angle": "How to give Gemini clean data (an export from your books, not raw bank PDFs), a prompt for a monthly income and expense summary, how to tie every chart total back to your profit and loss report, and what not to upload or connect.",
+    "cta": "monthly-books",
+    "links": [
+     "/ai-accounting/read-profit-and-loss-with-ai/",
+     "/ai-accounting/financial-data-safety-ai/",
+     "/ai-accounting/ai-excel-google-sheets-bookkeeping/"
+    ]
+   },
+   "note": "Moved from 2026-10-29 on 2026-10-29: no Google page confirms the Gemini business hub and finance tools are live yet. The Oct 20 blog post only says they begin rolling out 'in the coming days', and Gemini release notes (latest 2026.10.13) don't list them. Xero's own pages (Oct 14/17) confirm the Xero connected app is live outside the EEA, UK, Switzerland and Nigeria. Re-check before publishing."
   },
   {
    "date": "2026-11-11",

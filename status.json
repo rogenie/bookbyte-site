@@ -1,5 +1,5 @@
 {
- "built": "2026-10-28",
+ "built": "2026-10-29",
  "cadence": "Weekdays: evergreen Mon/Wed/Fri, AI updates Tue/Thu (see _src/TOPICS.md)",
  "items": [
   {
@@ -38,11 +38,6 @@
    "url": "https://bookbytellc.com/ai-accounting/ai-bank-reconciliation/"
   },
   {
-   "date": "2026-10-29",
-   "hub": "ai-accounting",
-   "status": "todo"
-  },
-  {
    "date": "2026-10-30",
    "hub": "ai-accounting",
    "status": "todo"
@@ -74,6 +69,11 @@
   },
   {
    "date": "2026-11-09",
+   "hub": "ai-accounting",
+   "status": "todo"
+  },
+  {
+   "date": "2026-11-10",
    "hub": "ai-accounting",
    "status": "todo"
   },
@@ -273,6 +273,18 @@
    "linkedin_post": true,
    "drive_copy": true,
    "note": "On-schedule publish (written this run from todo). Live page not yet in search results, so not fetched; Pages deploy succeeded. Pushed via rogenie/bookbyte remote (bookbyte-site URL denied by git proxy)."
+  },
+  {
+   "date": "2026-10-29",
+   "at": "2026-10-29T06:10:00-07:00",
+   "result": "held",
+   "path": "/ai-accounting/gemini-small-business-finance-tools/",
+   "facts_checked": 0,
+   "removed": 0,
+   "live_verified": false,
+   "linkedin_post": false,
+   "drive_copy": false,
+   "note": "Not published: Google hasn't confirmed the Gemini business hub is live (Oct 20 post says rollout begins 'in the coming days'; not in release notes). Moved to 2026-11-10 per the AI-update rule."
   }
  ]
 }
