@@ -6,12 +6,25 @@ Scheduled runs (every weekday) follow this file to publish one guide per schedul
 
 1. Get today's date in America/Los_Angeles.
 2. Open `_src/calendar.json` and list every item whose `date` is today **or earlier** and whose status is `written` or `todo`. These are due. Items marked `published` are done; items marked `held` wait for Rogenie. Skip both.
-   - Nothing due: stop. Make no commits and send no message.
+   - Nothing due: if today is a weekday and no guide went live today, today is an empty slot. Fill it (see "Never miss a weekday"). On weekends, or if a guide already went live today, stop: make no commits and send no message.
 3. Work through the due items oldest first, one at a time, running the full process below (fact check, Publish, run log) for each before starting the next. An earlier date means a scheduled run was missed; catch it up now. In its run record, say in `note` that it was a catch-up and on what date.
 4. If the status is `written`, the article is already in `_src/articles.py` with its scheduled date. Go to "Publish".
 5. If the status is `todo`, write the article (below), pass the fact check, and add it to the end of the `ARTICLES` list in `_src/articles.py` using the `article(...)` helper, with `published` set to the item's scheduled date (the build only publishes dates that have arrived). Then go to "Publish".
 
-Never publish an item dated in the future.
+Never publish an item dated in the future. (A substitute pulled forward under "Never miss a weekday" gets today's date first, so it is not a future item.)
+
+## Never miss a weekday
+
+Rogenie's rule (2026-10-29): one guide goes live every weekday, Monday to Friday, with no missed days. If a due guide has to be held back, swap in a different guide the same run.
+
+1. **When a due item can't publish** (an AI update that isn't live yet, or a fact that can't be confirmed): handle the item as the rules say (move it, or mark it `held`), then publish a substitute in the same run, dated today.
+2. **When today's weekday slot is empty** (nothing on the calendar for today): publish a substitute, dated today.
+3. **Choosing the substitute**, in this order:
+   a. **Write a new guide** on a topic that isn't published or on the calendar. On a Tue/Thu, use an AI update that passes the "Keep an item" rules in `_src/TOPICS.md`; on a Mon/Wed/Fri, an evergreen AI-for-your-books topic. Add it to `_src/calendar.json` with today's date and a `note` saying it is a substitute and for what. This keeps the rest of the calendar where it is.
+   b. If no new topic passes the fact check, **pull forward the next upcoming planned item** that can pass it today (prefer a `written` item, then an evergreen `todo`; avoid AI updates that still need a live check). Change its date to today and note its old date. Its old slot is then empty, and the run on that day fills it under rule 2.
+   c. A moved AI update goes to the next empty Tue/Thu at least 2 days out, or into a slot freed in step b if that is later and empty.
+4. The substitute gets the full process: writing standards, fact check, Publish, LinkedIn draft, Drive copy, run log. The held or moved item gets its own run record (`"result": "held"`) and the substitute gets a `published` record whose `note` names the item it replaced.
+5. If no substitute can pass the fact check either, the day is missed: send the push notification under "If the run can't finish", naming both guides and why.
 
 ## Fetching sources and pages
 
@@ -24,7 +37,7 @@ If anything stops the run before a due guide is live (a fetch or push is refused
 ## Writing standards
 
 - **Audience:** self-employed people and small-business owners anywhere in the US. Add a state note (`<div class="callout"><b>State note.</b> …</div>`) where a state's rules differ. California is the usual example.
-- **AI update articles** (calendar items with `"kind": "ai-update"`, planned by the topic scout in `_src/TOPICS.md`): start from the item's `brief`. Re-check the feature on the vendor's own page that day (search the vendor's domain, then fetch). If it isn't live yet, or the vendor page no longer supports the brief, don't publish: move the item to the next empty Tue/Thu at least 2 days out and note why, or mark it `held` if it was pulled. These articles may name the product. Open with a dated line ("As of <Month D, YYYY>, ..."), say which plans get it, show the steps or prompt, a made-up example, and how to check the output against your books. Link the vendor's page in Sources.
+- **AI update articles** (calendar items with `"kind": "ai-update"`, planned by the topic scout in `_src/TOPICS.md`): start from the item's `brief`. Re-check the feature on the vendor's own page that day (search the vendor's domain, then fetch). If it isn't live yet, or the vendor page no longer supports the brief, don't publish it: move the item to the next empty Tue/Thu at least 2 days out and note why, or mark it `held` if it was pulled. Then publish a substitute the same run (see "Never miss a weekday"). These articles may name the product. Open with a dated line ("As of <Month D, YYYY>, ..."), say which plans get it, show the steps or prompt, a made-up example, and how to check the output against your books. Link the vendor's page in Sources.
 - **AI articles** (most of the calendar): show the exact prompt in a callout, a sample run on made-up data labeled "Example (made-up data)", and how to check the output. Teach methods that work in any AI tool. Name a product only in comparison articles, check its features on the vendor's own pages that day, and date the article.
 - **Accounting substance:** every AI tip must rest on a correct bookkeeping or tax rule. AI never replaces reconciling, keeping receipts, or the taxpayer's responsibility for their return.
 - **Length:** 700–1,300 words. Short sentences and plain words. Use numbered steps where the reader follows along.
@@ -78,7 +91,7 @@ Items with status `written` were drafted before this structure existed: restruct
 1. List every rate, dollar threshold, percentage, deadline, form number and rule the article states.
 2. Confirm each one on an official source fetched during this run. Confirm the tax year, not just the number.
 3. If an item can't be confirmed, remove it or rewrite the sentence without it.
-4. If the article can't stand without an unconfirmed item, don't publish. Set the item's status to `held`, add a `note` explaining why, add a run record with `"result": "held"` and the reason (see "Run log"), run `python3 _src/build.py`, commit and push only those changes (`_src/calendar.json`, `_src/runs.json`, `status.json`), and report "HELD" with the reason.
+4. If the article can't stand without an unconfirmed item, don't publish it. Set the item's status to `held`, add a `note` explaining why, add a run record with `"result": "held"` and the reason (see "Run log"), run `python3 _src/build.py`, commit and push only those changes (`_src/calendar.json`, `_src/runs.json`, `status.json`), and report "HELD" with the reason. Then publish a substitute the same run (see "Never miss a weekday").
 5. Re-read the finished HTML once against the "Never" list above.
 
 ## Publish
