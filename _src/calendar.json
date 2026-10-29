@@ -57,6 +57,30 @@
    "url": "https://bookbytellc.com/ai-accounting/ai-bank-reconciliation/"
   },
   {
+   "date": "2026-10-29",
+   "hub": "ai-accounting",
+   "path": "/ai-accounting/irs-iris-1099-e-filing-fire-retiring/",
+   "title": "IRS FIRE is closing: e-file 1099s with IRIS instead",
+   "status": "published",
+   "kind": "ai-update",
+   "brief": {
+    "news": "The IRS is retiring the FIRE system for information returns; the last day to file through FIRE is Nov. 19, 2026, and tax year 2026 1099s must go through IRIS in the 2027 filing season.",
+    "source": "https://www.irs.gov/newsroom/irs-reminder-information-return-e-file-system-transitioning-to-a-new-platform",
+    "source_date": "2026-08-24",
+    "who": "Anyone who e-files Forms 1099 themselves (FIRE users must switch). The IRIS Taxpayer Portal is free, takes manual entry or a .csv upload, files up to 100 returns at a time, and needs an IRIS-only TCC (https://www.irs.gov/filing/e-file-information-returns-with-iris, updated 2026-10-22).",
+    "task": "Filing 1099-NECs and 1099-MISCs for contractors; keeping vendor records (names, TINs, totals) ready",
+    "angle": "Who this affects (FIRE users, and DIY filers who need a free e-file option), the key dates (Nov. 9 last day to change FIRE TCC applications, Nov. 19 FIRE closes), how to apply for an IRIS TCC now, and an AI prompt that turns a vendor-payments export into rows matching the IRS IRIS CSV template, with a check that each payee total ties to the vendor ledger and no TIN is pasted into a chatbot (mask it, fill it in locally). Re-confirm all dates on irs.gov before publishing; don't state TCC approval times unless the IRS page gives one.",
+    "cta": "call",
+    "links": [
+     "/deductions/send-1099-nec-by-january-31/",
+     "/deductions/1099-nec-2000-threshold/",
+     "/ai-accounting/financial-data-safety-ai/"
+    ]
+   },
+   "url": "https://bookbytellc.com/ai-accounting/irs-iris-1099-e-filing-fire-retiring/",
+   "note": "Swapped into the 2026-10-29 slot (from 2026-11-03) at Rogenie's request, replacing the Gemini guide."
+  },
+  {
    "date": "2026-10-30",
    "hub": "ai-accounting",
    "path": "/ai-accounting/can-ai-do-your-accounting/",
@@ -73,24 +97,25 @@
   {
    "date": "2026-11-03",
    "hub": "ai-accounting",
-   "path": "/ai-accounting/irs-iris-1099-e-filing-fire-retiring/",
-   "title": "IRS FIRE is closing: e-file 1099s with IRIS instead",
+   "path": "/ai-accounting/gemini-small-business-finance-tools/",
+   "title": "Gemini's new small-business finance tools: what to check",
    "status": "todo",
    "kind": "ai-update",
    "brief": {
-    "news": "The IRS is retiring the FIRE system for information returns; the last day to file through FIRE is Nov. 19, 2026, and tax year 2026 1099s must go through IRIS in the 2027 filing season.",
-    "source": "https://www.irs.gov/newsroom/irs-reminder-information-return-e-file-system-transitioning-to-a-new-platform",
-    "source_date": "2026-08-24",
-    "who": "Anyone who e-files Forms 1099 themselves (FIRE users must switch). The IRIS Taxpayer Portal is free, takes manual entry or a .csv upload, files up to 100 returns at a time, and needs an IRIS-only TCC (https://www.irs.gov/filing/e-file-information-returns-with-iris, updated 2026-10-22).",
-    "task": "Filing 1099-NECs and 1099-MISCs for contractors; keeping vendor records (names, TINs, totals) ready",
-    "angle": "Who this affects (FIRE users, and DIY filers who need a free e-file option), the key dates (Nov. 9 last day to change FIRE TCC applications, Nov. 19 FIRE closes), how to apply for an IRIS TCC now, and an AI prompt that turns a vendor-payments export into rows matching the IRS IRIS CSV template, with a check that each payee total ties to the vendor ledger and no TIN is pasted into a chatbot (mask it, fill it in locally). Re-confirm all dates on irs.gov before publishing; don't state TCC approval times unless the IRS page gives one.",
-    "cta": "call",
+    "news": "Google announced a Gemini business hub that turns spreadsheets, receipts and purchase records into financial charts and models, plus connected apps including Xero and Workspace.",
+    "source": "https://blog.google/innovation-and-ai/products/gemini-app/new-tools-small-business-owners/",
+    "source_date": "2026-10-20",
+    "who": "All Gemini app users, rolling out globally 'in the coming days' as of Oct 20; confirm it is live before publishing.",
+    "task": "Turning receipts and spreadsheets into financial summaries and charts",
+    "angle": "How to give Gemini clean data (an export from your books, not raw bank PDFs), a prompt for a monthly income and expense summary, how to tie every chart total back to your profit and loss report, and what not to upload or connect.",
+    "cta": "monthly-books",
     "links": [
-     "/deductions/send-1099-nec-by-january-31/",
-     "/deductions/1099-nec-2000-threshold/",
-     "/ai-accounting/financial-data-safety-ai/"
+     "/ai-accounting/read-profit-and-loss-with-ai/",
+     "/ai-accounting/financial-data-safety-ai/",
+     "/ai-accounting/ai-excel-google-sheets-bookkeeping/"
     ]
-   }
+   },
+   "note": "Moved from 2026-10-29 (to 2026-11-10, then to the 2026-11-03 slot vacated by the IRIS guide at Rogenie's request): no Google page confirms the Gemini business hub and finance tools are live yet. The Oct 20 blog post only says they begin rolling out 'in the coming days', and Gemini release notes (latest 2026.10.13) don't list them. Xero's own pages (Oct 14/17) confirm the Xero connected app is live outside the EEA, UK, Switzerland and Nigeria. Re-check before publishing. Publish only once a Google page confirms it is live; otherwise move again."
   },
   {
    "date": "2026-11-04",
@@ -134,29 +159,6 @@
    "path": "/ai-accounting/chart-of-accounts-with-ai/",
    "title": "How to build a chart of accounts with AI (free template)",
    "status": "todo"
-  },
-  {
-   "date": "2026-11-10",
-   "hub": "ai-accounting",
-   "path": "/ai-accounting/gemini-small-business-finance-tools/",
-   "title": "Gemini's new small-business finance tools: what to check",
-   "status": "todo",
-   "kind": "ai-update",
-   "brief": {
-    "news": "Google announced a Gemini business hub that turns spreadsheets, receipts and purchase records into financial charts and models, plus connected apps including Xero and Workspace.",
-    "source": "https://blog.google/innovation-and-ai/products/gemini-app/new-tools-small-business-owners/",
-    "source_date": "2026-10-20",
-    "who": "All Gemini app users, rolling out globally 'in the coming days' as of Oct 20; confirm it is live before publishing.",
-    "task": "Turning receipts and spreadsheets into financial summaries and charts",
-    "angle": "How to give Gemini clean data (an export from your books, not raw bank PDFs), a prompt for a monthly income and expense summary, how to tie every chart total back to your profit and loss report, and what not to upload or connect.",
-    "cta": "monthly-books",
-    "links": [
-     "/ai-accounting/read-profit-and-loss-with-ai/",
-     "/ai-accounting/financial-data-safety-ai/",
-     "/ai-accounting/ai-excel-google-sheets-bookkeeping/"
-    ]
-   },
-   "note": "Moved from 2026-10-29 on 2026-10-29: no Google page confirms the Gemini business hub and finance tools are live yet. The Oct 20 blog post only says they begin rolling out 'in the coming days', and Gemini release notes (latest 2026.10.13) don't list them. Xero's own pages (Oct 14/17) confirm the Xero connected app is live outside the EEA, UK, Switzerland and Nigeria. Re-check before publishing."
   },
   {
    "date": "2026-11-11",

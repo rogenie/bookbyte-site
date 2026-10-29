@@ -525,4 +525,96 @@ Sep 28 &middot; CHECK 1042 &middot; $400.00 &rarr; only in books &middot; &ldquo
  [("IRS: Publication 583, Starting a Business and Keeping Records","https://www.irs.gov/publications/p583"),
   ("IRS: How long should I keep records?","https://www.irs.gov/businesses/small-businesses-self-employed/how-long-should-i-keep-records")],
  "ai-bank-reconciliation"),
+article("/ai-accounting/irs-iris-1099-e-filing-fire-retiring/","/ai-accounting/","AI for Accounting",
+ "IRS FIRE is closing: e-file 1099s with IRIS instead",
+ "IRS FIRE is closing: e-file 1099s with IRIS instead",
+ "IRS FIRE stops taking 1099s on Nov. 19, 2026. How to get an IRIS TCC now, e-file 1099-NECs free in IRIS, and use AI to prep your vendor list safely.",
+ "2026-10-29",
+ "You filed your contractors&rsquo; 1099s through FIRE last year. This year, that door closes before filing season even opens. And the new system needs a code you don&rsquo;t have yet.",
+ '''<div class="callout"><b>Quick answer:</b> as of October 29, 2026, the IRS says <b>November 19, 2026, at 3 p.m. Eastern</b> is the last day to file information returns through FIRE. FIRE users must file tax year 2026 Forms 1099 through <b>IRIS</b>, the IRS&rsquo;s Information Returns Intake System, in the 2027 filing season. IRIS needs its own Transmitter Control Code (TCC), and the IRS says to allow up to 45 calendar days to process the application. <b>Apply now.</b> The IRIS Taxpayer Portal is free and takes typed-in forms or a CSV upload.</div>
+
+<h2>Your FIRE login won&rsquo;t file your 2026 1099s</h2>
+<p>FIRE, the IRS&rsquo;s older e-file system for information returns, is being retired. The IRS has already stopped taking new FIRE TCC applications. Existing applications can be updated only through November 9, 2026, and then become read-only.</p>
+<p><b>After January 1, 2027, IRIS is the only IRS e-file system for information returns</b>, including current-year, prior-year and corrected returns.</p>
+
+<h2>And your new IRIS code takes weeks</h2>
+<p>A FIRE TCC doesn&rsquo;t carry over. IRIS uses a 5-digit TCC that works only in IRIS. The IRS&rsquo;s IRIS portal guide says to allow up to 45 calendar days for the application, and the approval letter comes by mail.</p>
+<p>Form 1099-NEC is due to your contractors and to the IRS by January 31. For 2026 forms that date is a Sunday, so the due date moves to the next business day: <b>Monday, February 1, 2027</b>.</p>
+
+<h2>What waiting costs you</h2>
+<ul>
+<li><b>A scramble in January.</b> Apply in mid-December and 45 days lands you near the end of January, right at the deadline.</li>
+<li><b>Paper may not be an option.</b> If you file 10 or more information returns in total (all types added together), the IRS requires you to e-file them.</li>
+<li><b>Wrong forms from messy records.</b> Your 1099s are only as right as your vendor totals. A missing payment or a card payment counted by mistake goes straight onto the form.</li>
+</ul>
+
+<h2>Picture January with the code already in hand</h2>
+<p>Your IRIS TCC letter came in November. In early January you close the year, run one AI prompt on your vendor payments, and get a short list: who needs a 1099-NEC, how much, and what&rsquo;s missing. You fill the IRS template, upload it, and download the copies for your contractors.</p>
+<p><b>The work that needs you is a handful of judgment calls, not a hunt through twelve months of payments.</b></p>
+
+<h2>Step 1: Get your IRIS TCC now</h2>
+<p>Following the IRS&rsquo;s IRIS Taxpayer Portal guide (Publication 5717):</p>
+<ol>
+<li>Go to the IRS page <b>IRIS Application for TCC</b> and select the button to access the application.</li>
+<li>Sign in, or create an account.</li>
+<li>On <b>Select Your Organization</b>, choose <b>Individual</b>.</li>
+<li>Select <b>New Application</b>, then <b>IRIS Application for TCC</b>, and complete it.</li>
+<li>Each Responsible Official signs the submission page with their 5-digit PIN.</li>
+</ol>
+<p>If it sits in &ldquo;Submitted Pending Review&rdquo; for more than 45 days, the guide says to contact the help desk.</p>
+
+<h2>Step 2: Use AI to build your 1099 vendor list</h2>
+<p>AI is good at sorting a year of payments into per-vendor totals and flagging gaps. It should never see a Social Security number or EIN. <b>Mask every TIN before you paste anything</b>, and add the real numbers yourself, offline. Our <a href="/ai-accounting/financial-data-safety-ai/">financial data safety guide</a> covers what else to strip out.</p>
+<ol>
+<li>Export every 2026 payment to non-employees from your books: date, payee, amount, payment method, and what it was for.</li>
+<li>Replace names with your own vendor IDs if you like, and delete any TIN or bank details.</li>
+<li>Paste the export into any AI tool with the prompt below.</li>
+</ol>
+
+<div class="callout"><b>Prompt:</b> &ldquo;Below are my 2026 business payments to outside people and companies. Group them by payee and total each one. For each payee, list: total paid by check, ACH or cash; total paid by credit card, payment card or a payment app; whether the payee is a corporation (answer &lsquo;unknown&rsquo; if the data doesn&rsquo;t say); and whether the services were legal services. Flag any payee whose check, ACH and cash total is $2,000 or more. Do not add numbers that aren&rsquo;t in the data. List any payment you couldn&rsquo;t assign to a payee.&rdquo;</div>
+
+<p>The prompt splits payment methods because the IRS says payments made with a credit card or payment card aren&rsquo;t reported on Form 1099-NEC or 1099-MISC; they belong on Form 1099-K. Payments to corporations are generally exempt, except payments for legal services. For tax year 2026, the reporting threshold for nonemployee compensation is <b>$2,000</b>; see our <a href="/deductions/1099-nec-2000-threshold/">guide to the $2,000 threshold</a>.</p>
+
+<div class="callout"><b>Example (made-up data).</b> A one-person marketing studio, 2026:<br>
+V-01 &middot; freelance designer &middot; $4,800 by ACH &middot; not a corporation &rarr; <b>1099-NEC, $4,800</b><br>
+V-02 &middot; copywriter &middot; $1,650 by check + $900 by card &rarr; the check total is under $2,000, so no 1099-NEC. Card payments are reported on Form 1099-K instead, not by you.<br>
+V-03 &middot; web developer, Inc. &middot; $6,000 by ACH &rarr; corporation, not legal services. Generally no 1099-NEC. Confirm the corporate status in your vendor file.<br>
+V-04 &middot; law office, PC &middot; $2,500 by check for a contract review &rarr; legal services. The corporation exemption doesn&rsquo;t apply. Check the instructions for which box to use.<br>
+One $350 payment had no payee &rarr; find the receipt before you file.</div>
+
+<h2>Step 3: How to check the AI&rsquo;s 1099 list</h2>
+<ol>
+<li><b>Tie each total to your vendor ledger.</b> Run a 2026 expense-by-vendor report in your books. Every flagged total must match it to the cent.</li>
+<li><b>Add it all up.</b> The AI&rsquo;s totals for all payees should equal the total of the export you pasted. A gap means a dropped or doubled payment.</li>
+<li><b>Confirm every &ldquo;unknown&rdquo;</b> (corporation status, payment method) from your own records, not the AI&rsquo;s guess.</li>
+<li><b>Reconcile December first.</b> If the year&rsquo;s last month isn&rsquo;t reconciled, the totals may be short. Our <a href="/ai-accounting/ai-bank-reconciliation/">AI bank reconciliation guide</a> shows how.</li>
+</ol>
+
+<h2>Step 4: File in the IRIS Taxpayer Portal</h2>
+<ol>
+<li>Sign in and add your business under <b>Issuer Management</b>.</li>
+<li>For a few forms, use <b>Start New Form</b> and type them in.</li>
+<li>For more, select <b>Upload CSV with Form Data</b>, choose the form type, and download the IRS template. The IRS accepts only its own templates, and one upload holds one tax year and one form type.</li>
+<li>Type your checked list into a fresh template. The IRS warns against copying and pasting from another CSV into it, and recommends a new template each time.</li>
+<li>Leave empty money cells blank, not $0.00. Use Y or N in check-box fields. Save as <b>CSV UTF-8 (Comma delimited)</b>.</li>
+<li>Add each payee&rsquo;s real TIN yourself, on your own computer, never in a chatbot.</li>
+<li>After you submit, download the recipient copies from the portal and send them by the due date. Our <a href="/deductions/send-1099-nec-by-january-31/">January deadline guide</a> covers how.</li>
+</ol>
+<p>Made a mistake? IRIS also takes corrections and automatic extension requests. Filing large volumes through software? The IRS offers IRIS Application to Application (A2A) for that.</p>
+
+<h2>What AI can&rsquo;t do for your 1099s</h2>
+<ul>
+<li><b>It can&rsquo;t confirm a payee&rsquo;s tax status.</b> Whether a vendor is a corporation comes from your records, not from its name.</li>
+<li><b>It can&rsquo;t file for you.</b> The TCC, the upload and the signature are yours.</li>
+<li><b>It can be confidently wrong.</b> Treat its totals as a draft until they tie to your books.</li>
+</ul>
+<p>You don&rsquo;t need to be technical. If you can export a report and fill a spreadsheet, you can do this. For more, see our <a href="/ai-accounting/">AI for Accounting guides</a> and our <a href="/deductions/">deductions guides</a>.</p>
+<p>Not sure who needs a 1099, or how to set up IRIS for your business?</p>''',
+ 'Not sure where you stand? <a href="CTAURL">Book a free 20-minute call with Computatio</a> to go through your contractor payments and your filing plan.',
+ [("IRS: Information return e-file system transitioning to a new platform (IR-2026-99)","https://www.irs.gov/newsroom/irs-reminder-information-return-e-file-system-transitioning-to-a-new-platform"),
+  ("IRS: Filing Information Returns Electronically (FIRE)","https://www.irs.gov/e-file-providers/filing-information-returns-electronically-fire"),
+  ("IRS: E-file information returns with IRIS","https://www.irs.gov/filing/e-file-information-returns-with-iris"),
+  ("IRS: Publication 5717, IRIS Taxpayer Portal User Guide","https://www.irs.gov/pub/irs-pdf/p5717.pdf"),
+  ("IRS: Instructions for Forms 1099-MISC and 1099-NEC","https://www.irs.gov/instructions/i1099mec")],
+ "irs-iris-1099-e-filing-fire-retiring"),
 ]

@@ -38,6 +38,13 @@
    "url": "https://bookbytellc.com/ai-accounting/ai-bank-reconciliation/"
   },
   {
+   "date": "2026-10-29",
+   "hub": "ai-accounting",
+   "status": "written",
+   "title": "IRS FIRE is closing: e-file 1099s with IRIS instead",
+   "url": "https://bookbytellc.com/ai-accounting/irs-iris-1099-e-filing-fire-retiring/"
+  },
+  {
    "date": "2026-10-30",
    "hub": "ai-accounting",
    "status": "todo"
@@ -69,11 +76,6 @@
   },
   {
    "date": "2026-11-09",
-   "hub": "ai-accounting",
-   "status": "todo"
-  },
-  {
-   "date": "2026-11-10",
    "hub": "ai-accounting",
    "status": "todo"
   },
