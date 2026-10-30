@@ -617,4 +617,91 @@ One $350 payment had no payee &rarr; find the receipt before you file.</div>
   ("IRS: Publication 5717, IRIS Taxpayer Portal User Guide","https://www.irs.gov/pub/irs-pdf/p5717.pdf"),
   ("IRS: Instructions for Forms 1099-MISC and 1099-NEC","https://www.irs.gov/instructions/i1099mec")],
  "irs-iris-1099-e-filing-fire-retiring"),
+article("/ai-accounting/can-ai-do-your-accounting/","/ai-accounting/","AI for Accounting",
+ "Can AI Do Your Accounting? What It Gets Right and Wrong",
+ "Can AI do your accounting? What it gets right and wrong",
+ "Can AI do your accounting? See which bookkeeping tasks AI handles well, where it gets things wrong, and a simple test to check it on your own books.",
+ "2026-10-30",
+ "You keep hearing that AI can run your books now. You open a chatbot, paste in a month of transactions, and get a tidy answer in seconds. Then a question nags at you: is any of this right?",
+ '''<div class="callout"><b>Quick answer:</b> AI can do <b>part</b> of your accounting well: sorting transactions, reading receipts, matching lines and explaining reports in plain English. It gets things wrong when a task needs your business context, current tax rules, or exact math across long tables. It can&rsquo;t reconcile your accounts for you, keep your records, or take responsibility for your return. <b>Use AI to draft, and use your books, receipts and official rules to check.</b></div>
+
+<h2>You don&rsquo;t know what to hand over to AI</h2>
+<p>Some say AI will replace bookkeeping. Others say never trust it with money. Neither helps on a Tuesday night with 140 unsorted transactions.</p>
+<p><b>The real question isn&rsquo;t &ldquo;can AI do accounting?&rdquo; It&rsquo;s &ldquo;which parts, and how do I check them?&rdquo;</b></p>
+
+<h2>And you&rsquo;ve seen it be wrong with total confidence</h2>
+<p>Maybe it labeled a family dinner as a business meal. Maybe it gave you a total that was off by a few hundred dollars. It never said &ldquo;I&rsquo;m not sure.&rdquo;</p>
+<p>That&rsquo;s the hard part. A wrong answer from AI looks exactly like a right one.</p>
+
+<h2>What a wrong AI answer costs you</h2>
+<ul>
+<li><b>You&rsquo;re responsible, not the tool.</b> The IRS says taxpayers are ultimately responsible for all the information on their return, no matter who prepares it. That includes a chatbot.</li>
+<li><b>A bank line isn&rsquo;t proof.</b> IRS Publication 583 says proof of payment alone doesn&rsquo;t show you&rsquo;re entitled to a deduction. You still need the receipt or invoice, and AI can&rsquo;t create those for you.</li>
+<li><b>Old rules sound current.</b> AI often learned from years of articles. For example, restaurant meals were 100% deductible only for amounts paid in 2021 and 2022. The normal rule, generally a 50% limit, applies again. An AI that remembers the old rule can overstate your deduction.</li>
+<li><b>Wrong categories become wrong tax numbers.</b> To be deductible, the IRS says an expense must be ordinary (common in your field) and necessary (helpful and appropriate for your business). AI can&rsquo;t know which of your purchases meet that test.</li>
+</ul>
+<div class="callout"><b>State note.</b> States don&rsquo;t always follow federal changes. California, for example, did not adopt the temporary federal 100% restaurant meal deduction for 2021 and 2022. When AI states a tax rule, ask which year and which government it applies to, then check that agency&rsquo;s own page.</div>
+
+<h2>Picture AI doing the busywork while you make the calls</h2>
+<p>AI sorts the month and flags the 12 lines it&rsquo;s unsure about. It reads your receipt photos and fills in date, vendor and amount. It tells you in two sentences why profit dropped. You spend 20 minutes on judgment calls, and your software confirms the books match the bank.</p>
+<p><b>You get AI&rsquo;s speed without betting your tax return on its guesses.</b></p>
+
+<h2>What AI gets right in accounting, and what it gets wrong</h2>
+<p>Here&rsquo;s how common bookkeeping tasks sort out. Green means AI does it well. Yellow means AI drafts and you check. Red means AI can&rsquo;t do it for you.</p>
+<table class="tbl">
+<tr><th>Task</th><th>Rating</th><th>Why</th></tr>
+<tr><td>Suggesting categories for transactions</td><td>Green</td><td>Pattern work. Give it your category list and rules.</td></tr>
+<tr><td>Reading receipts and invoices</td><td>Green</td><td>Pulls date, vendor and amount fast. Check blurry photos.</td></tr>
+<tr><td>Matching bank lines to book entries</td><td>Green</td><td>Good at pairing; bad at the final balance.</td></tr>
+<tr><td>Explaining a profit and loss report</td><td>Green</td><td>Turns numbers into plain English.</td></tr>
+<tr><td>Totals and percentages across long tables</td><td>Yellow</td><td>Can slip. Let your software or spreadsheet do the math.</td></tr>
+<tr><td>Business vs. personal calls</td><td>Yellow</td><td>Needs your context. Review anything it marks unsure.</td></tr>
+<tr><td>Tax rules, rates and deadlines</td><td>Yellow</td><td>May be outdated. Check the IRS or state agency page.</td></tr>
+<tr><td>Reconciling and signing off</td><td>Red</td><td>Done only when your software ties out to the statement.</td></tr>
+<tr><td>Keeping your records</td><td>Red</td><td>You keep the receipts and statements, not a chat summary.</td></tr>
+<tr><td>Responsibility for your return</td><td>Red</td><td>Always yours.</td></tr>
+</table>
+
+<h2>The traffic-light test: check AI on your own books</h2>
+<p>Don&rsquo;t take our table on trust. Test AI on a month you know is right. These steps work in ChatGPT, Claude, Gemini or Copilot, and you don&rsquo;t need to be technical.</p>
+<ol>
+<li><b>Pick a month you&rsquo;ve already reconciled.</b> You know the right answers, so you can grade the AI.</li>
+<li><b>Export that month&rsquo;s transactions</b> from your bank or bookkeeping software. Keep date, description and amount only. Remove account numbers and anything personal; see our <a href="/ai-accounting/financial-data-safety-ai/">data safety guide</a>.</li>
+<li><b>Run the test prompt below.</b> It asks for categories, confidence levels and a flag list, but no totals.</li>
+<li><b>Grade the answers</b> against your reconciled books.</li>
+<li><b>Sort your tasks into green, yellow and red</b> based on what you saw, then use the matching guide for each green task.</li>
+</ol>
+
+<div class="callout"><b>Prompt you can copy:</b><br>&ldquo;I&rsquo;m testing how well you handle my bookkeeping. Here are one month of transactions for a [type of business]. Use only these categories: [paste list]. For each line, return date, description, amount, suggested category, confidence (high, medium or low) and a one-line reason. Mark anything that could be personal, or that needs a receipt to decide, as low confidence. Then list every tax rule you relied on, with the tax year it applies to. Don&rsquo;t calculate any totals. Transactions: [paste].&rdquo;</div>
+<p><b>The last instruction matters most.</b> Asking AI to name each rule and its tax year turns a hidden guess into something you can check.</p>
+
+<div class="callout"><b>Example (made-up data).</b> A freelance designer tests one reconciled month of 48 transactions:<br>
+Categories: 44 of 48 matched her books. The 4 misses were all marked low or medium confidence.<br>
+Oct 8 &middot; THAI GARDEN &middot; $86.40 &rarr; Meals &middot; low &middot; &ldquo;Could be personal; needs receipt and business purpose.&rdquo;<br>
+Rule it listed: &ldquo;Business meals 100% deductible.&rdquo; &rarr; <b>Wrong for this year.</b> That was a 2021&ndash;2022 rule; meals are generally limited to 50%.<br>
+Oct 21 &middot; TRANSFER TO SAVINGS &middot; $2,000.00 &rarr; Owner draw &middot; medium &middot; &ldquo;Transfer to own account; not an expense.&rdquo; &rarr; Correct.<br>
+<b>Her verdict:</b> categories are green if she reviews the low-confidence lines. Tax rules are yellow: check every one. Totals stay in her software.</div>
+
+<h2>How do you check AI&rsquo;s accounting work?</h2>
+<ol>
+<li><b>Count the rows.</b> Every transaction you pasted should come back once. A missing row is a missing expense or deposit.</li>
+<li><b>Review every low-confidence line</b> with the receipt or invoice in hand.</li>
+<li><b>Check each tax rule</b> on the IRS or your state tax agency&rsquo;s site, for the right tax year.</li>
+<li><b>Reconcile in your software.</b> The IRS says to reconcile your checking account each month. <b>If the software doesn&rsquo;t tie out, the books aren&rsquo;t done, whatever the chat said.</b></li>
+<li><b>Keep the source records.</b> The IRS generally expects records for 3 years after you file. Some cases need longer: 6 years if you left out more than 25% of your gross income, 7 years for a bad debt or worthless securities loss, and at least 4 years for employment tax records. Electronic records must meet the same rules as paper.</li>
+</ol>
+
+<h2>Is it safe to let AI do your accounting?</h2>
+<p>It can be. Never paste Social Security numbers, full account numbers or passwords, and turn off training on your inputs where you can.</p>
+
+<h2>Where to start with your green tasks</h2>
+<p>Start with sorting: our <a href="/ai-accounting/ai-prompts-categorize-transactions/">AI prompts to categorize transactions</a>. Then match lines with <a href="/ai-accounting/ai-bank-reconciliation/">AI bank reconciliation</a>, and put it all together with <a href="/ai-accounting/how-to-use-ai-for-bookkeeping/">the 3-pass AI bookkeeping method</a>. Receipts next? See <a href="/ai-accounting/ai-receipt-scanning/">AI receipt scanning</a>.</p>
+<p>Or hand the green, yellow and red tasks to someone who checks all three:</p>''',
+ 'Want AI speed with a person checking the work? At <a href="CTAURL">Computatio</a>, AI does the sorting and matching, and an accountant reviews and reconciles every account each month. Monthly Books is $500 a month.',
+ [("IRS: What taxpayers should know when choosing a tax professional","https://www.irs.gov/newsroom/what-taxpayers-should-know-when-choosing-a-tax-professional"),
+  ("IRS: Publication 583, Starting a Business and Keeping Records","https://www.irs.gov/publications/p583"),
+  ("IRS: How long should I keep records?","https://www.irs.gov/businesses/small-businesses-self-employed/how-long-should-i-keep-records"),
+  ("IRS: Notice 2021-25, temporary 100% deduction for business meals","https://www.irs.gov/pub/irs-drop/n-21-25.pdf"),
+  ("California FTB: 2022 Instructions for Schedule CA (540)","https://www.ftb.ca.gov/forms/2022/2022-540-ca-instructions.html")],
+ "can-ai-do-your-accounting"),
 ]
