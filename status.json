@@ -301,6 +301,18 @@
    "linkedin_post": true,
    "drive_copy": false,
    "note": "Swap at Rogenie's request: IRIS guide (was 2026-11-03) published in the 2026-10-29 slot in place of the held Gemini guide, now 2026-11-03 pending live confirmation. Removed 'up to 100 returns at a time' (IRS pages conflict: Pub 5717 says 250 records per CSV). Live page not yet in search results. Drive upload not done this run; docx sent to Rogenie in chat instead."
+  },
+  {
+   "date": "2026-10-30",
+   "at": "2026-10-30T05:59:04-07:00",
+   "result": "published",
+   "path": "/ai-accounting/can-ai-do-your-accounting/",
+   "facts_checked": 11,
+   "removed": 0,
+   "live_verified": false,
+   "linkedin_post": true,
+   "drive_copy": true,
+   "note": "On-schedule publish (written this run from todo). Pages deploy succeeded; live page not yet in search results, so not fetched. Pushed via rogenie/bookbyte remote (bookbyte-site URL denied by git proxy)."
   }
  ]
 }
