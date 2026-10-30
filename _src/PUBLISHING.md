@@ -15,6 +15,8 @@ Never publish an item dated in the future. (A substitute pulled forward under "N
 
 ## Never miss a weekday
 
+- Never add tracking pixels (Meta, Google Ads/Analytics, LinkedIn, TikTok and the like), session recording, chat widgets or any third-party script to the site. Visit counting is GoatCounter only (no cookies). Fonts stay self-hosted in `assets/fonts/`. Adding any of these needs Rogenie's approval, a consent banner and a privacy page update first (California privacy law).
+
 Rogenie's rule (2026-10-29): one guide goes live every weekday, Monday to Friday, with no missed days. If a due guide has to be held back, swap in a different guide the same run.
 
 1. **When a due item can't publish** (an AI update that isn't live yet, or a fact that can't be confirmed): handle the item as the rules say (move it, or mark it `held`), then publish a substitute in the same run, dated today.
