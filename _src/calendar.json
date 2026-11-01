@@ -162,11 +162,55 @@
    "status": "todo"
   },
   {
+   "date": "2026-11-10",
+   "hub": "ai-accounting",
+   "path": "/ai-accounting/quickbooks-chatgpt-claude-invoices/",
+   "title": "QuickBooks in ChatGPT or Claude: check invoices first",
+   "status": "todo",
+   "kind": "ai-update",
+   "brief": {
+    "news": "QuickBooks' fall release (Oct 26) says invoicing through its ChatGPT plugin and Claude connector is now generally available; the Claude help page (updated Oct 28) says invoices Claude creates land in QuickBooks right away, and it can also import transactions and send payment reminders.",
+    "source": "https://quickbooks.intuit.com/learn-support/en-us/help-article/accounting-bookkeeping/use-quickbooks-connector-claude/L3YBlo6Ht_US_en_US",
+    "source_date": "2026-10-28",
+    "who": "US QuickBooks customers only. Fall release lists AI connectors on Simple Start through Advanced (https://quickbooks.intuit.com/r/product-update/whats-new-quickbooks-fall-2026/, 2026-10-26). Claude page asks only for an active Claude account; ChatGPT setup page (https://quickbooks.intuit.com/learn-support/en-us/help-article/mobile-and-apps/connect-quickbooks-online-chatgpt/L0RDe9RPd_US_en_US, updated 2026-08-26) names no ChatGPT plan. Payment links and deposits need QuickBooks Payments.",
+    "task": "Creating and sending invoices, payment reminders, and pulling P&L and cash flow numbers from inside a chatbot",
+    "angle": "How to connect (Claude: Customize > Connectors > QuickBooks; ChatGPT: Plugins > Intuit QuickBooks) and pick the narrowest permissions; why it matters that these write straight into the books (a wrong customer, amount, date or product creates a real invoice and real income); a prompt to draft one invoice from a made-up job, then the checks: open the invoice link in QuickBooks, compare customer, items, tax, terms and due date to the estimate or contract before asking it to send; confirm reminders before they go; tie any P&L figure the chatbot quotes to the report in QuickBooks; how to disconnect. Re-confirm GA status, plan list and click paths on Intuit's pages before publishing; don't claim which ChatGPT plans qualify unless a page says.",
+    "cta": "monthly-books",
+    "links": [
+     "/ai-accounting/ai-invoices-payment-reminders/",
+     "/ai-accounting/quickbooks-ai-banking-suggestions/",
+     "/ai-accounting/financial-data-safety-ai/"
+    ]
+   }
+  },
+  {
    "date": "2026-11-11",
    "hub": "ai-accounting",
    "path": "/ai-accounting/catch-up-bookkeeping-with-ai/",
    "title": "How to catch up on months of bookkeeping with AI",
    "status": "todo"
+  },
+  {
+   "date": "2026-11-12",
+   "hub": "ai-accounting",
+   "path": "/ai-accounting/quickbooks-report-insights-reconciliation-ai/",
+   "title": "QuickBooks AI report insights: use them before month-end",
+   "status": "todo",
+   "kind": "ai-update",
+   "brief": {
+    "news": "QuickBooks' Accounting AI help page (updated Oct 26) describes report insights on the P&L and Balance Sheet that flag possible issues such as duplicates, miscategorized items, AR/AP aging and income that may need deferring, plus AI-powered reconciliation that explains possible issues while you reconcile.",
+    "source": "https://quickbooks.intuit.com/learn-support/en-us/help-article/bank-transactions/accounting-agent-features/L6pl9rv94_US_en_US",
+    "source_date": "2026-10-26",
+    "who": "QuickBooks Online Plus, Advanced and Intuit Enterprise Suite (both report insights and AI-powered reconciliation). Not Simple Start or Essentials. The page does not say US-only.",
+    "task": "Month-end review: reconciling bank and card accounts and catching errors in the P&L and Balance Sheet",
+    "angle": "Click path for report insights (Reports > Standard reports > P&L or Balance Sheet > Insights icon > Analyze Books with Accounting AI) and what each flag type means in plain words; a made-up example with a duplicate charge and a miscategorized owner draw; how to verify each flag yourself (open the transactions, check the receipt or bank line, fix with a dated note) instead of accepting the explanation; why it's a supplement to, not a replacement for, reconciling to the statement (the page itself says not all accounts are covered). Link the older reconciliation and banking-suggestions guides and teach only what's new. Re-confirm plans and click path on Intuit's page before publishing.",
+    "cta": "monthly-books",
+    "links": [
+     "/ai-accounting/ai-bank-reconciliation/",
+     "/ai-accounting/quickbooks-ai-banking-suggestions/",
+     "/bookkeeping/monthly-close-checklist-ai/"
+    ]
+   }
   },
   {
    "date": "2026-11-13",
