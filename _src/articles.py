@@ -163,49 +163,77 @@ If Ana earns much more in 2026, she&rsquo;ll owe the difference when she files, 
 article("/business-structure/s-corp-vs-sole-proprietor-california/","/business-structure/","Business structure",
  "S Corp vs Sole Proprietor in California: When to Switch",
  "S-corp vs. sole proprietor in California: when the switch pays off",
- "How an S-corp can lower self-employment tax, what it costs in California (1.5% tax, $800 minimum, payroll), and a worked example to see where the break-even is.",
+ "S-corp vs. sole proprietor in California: how an S-corp can cut self-employment tax, what it costs (1.5%, $800 minimum, payroll) and your break-even.",
  "2026-11-02",
- "An S-corp can lower your self-employment tax, but in California it also adds costs. Whether it pays off depends on your profit, the salary you pay yourself, and what the extra paperwork costs you.",
- '''<h2>How each one is taxed</h2>
-<p><b>Sole proprietor</b> (including a single-member LLC taxed the default way): all of your net profit is subject to self-employment tax of 15.3% on 92.35% of net earnings (the Social Security part only up to $184,500 in 2026), plus income tax.</p>
-<p><b>S-corp</b>: you&rsquo;re an employee of your own company. You pay yourself a salary, and Social Security and Medicare taxes apply to that salary through payroll. Profit you take out beyond the salary, as distributions, isn&rsquo;t subject to those taxes. That difference is where the savings come from.</p>
+ "Your profit went up, and so did the self-employment tax bill. Someone told you to &ldquo;just become an S-corp.&rdquo; Before you do, here is what changes, what it costs in California, and how to find your own break-even.",
+ '''<div class="callout"><b>Quick answer:</b> as a sole proprietor, you pay <b>15.3% self-employment tax on 92.35% of your net profit</b>. As an S-corp owner, you pay Social Security and Medicare tax only on the <b>reasonable salary</b> you pay yourself, not on the rest of the profit. In California, an S-corp also owes <b>1.5% of its net income, with an $800 yearly minimum</b>, plus payroll and an extra tax return. The switch tends to pay off only when your profit is well above a fair salary for your work.</div>
 
-<h2>What an S-corp costs in California</h2>
+<h2>Self-employment tax takes a big bite</h2>
+<p>As a sole proprietor (or a single-member LLC taxed the default way), you pay self-employment tax on your profit. The rate is 15.3%: 12.4% for Social Security and 2.9% for Medicare. It applies to 92.35% of your net earnings.</p>
+<p>The Social Security part stops at a yearly cap, $184,500 for 2026. Medicare has no cap. <b>Below the cap, almost every extra dollar of profit carries this tax, on top of income tax.</b></p>
+
+<h2>S-corp vs. sole proprietor in California: the advice conflicts</h2>
+<p>One person says an S-corp is a must. Another says it&rsquo;s a trap. Both can be right, because the answer depends on your numbers.</p>
+<p>Here is the difference. In an S-corp, you&rsquo;re an employee of your own company. You pay yourself a salary through payroll, and Social Security and Medicare taxes apply to that salary. Profit you take out beyond the salary, as distributions, isn&rsquo;t subject to those taxes. <b>That gap is the whole reason people switch.</b></p>
+<p>Outside California, the federal side works the same way, but state taxes and fees differ. Check your own state&rsquo;s rules.</p>
+
+<h2>What an S-corp costs you in California</h2>
 <ul>
-<li><b>California S-corp tax:</b> 1.5% of the company&rsquo;s California net income, with an $800 minimum each year.</li>
-<li><b>Payroll:</b> you have to run payroll for yourself, file payroll returns and pay California payroll taxes through the Employment Development Department (EDD). Most owners pay a payroll service.</li>
-<li><b>A separate business tax return:</b> federal Form 1120-S and California Form 100S, usually prepared for a fee.</li>
-<li><b>Bookkeeping:</b> an S-corp needs clean, reconciled books. You can&rsquo;t mix personal and business money.</li>
+<li><b>California S-corp tax:</b> 1.5% of the company&rsquo;s California net income, with an $800 minimum each year, even in a loss year.</li>
+<li><b>Payroll:</b> you run payroll for yourself, withhold and pay payroll taxes, and file payroll reports. California requires you to register with the Employment Development Department (EDD) within 15 days of paying more than $100 in wages in a quarter. Most owners pay a payroll service.</li>
+<li><b>An extra tax return:</b> federal Form 1120-S and California Form 100S each year, usually prepared for a fee.</li>
+<li><b>Clean books:</b> an S-corp needs reconciled books and no mixing of personal and business money. See <a href="/ai-accounting/ai-bank-reconciliation/">how to reconcile your bank account</a>.</li>
 </ul>
-<div class="callout"><b>California note.</b> A newly formed corporation&rsquo;s first-year $800 minimum tax is generally waived, though first-year income is still taxed at 1.5%. California LLCs owe their own $800 annual tax from the first year. If you&rsquo;re forming an LLC and electing S-corp status, check with the FTB which rules apply to you.</div>
+<div class="callout"><b>State note.</b> California waives the $800 minimum for a newly formed S corporation&rsquo;s first tax year, but first-year income is still taxed at 1.5%. California LLCs owe their own $800 annual tax starting in the first year; the temporary first-year exemption ended with tax years starting before 2024. If you plan to form an LLC and elect S-corp status, confirm with the Franchise Tax Board which rules apply to you.</div>
 
-<h2>The reasonable salary rule</h2>
-<p>The IRS requires S-corp owners who work in the business to pay themselves a reasonable salary for the work they do before taking distributions. Setting your salary very low to avoid payroll tax is a common audit issue. A reasonable salary is roughly what you&rsquo;d have to pay someone else to do your job.</p>
+<h2>The salary rule can undo the plan</h2>
+<p>The IRS says an S-corp must pay an owner who works in the business reasonable pay for that work before taking distributions. If the salary is too low, the IRS can treat distributions as wages and charge employment taxes on them.</p>
+<p>The IRS looks at things like your training, your duties, the time you put in, and what similar businesses pay for similar work. <b>A fair test: what would you have to pay someone else to do your job?</b> If most of your profit comes from your own work, most of it may need to be salary, and the gap shrinks.</p>
 
-<h2>Worked example (hypothetical, simplified)</h2>
-<p>Jordan, a consultant, has $100,000 of net profit and pays himself a $55,000 salary as an S-corp.</p>
+<h2>Picture this instead</h2>
+<p>You know your break-even number. You know the salary you&rsquo;d pay yourself and why it&rsquo;s defensible. You can see, line by line, what the S-corp would cost in fees, tax and time. You decide once, with your own figures, and stop second-guessing every time someone mentions it.</p>
+
+<h2>When does an S-corp pay off? The break-even method</h2>
+<p>You can do this with a calculator or any AI chat tool. You don&rsquo;t need to be technical. Use your real numbers from your books, not a guess.</p>
+<ol>
+<li><b>Get your net profit.</b> Use last year&rsquo;s Schedule C profit or a 12-month total from your books. If your books are behind, catch them up first; see <a href="/ai-accounting/how-to-use-ai-for-bookkeeping/">how to use AI for bookkeeping</a>.</li>
+<li><b>Pick a reasonable salary.</b> Write down what it would cost to hire someone to do your work, and why.</li>
+<li><b>Get quotes</b> for a payroll service and for the extra business return.</li>
+<li><b>Run the comparison</b> with the prompt below.</li>
+<li><b>Check the math yourself</b> with the formulas in the example.</li>
+</ol>
+<div class="callout"><b>Prompt to copy:</b> &ldquo;Compare two setups for a California business. Net profit: [amount]. Setup A, sole proprietor: self-employment tax = 15.3% &times; 92.35% &times; net profit. Setup B, S-corp: payroll tax = 15.3% &times; salary of [amount]; California S-corp tax = the greater of $800 or 1.5% of (net profit &minus; salary &minus; 7.65% of salary); plus payroll service [amount] and tax return fee [amount]. Show each line with its formula, then the difference. Don&rsquo;t estimate income tax or add any other taxes. List anything you assumed.&rdquo;</div>
+
+<h3>Example (made-up data)</h3>
+<p>Jordan is a made-up consultant with $100,000 of net profit. He would pay himself a $55,000 salary as an S-corp.</p>
 <table class="tbl"><tr><th></th><th>Sole proprietor</th><th>S-corp</th></tr>
 <tr><td>Self-employment or payroll tax</td><td>About $14,130 (15.3% &times; 92.35% &times; $100,000)</td><td>About $8,415 (15.3% &times; $55,000)</td></tr>
-<tr><td>California S-corp tax</td><td>None</td><td>$800 (1.5% of remaining profit is less than the minimum)</td></tr>
-<tr><td>Payroll service and extra tax return</td><td>None</td><td>Varies: get quotes</td></tr></table>
-<p>After the $800 California tax, Jordan saves about $4,900 in Social Security and Medicare taxes ($14,130 &minus; $8,415 &minus; $800). Payroll fees, the business return, California payroll taxes and his time reduce that. The example also ignores income tax effects, such as the qualified business income deduction, which can change the result. Run your own numbers, or have them run, before you switch.</p>
+<tr><td>California S-corp tax</td><td>None</td><td>$800 (1.5% of about $40,800 is about $612, below the minimum)</td></tr>
+<tr><td>Payroll service and extra return</td><td>None</td><td>Get quotes</td></tr></table>
+<p>Before fees, the S-corp column is about $4,900 lower ($14,130 &minus; $8,415 &minus; $800). <b>Payroll fees, the business return, California payroll taxes and your time all come out of that.</b> The example also skips income tax effects, such as the deduction for half of self-employment tax and the qualified business income deduction, which can change the result.</p>
 
-<h2>A rough rule of thumb</h2>
-<p>If your profit is modest, the fixed costs usually eat the savings. The switch tends to make sense once profit is well above what a reasonable salary for your work would be, and steady enough that you&rsquo;ll keep up with payroll every month.</p>
+<h3>How to check the AI&rsquo;s answer</h3>
+<ul>
+<li>Redo each line with a calculator using the formulas above. AI tools still slip on arithmetic.</li>
+<li>Make sure it used your salary, not a lower number it picked.</li>
+<li>Delete any tax it added that you didn&rsquo;t ask for, and any it left out that applies to you.</li>
+</ul>
+<p><b>Limits:</b> this is a first screen, not a tax plan. It doesn&rsquo;t cover income tax, retirement contributions, health insurance or other states. If profit is modest or swings a lot, the fixed costs usually eat the gap. Keep paying <a href="/estimated-taxes/quarterly-estimated-taxes-california/">quarterly estimated taxes</a> on time either way; more in our <a href="/estimated-taxes/">estimated tax guides</a>.</p>
 
-<h2>How to switch</h2>
+<h2>How to switch to an S-corp in California</h2>
 <ol>
 <li>Form a corporation or LLC with the California Secretary of State, if you haven&rsquo;t already.</li>
-<li>File IRS Form 2553 to elect S-corp status, generally within 2 months and 15 days of the start of the tax year you want it to apply.</li>
-<li>Set up payroll and register with the EDD as an employer.</li>
-<li>Open a business bank account and keep the books separate from day one.</li>
-</ol>''',
+<li>File IRS Form 2553 to elect S-corp status. To count for a tax year, file it no more than 2 months and 15 days after that year begins (or any time in the year before). The IRS has relief for late elections in some cases.</li>
+<li>Register with the EDD as an employer and set up payroll.</li>
+<li>Open a business bank account and keep the books separate from day one. Our <a href="/bookkeeping/do-your-own-bookkeeping/">bookkeeping routine for the self-employed</a> shows how.</li>
+</ol>
+<p>If you&rsquo;d rather not run these numbers alone, the box below is the shortcut.</p>''',
  'Thinking about an S-corp? <a href="CTAURL">Book a free 20-minute call with Computatio</a> to go through your own numbers. Owner-operator returns are quoted on the call.',
  [("FTB: S corporations","https://www.ftb.ca.gov/file/business/types/corporations/s-corporations.html"),
+  ("FTB: Limited liability company","https://www.ftb.ca.gov/file/business/types/limited-liability-company/index.html"),
   ("IRS: S corporation compensation and medical insurance issues","https://www.irs.gov/businesses/small-businesses-self-employed/s-corporation-compensation-and-medical-insurance-issues"),
-  ("IRS: About Form 2553","https://www.irs.gov/forms-pubs/about-form-2553"),
-  ("IRS: Self-employment tax","https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes"),
-  ("LLC University: California AB 85 expired","https://www.llcuniversity.com/california-llc/annual-llc-tax-exemption-ab-85/")],
+  ("IRS: Instructions for Form 2553","https://www.irs.gov/instructions/i2553"),
+  ("IRS: Topic no. 554, Self-employment tax","https://www.irs.gov/taxtopics/tc554")],
  "s-corp-vs-sole-proprietor-california"),
 article("/ai-accounting/how-to-use-ai-for-bookkeeping/","/ai-accounting/","AI for Accounting",
  "How to Use AI for Bookkeeping and Keep Your Books Accurate",
