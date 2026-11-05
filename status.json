@@ -346,6 +346,42 @@
    "linkedin_post": true,
    "drive_copy": true,
    "note": "On-schedule publish of a written item, restructured to the direct-response format. Pages deploy succeeded; live page not yet in search results, so not fetched. Pushed via rogenie/bookbyte remote (bookbyte-site URL denied by git proxy). Replaced non-official LLC source with FTB LLC page."
+  },
+  {
+   "date": "2026-11-04",
+   "at": "2026-11-04T18:45:00-08:00",
+   "result": "held",
+   "path": "/ai-accounting/gemini-small-business-finance-tools/",
+   "facts_checked": 0,
+   "removed": 0,
+   "live_verified": false,
+   "linkedin_post": false,
+   "drive_copy": false,
+   "note": "Catch-up for the missed 2026-11-03 slot (scheduled runs on Nov 3-4 stalled before pushing). Google's Oct 20 post still says rolling out 'in the coming days'; moved to 2026-11-17."
+  },
+  {
+   "date": "2026-11-04",
+   "at": "2026-11-04T18:45:00-08:00",
+   "result": "published",
+   "path": "/ai-accounting/separate-business-personal-expenses-ai/",
+   "facts_checked": 9,
+   "removed": 2,
+   "live_verified": true,
+   "linkedin_post": true,
+   "drive_copy": false,
+   "note": "Substitute for the 2026-11-03 Gemini guide; published from an interactive session after scheduled runs stalled before pushing. Reworded the vehicle example and the separate-account line to match IRS wording. Drive copy not uploaded."
+  },
+  {
+   "date": "2026-11-04",
+   "at": "2026-11-04T18:45:00-08:00",
+   "result": "published",
+   "path": "/ai-accounting/ai-receipt-scanning/",
+   "facts_checked": 12,
+   "removed": 0,
+   "live_verified": true,
+   "linkedin_post": true,
+   "drive_copy": false,
+   "note": "On the scheduled date but late: the 5:48 AM run stalled before pushing, so published from an interactive session. Drive copy not uploaded."
   }
  ]
 }
