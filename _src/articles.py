@@ -732,4 +732,144 @@ Oct 21 &middot; TRANSFER TO SAVINGS &middot; $2,000.00 &rarr; Owner draw &middot
   ("IRS: Notice 2021-25, temporary 100% deduction for business meals","https://www.irs.gov/pub/irs-drop/n-21-25.pdf"),
   ("California FTB: 2022 Instructions for Schedule CA (540)","https://www.ftb.ca.gov/forms/2022/2022-540-ca-instructions.html")],
  "can-ai-do-your-accounting"),
+article("/ai-accounting/separate-business-personal-expenses-ai/","/ai-accounting/","AI for Accounting",
+ "Separate Business and Personal Expenses With AI",
+ "Separate business and personal expenses with AI",
+ "How to separate business and personal expenses with AI: a prompt that flags mixed charges, a made-up example, and the IRS rules to check it against.",
+ "2026-11-04",
+ "Your business card paid for groceries. Your personal card paid for a software plan. Now tax time is coming, and you have to work out which charges belong to the business.",
+ '''<div class="callout"><b>Quick answer:</b> To separate business and personal expenses with AI, export your transactions, give the AI your category list and a short set of your own rules, and ask it to mark every line <b>business</b>, <b>personal</b> or <b>split</b>, with a reason and no totals. Then you decide every split line, keep the receipt, and post the results in your books. The IRS says personal, living and family costs generally aren&rsquo;t deductible, and costs used both ways, like a car, must be divided.</div>
+
+<h2>Your business and personal spending are mixed together</h2>
+<p>It started small. One coffee on the wrong card. One client lunch on your personal card. A few months later, nobody can tell which charge was which, including you.</p>
+<p><b>Mixed accounts turn a 10-minute monthly job into a weekend of guessing.</b></p>
+
+<h2>And some expenses are both at once</h2>
+<p>Your phone, your car, your internet and the room you work in all serve your life and your business. You know part of each is deductible. You don&rsquo;t know how much, or how to show it.</p>
+
+<h2>What mixed expenses cost you</h2>
+<ul>
+<li><b>Personal costs don&rsquo;t count.</b> The IRS says personal, household and family living costs generally can&rsquo;t be deducted, because they aren&rsquo;t ordinary and necessary costs of your business. Leave one in, and your profit is too low on your return.</li>
+<li><b>Mixed-use costs must be split.</b> The IRS says you must divide them between business and personal use. For a vehicle, you deduct only the business part. Deduct the whole thing and you overstate the expense.</li>
+<li><b>Some rules are specific.</b> For 2025, the Schedule C instructions say you can&rsquo;t deduct the base rate of the first phone line into your home. A home office has to be used regularly and exclusively for business. Business meals are generally limited to 50%.</li>
+<li><b>A bank line isn&rsquo;t proof.</b> IRS Publication 583 says proof of payment alone doesn&rsquo;t show you&rsquo;re entitled to a deduction. You need the receipt or invoice too.</li>
+</ul>
+
+<h2>Picture a month where every charge has a home</h2>
+<p>You open last month&rsquo;s transactions. AI has already marked 90% of them business or personal, with a reason for each. Six lines say &ldquo;split.&rdquo; You decide those six with your receipts and mileage log, and you&rsquo;re done.</p>
+<p><b>You make the judgment calls. AI does the sorting.</b></p>
+
+<h2>The business-or-personal method, step by step</h2>
+<p>These steps work in ChatGPT, Claude, Gemini or Copilot. You don&rsquo;t need to be technical. You need a transaction export and 30 minutes.</p>
+<ol>
+<li><b>Export one month of transactions</b> from each account the business touched, business and personal. Keep only date, description and amount. Remove account numbers, names and anything else personal; see our <a href="/ai-accounting/financial-data-safety-ai/">data safety guide</a>.</li>
+<li><b>Write your house rules in three to five lines.</b> For example: &ldquo;Groceries are personal. Adobe and Zoom are business. Phone and car are split.&rdquo; AI can&rsquo;t know your business. Your rules tell it.</li>
+<li><b>Run the prompt below.</b> It sorts, explains and flags. It doesn&rsquo;t total anything.</li>
+<li><b>Decide every &ldquo;split&rdquo; and &ldquo;unsure&rdquo; line yourself.</b> Use a reasonable basis you can show, like a mileage log for your car or a log of business calls for your phone.</li>
+<li><b>Post the results in your books.</b> Business costs paid from a personal account are usually recorded as an owner contribution. Personal costs paid from the business account are owner draws, not expenses.</li>
+</ol>
+
+<div class="callout"><b>Prompt you can copy:</b><br>&ldquo;Help me separate business and personal spending for my [type of business]. My categories are: [paste list]. My rules: [paste your 3&ndash;5 rules]. For each transaction, return date, description, amount, a label (business, personal, split or unsure), a suggested category if business, and a one-line reason. Use &lsquo;split&rsquo; for anything that may be used both ways, like a phone, car, internet or home. Use &lsquo;unsure&rsquo; when you&rsquo;d need a receipt to decide. Don&rsquo;t guess a business percentage and don&rsquo;t calculate totals. Transactions: [paste].&rdquo;</div>
+<p><b>Two lines in that prompt do the heavy lifting:</b> no guessed percentages, and no totals. The percentage needs your records. The totals come from your software.</p>
+
+<div class="callout"><b>Example (made-up data).</b> A freelance photographer runs one month of 62 transactions from her business and personal cards:<br>
+Oct 3 &middot; TRADER JOE&rsquo;S &middot; $74.18 &rarr; personal &middot; &ldquo;Groceries, per your rules.&rdquo;<br>
+Oct 6 &middot; ADOBE CREATIVE CLOUD &middot; $59.99 &rarr; business &middot; Software &middot; &ldquo;Listed as business in your rules.&rdquo; Paid from her personal card, so she records it as an owner contribution.<br>
+Oct 9 &middot; VERIZON WIRELESS &middot; $95.00 &rarr; split &middot; &ldquo;Phone used both ways; needs your business share.&rdquo;<br>
+Oct 14 &middot; SHELL OIL &middot; $48.20 &rarr; split &middot; &ldquo;Car fuel; depends on your mileage log.&rdquo;<br>
+Oct 22 &middot; BLUE PLATE CAFE &middot; $63.50 &rarr; unsure &middot; &ldquo;Could be a client meal or personal; check the receipt.&rdquo;<br>
+<b>Result:</b> 55 lines sorted, 5 split, 2 unsure. She checks the 7 open lines against her receipts and mileage log, then posts the month.</div>
+
+<h2>How do you check AI&rsquo;s business vs. personal split?</h2>
+<ol>
+<li><b>Count the rows.</b> Every transaction you pasted should come back once.</li>
+<li><b>Spot-check five &ldquo;business&rdquo; lines</b> against receipts. Each record should show the payee, amount, date, proof of payment and what it was for.</li>
+<li><b>Never accept a percentage AI made up.</b> Your car share comes from your mileage log. Your phone and home office shares come from your own records.</li>
+<li><b>Reconcile each account</b> in your software. See <a href="/ai-accounting/ai-bank-reconciliation/">AI bank reconciliation</a>. If it doesn&rsquo;t tie out, the month isn&rsquo;t done.</li>
+</ol>
+
+<h2>Stop the mixing at the source</h2>
+<p>AI helps you clean up. It doesn&rsquo;t stop the mess from coming back. Publication 583 says to keep your business account separate from your personal checking account. <b>One business account and one business card cut the split work to a handful of lines a month.</b></p>
+<p>Already mixed for months? Start with our guide to <a href="/ai-accounting/catch-up-bookkeeping-with-ai/">catching up on bookkeeping with AI</a>, then keep the routine going with <a href="/ai-accounting/ai-prompts-categorize-transactions/">AI prompts to categorize transactions</a>.</p>
+
+<h2>Is this safe, and can AI get it wrong?</h2>
+<p>AI can get it wrong, which is why it labels and you decide. Never paste Social Security numbers, full account numbers or passwords. And remember that you&rsquo;re responsible for what goes on your return, whoever or whatever sorted it.</p>
+<p>Want the sorting done and checked for you every month?</p>''',
+ 'Let us keep business and personal apart for you. At <a href="CTAURL">Computatio</a>, AI does the sorting and an accountant reviews every account each month. Monthly Books is $500 a month.',
+ [("IRS: Small business FAQs on income and expenses","https://www.irs.gov/faqs/small-business-self-employed-other-business/income-expenses/income-expenses-1"),
+  ("IRS: Instructions for Schedule C (Form 1040) (2025)","https://www.irs.gov/instructions/i1040sc"),
+  ("IRS: Publication 583, Starting a Business and Keeping Records","https://www.irs.gov/publications/p583"),
+  ("IRS: What kind of records should I keep","https://www.irs.gov/businesses/small-businesses-self-employed/what-kind-of-records-should-i-keep")],
+ "separate-business-personal-expenses-ai"),
+article("/ai-accounting/ai-receipt-scanning/","/ai-accounting/","AI for Accounting",
+ "AI Receipt Scanning: Turn Phone Photos Into Records",
+ "AI receipt scanning: turn phone photos into bookkeeping records",
+ "AI receipt scanning for small business: a prompt that turns receipt photos into bookkeeping rows, a made-up example, and what the IRS expects you to keep.",
+ "2026-11-04",
+ "There&rsquo;s a shoebox, a glovebox and a camera roll full of receipts. You meant to deal with them every week. Now it&rsquo;s been months.",
+ '''<div class="callout"><b>Quick answer:</b> AI receipt scanning means taking a clear photo of each receipt and asking an AI tool to pull out the date, vendor, amount and what you bought, into rows you can match to your bank transactions. It saves typing. It doesn&rsquo;t replace the receipt: keep the image itself, legible and easy to find, because the IRS says electronic records must meet the same rules as paper ones.</div>
+
+<h2>Your receipts are everywhere</h2>
+<p>Some are paper. Some are emails. Some are photos you took and never looked at again. When you need one, you can&rsquo;t find it.</p>
+<p><b>A receipt you can&rsquo;t find is a receipt you don&rsquo;t have.</b></p>
+
+<h2>And the paper ones are fading</h2>
+<p>Thermal paper receipts fade. Ink smudges in a wallet. By the time you sort them, some are blank.</p>
+
+<h2>What missing receipts cost you</h2>
+<ul>
+<li><b>Your bank statement isn&rsquo;t enough.</b> IRS Publication 583 says proof of payment alone doesn&rsquo;t establish your right to a deduction. You also need documents like the receipt or invoice.</li>
+<li><b>Records need specific details.</b> The IRS says your expense documents should show the payee, the amount, proof of payment, the date and a description that shows the business purpose.</li>
+<li><b>Travel, gifts and car costs have stricter rules.</b> You must show the amount, time, place and business purpose. The IRS generally requires receipts for all lodging, whatever the amount, and for any other expense of $75 or more.</li>
+<li><b>Records must last.</b> Publication 583 says to keep records generally for 3 years after you file, 6 years if you left out more than 25% of your gross income, and 7 years for a bad debt or worthless securities loss. Keep employment tax records at least 4 years.</li>
+</ul>
+<div class="callout"><b>State note.</b> States set their own time limits. California&rsquo;s Franchise Tax Board says its time to examine a return is usually 4 years from the return&rsquo;s due date or the date you filed it, and longer in some cases. Keep receipts at least as long as your state needs them too.</div>
+
+<h2>Picture a receipt pile that never builds up</h2>
+<p>You snap a photo at the register. Once a week, AI reads the new photos and gives you a tidy table. You match each row to a bank line in a few minutes. At tax time, every receipt is in one folder, named and searchable.</p>
+<p><b>No shoebox. No fading paper. No hunting.</b></p>
+
+<h2>The snap-read-match method for AI receipt scanning</h2>
+<p>This works in any AI chat tool that reads images, like ChatGPT, Claude, Gemini or Copilot. Your bookkeeping software may also have its own receipt capture; the checks below apply either way.</p>
+<ol>
+<li><b>Snap a clear photo the same day.</b> Flat surface, good light, whole receipt in frame. On the back of a meal or travel receipt, write who you met and why, then photograph that too.</li>
+<li><b>Save it in one place.</b> Use one folder per year, with a name like <code>2026-11-04_officedepot_42.17.jpg</code>. This is your record, so back it up.</li>
+<li><b>Once a week, upload the week&rsquo;s photos</b> and run the prompt below. Crop out card numbers and loyalty IDs first; see our <a href="/ai-accounting/financial-data-safety-ai/">data safety guide</a>.</li>
+<li><b>Match each row to your bank or card transaction</b>, then post the category in your books. Our <a href="/ai-accounting/ai-prompts-categorize-transactions/">categorization prompts</a> help with that step.</li>
+<li><b>Flag anything that didn&rsquo;t match.</b> A receipt with no bank line, or a bank line with no receipt, is your to-do list.</li>
+</ol>
+
+<div class="callout"><b>Prompt you can copy:</b><br>&ldquo;Read these receipt images. For each one, return a table row with: file name, date, vendor, total, tax shown, payment method (last 4 digits only, if shown), and a short list of items. If any field is blurry, cut off or missing, write &lsquo;UNCLEAR&rsquo; instead of guessing. Don&rsquo;t pick tax categories and don&rsquo;t add up totals. After the table, list every receipt with an UNCLEAR field.&rdquo;</div>
+<p><b>&ldquo;Write UNCLEAR instead of guessing&rdquo; is the most important line.</b> AI will otherwise fill a smudged number with something that looks right.</p>
+
+<div class="callout"><b>Example (made-up data).</b> A home-repair contractor uploads 5 photos from one week:<br>
+2026-11-02_homedepot.jpg &middot; Nov 2 &middot; Home Depot &middot; $186.43 &middot; tax $15.12 &middot; Visa 4411 &middot; lumber, screws<br>
+2026-11-03_shell.jpg &middot; Nov 3 &middot; Shell &middot; $61.05 &middot; tax UNCLEAR &middot; Visa 4411 &middot; fuel<br>
+2026-11-04_cafe.jpg &middot; Nov 4 &middot; Corner Cafe &middot; $38.90 &middot; tax $3.10 &middot; cash &middot; 2 lunches<br>
+2026-11-05_ferguson.jpg &middot; Nov 5 &middot; Ferguson &middot; UNCLEAR &middot; &mdash; &middot; Visa 4411 &middot; pipe fittings<br>
+2026-11-06_motel.jpg &middot; Nov 6 &middot; Valley Inn &middot; $129.00 &middot; tax $13.55 &middot; Visa 4411 &middot; 1 night<br>
+<b>What he does next:</b> He reads the Ferguson total from the paper receipt ($94.30) and fixes the row. He matches 4 rows to his card statement. The cash lunch has a note on the back naming the client and the job, so he keeps the photo of both sides. The motel receipt stays on file: lodging always needs one.</div>
+
+<h2>How do you check AI receipt scanning results?</h2>
+<ol>
+<li><b>Count photos in, rows out.</b> Five photos, five rows.</li>
+<li><b>Check every UNCLEAR field</b> against the original receipt, then fix it by hand.</li>
+<li><b>Tie each total to a bank or card line.</b> If the amounts differ, the receipt or the posting is wrong. Find out which.</li>
+<li><b>Open the image, not just the table.</b> The table is a summary. The image is the record.</li>
+<li><b><a href="/ai-accounting/ai-bank-reconciliation/">Reconcile the account</a></b> at month-end. If your software doesn&rsquo;t tie out, the month isn&rsquo;t done.</li>
+</ol>
+
+<h2>Can you throw away the paper receipt?</h2>
+<p>Sometimes, but be careful. The IRS rule for electronic storage, Revenue Procedure 97-22, allows scanned images if they&rsquo;re highly legible, indexed so you can find them, and kept with controls that protect their accuracy. It lets you destroy the paper only after you&rsquo;ve tested that your electronic copies meet those rules and you have a process to keep meeting them. <b>If a photo isn&rsquo;t sharp enough to read every number, keep the paper.</b></p>
+
+<h2>What AI receipt scanning can&rsquo;t do</h2>
+<p>It can&rsquo;t tell whether an expense was for business; you can. It can&rsquo;t apply tax limits like the general 50% limit on business meals; your books and your return do that. And it can&rsquo;t take responsibility for your return. That stays with you.</p>
+<p>For the full routine, see <a href="/ai-accounting/how-to-use-ai-for-bookkeeping/">how to use AI for bookkeeping</a>. Or hand the whole pile to us:</p>''',
+ 'Send us the photos and we&rsquo;ll do the rest. At <a href="CTAURL">Computatio</a>, AI reads and matches your receipts, and an accountant reviews every account each month. Monthly Books is $500 a month.',
+ [("IRS: Publication 583, Starting a Business and Keeping Records","https://www.irs.gov/publications/p583"),
+  ("IRS: What kind of records should I keep","https://www.irs.gov/businesses/small-businesses-self-employed/what-kind-of-records-should-i-keep"),
+  ("IRS: Instructions for Form 2106 (2025), Recordkeeping","https://www.irs.gov/instructions/i2106"),
+  ("IRS: Revenue Procedure 97-22, electronic storage of records","https://www.irs.gov/pub/irs-tege/rp-97-22.pdf"),
+  ("California FTB: Keeping your tax records","https://www.ftb.ca.gov/file/after-you-file/keeping-your-tax-records.html")],
+ "ai-receipt-scanning"),
 ]

@@ -1,5 +1,5 @@
 {
- "built": "2026-11-02",
+ "built": "2026-11-04",
  "cadence": "Weekdays: evergreen Mon/Wed/Fri, AI updates Tue/Thu (see _src/TOPICS.md)",
  "items": [
   {
@@ -59,14 +59,18 @@
    "url": "https://bookbytellc.com/business-structure/s-corp-vs-sole-proprietor-california/"
   },
   {
-   "date": "2026-11-03",
+   "date": "2026-11-04",
    "hub": "ai-accounting",
-   "status": "todo"
+   "status": "written",
+   "title": "AI receipt scanning: turn phone photos into bookkeeping records",
+   "url": "https://bookbytellc.com/ai-accounting/ai-receipt-scanning/"
   },
   {
    "date": "2026-11-04",
    "hub": "ai-accounting",
-   "status": "todo"
+   "status": "written",
+   "title": "Separate business and personal expenses with AI",
+   "url": "https://bookbytellc.com/ai-accounting/separate-business-personal-expenses-ai/"
   },
   {
    "date": "2026-11-05",
@@ -107,6 +111,11 @@
    "date": "2026-11-16",
    "hub": "bookkeeping",
    "status": "written"
+  },
+  {
+   "date": "2026-11-17",
+   "hub": "ai-accounting",
+   "status": "todo"
   },
   {
    "date": "2026-11-18",
