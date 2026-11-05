@@ -872,4 +872,73 @@ article("/ai-accounting/ai-receipt-scanning/","/ai-accounting/","AI for Accounti
   ("IRS: Revenue Procedure 97-22, electronic storage of records","https://www.irs.gov/pub/irs-tege/rp-97-22.pdf"),
   ("California FTB: Keeping your tax records","https://www.ftb.ca.gov/file/after-you-file/keeping-your-tax-records.html")],
  "ai-receipt-scanning"),
+article("/ai-accounting/google-sheets-canvas-cash-flow-planner/","/ai-accounting/","AI for Accounting",
+ "Google Sheets canvas: build a cash flow what-if tool",
+ "Google Sheets canvas: build a cash flow what-if tool",
+ "Use Google Sheets canvas to turn a 13-week cash flow sheet into a what-if tool with sliders, then check it against your reconciled bank balance.",
+ "2026-11-05",
+ "A client says they&rsquo;ll pay &ldquo;next month.&rdquo; Sales feel slower. A tax payment is due in January. You want to know one thing: will there be enough in the bank?",
+ '''<div class="callout"><b>Quick answer:</b> as of November 5, 2026, Gemini in Google Sheets can turn a sheet into an interactive mini-app called a <b>canvas</b>. Open your cash flow sheet and choose <b>Insert &gt; Create a canvas</b>, then ask for sliders on sales, costs and payment timing. Google lists it for Google AI Pro and Ultra, Workspace Business and Enterprise Standard and Plus, and Google AI Pro for Education, in English, on the web. <b>Start from your reconciled bank balance, and check that the canvas&rsquo;s base case matches the sheet.</b></div>
+
+<h2>You&rsquo;re guessing at next month&rsquo;s bank balance</h2>
+<p>Your profit and loss shows what happened. It doesn&rsquo;t show when cash will land or leave. Income can look fine while the account runs thin, because a client pays late or a big bill hits in the same week.</p>
+<p><b>Profit is not cash.</b> A cash flow forecast fills that gap, week by week.</p>
+
+<h2>And every &ldquo;what if&rdquo; means rebuilding the spreadsheet</h2>
+<p>What if sales drop 20%? What if the big client pays six weeks late? In a normal sheet, you change cells, copy tabs, and lose track of which version is which. Most owners stop after one try.</p>
+
+<h2>What it costs to fly blind</h2>
+<ul>
+<li><b>Tax dates don&rsquo;t move.</b> The fourth IRS estimated tax payment for 2026 is due January 15, 2027. California&rsquo;s fourth payment, 30% of the year&rsquo;s required amount, is due the same day.</li>
+<li><b>Short weeks surprise you.</b> You find out the account is low when a payment bounces, not when you could still plan around it.</li>
+<li><b>Bad starting numbers spread.</b> A forecast built on an unreconciled balance is wrong in every week after the first.</li>
+</ul>
+
+<h2>Picture this instead</h2>
+<p>One tab holds 13 weeks of cash in and out, starting from the balance you reconciled. Next to it, a canvas with three sliders. You drag &ldquo;client pays late&rdquo; to six weeks and see the lowest week turn yellow. <b>You decide what to delay or chase while there&rsquo;s still time.</b></p>
+
+<h2>What is Google Sheets canvas?</h2>
+<p>Google announced Sheets canvas on August 13, 2026. Gemini builds a custom layout, such as a dashboard or a scenario model, on top of one tab of your data. Google calls it read-write: <b>if you have edit access, changes you make in the canvas change the sheet</b>, and changes in the sheet show in the canvas. Google&rsquo;s help page says access to a canvas is the same as access to the sheet. A Google Workspace post from September 10 lists a financial scenario model, where you adjust key assumptions and see the effect, as one of its examples.</p>
+<p><b>Who gets it:</b> Google AI Pro and Ultra personal plans; Workspace Business and Enterprise Standard and Plus; and Google AI Pro for Education. Google&rsquo;s help page also says personal accounts may be able to use it up to 3 times a month. It&rsquo;s English only and not in the Sheets mobile app.</p>
+
+<h2>The 13-week method for a Google Sheets canvas cash flow tool</h2>
+<ol>
+<li><b>Reconcile first.</b> <a href="/ai-accounting/ai-bank-reconciliation/">Reconcile your business bank account</a> through the last statement. That ending balance is your opening cash. Not the bank app&rsquo;s number today, and not a guess.</li>
+<li><b>Build one tab.</b> Canvas reads one tab, so put everything there: a row of assumptions at the top (weekly sales, weekly costs, sales change %, weeks the big client is late), then 13 rows, one per week, with cash in, cash out and ending balance as formulas. Add fixed items on their dates: rent, loan payments, and the January 15 estimated tax payments. If your forecast is in Excel, use File &gt; Save as Google Sheets first.</li>
+<li><b>Work on a copy.</b> Because the canvas writes to the sheet, make a copy of the file to experiment in. Keep the original as your base case.</li>
+<li><b>Open canvas.</b> Choose <b>Insert &gt; Create a canvas</b>. Google&rsquo;s help page also lists Tools &gt; Create canvas and the Canvas menu in the bottom bar.</li>
+<li><b>Paste the prompt below,</b> then refine it with follow-up prompts.</li>
+</ol>
+
+<div class="callout"><b>Prompt to copy:</b><br>
+Build a cash flow what-if tool from this tab. Show a slider for &ldquo;Sales change %&rdquo; (&minus;50 to +20), a slider for &ldquo;Weekly costs&rdquo;, and a slider for &ldquo;Weeks the big client pays late&rdquo; (0 to 8). The sliders should change only the assumption cells at the top. Do not change any weekly rows or formulas. Show a line chart of ending cash for all 13 weeks, the lowest week and its balance, and color any week below $5,000 yellow and below $0 red. Show the base-case numbers next to the scenario so I can compare.</div>
+
+<p>Don&rsquo;t put account numbers, client names or anything sensitive in the sheet or the prompt. Use labels like &ldquo;Client A.&rdquo; Our <a href="/ai-accounting/financial-data-safety-ai/">guide to keeping financial data safe with AI</a> covers the rest.</p>
+
+<div class="callout"><b>Example (made-up data).</b> A one-person agency starts the week of November 9 with $9,200, the reconciled October 31 balance. Base case: $3,800 a week in, $3,300 a week out, rent of $1,800 in weeks 4, 8 and 13, a $6,000 client payment in week 3, and $4,700 of estimated tax in week 10 (the week of January 15).<br>
+<b>Base case:</b> lowest week is week 1 at $9,700; week 13 ends at $11,600.<br>
+<b>Client pays 6 weeks late:</b> lowest week drops to $9,400 in week 4; week 13 still ends at $11,600.<br>
+<b>Late client and sales down 20%:</b> week 8 falls to $3,520 and week 13 ends at $1,720.<br>
+<b>What the owner does next:</b> she sends the client a reminder now, moves a planned equipment purchase out of December, and keeps the January tax money in a separate savings account.</div>
+
+<h2>How to check the canvas before you trust it</h2>
+<ol>
+<li><b>Set every slider to zero change.</b> The canvas&rsquo;s numbers must equal the sheet&rsquo;s base case, week by week. Click <b>View data</b> to see the rows behind it.</li>
+<li><b>Tie the opening balance</b> to your last bank reconciliation. If they differ, fix the sheet, not the canvas.</li>
+<li><b>Recalculate one week by hand.</b> Opening cash plus cash in minus cash out should equal the ending balance shown.</li>
+<li><b>Check the sheet after you play.</b> Open the tab and confirm only the assumption cells changed. If a formula was overwritten, undo it or go back to your original.</li>
+<li><b>Each month, compare the forecast to actuals</b> from your <a href="/ai-accounting/read-profit-and-loss-with-ai/">profit and loss</a> and bank statement. Adjust the assumptions that were wrong.</li>
+</ol>
+
+<h2>What Google Sheets canvas can&rsquo;t do for your cash flow</h2>
+<p>Google&rsquo;s help page says not to rely on Gemini features for financial or other professional advice, so review what it builds. A forecast is a planning tool, not a promise: it&rsquo;s only as good as the assumptions you type in. It doesn&rsquo;t replace reconciling, keeping receipts, or making your tax payments on time. Canvas also won&rsquo;t open if downloading, copying or printing is turned off for the file, and the source data must stay under 1 million cells.</p>
+<p>You don&rsquo;t need formula skills beyond simple addition to start. If the sheet itself is the hard part, see <a href="/ai-accounting/ai-excel-google-sheets-bookkeeping/">AI for Excel and Google Sheets bookkeeping</a> and our <a href="/estimated-taxes/quarterly-estimated-taxes-california/">estimated tax guide</a> for the payment amounts.</p>
+<p>A forecast is only as good as the books under it. Want those handled?</p>''',
+ 'Want books you can forecast from? At <a href="CTAURL">Computatio</a>, AI does the first pass and an accountant reviews and reconciles every account each month, so your opening balance is one you can trust. Monthly Books is $500 a month.',
+ [("Google: Build mini-apps with Gemini in Google Sheets (Aug 13, 2026)","https://blog.google/products-and-platforms/products/workspace/sheets-canvas-for-google-sheets-spreadsheets/"),
+  ("Google Docs Editors Help: Create a Sheets canvas","https://support.google.com/docs/answer/17035851?hl=en"),
+  ("Google Workspace: 6 mini-apps you can create with Sheets canvas (Sep 10, 2026)","https://workspace.google.com/blog/product-announcements/turn-your-data-into-action-6-mini-apps-you-can-create-with-sheets-canvas"),
+  ("IRS: 2026 Form 1040-ES, Estimated Tax for Individuals","https://www.irs.gov/pub/irs-pdf/f1040es.pdf"),
+  ("California FTB: 2026 Instructions for Form 540-ES","https://www.ftb.ca.gov/forms/2026/2026-540-es-instructions.html")],
+ "google-sheets-canvas-cash-flow-planner"),
 ]

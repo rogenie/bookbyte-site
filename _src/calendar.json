@@ -118,7 +118,7 @@
    "hub": "ai-accounting",
    "path": "/ai-accounting/google-sheets-canvas-cash-flow-planner/",
    "title": "Google Sheets canvas: build a cash flow what-if tool",
-   "status": "todo",
+   "status": "published",
    "kind": "ai-update",
    "brief": {
     "news": "Gemini in Google Sheets can turn a sheet into an interactive mini-app (Insert > Create a canvas), including financial forecast and scenario models that stay synced with the sheet.",
@@ -133,7 +133,9 @@
      "/ai-accounting/read-profit-and-loss-with-ai/",
      "/ai-accounting/ai-bank-reconciliation/"
     ]
-   }
+   },
+   "url": "https://bookbytellc.com/ai-accounting/google-sheets-canvas-cash-flow-planner/",
+   "note": "Drafted by the 2026-11-05 run, which stalled before pushing; finished and re-checked on Google, IRS and FTB pages 2026-11-05. Click path Insert > Create a canvas (also Tools > Create canvas, bottom-bar Canvas menu); plans per Google blog Aug 13; English, web only."
   },
   {
    "date": "2026-11-06",

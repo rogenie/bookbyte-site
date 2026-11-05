@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Google Sheets canvas: build a cash flow what-if tool</title>
+<meta name="description" content="Use Google Sheets canvas to turn a 13-week cash flow sheet into a what-if tool with sliders, then check it against your reconciled bank balance.">
+<link rel="canonical" href="https://bookbytellc.com/ai-accounting/google-sheets-canvas-cash-flow-planner/">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="BookByte">
+<meta property="og:title" content="Google Sheets canvas: build a cash flow what-if tool">
+<meta property="og:description" content="Use Google Sheets canvas to turn a 13-week cash flow sheet into a what-if tool with sliders, then check it against your reconciled bank balance.">
+<meta property="og:url" content="https://bookbytellc.com/ai-accounting/google-sheets-canvas-cash-flow-planner/">
+<meta property="og:image" content="https://bookbytellc.com/assets/og/google-sheets-canvas-cash-flow-planner.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Google Sheets canvas: build a cash flow what-if tool">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Google Sheets canvas: build a cash flow what-if tool">
+<meta name="twitter:description" content="Use Google Sheets canvas to turn a 13-week cash flow sheet into a what-if tool with sliders, then check it against your reconciled bank balance.">
+<meta name="twitter:image" content="https://bookbytellc.com/assets/og/google-sheets-canvas-cash-flow-planner.png">
+<meta name="theme-color" content="#111111">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/fonts.css">
+<link rel="stylesheet" href="/assets/style.css">
+<link rel="alternate" type="application/rss+xml" title="BookByte" href="/feed.xml">
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://bookbytellc.com/"}, {"@type": "ListItem", "position": 2, "name": "AI for Accounting", "item": "https://bookbytellc.com/ai-accounting/"}, {"@type": "ListItem", "position": 3, "name": "Google Sheets canvas: build a cash flow what-if tool", "item": "https://bookbytellc.com/ai-accounting/google-sheets-canvas-cash-flow-planner/"}]}, {"@context": "https://schema.org", "@type": "Article", "headline": "Google Sheets canvas: build a cash flow what-if tool", "description": "Use Google Sheets canvas to turn a 13-week cash flow sheet into a what-if tool with sliders, then check it against your reconciled bank balance.", "author": {"@type": "Organization", "name": "Computatio", "url": "https://computatio.io/"}, "publisher": {"@type": "Organization", "name": "BookByte"}, "datePublished": "2026-11-05", "dateModified": "2026-11-05", "mainEntityOfPage": "https://bookbytellc.com/ai-accounting/google-sheets-canvas-cash-flow-planner/"}]</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site"><div class="wrap bar">
+<a class="brand" href="/"><img src="/assets/favicon.svg" alt="" width="32" height="32"><span>BookByte</span></a>
+<nav aria-label="Main"><a href="/bookkeeping/">Bookkeeping</a><a href="/estimated-taxes/">Estimated taxes</a><a href="/deductions/">Deductions</a><a href="/business-structure/">Business structure</a><a href="/about/">About</a><a class="ai-btn on" href="/ai-accounting/"><svg class="spark" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.2 6.3L20.5 10.5l-6.3 2.2L12 19l-2.2-6.3L3.5 10.5l6.3-2.2zM19 15l.9 2.1L22 18l-2.1.9L19 21l-.9-2.1L16 18l2.1-.9z" fill="currentColor"/></svg>AI for Accounting</a></nav>
+</div></header>
+<main id="main">
+<section class="hero small"><div class="wrap narrow">
+<p class="eyebrow"><a href="/ai-accounting/" style="color:inherit;text-decoration:none">AI for Accounting</a></p>
+<h1>Google Sheets canvas: build a cash flow what-if tool</h1>
+<p class="lede">A client says they&rsquo;ll pay &ldquo;next month.&rdquo; Sales feel slower. A tax payment is due in January. You want to know one thing: will there be enough in the bank?</p>
+<p class="muted" style="color:#bbb">By: Computatio &middot; Last reviewed 2026-11-05</p>
+</div></section>
+<section><div class="wrap narrow prose">
+<div class="callout"><b>Quick answer:</b> as of November 5, 2026, Gemini in Google Sheets can turn a sheet into an interactive mini-app called a <b>canvas</b>. Open your cash flow sheet and choose <b>Insert &gt; Create a canvas</b>, then ask for sliders on sales, costs and payment timing. Google lists it for Google AI Pro and Ultra, Workspace Business and Enterprise Standard and Plus, and Google AI Pro for Education, in English, on the web. <b>Start from your reconciled bank balance, and check that the canvas&rsquo;s base case matches the sheet.</b></div>
+
+<h2>You&rsquo;re guessing at next month&rsquo;s bank balance</h2>
+<p>Your profit and loss shows what happened. It doesn&rsquo;t show when cash will land or leave. Income can look fine while the account runs thin, because a client pays late or a big bill hits in the same week.</p>
+<p><b>Profit is not cash.</b> A cash flow forecast fills that gap, week by week.</p>
+
+<h2>And every &ldquo;what if&rdquo; means rebuilding the spreadsheet</h2>
+<p>What if sales drop 20%? What if the big client pays six weeks late? In a normal sheet, you change cells, copy tabs, and lose track of which version is which. Most owners stop after one try.</p>
+
+<h2>What it costs to fly blind</h2>
+<ul>
+<li><b>Tax dates don&rsquo;t move.</b> The fourth IRS estimated tax payment for 2026 is due January 15, 2027. California&rsquo;s fourth payment, 30% of the year&rsquo;s required amount, is due the same day.</li>
+<li><b>Short weeks surprise you.</b> You find out the account is low when a payment bounces, not when you could still plan around it.</li>
+<li><b>Bad starting numbers spread.</b> A forecast built on an unreconciled balance is wrong in every week after the first.</li>
+</ul>
+
+<h2>Picture this instead</h2>
+<p>One tab holds 13 weeks of cash in and out, starting from the balance you reconciled. Next to it, a canvas with three sliders. You drag &ldquo;client pays late&rdquo; to six weeks and see the lowest week turn yellow. <b>You decide what to delay or chase while there&rsquo;s still time.</b></p>
+
+<h2>What is Google Sheets canvas?</h2>
+<p>Google announced Sheets canvas on August 13, 2026. Gemini builds a custom layout, such as a dashboard or a scenario model, on top of one tab of your data. Google calls it read-write: <b>if you have edit access, changes you make in the canvas change the sheet</b>, and changes in the sheet show in the canvas. Google&rsquo;s help page says access to a canvas is the same as access to the sheet. A Google Workspace post from September 10 lists a financial scenario model, where you adjust key assumptions and see the effect, as one of its examples.</p>
+<p><b>Who gets it:</b> Google AI Pro and Ultra personal plans; Workspace Business and Enterprise Standard and Plus; and Google AI Pro for Education. Google&rsquo;s help page also says personal accounts may be able to use it up to 3 times a month. It&rsquo;s English only and not in the Sheets mobile app.</p>
+
+<h2>The 13-week method for a Google Sheets canvas cash flow tool</h2>
+<ol>
+<li><b>Reconcile first.</b> <a href="/ai-accounting/ai-bank-reconciliation/">Reconcile your business bank account</a> through the last statement. That ending balance is your opening cash. Not the bank app&rsquo;s number today, and not a guess.</li>
+<li><b>Build one tab.</b> Canvas reads one tab, so put everything there: a row of assumptions at the top (weekly sales, weekly costs, sales change %, weeks the big client is late), then 13 rows, one per week, with cash in, cash out and ending balance as formulas. Add fixed items on their dates: rent, loan payments, and the January 15 estimated tax payments. If your forecast is in Excel, use File &gt; Save as Google Sheets first.</li>
+<li><b>Work on a copy.</b> Because the canvas writes to the sheet, make a copy of the file to experiment in. Keep the original as your base case.</li>
+<li><b>Open canvas.</b> Choose <b>Insert &gt; Create a canvas</b>. Google&rsquo;s help page also lists Tools &gt; Create canvas and the Canvas menu in the bottom bar.</li>
+<li><b>Paste the prompt below,</b> then refine it with follow-up prompts.</li>
+</ol>
+
+<div class="callout"><b>Prompt to copy:</b><br>
+Build a cash flow what-if tool from this tab. Show a slider for &ldquo;Sales change %&rdquo; (&minus;50 to +20), a slider for &ldquo;Weekly costs&rdquo;, and a slider for &ldquo;Weeks the big client pays late&rdquo; (0 to 8). The sliders should change only the assumption cells at the top. Do not change any weekly rows or formulas. Show a line chart of ending cash for all 13 weeks, the lowest week and its balance, and color any week below $5,000 yellow and below $0 red. Show the base-case numbers next to the scenario so I can compare.</div>
+
+<p>Don&rsquo;t put account numbers, client names or anything sensitive in the sheet or the prompt. Use labels like &ldquo;Client A.&rdquo; Our guide to keeping financial data safe with AI covers the rest.</p>
+
+<div class="callout"><b>Example (made-up data).</b> A one-person agency starts the week of November 9 with $9,200, the reconciled October 31 balance. Base case: $3,800 a week in, $3,300 a week out, rent of $1,800 in weeks 4, 8 and 13, a $6,000 client payment in week 3, and $4,700 of estimated tax in week 10 (the week of January 15).<br>
+<b>Base case:</b> lowest week is week 1 at $9,700; week 13 ends at $11,600.<br>
+<b>Client pays 6 weeks late:</b> lowest week drops to $9,400 in week 4; week 13 still ends at $11,600.<br>
+<b>Late client and sales down 20%:</b> week 8 falls to $3,520 and week 13 ends at $1,720.<br>
+<b>What the owner does next:</b> she sends the client a reminder now, moves a planned equipment purchase out of December, and keeps the January tax money in a separate savings account.</div>
+
+<h2>How to check the canvas before you trust it</h2>
+<ol>
+<li><b>Set every slider to zero change.</b> The canvas&rsquo;s numbers must equal the sheet&rsquo;s base case, week by week. Click <b>View data</b> to see the rows behind it.</li>
+<li><b>Tie the opening balance</b> to your last bank reconciliation. If they differ, fix the sheet, not the canvas.</li>
+<li><b>Recalculate one week by hand.</b> Opening cash plus cash in minus cash out should equal the ending balance shown.</li>
+<li><b>Check the sheet after you play.</b> Open the tab and confirm only the assumption cells changed. If a formula was overwritten, undo it or go back to your original.</li>
+<li><b>Each month, compare the forecast to actuals</b> from your profit and loss and bank statement. Adjust the assumptions that were wrong.</li>
+</ol>
+
+<h2>What Google Sheets canvas can&rsquo;t do for your cash flow</h2>
+<p>Google&rsquo;s help page says not to rely on Gemini features for financial or other professional advice, so review what it builds. A forecast is a planning tool, not a promise: it&rsquo;s only as good as the assumptions you type in. It doesn&rsquo;t replace reconciling, keeping receipts, or making your tax payments on time. Canvas also won&rsquo;t open if downloading, copying or printing is turned off for the file, and the source data must stay under 1 million cells.</p>
+<p>You don&rsquo;t need formula skills beyond simple addition to start. If the sheet itself is the hard part, see AI for Excel and Google Sheets bookkeeping and our <a href="/estimated-taxes/quarterly-estimated-taxes-california/">estimated tax guide</a> for the payment amounts.</p>
+<p>A forecast is only as good as the books under it. Want those handled?</p>
+<div class="cta"><b>Short on time?</b> Want books you can forecast from? At <a href="https://computatio.io/?utm_source=bookbyte&amp;utm_medium=referral&amp;utm_campaign=google-sheets-canvas-cash-flow-planner">Computatio</a>, AI does the first pass and an accountant reviews and reconciles every account each month, so your opening balance is one you can trust. Monthly Books is $500 a month.</div>
+<div class="share" aria-label="Share this guide"><b>Share this guide:</b> <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fbookbytellc.com%2Fai-accounting%2Fgoogle-sheets-canvas-cash-flow-planner%2F" target="_blank" rel="noopener">LinkedIn</a><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fbookbytellc.com%2Fai-accounting%2Fgoogle-sheets-canvas-cash-flow-planner%2F" target="_blank" rel="noopener">Facebook</a><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fbookbytellc.com%2Fai-accounting%2Fgoogle-sheets-canvas-cash-flow-planner%2F&amp;text=Google%20Sheets%20canvas%3A%20build%20a%20cash%20flow%20what-if%20tool" target="_blank" rel="noopener">X</a><a href="mailto:?subject=Google%20Sheets%20canvas%3A%20build%20a%20cash%20flow%20what-if%20tool&amp;body=https%3A%2F%2Fbookbytellc.com%2Fai-accounting%2Fgoogle-sheets-canvas-cash-flow-planner%2F">Email</a><button type="button" data-url="https://bookbytellc.com/ai-accounting/google-sheets-canvas-cash-flow-planner/" onclick="var b=this;navigator.clipboard.writeText(b.dataset.url).then(function(){b.textContent='Link copied'},function(){prompt('Copy this link:',b.dataset.url)})">Copy link</button></div>
+<div class="callout"><b>Free download:</b> <a href="https://computatio.io/free-guide/?utm_source=bookbyte&amp;utm_medium=referral&amp;utm_campaign=google-sheets-canvas-cash-flow-planner">47 write-offs for the self-employed</a>, a 42-page guide with the IRS rules behind each deduction. Free when you join the Computatio newsletter.</div>
+<h2>Sources</h2><ul><li><a href="https://blog.google/products-and-platforms/products/workspace/sheets-canvas-for-google-sheets-spreadsheets/">Google: Build mini-apps with Gemini in Google Sheets (Aug 13, 2026)</a></li><li><a href="https://support.google.com/docs/answer/17035851?hl=en">Google Docs Editors Help: Create a Sheets canvas</a></li><li><a href="https://workspace.google.com/blog/product-announcements/turn-your-data-into-action-6-mini-apps-you-can-create-with-sheets-canvas">Google Workspace: 6 mini-apps you can create with Sheets canvas (Sep 10, 2026)</a></li><li><a href="https://www.irs.gov/pub/irs-pdf/f1040es.pdf">IRS: 2026 Form 1040-ES, Estimated Tax for Individuals</a></li><li><a href="https://www.ftb.ca.gov/forms/2026/2026-540-es-instructions.html">California FTB: 2026 Instructions for Form 540-ES</a></li></ul>
+<p class="fine">This guide is general information, not financial, tax or legal advice for your situation. We work hard to get it right, but we can make mistakes, and rules change. Check the official sources above before you act.</p>
+</div></section>
+</main>
+<footer class="site"><div class="wrap">
+<div class="fgrid">
+<div><b>BookByte</b><p>Plain-English bookkeeping, tax and AI accounting guides for the self-employed.</p><a href="https://computatio.io/free-guide/?utm_source=bookbyte&amp;utm_medium=referral&amp;utm_campaign=footer">Free guide: 47 write-offs</a><a href="/feed.xml">RSS feed</a></div>
+<div><b>Guides</b><a href="/ai-accounting/">AI for Accounting</a><a href="/bookkeeping/">Bookkeeping</a><a href="/estimated-taxes/">Estimated taxes</a><a href="/deductions/">Deductions</a><a href="/business-structure/">Business structure</a></div>
+<div><b>Would rather not do it yourself?</b><p><a href="https://computatio.io/?utm_source=bookbyte&amp;utm_medium=referral&amp;utm_campaign=footer">Computatio</a> keeps your books and prepares your return, with a person reviewing every account.</p></div>
+</div>
+<p class="legal">Guides are general information, not financial, tax or legal advice. We can make mistakes and rules change; check the date and sources on each guide. &middot; <a href="/about/">About</a> &middot; <a href="/privacy/">Privacy</a> &middot; &copy; 2026 BookByte</p>
+</div></footer>
+<script>window.goatcounter={path:function(p){return location.host+p}}</script>
+<script data-goatcounter="https://computatio.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>
