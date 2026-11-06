@@ -154,5 +154,17 @@
   "linkedin_post": true,
   "drive_copy": false,
   "note": "On the scheduled date but late: the 5:48 AM run stalled at the push step waiting for an approval, so finished and published from an interactive session on Rogenie's yes. Reworded two lines to match Google's help page. Drive copy not uploaded."
+ },
+ {
+  "date": "2026-11-06",
+  "at": "2026-11-06T12:35:02-08:00",
+  "result": "published",
+  "path": "/ai-accounting/financial-data-safety-ai/",
+  "facts_checked": 12,
+  "removed": 0,
+  "live_verified": true,
+  "linkedin_post": true,
+  "drive_copy": false,
+  "note": "On schedule. Facts confirmed on FTC, IRS and California FTB pages fetched this run. Drive copy not uploaded: the .docx base64 has to be passed inline and was not retyped by hand to avoid a corrupted file."
  }
 ]
