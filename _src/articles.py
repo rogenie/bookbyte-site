@@ -941,4 +941,82 @@ Build a cash flow what-if tool from this tab. Show a slider for &ldquo;Sales cha
   ("IRS: 2026 Form 1040-ES, Estimated Tax for Individuals","https://www.irs.gov/pub/irs-pdf/f1040es.pdf"),
   ("California FTB: 2026 Instructions for Form 540-ES","https://www.ftb.ca.gov/forms/2026/2026-540-es-instructions.html")],
  "google-sheets-canvas-cash-flow-planner"),
+article("/ai-accounting/financial-data-safety-ai/","/ai-accounting/","AI for Accounting",
+ "How to Keep Your Financial Data Safe When Using AI",
+ "How to keep your financial data safe when you use AI",
+ "Keep financial data safe when you use AI for bookkeeping: what to strip out, a redaction prompt, a made-up example, and the IRS and FTC steps that matter.",
+ "2026-11-06",
+ "You want AI to sort your transactions. But the export has your account number, your clients&rsquo; names and maybe a Social Security number. You&rsquo;re not sure what&rsquo;s safe to paste.",
+ '''<div class="callout"><b>Quick answer:</b> to keep financial data safe when you use AI, share only what the task needs. Strip out Social Security numbers, full account and card numbers, passwords and login codes before you upload anything. Replace names with labels like &ldquo;Client A.&rdquo; Turn on multi-factor authentication for your AI, bank and tax accounts, and keep the original files in your own records, not in a chat.</div>
+
+<h2>You don&rsquo;t know what the AI keeps</h2>
+<p>A bank export looks harmless. It isn&rsquo;t. It can hold full account numbers, payee names, client names and notes you typed years ago.</p>
+<p><b>Once you paste it into a chat, you&rsquo;ve handed it to another company&rsquo;s system.</b> Whether it&rsquo;s stored, reviewed or used to improve the tool depends on that tool&rsquo;s settings and your plan.</p>
+
+<h2>And scammers know you&rsquo;re busy with your books</h2>
+<p>Tax season brings fake &ldquo;IRS&rdquo; emails and texts. A rushed owner who just uploaded a stack of documents is an easy target for a message that says &ldquo;verify your account.&rdquo;</p>
+
+<h2>What a slip can cost you</h2>
+<ul>
+<li><b>Identity theft is slow to undo.</b> A stolen Social Security number can be used to file a fake return in your name. Fixing that means reports, affidavits and letters, while your real refund or account waits.</li>
+<li><b>Client data isn&rsquo;t only yours.</b> The FTC tells businesses to use Social Security numbers only for required and lawful purposes, and not to keep card numbers and expiration dates without an essential business need.</li>
+<li><b>Fake messages look real.</b> The IRS says a letter or notice is the first way it contacts you. It doesn&rsquo;t make initial contact by email or social media, and it sends texts only with your permission.</li>
+</ul>
+
+<h2>Picture this instead</h2>
+<p>You keep one clean working file for AI: dates, amounts, vendor names and categories. No account numbers. No client names. No IDs. <b>If that file leaked tomorrow, it wouldn&rsquo;t open a single account.</b> You get the time savings, and your originals stay locked in your own records.</p>
+
+<h2>The share-the-minimum method for AI and financial data</h2>
+<p>This works with any AI chat tool. It follows the FTC&rsquo;s five principles for protecting personal information: take stock, scale down, lock it, pitch it, and plan ahead.</p>
+<ol>
+<li><b>Take stock.</b> Before you upload, open the file and look. List what&rsquo;s in it: account numbers, names, addresses, tax IDs, notes.</li>
+<li><b>Scale down.</b> Delete every column the task doesn&rsquo;t need. To categorize transactions, the AI needs the date, description and amount. It doesn&rsquo;t need your account number or balance.</li>
+<li><b>Swap names for labels.</b> Replace client and employee names with &ldquo;Client A,&rdquo; &ldquo;Contractor B.&rdquo; Keep the key that maps labels to names in your own files.</li>
+<li><b>Check the tool&rsquo;s settings.</b> Find out whether chats are saved, and whether you can turn off use of your chats for training. Business plans often have different terms than free ones. Read them on the vendor&rsquo;s own site.</li>
+<li><b>Lock your accounts.</b> The IRS recommends strong, unique passwords for each account and multi-factor authentication wherever it&rsquo;s offered. Do that for your AI tool, your email, your bank and your bookkeeping software.</li>
+<li><b>Pitch it.</b> Delete old chats and uploads you no longer need. Keep the real records in your bookkeeping system, where they belong.</li>
+</ol>
+
+<div class="callout"><b>Prompt to copy (run it on a file you&rsquo;ve already trimmed):</b><br>
+&ldquo;Before you do anything else, scan this data for sensitive details: Social Security or tax ID numbers, full bank or card numbers (more than the last 4 digits), routing numbers, passwords, login codes, home addresses, birth dates and personal names. List each one you find by row. Don&rsquo;t repeat the full value; show only the last 4 characters. Then stop and wait. Don&rsquo;t categorize or summarize anything until I confirm the data is clean.&rdquo;</div>
+<p><b>This is a second check, not the first.</b> The safest data is the data you deleted before you uploaded it.</p>
+
+<div class="callout"><b>Example (made-up data).</b> A freelance designer exports 3 months of bank transactions to categorize. The raw file has 7 columns: date, description, amount, balance, account number, check number and memo.<br>
+<b>Step 1:</b> She deletes balance, account number and check number. Four columns left.<br>
+<b>Step 2:</b> The memo column has &ldquo;Invoice 1042 &ndash; Maria Lopez&rdquo; and &ldquo;Rent &ndash; 418 Elm St.&rdquo; She replaces the names with &ldquo;Client A&rdquo; and deletes the address.<br>
+<b>Step 3:</b> She runs the scan prompt. The AI flags one row: a Zelle description that includes a phone number ending in 5521. She deletes it from the description.<br>
+<b>Step 4:</b> Now she runs her <a href="/ai-accounting/ai-prompts-categorize-transactions/">categorization prompt</a> on the clean file and posts the results in her books.</div>
+
+<h2>What should you never paste into AI?</h2>
+<ul>
+<li><b>Social Security numbers, ITINs and EINs</b> (yours, your family&rsquo;s or anyone you pay).</li>
+<li><b>Full bank, card and routing numbers.</b> The last 4 digits are enough to tell accounts apart.</li>
+<li><b>Passwords, PINs and one-time login codes.</b> No AI task needs them.</li>
+<li><b>Your IRS Identity Protection PIN.</b> Treat it like a password.</li>
+<li><b>Whole tax returns and W-2s.</b> If you need help with one line, type the line, not the form.</li>
+<li><b>Receipt photos with card numbers showing.</b> Crop them first, as our <a href="/ai-accounting/ai-receipt-scanning/">receipt scanning guide</a> shows.</li>
+</ul>
+
+<h2>How to keep your financial data safe beyond the chat</h2>
+<ol>
+<li><b>Get an IRS Identity Protection PIN.</b> It&rsquo;s a six-digit number that stops anyone else from filing a federal return with your Social Security number. Anyone with an SSN or ITIN who can verify their identity can get one through their IRS online account. It&rsquo;s good for one calendar year, and a new one is issued each year.</li>
+<li><b>Encrypt files you keep.</b> The IRS suggests encrypting tax records stored on your computer and running security software with automatic updates.</li>
+<li><b>Don&rsquo;t email sensitive files unprotected.</b> The FTC warns against sending sensitive information through regular, unencrypted email.</li>
+<li><b>Vet anyone you hand your books to.</b> The FTC tells businesses to check a provider&rsquo;s security practices before outsourcing, and to put security expectations in writing. That applies to AI apps and bookkeepers alike.</li>
+<li><b>Ignore &ldquo;verify your account&rdquo; messages.</b> Go to the site yourself instead of clicking a link.</li>
+</ol>
+
+<div class="callout"><b>State note.</b> States run their own identity theft processes. In California, the Franchise Tax Board takes reports online, by phone at 916-845-7088, or by mail or fax with its Identity Theft Affidavit, Form FTB 3552. Report to the FTC at IdentityTheft.gov and to the IRS as well.</div>
+
+<h2>Can AI still help if you remove all that?</h2>
+<p>Yes. Categorizing, spotting duplicates, matching receipts and drafting reports work fine with dates, amounts and vendor names. <b>AI almost never needs the details that make data dangerous.</b> You also don&rsquo;t need to be technical: deleting columns in a spreadsheet is the whole skill.</p>
+<p>What AI can&rsquo;t do is take responsibility for your records. You still <a href="/ai-accounting/ai-bank-reconciliation/">reconcile every account</a>, keep your receipts, and own your tax return. For the full routine, see <a href="/ai-accounting/how-to-use-ai-for-bookkeeping/">how to use AI for bookkeeping</a> and <a href="/ai-accounting/can-ai-do-your-accounting/">what AI gets right and wrong</a>.</p>
+<p>Rather not trim files every month? We can handle that for you.</p>''',
+ 'Want the time savings without the data handling? At <a href="CTAURL">Computatio</a>, AI does the first pass on your books and an accountant reviews every account each month. Monthly Books is $500 a month.',
+ [("FTC: Protecting Personal Information, A Guide for Business","https://www.ftc.gov/business-guidance/resources/protecting-personal-information-guide-business"),
+  ("IRS: Taxes. Security. Together.","https://www.irs.gov/individuals/taxes-security-together"),
+  ("IRS: Get an identity protection PIN","https://www.irs.gov/identity-theft-fraud-scams/get-an-identity-protection-pin"),
+  ("IRS: Ways to tell if the IRS is reaching out or if it&rsquo;s a scammer","https://www.irs.gov/newsroom/ways-to-tell-if-the-irs-is-reaching-out-or-if-its-a-scammer"),
+  ("California FTB: Identity theft","https://www.ftb.ca.gov/help/scams/identity-theft.html")],
+ "financial-data-safety-ai"),
 ]
