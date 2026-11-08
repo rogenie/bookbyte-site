@@ -248,6 +248,28 @@
    "status": "todo"
   },
   {
+   "date": "2026-11-19",
+   "hub": "ai-accounting",
+   "path": "/ai-accounting/excel-copilot-clean-data-bank-exports/",
+   "title": "Excel Copilot clean data: fix bank exports before you sort",
+   "status": "todo",
+   "kind": "ai-update",
+   "brief": {
+    "news": "Copilot in Excel now has a clean-data skill (@clean-data, or the Skills menu) that finds extra spaces, inconsistent text, number and date formats, duplicates and numbers stored as text, explains each issue and lets you pick which fixes to apply.",
+    "source": "https://support.microsoft.com/en-us/excel/copilot/copilot-in-excel-built-in-skills",
+    "source_date": "2026-11-03",
+    "who": "Rolling out to general availability on Windows, Mac and web (Excel blog, Oct 27: https://techcommunity.microsoft.com/blog/excelblog/whats-new-in-excel-october-2026/4549758; Copilot roundup Oct 30 says rolled out in October). Support page says it is on by default but may not reach every customer yet. Copilot in Excel needs Microsoft 365 Personal or Family with an AI credits plan, Microsoft 365 Premium, a commercial Copilot subscription, or a Copilot Chat-eligible business plan (https://support.microsoft.com/en-US/Excel/copilot/frequently-asked-questions-about-copilot-in-excel). File must be .xlsx with calculation set to Automatic.",
+    "task": "Cleaning bank and card CSV exports (dates stored as text, amounts with stray symbols, duplicate rows from overlapping downloads) before categorizing and reconciling",
+    "angle": "Why messy exports break SUMIFs, PivotTables and reconciliations; a made-up bank export with the usual problems (two date formats, '$1,200.00' as text, a duplicated week from overlapping downloads, trailing spaces in payee names); run @clean-data, read each finding, and accept fixes one type at a time (keep a copy of the raw export on its own sheet first). Warn that a 'duplicate' may be a real repeat charge: check against the bank statement before deleting. Checks: row count and total of deposits and withdrawals before vs. after cleaning must match except for removed true duplicates, which you list; ending balance still ties to the statement. Teach only the new skill and link the general Excel/Sheets guide for the rest. Note the separate Copilot accounting skills (reconciliation, journal-entry) are Frontier-only and not covered. Re-confirm GA status, plans and the @clean-data invocation on Microsoft's pages before publishing.",
+    "cta": "monthly-books",
+    "links": [
+     "/ai-accounting/ai-excel-google-sheets-bookkeeping/",
+     "/ai-accounting/ai-prompts-categorize-transactions/",
+     "/ai-accounting/ai-bank-reconciliation/"
+    ]
+   }
+  },
+  {
    "date": "2026-11-20",
    "hub": "ai-accounting",
    "path": "/ai-accounting/ai-invoices-payment-reminders/",
