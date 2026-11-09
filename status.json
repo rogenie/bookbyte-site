@@ -417,6 +417,18 @@
    "linkedin_post": true,
    "drive_copy": false,
    "note": "On schedule. Facts confirmed on FTC, IRS and California FTB pages fetched this run. Drive copy not uploaded: the .docx base64 has to be passed inline and was not retyped by hand to avoid a corrupted file."
+  },
+  {
+   "date": "2026-11-09",
+   "at": "2026-11-09T05:57:38-08:00",
+   "result": "published",
+   "path": "/ai-accounting/chart-of-accounts-with-ai/",
+   "facts_checked": 14,
+   "removed": 2,
+   "live_verified": false,
+   "linkedin_post": true,
+   "drive_copy": false,
+   "note": "On schedule. Facts confirmed on IRS (2025 Schedule C and instructions, Pub 583, record retention) and CDTFA pages fetched this run; removed two unconfirmed line mappings (processor fees, phone). GitHub Pages deploy succeeded; site search didn't return the page yet, so live_verified is false. Drive copy not uploaded: the .docx base64 has to be passed inline and was not retyped by hand."
   }
  ]
 }
