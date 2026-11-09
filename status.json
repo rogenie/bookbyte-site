@@ -1,5 +1,5 @@
 {
- "built": "2026-11-08",
+ "built": "2026-11-09",
  "cadence": "Weekdays: evergreen Mon/Wed/Fri, AI updates Tue/Thu (see _src/TOPICS.md)",
  "items": [
   {
@@ -89,7 +89,9 @@
   {
    "date": "2026-11-09",
    "hub": "ai-accounting",
-   "status": "todo"
+   "status": "written",
+   "title": "Chart of accounts with AI: build yours (free template)",
+   "url": "https://bookbytellc.com/ai-accounting/chart-of-accounts-with-ai/"
   },
   {
    "date": "2026-11-10",
