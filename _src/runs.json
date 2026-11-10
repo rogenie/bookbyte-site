@@ -178,5 +178,17 @@
   "linkedin_post": true,
   "drive_copy": false,
   "note": "On schedule. Facts confirmed on IRS (2025 Schedule C and instructions, Pub 583, record retention) and CDTFA pages fetched this run; removed two unconfirmed line mappings (processor fees, phone). GitHub Pages deploy succeeded; site search didn't return the page yet, so live_verified is false. Drive copy not uploaded: the .docx base64 has to be passed inline and was not retyped by hand."
+ },
+ {
+  "date": "2026-11-10",
+  "at": "2026-11-10T05:58:18-08:00",
+  "result": "published",
+  "path": "/ai-accounting/quickbooks-chatgpt-claude-invoices/",
+  "facts_checked": 16,
+  "removed": 0,
+  "live_verified": false,
+  "linkedin_post": true,
+  "drive_copy": false,
+  "note": "On schedule. GA status, plans (Simple Start through Advanced), US-only, Claude and ChatGPT click paths confirmed on Intuit pages; IRS Pub 583 and Topic 305, CDTFA fetched this run. ChatGPT plan left unnamed (no Intuit page says). Pages deploy succeeded; site search didn't return the page yet, so live_verified is false. Drive copy not uploaded: the upload needs an approval this unattended run can't give."
  }
 ]
