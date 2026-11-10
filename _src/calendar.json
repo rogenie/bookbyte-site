@@ -1,435 +1,436 @@
 {
- "cadence": "Weekdays: evergreen Mon/Wed/Fri, AI updates Tue/Thu (see _src/TOPICS.md)",
- "items": [
-  {
-   "date": "2026-10-21",
-   "hub": "ai-accounting",
-   "path": "/ai-accounting/how-to-use-ai-for-bookkeeping/",
-   "title": "How to use AI for bookkeeping and keep your books accurate",
-   "status": "published",
-   "url": "https://bookbytellc.com/ai-accounting/how-to-use-ai-for-bookkeeping/"
-  },
-  {
-   "date": "2026-10-23",
-   "hub": "estimated-taxes",
-   "path": "/estimated-taxes/quarterly-estimated-taxes-california/",
-   "title": "Quarterly estimated taxes in California: a 2026 guide",
-   "status": "published",
-   "url": "https://bookbytellc.com/estimated-taxes/quarterly-estimated-taxes-california/"
-  },
-  {
-   "date": "2026-10-26",
-   "hub": "ai-accounting",
-   "path": "/ai-accounting/ai-prompts-categorize-transactions/",
-   "title": "AI prompts to categorize business transactions (copy-paste)",
-   "status": "published",
-   "url": "https://bookbytellc.com/ai-accounting/ai-prompts-categorize-transactions/"
-  },
-  {
-   "date": "2026-10-27",
-   "hub": "ai-accounting",
-   "path": "/ai-accounting/quickbooks-ai-banking-suggestions/",
-   "title": "QuickBooks AI banking suggestions: review before you post",
-   "status": "published",
-   "kind": "ai-update",
-   "brief": {
-    "news": "QuickBooks Online's banking page now autofills payee and category with color-coded review signals (green, blue, orange); Essentials and up add 'Ready to post' batches.",
-    "source": "https://quickbooks.intuit.com/learn-support/en-us/help-article/matching-rules/learn-updates-new-ai-powered-banking-page/L0hR7A9Zf_US_en_US",
-    "source_date": "2026-10-11",
-    "who": "Suggestions on all QuickBooks Online versions; Ready to post and Requests for more information on Essentials, Plus and Advanced (US help site).",
-    "task": "Categorizing and matching bank and card transactions",
-    "angle": "What each review signal means, which ones to post in a batch and which to open first, how to spot a wrong match or duplicate, and a month-end check that the suggestions didn't drift (compare category totals to last month, then reconcile).",
-    "cta": "monthly-books",
-    "links": [
-     "/ai-accounting/ai-prompts-categorize-transactions/",
-     "/ai-accounting/ai-bank-reconciliation/",
-     "/ai-accounting/how-to-use-ai-for-bookkeeping/"
-    ]
-   },
-   "url": "https://bookbytellc.com/ai-accounting/quickbooks-ai-banking-suggestions/"
-  },
-  {
-   "date": "2026-10-28",
-   "hub": "ai-accounting",
-   "path": "/ai-accounting/ai-bank-reconciliation/",
-   "title": "AI bank reconciliation: how to do it and what AI can’t do",
-   "status": "published",
-   "url": "https://bookbytellc.com/ai-accounting/ai-bank-reconciliation/"
-  },
-  {
-   "date": "2026-10-29",
-   "hub": "ai-accounting",
-   "path": "/ai-accounting/irs-iris-1099-e-filing-fire-retiring/",
-   "title": "IRS FIRE is closing: e-file 1099s with IRIS instead",
-   "status": "published",
-   "kind": "ai-update",
-   "brief": {
-    "news": "The IRS is retiring the FIRE system for information returns; the last day to file through FIRE is Nov. 19, 2026, and tax year 2026 1099s must go through IRIS in the 2027 filing season.",
-    "source": "https://www.irs.gov/newsroom/irs-reminder-information-return-e-file-system-transitioning-to-a-new-platform",
-    "source_date": "2026-08-24",
-    "who": "Anyone who e-files Forms 1099 themselves (FIRE users must switch). The IRIS Taxpayer Portal is free, takes manual entry or a .csv upload, files up to 100 returns at a time, and needs an IRIS-only TCC (https://www.irs.gov/filing/e-file-information-returns-with-iris, updated 2026-10-22).",
-    "task": "Filing 1099-NECs and 1099-MISCs for contractors; keeping vendor records (names, TINs, totals) ready",
-    "angle": "Who this affects (FIRE users, and DIY filers who need a free e-file option), the key dates (Nov. 9 last day to change FIRE TCC applications, Nov. 19 FIRE closes), how to apply for an IRIS TCC now, and an AI prompt that turns a vendor-payments export into rows matching the IRS IRIS CSV template, with a check that each payee total ties to the vendor ledger and no TIN is pasted into a chatbot (mask it, fill it in locally). Re-confirm all dates on irs.gov before publishing; don't state TCC approval times unless the IRS page gives one.",
-    "cta": "call",
-    "links": [
-     "/deductions/send-1099-nec-by-january-31/",
-     "/deductions/1099-nec-2000-threshold/",
-     "/ai-accounting/financial-data-safety-ai/"
-    ]
-   },
-   "url": "https://bookbytellc.com/ai-accounting/irs-iris-1099-e-filing-fire-retiring/",
-   "note": "Swapped into the 2026-10-29 slot (from 2026-11-03) at Rogenie's request, replacing the Gemini guide."
-  },
-  {
-   "date": "2026-10-30",
-   "hub": "ai-accounting",
-   "path": "/ai-accounting/can-ai-do-your-accounting/",
-   "title": "Can AI do your accounting? What it gets right and wrong",
-   "status": "published",
-   "url": "https://bookbytellc.com/ai-accounting/can-ai-do-your-accounting/"
-  },
-  {
-   "date": "2026-11-02",
-   "hub": "business-structure",
-   "path": "/business-structure/s-corp-vs-sole-proprietor-california/",
-   "title": "S-corp vs. sole proprietor: when the switch pays off",
-   "status": "published",
-   "url": "https://bookbytellc.com/business-structure/s-corp-vs-sole-proprietor-california/"
-  },
-  {
-   "date": "2026-11-04",
-   "hub": "ai-accounting",
-   "path": "/ai-accounting/ai-receipt-scanning/",
-   "title": "AI receipt scanning: turn phone photos into bookkeeping records",
-   "status": "published",
-   "url": "https://bookbytellc.com/ai-accounting/ai-receipt-scanning/"
-  },
-  {
-   "date": "2026-11-04",
-   "hub": "ai-accounting",
-   "path": "/ai-accounting/separate-business-personal-expenses-ai/",
-   "title": "Separate business and personal expenses with AI",
-   "status": "published",
-   "url": "https://bookbytellc.com/ai-accounting/separate-business-personal-expenses-ai/",
-   "note": "Substitute (new evergreen guide) for the missed 2026-11-03 slot: the Gemini small-business finance tools guide was moved to 2026-11-17 because no Google page confirms it is live. Published in the 2026-11-04 evening catch-up from an interactive session."
-  },
-  {
-   "date": "2026-11-05",
-   "hub": "ai-accounting",
-   "path": "/ai-accounting/google-sheets-canvas-cash-flow-planner/",
-   "title": "Google Sheets canvas: build a cash flow what-if tool",
-   "status": "published",
-   "kind": "ai-update",
-   "brief": {
-    "news": "Gemini in Google Sheets can turn a sheet into an interactive mini-app (Insert > Create a canvas), including financial forecast and scenario models that stay synced with the sheet.",
-    "source": "https://workspace.google.com/blog/product-announcements/turn-your-data-into-action-6-mini-apps-you-can-create-with-sheets-canvas",
-    "source_date": "2026-09-10",
-    "who": "Google AI Pro and Ultra personal plans; Workspace Business and Enterprise Standard and Plus; Google AI Pro for Education. Not listed for free Gmail or Business Starter. English only at launch (https://blog.google/products-and-platforms/products/workspace/sheets-canvas-for-google-sheets-spreadsheets/, 2026-08-13).",
-    "task": "Cash flow planning: testing what happens to your bank balance if sales, a big expense or a client's late payment changes",
-    "angle": "Start from a 13-week cash flow sheet built from your real books (opening balance from the reconciled bank account), a prompt that asks canvas for sliders on sales, expenses and payment timing, and checks: the canvas's base case must equal the sheet's totals, and the opening balance must match your last bank reconciliation. Note that a forecast is a planning tool, not a promise, and which plans include canvas. Re-check plan list and click path on Google's pages before publishing.",
-    "cta": "monthly-books",
-    "links": [
-     "/ai-accounting/ai-excel-google-sheets-bookkeeping/",
-     "/ai-accounting/read-profit-and-loss-with-ai/",
-     "/ai-accounting/ai-bank-reconciliation/"
-    ]
-   },
-   "url": "https://bookbytellc.com/ai-accounting/google-sheets-canvas-cash-flow-planner/",
-   "note": "Drafted by the 2026-11-05 run, which stalled before pushing; finished and re-checked on Google, IRS and FTB pages 2026-11-05. Click path Insert > Create a canvas (also Tools > Create canvas, bottom-bar Canvas menu); plans per Google blog Aug 13; English, web only."
-  },
-  {
-   "date": "2026-11-06",
-   "hub": "ai-accounting",
-   "path": "/ai-accounting/financial-data-safety-ai/",
-   "title": "How to keep your financial data safe when you use AI",
-   "status": "published",
-   "url": "https://bookbytellc.com/ai-accounting/financial-data-safety-ai/"
-  },
-  {
-   "date": "2026-11-09",
-   "hub": "ai-accounting",
-   "path": "/ai-accounting/chart-of-accounts-with-ai/",
-   "title": "Chart of accounts with AI: build yours (free template)",
-   "status": "published",
-   "url": "https://bookbytellc.com/ai-accounting/chart-of-accounts-with-ai/"
-  },
-  {
-   "date": "2026-11-10",
-   "hub": "ai-accounting",
-   "path": "/ai-accounting/quickbooks-chatgpt-claude-invoices/",
-   "title": "QuickBooks in ChatGPT or Claude: check invoices first",
-   "status": "todo",
-   "kind": "ai-update",
-   "brief": {
-    "news": "QuickBooks' fall release (Oct 26) says invoicing through its ChatGPT plugin and Claude connector is now generally available; the Claude help page (updated Oct 28) says invoices Claude creates land in QuickBooks right away, and it can also import transactions and send payment reminders.",
-    "source": "https://quickbooks.intuit.com/learn-support/en-us/help-article/accounting-bookkeeping/use-quickbooks-connector-claude/L3YBlo6Ht_US_en_US",
-    "source_date": "2026-10-28",
-    "who": "US QuickBooks customers only. Fall release lists AI connectors on Simple Start through Advanced (https://quickbooks.intuit.com/r/product-update/whats-new-quickbooks-fall-2026/, 2026-10-26). Claude page asks only for an active Claude account; ChatGPT setup page (https://quickbooks.intuit.com/learn-support/en-us/help-article/mobile-and-apps/connect-quickbooks-online-chatgpt/L0RDe9RPd_US_en_US, updated 2026-08-26) names no ChatGPT plan. Payment links and deposits need QuickBooks Payments.",
-    "task": "Creating and sending invoices, payment reminders, and pulling P&L and cash flow numbers from inside a chatbot",
-    "angle": "How to connect (Claude: Customize > Connectors > QuickBooks; ChatGPT: Plugins > Intuit QuickBooks) and pick the narrowest permissions; why it matters that these write straight into the books (a wrong customer, amount, date or product creates a real invoice and real income); a prompt to draft one invoice from a made-up job, then the checks: open the invoice link in QuickBooks, compare customer, items, tax, terms and due date to the estimate or contract before asking it to send; confirm reminders before they go; tie any P&L figure the chatbot quotes to the report in QuickBooks; how to disconnect. Re-confirm GA status, plan list and click paths on Intuit's pages before publishing; don't claim which ChatGPT plans qualify unless a page says.",
-    "cta": "monthly-books",
-    "links": [
-     "/ai-accounting/ai-invoices-payment-reminders/",
-     "/ai-accounting/quickbooks-ai-banking-suggestions/",
-     "/ai-accounting/financial-data-safety-ai/"
-    ]
-   }
-  },
-  {
-   "date": "2026-11-11",
-   "hub": "ai-accounting",
-   "path": "/ai-accounting/catch-up-bookkeeping-with-ai/",
-   "title": "How to catch up on months of bookkeeping with AI",
-   "status": "todo"
-  },
-  {
-   "date": "2026-11-12",
-   "hub": "ai-accounting",
-   "path": "/ai-accounting/quickbooks-report-insights-reconciliation-ai/",
-   "title": "QuickBooks AI report insights: use them before month-end",
-   "status": "todo",
-   "kind": "ai-update",
-   "brief": {
-    "news": "QuickBooks' Accounting AI help page (updated Oct 26) describes report insights on the P&L and Balance Sheet that flag possible issues such as duplicates, miscategorized items, AR/AP aging and income that may need deferring, plus AI-powered reconciliation that explains possible issues while you reconcile.",
-    "source": "https://quickbooks.intuit.com/learn-support/en-us/help-article/bank-transactions/accounting-agent-features/L6pl9rv94_US_en_US",
-    "source_date": "2026-10-26",
-    "who": "QuickBooks Online Plus, Advanced and Intuit Enterprise Suite (both report insights and AI-powered reconciliation). Not Simple Start or Essentials. The page does not say US-only.",
-    "task": "Month-end review: reconciling bank and card accounts and catching errors in the P&L and Balance Sheet",
-    "angle": "Click path for report insights (Reports > Standard reports > P&L or Balance Sheet > Insights icon > Analyze Books with Accounting AI) and what each flag type means in plain words; a made-up example with a duplicate charge and a miscategorized owner draw; how to verify each flag yourself (open the transactions, check the receipt or bank line, fix with a dated note) instead of accepting the explanation; why it's a supplement to, not a replacement for, reconciling to the statement (the page itself says not all accounts are covered). Link the older reconciliation and banking-suggestions guides and teach only what's new. Re-confirm plans and click path on Intuit's page before publishing.",
-    "cta": "monthly-books",
-    "links": [
-     "/ai-accounting/ai-bank-reconciliation/",
-     "/ai-accounting/quickbooks-ai-banking-suggestions/",
-     "/bookkeeping/monthly-close-checklist-ai/"
-    ]
-   }
-  },
-  {
-   "date": "2026-11-13",
-   "hub": "ai-accounting",
-   "path": "/ai-accounting/read-profit-and-loss-with-ai/",
-   "title": "How to use AI to read your profit and loss statement",
-   "status": "todo"
-  },
-  {
-   "date": "2026-11-16",
-   "hub": "bookkeeping",
-   "path": "/bookkeeping/do-your-own-bookkeeping/",
-   "title": "How to do your own bookkeeping when you're self-employed",
-   "status": "written"
-  },
-  {
-   "date": "2026-11-17",
-   "hub": "ai-accounting",
-   "path": "/ai-accounting/gemini-small-business-finance-tools/",
-   "title": "Gemini's new small-business finance tools: what to check",
-   "status": "todo",
-   "kind": "ai-update",
-   "brief": {
-    "news": "Google announced a Gemini business hub that turns spreadsheets, receipts and purchase records into financial charts and models, plus connected apps including Xero and Workspace.",
-    "source": "https://blog.google/innovation-and-ai/products/gemini-app/new-tools-small-business-owners/",
-    "source_date": "2026-10-20",
-    "who": "All Gemini app users, rolling out globally 'in the coming days' as of Oct 20; confirm it is live before publishing.",
-    "task": "Turning receipts and spreadsheets into financial summaries and charts",
-    "angle": "How to give Gemini clean data (an export from your books, not raw bank PDFs), a prompt for a monthly income and expense summary, how to tie every chart total back to your profit and loss report, and what not to upload or connect.",
-    "cta": "monthly-books",
-    "links": [
-     "/ai-accounting/read-profit-and-loss-with-ai/",
-     "/ai-accounting/financial-data-safety-ai/",
-     "/ai-accounting/ai-excel-google-sheets-bookkeeping/"
-    ]
-   },
-   "note": "Moved from 2026-10-29 (to 2026-11-10, then to the 2026-11-03 slot vacated by the IRIS guide at Rogenie's request): no Google page confirms the Gemini business hub and finance tools are live yet. The Oct 20 blog post only says they begin rolling out 'in the coming days', and Gemini release notes (latest 2026.10.13) don't list them. Xero's own pages (Oct 14/17) confirm the Xero connected app is live outside the EEA, UK, Switzerland and Nigeria. Re-check before publishing. Publish only once a Google page confirms it is live; otherwise move again. 2026-11-04 catch-up (scheduled runs on Nov 3-4 stalled before pushing): still not confirmed live. Google's Oct 20 post, re-checked Nov 4 evening, still says rolling out 'in the coming days' with no update. Moved to 2026-11-17, the next empty Tue/Thu at least 2 days out; substitute 'Separate business and personal expenses with AI' published 2026-11-04."
-  },
-  {
-   "date": "2026-11-18",
-   "hub": "ai-accounting",
-   "path": "/ai-accounting/chatgpt-vs-claude-vs-gemini-bookkeeping/",
-   "title": "ChatGPT vs. Claude vs. Gemini for bookkeeping tasks: a 2026 test",
-   "status": "todo"
-  },
-  {
-   "date": "2026-11-19",
-   "hub": "ai-accounting",
-   "path": "/ai-accounting/excel-copilot-clean-data-bank-exports/",
-   "title": "Excel Copilot clean data: fix bank exports before you sort",
-   "status": "todo",
-   "kind": "ai-update",
-   "brief": {
-    "news": "Copilot in Excel now has a clean-data skill (@clean-data, or the Skills menu) that finds extra spaces, inconsistent text, number and date formats, duplicates and numbers stored as text, explains each issue and lets you pick which fixes to apply.",
-    "source": "https://support.microsoft.com/en-us/excel/copilot/copilot-in-excel-built-in-skills",
-    "source_date": "2026-11-03",
-    "who": "Rolling out to general availability on Windows, Mac and web (Excel blog, Oct 27: https://techcommunity.microsoft.com/blog/excelblog/whats-new-in-excel-october-2026/4549758; Copilot roundup Oct 30 says rolled out in October). Support page says it is on by default but may not reach every customer yet. Copilot in Excel needs Microsoft 365 Personal or Family with an AI credits plan, Microsoft 365 Premium, a commercial Copilot subscription, or a Copilot Chat-eligible business plan (https://support.microsoft.com/en-US/Excel/copilot/frequently-asked-questions-about-copilot-in-excel). File must be .xlsx with calculation set to Automatic.",
-    "task": "Cleaning bank and card CSV exports (dates stored as text, amounts with stray symbols, duplicate rows from overlapping downloads) before categorizing and reconciling",
-    "angle": "Why messy exports break SUMIFs, PivotTables and reconciliations; a made-up bank export with the usual problems (two date formats, '$1,200.00' as text, a duplicated week from overlapping downloads, trailing spaces in payee names); run @clean-data, read each finding, and accept fixes one type at a time (keep a copy of the raw export on its own sheet first). Warn that a 'duplicate' may be a real repeat charge: check against the bank statement before deleting. Checks: row count and total of deposits and withdrawals before vs. after cleaning must match except for removed true duplicates, which you list; ending balance still ties to the statement. Teach only the new skill and link the general Excel/Sheets guide for the rest. Note the separate Copilot accounting skills (reconciliation, journal-entry) are Frontier-only and not covered. Re-confirm GA status, plans and the @clean-data invocation on Microsoft's pages before publishing.",
-    "cta": "monthly-books",
-    "links": [
-     "/ai-accounting/ai-excel-google-sheets-bookkeeping/",
-     "/ai-accounting/ai-prompts-categorize-transactions/",
-     "/ai-accounting/ai-bank-reconciliation/"
-    ]
-   }
-  },
-  {
-   "date": "2026-11-20",
-   "hub": "ai-accounting",
-   "path": "/ai-accounting/ai-invoices-payment-reminders/",
-   "title": "AI for invoices and payment reminders",
-   "status": "todo"
-  },
-  {
-   "date": "2026-11-23",
-   "hub": "ai-accounting",
-   "path": "/ai-accounting/ai-excel-google-sheets-bookkeeping/",
-   "title": "How to use AI in Excel or Google Sheets for bookkeeping",
-   "status": "todo"
-  },
-  {
-   "date": "2026-11-25",
-   "hub": "bookkeeping",
-   "path": "/bookkeeping/year-end-bookkeeping-checklist-ai/",
-   "title": "Year-end bookkeeping checklist, with AI prompts for each step",
-   "status": "todo"
-  },
-  {
-   "date": "2026-11-27",
-   "hub": "ai-accounting",
-   "path": "/ai-accounting/find-missed-deductions-with-ai/",
-   "title": "How to use AI to find missed deductions, and verify them",
-   "status": "todo"
-  },
-  {
-   "date": "2026-11-30",
-   "hub": "deductions",
-   "path": "/deductions/1099-nec-2000-threshold/",
-   "title": "The new $2,000 1099-NEC threshold for 2026, explained",
-   "status": "todo"
-  },
-  {
-   "date": "2026-12-02",
-   "hub": "ai-accounting",
-   "path": "/ai-accounting/estimate-quarterly-taxes-with-ai/",
-   "title": "How to use AI to estimate quarterly taxes, and check the math",
-   "status": "todo"
-  },
-  {
-   "date": "2026-12-04",
-   "hub": "ai-accounting",
-   "path": "/ai-accounting/ai-mileage-logs/",
-   "title": "AI mileage logs: what to track and what the IRS expects",
-   "status": "todo"
-  },
-  {
-   "date": "2026-12-07",
-   "hub": "ai-accounting",
-   "path": "/ai-accounting/tax-appointment-prep-with-ai/",
-   "title": "How to prepare for your tax appointment with AI",
-   "status": "todo"
-  },
-  {
-   "date": "2026-12-09",
-   "hub": "estimated-taxes",
-   "path": "/estimated-taxes/q4-estimated-payment-january-15-2027/",
-   "title": "Your Q4 estimated payment is due January 15, 2027: a checklist",
-   "status": "todo"
-  },
-  {
-   "date": "2026-12-11",
-   "hub": "ai-accounting",
-   "path": "/ai-accounting/ai-for-contractors-job-costing/",
-   "title": "AI for contractors: job costing and materials tracking",
-   "status": "todo"
-  },
-  {
-   "date": "2026-12-14",
-   "hub": "ai-accounting",
-   "path": "/ai-accounting/ai-for-real-estate-agents/",
-   "title": "AI for real estate agents: commissions and expenses",
-   "status": "todo"
-  },
-  {
-   "date": "2026-12-16",
-   "hub": "ai-accounting",
-   "path": "/ai-accounting/ai-for-content-creators/",
-   "title": "AI for content creators: sponsorships, 1099s and expenses",
-   "status": "todo"
-  },
-  {
-   "date": "2026-12-18",
-   "hub": "ai-accounting",
-   "path": "/ai-accounting/ai-bookkeeping-mistakes/",
-   "title": "Common AI bookkeeping mistakes, and how to catch them",
-   "status": "todo"
-  },
-  {
-   "date": "2026-12-21",
-   "hub": "ai-accounting",
-   "path": "/ai-accounting/bookkeeping-routine-sop-with-ai/",
-   "title": "How to write a bookkeeping routine (SOP) with AI",
-   "status": "todo"
-  },
-  {
-   "date": "2026-12-23",
-   "hub": "ai-accounting",
-   "path": "/ai-accounting/ai-for-online-sellers-payouts/",
-   "title": "AI for online sellers: reconciling platform payouts",
-   "status": "todo"
-  },
-  {
-   "date": "2026-12-25",
-   "hub": "ai-accounting",
-   "path": "/ai-accounting/ai-duplicate-charges-subscriptions/",
-   "title": "How to use AI to spot duplicate charges and subscription creep",
-   "status": "todo"
-  },
-  {
-   "date": "2026-12-28",
-   "hub": "bookkeeping",
-   "path": "/bookkeeping/monthly-close-checklist-ai/",
-   "title": "A monthly close checklist, with AI prompts",
-   "status": "todo"
-  },
-  {
-   "date": "2026-12-30",
-   "hub": "deductions",
-   "path": "/deductions/send-1099-nec-by-january-31/",
-   "title": "How to send 1099-NECs to your contractors by January 31",
-   "status": "todo"
-  },
-  {
-   "date": "2027-01-01",
-   "hub": "ai-accounting",
-   "path": "/ai-accounting/organize-tax-documents-with-ai/",
-   "title": "How to use AI to organize your tax documents",
-   "status": "todo"
-  },
-  {
-   "date": "2027-01-04",
-   "hub": "ai-accounting",
-   "path": "/ai-accounting/ai-for-rideshare-delivery-drivers/",
-   "title": "AI for rideshare and delivery drivers",
-   "status": "todo"
-  },
-  {
-   "date": "2027-01-06",
-   "hub": "ai-accounting",
-   "path": "/ai-accounting/should-you-trust-ai-with-taxes/",
-   "title": "Should you trust AI with your taxes?",
-   "status": "todo"
-  },
-  {
-   "date": "2027-01-08",
-   "hub": "ai-accounting",
-   "path": "/ai-accounting/ai-vs-bookkeeper-vs-diy/",
-   "title": "AI, a bookkeeper, or doing it yourself: time and cost compared",
-   "status": "todo"
-  },
-  {
-   "date": "2027-01-11",
-   "hub": "deductions",
-   "path": "/deductions/tax-documents-checklist-2026/",
-   "title": "Tax documents checklist: what to gather before filing your 2026 return",
-   "status": "todo"
-  }
- ]
+  "cadence": "Weekdays: evergreen Mon/Wed/Fri, AI updates Tue/Thu (see _src/TOPICS.md)",
+  "items": [
+    {
+      "date": "2026-10-21",
+      "hub": "ai-accounting",
+      "path": "/ai-accounting/how-to-use-ai-for-bookkeeping/",
+      "title": "How to use AI for bookkeeping and keep your books accurate",
+      "status": "published",
+      "url": "https://bookbytellc.com/ai-accounting/how-to-use-ai-for-bookkeeping/"
+    },
+    {
+      "date": "2026-10-23",
+      "hub": "estimated-taxes",
+      "path": "/estimated-taxes/quarterly-estimated-taxes-california/",
+      "title": "Quarterly estimated taxes in California: a 2026 guide",
+      "status": "published",
+      "url": "https://bookbytellc.com/estimated-taxes/quarterly-estimated-taxes-california/"
+    },
+    {
+      "date": "2026-10-26",
+      "hub": "ai-accounting",
+      "path": "/ai-accounting/ai-prompts-categorize-transactions/",
+      "title": "AI prompts to categorize business transactions (copy-paste)",
+      "status": "published",
+      "url": "https://bookbytellc.com/ai-accounting/ai-prompts-categorize-transactions/"
+    },
+    {
+      "date": "2026-10-27",
+      "hub": "ai-accounting",
+      "path": "/ai-accounting/quickbooks-ai-banking-suggestions/",
+      "title": "QuickBooks AI banking suggestions: review before you post",
+      "status": "published",
+      "kind": "ai-update",
+      "brief": {
+        "news": "QuickBooks Online's banking page now autofills payee and category with color-coded review signals (green, blue, orange); Essentials and up add 'Ready to post' batches.",
+        "source": "https://quickbooks.intuit.com/learn-support/en-us/help-article/matching-rules/learn-updates-new-ai-powered-banking-page/L0hR7A9Zf_US_en_US",
+        "source_date": "2026-10-11",
+        "who": "Suggestions on all QuickBooks Online versions; Ready to post and Requests for more information on Essentials, Plus and Advanced (US help site).",
+        "task": "Categorizing and matching bank and card transactions",
+        "angle": "What each review signal means, which ones to post in a batch and which to open first, how to spot a wrong match or duplicate, and a month-end check that the suggestions didn't drift (compare category totals to last month, then reconcile).",
+        "cta": "monthly-books",
+        "links": [
+          "/ai-accounting/ai-prompts-categorize-transactions/",
+          "/ai-accounting/ai-bank-reconciliation/",
+          "/ai-accounting/how-to-use-ai-for-bookkeeping/"
+        ]
+      },
+      "url": "https://bookbytellc.com/ai-accounting/quickbooks-ai-banking-suggestions/"
+    },
+    {
+      "date": "2026-10-28",
+      "hub": "ai-accounting",
+      "path": "/ai-accounting/ai-bank-reconciliation/",
+      "title": "AI bank reconciliation: how to do it and what AI can’t do",
+      "status": "published",
+      "url": "https://bookbytellc.com/ai-accounting/ai-bank-reconciliation/"
+    },
+    {
+      "date": "2026-10-29",
+      "hub": "ai-accounting",
+      "path": "/ai-accounting/irs-iris-1099-e-filing-fire-retiring/",
+      "title": "IRS FIRE is closing: e-file 1099s with IRIS instead",
+      "status": "published",
+      "kind": "ai-update",
+      "brief": {
+        "news": "The IRS is retiring the FIRE system for information returns; the last day to file through FIRE is Nov. 19, 2026, and tax year 2026 1099s must go through IRIS in the 2027 filing season.",
+        "source": "https://www.irs.gov/newsroom/irs-reminder-information-return-e-file-system-transitioning-to-a-new-platform",
+        "source_date": "2026-08-24",
+        "who": "Anyone who e-files Forms 1099 themselves (FIRE users must switch). The IRIS Taxpayer Portal is free, takes manual entry or a .csv upload, files up to 100 returns at a time, and needs an IRIS-only TCC (https://www.irs.gov/filing/e-file-information-returns-with-iris, updated 2026-10-22).",
+        "task": "Filing 1099-NECs and 1099-MISCs for contractors; keeping vendor records (names, TINs, totals) ready",
+        "angle": "Who this affects (FIRE users, and DIY filers who need a free e-file option), the key dates (Nov. 9 last day to change FIRE TCC applications, Nov. 19 FIRE closes), how to apply for an IRIS TCC now, and an AI prompt that turns a vendor-payments export into rows matching the IRS IRIS CSV template, with a check that each payee total ties to the vendor ledger and no TIN is pasted into a chatbot (mask it, fill it in locally). Re-confirm all dates on irs.gov before publishing; don't state TCC approval times unless the IRS page gives one.",
+        "cta": "call",
+        "links": [
+          "/deductions/send-1099-nec-by-january-31/",
+          "/deductions/1099-nec-2000-threshold/",
+          "/ai-accounting/financial-data-safety-ai/"
+        ]
+      },
+      "url": "https://bookbytellc.com/ai-accounting/irs-iris-1099-e-filing-fire-retiring/",
+      "note": "Swapped into the 2026-10-29 slot (from 2026-11-03) at Rogenie's request, replacing the Gemini guide."
+    },
+    {
+      "date": "2026-10-30",
+      "hub": "ai-accounting",
+      "path": "/ai-accounting/can-ai-do-your-accounting/",
+      "title": "Can AI do your accounting? What it gets right and wrong",
+      "status": "published",
+      "url": "https://bookbytellc.com/ai-accounting/can-ai-do-your-accounting/"
+    },
+    {
+      "date": "2026-11-02",
+      "hub": "business-structure",
+      "path": "/business-structure/s-corp-vs-sole-proprietor-california/",
+      "title": "S-corp vs. sole proprietor: when the switch pays off",
+      "status": "published",
+      "url": "https://bookbytellc.com/business-structure/s-corp-vs-sole-proprietor-california/"
+    },
+    {
+      "date": "2026-11-04",
+      "hub": "ai-accounting",
+      "path": "/ai-accounting/ai-receipt-scanning/",
+      "title": "AI receipt scanning: turn phone photos into bookkeeping records",
+      "status": "published",
+      "url": "https://bookbytellc.com/ai-accounting/ai-receipt-scanning/"
+    },
+    {
+      "date": "2026-11-04",
+      "hub": "ai-accounting",
+      "path": "/ai-accounting/separate-business-personal-expenses-ai/",
+      "title": "Separate business and personal expenses with AI",
+      "status": "published",
+      "url": "https://bookbytellc.com/ai-accounting/separate-business-personal-expenses-ai/",
+      "note": "Substitute (new evergreen guide) for the missed 2026-11-03 slot: the Gemini small-business finance tools guide was moved to 2026-11-17 because no Google page confirms it is live. Published in the 2026-11-04 evening catch-up from an interactive session."
+    },
+    {
+      "date": "2026-11-05",
+      "hub": "ai-accounting",
+      "path": "/ai-accounting/google-sheets-canvas-cash-flow-planner/",
+      "title": "Google Sheets canvas: build a cash flow what-if tool",
+      "status": "published",
+      "kind": "ai-update",
+      "brief": {
+        "news": "Gemini in Google Sheets can turn a sheet into an interactive mini-app (Insert > Create a canvas), including financial forecast and scenario models that stay synced with the sheet.",
+        "source": "https://workspace.google.com/blog/product-announcements/turn-your-data-into-action-6-mini-apps-you-can-create-with-sheets-canvas",
+        "source_date": "2026-09-10",
+        "who": "Google AI Pro and Ultra personal plans; Workspace Business and Enterprise Standard and Plus; Google AI Pro for Education. Not listed for free Gmail or Business Starter. English only at launch (https://blog.google/products-and-platforms/products/workspace/sheets-canvas-for-google-sheets-spreadsheets/, 2026-08-13).",
+        "task": "Cash flow planning: testing what happens to your bank balance if sales, a big expense or a client's late payment changes",
+        "angle": "Start from a 13-week cash flow sheet built from your real books (opening balance from the reconciled bank account), a prompt that asks canvas for sliders on sales, expenses and payment timing, and checks: the canvas's base case must equal the sheet's totals, and the opening balance must match your last bank reconciliation. Note that a forecast is a planning tool, not a promise, and which plans include canvas. Re-check plan list and click path on Google's pages before publishing.",
+        "cta": "monthly-books",
+        "links": [
+          "/ai-accounting/ai-excel-google-sheets-bookkeeping/",
+          "/ai-accounting/read-profit-and-loss-with-ai/",
+          "/ai-accounting/ai-bank-reconciliation/"
+        ]
+      },
+      "url": "https://bookbytellc.com/ai-accounting/google-sheets-canvas-cash-flow-planner/",
+      "note": "Drafted by the 2026-11-05 run, which stalled before pushing; finished and re-checked on Google, IRS and FTB pages 2026-11-05. Click path Insert > Create a canvas (also Tools > Create canvas, bottom-bar Canvas menu); plans per Google blog Aug 13; English, web only."
+    },
+    {
+      "date": "2026-11-06",
+      "hub": "ai-accounting",
+      "path": "/ai-accounting/financial-data-safety-ai/",
+      "title": "How to keep your financial data safe when you use AI",
+      "status": "published",
+      "url": "https://bookbytellc.com/ai-accounting/financial-data-safety-ai/"
+    },
+    {
+      "date": "2026-11-09",
+      "hub": "ai-accounting",
+      "path": "/ai-accounting/chart-of-accounts-with-ai/",
+      "title": "Chart of accounts with AI: build yours (free template)",
+      "status": "published",
+      "url": "https://bookbytellc.com/ai-accounting/chart-of-accounts-with-ai/"
+    },
+    {
+      "date": "2026-11-10",
+      "hub": "ai-accounting",
+      "path": "/ai-accounting/quickbooks-chatgpt-claude-invoices/",
+      "title": "QuickBooks in ChatGPT or Claude: check invoices first",
+      "status": "published",
+      "kind": "ai-update",
+      "brief": {
+        "news": "QuickBooks' fall release (Oct 26) says invoicing through its ChatGPT plugin and Claude connector is now generally available; the Claude help page (updated Oct 28) says invoices Claude creates land in QuickBooks right away, and it can also import transactions and send payment reminders.",
+        "source": "https://quickbooks.intuit.com/learn-support/en-us/help-article/accounting-bookkeeping/use-quickbooks-connector-claude/L3YBlo6Ht_US_en_US",
+        "source_date": "2026-10-28",
+        "who": "US QuickBooks customers only. Fall release lists AI connectors on Simple Start through Advanced (https://quickbooks.intuit.com/r/product-update/whats-new-quickbooks-fall-2026/, 2026-10-26). Claude page asks only for an active Claude account; ChatGPT setup page (https://quickbooks.intuit.com/learn-support/en-us/help-article/mobile-and-apps/connect-quickbooks-online-chatgpt/L0RDe9RPd_US_en_US, updated 2026-08-26) names no ChatGPT plan. Payment links and deposits need QuickBooks Payments.",
+        "task": "Creating and sending invoices, payment reminders, and pulling P&L and cash flow numbers from inside a chatbot",
+        "angle": "How to connect (Claude: Customize > Connectors > QuickBooks; ChatGPT: Plugins > Intuit QuickBooks) and pick the narrowest permissions; why it matters that these write straight into the books (a wrong customer, amount, date or product creates a real invoice and real income); a prompt to draft one invoice from a made-up job, then the checks: open the invoice link in QuickBooks, compare customer, items, tax, terms and due date to the estimate or contract before asking it to send; confirm reminders before they go; tie any P&L figure the chatbot quotes to the report in QuickBooks; how to disconnect. Re-confirm GA status, plan list and click paths on Intuit's pages before publishing; don't claim which ChatGPT plans qualify unless a page says.",
+        "cta": "monthly-books",
+        "links": [
+          "/ai-accounting/ai-invoices-payment-reminders/",
+          "/ai-accounting/quickbooks-ai-banking-suggestions/",
+          "/ai-accounting/financial-data-safety-ai/"
+        ]
+      },
+      "url": "https://bookbytellc.com/ai-accounting/quickbooks-chatgpt-claude-invoices/"
+    },
+    {
+      "date": "2026-11-11",
+      "hub": "ai-accounting",
+      "path": "/ai-accounting/catch-up-bookkeeping-with-ai/",
+      "title": "How to catch up on months of bookkeeping with AI",
+      "status": "todo"
+    },
+    {
+      "date": "2026-11-12",
+      "hub": "ai-accounting",
+      "path": "/ai-accounting/quickbooks-report-insights-reconciliation-ai/",
+      "title": "QuickBooks AI report insights: use them before month-end",
+      "status": "todo",
+      "kind": "ai-update",
+      "brief": {
+        "news": "QuickBooks' Accounting AI help page (updated Oct 26) describes report insights on the P&L and Balance Sheet that flag possible issues such as duplicates, miscategorized items, AR/AP aging and income that may need deferring, plus AI-powered reconciliation that explains possible issues while you reconcile.",
+        "source": "https://quickbooks.intuit.com/learn-support/en-us/help-article/bank-transactions/accounting-agent-features/L6pl9rv94_US_en_US",
+        "source_date": "2026-10-26",
+        "who": "QuickBooks Online Plus, Advanced and Intuit Enterprise Suite (both report insights and AI-powered reconciliation). Not Simple Start or Essentials. The page does not say US-only.",
+        "task": "Month-end review: reconciling bank and card accounts and catching errors in the P&L and Balance Sheet",
+        "angle": "Click path for report insights (Reports > Standard reports > P&L or Balance Sheet > Insights icon > Analyze Books with Accounting AI) and what each flag type means in plain words; a made-up example with a duplicate charge and a miscategorized owner draw; how to verify each flag yourself (open the transactions, check the receipt or bank line, fix with a dated note) instead of accepting the explanation; why it's a supplement to, not a replacement for, reconciling to the statement (the page itself says not all accounts are covered). Link the older reconciliation and banking-suggestions guides and teach only what's new. Re-confirm plans and click path on Intuit's page before publishing.",
+        "cta": "monthly-books",
+        "links": [
+          "/ai-accounting/ai-bank-reconciliation/",
+          "/ai-accounting/quickbooks-ai-banking-suggestions/",
+          "/bookkeeping/monthly-close-checklist-ai/"
+        ]
+      }
+    },
+    {
+      "date": "2026-11-13",
+      "hub": "ai-accounting",
+      "path": "/ai-accounting/read-profit-and-loss-with-ai/",
+      "title": "How to use AI to read your profit and loss statement",
+      "status": "todo"
+    },
+    {
+      "date": "2026-11-16",
+      "hub": "bookkeeping",
+      "path": "/bookkeeping/do-your-own-bookkeeping/",
+      "title": "How to do your own bookkeeping when you're self-employed",
+      "status": "written"
+    },
+    {
+      "date": "2026-11-17",
+      "hub": "ai-accounting",
+      "path": "/ai-accounting/gemini-small-business-finance-tools/",
+      "title": "Gemini's new small-business finance tools: what to check",
+      "status": "todo",
+      "kind": "ai-update",
+      "brief": {
+        "news": "Google announced a Gemini business hub that turns spreadsheets, receipts and purchase records into financial charts and models, plus connected apps including Xero and Workspace.",
+        "source": "https://blog.google/innovation-and-ai/products/gemini-app/new-tools-small-business-owners/",
+        "source_date": "2026-10-20",
+        "who": "All Gemini app users, rolling out globally 'in the coming days' as of Oct 20; confirm it is live before publishing.",
+        "task": "Turning receipts and spreadsheets into financial summaries and charts",
+        "angle": "How to give Gemini clean data (an export from your books, not raw bank PDFs), a prompt for a monthly income and expense summary, how to tie every chart total back to your profit and loss report, and what not to upload or connect.",
+        "cta": "monthly-books",
+        "links": [
+          "/ai-accounting/read-profit-and-loss-with-ai/",
+          "/ai-accounting/financial-data-safety-ai/",
+          "/ai-accounting/ai-excel-google-sheets-bookkeeping/"
+        ]
+      },
+      "note": "Moved from 2026-10-29 (to 2026-11-10, then to the 2026-11-03 slot vacated by the IRIS guide at Rogenie's request): no Google page confirms the Gemini business hub and finance tools are live yet. The Oct 20 blog post only says they begin rolling out 'in the coming days', and Gemini release notes (latest 2026.10.13) don't list them. Xero's own pages (Oct 14/17) confirm the Xero connected app is live outside the EEA, UK, Switzerland and Nigeria. Re-check before publishing. Publish only once a Google page confirms it is live; otherwise move again. 2026-11-04 catch-up (scheduled runs on Nov 3-4 stalled before pushing): still not confirmed live. Google's Oct 20 post, re-checked Nov 4 evening, still says rolling out 'in the coming days' with no update. Moved to 2026-11-17, the next empty Tue/Thu at least 2 days out; substitute 'Separate business and personal expenses with AI' published 2026-11-04."
+    },
+    {
+      "date": "2026-11-18",
+      "hub": "ai-accounting",
+      "path": "/ai-accounting/chatgpt-vs-claude-vs-gemini-bookkeeping/",
+      "title": "ChatGPT vs. Claude vs. Gemini for bookkeeping tasks: a 2026 test",
+      "status": "todo"
+    },
+    {
+      "date": "2026-11-19",
+      "hub": "ai-accounting",
+      "path": "/ai-accounting/excel-copilot-clean-data-bank-exports/",
+      "title": "Excel Copilot clean data: fix bank exports before you sort",
+      "status": "todo",
+      "kind": "ai-update",
+      "brief": {
+        "news": "Copilot in Excel now has a clean-data skill (@clean-data, or the Skills menu) that finds extra spaces, inconsistent text, number and date formats, duplicates and numbers stored as text, explains each issue and lets you pick which fixes to apply.",
+        "source": "https://support.microsoft.com/en-us/excel/copilot/copilot-in-excel-built-in-skills",
+        "source_date": "2026-11-03",
+        "who": "Rolling out to general availability on Windows, Mac and web (Excel blog, Oct 27: https://techcommunity.microsoft.com/blog/excelblog/whats-new-in-excel-october-2026/4549758; Copilot roundup Oct 30 says rolled out in October). Support page says it is on by default but may not reach every customer yet. Copilot in Excel needs Microsoft 365 Personal or Family with an AI credits plan, Microsoft 365 Premium, a commercial Copilot subscription, or a Copilot Chat-eligible business plan (https://support.microsoft.com/en-US/Excel/copilot/frequently-asked-questions-about-copilot-in-excel). File must be .xlsx with calculation set to Automatic.",
+        "task": "Cleaning bank and card CSV exports (dates stored as text, amounts with stray symbols, duplicate rows from overlapping downloads) before categorizing and reconciling",
+        "angle": "Why messy exports break SUMIFs, PivotTables and reconciliations; a made-up bank export with the usual problems (two date formats, '$1,200.00' as text, a duplicated week from overlapping downloads, trailing spaces in payee names); run @clean-data, read each finding, and accept fixes one type at a time (keep a copy of the raw export on its own sheet first). Warn that a 'duplicate' may be a real repeat charge: check against the bank statement before deleting. Checks: row count and total of deposits and withdrawals before vs. after cleaning must match except for removed true duplicates, which you list; ending balance still ties to the statement. Teach only the new skill and link the general Excel/Sheets guide for the rest. Note the separate Copilot accounting skills (reconciliation, journal-entry) are Frontier-only and not covered. Re-confirm GA status, plans and the @clean-data invocation on Microsoft's pages before publishing.",
+        "cta": "monthly-books",
+        "links": [
+          "/ai-accounting/ai-excel-google-sheets-bookkeeping/",
+          "/ai-accounting/ai-prompts-categorize-transactions/",
+          "/ai-accounting/ai-bank-reconciliation/"
+        ]
+      }
+    },
+    {
+      "date": "2026-11-20",
+      "hub": "ai-accounting",
+      "path": "/ai-accounting/ai-invoices-payment-reminders/",
+      "title": "AI for invoices and payment reminders",
+      "status": "todo"
+    },
+    {
+      "date": "2026-11-23",
+      "hub": "ai-accounting",
+      "path": "/ai-accounting/ai-excel-google-sheets-bookkeeping/",
+      "title": "How to use AI in Excel or Google Sheets for bookkeeping",
+      "status": "todo"
+    },
+    {
+      "date": "2026-11-25",
+      "hub": "bookkeeping",
+      "path": "/bookkeeping/year-end-bookkeeping-checklist-ai/",
+      "title": "Year-end bookkeeping checklist, with AI prompts for each step",
+      "status": "todo"
+    },
+    {
+      "date": "2026-11-27",
+      "hub": "ai-accounting",
+      "path": "/ai-accounting/find-missed-deductions-with-ai/",
+      "title": "How to use AI to find missed deductions, and verify them",
+      "status": "todo"
+    },
+    {
+      "date": "2026-11-30",
+      "hub": "deductions",
+      "path": "/deductions/1099-nec-2000-threshold/",
+      "title": "The new $2,000 1099-NEC threshold for 2026, explained",
+      "status": "todo"
+    },
+    {
+      "date": "2026-12-02",
+      "hub": "ai-accounting",
+      "path": "/ai-accounting/estimate-quarterly-taxes-with-ai/",
+      "title": "How to use AI to estimate quarterly taxes, and check the math",
+      "status": "todo"
+    },
+    {
+      "date": "2026-12-04",
+      "hub": "ai-accounting",
+      "path": "/ai-accounting/ai-mileage-logs/",
+      "title": "AI mileage logs: what to track and what the IRS expects",
+      "status": "todo"
+    },
+    {
+      "date": "2026-12-07",
+      "hub": "ai-accounting",
+      "path": "/ai-accounting/tax-appointment-prep-with-ai/",
+      "title": "How to prepare for your tax appointment with AI",
+      "status": "todo"
+    },
+    {
+      "date": "2026-12-09",
+      "hub": "estimated-taxes",
+      "path": "/estimated-taxes/q4-estimated-payment-january-15-2027/",
+      "title": "Your Q4 estimated payment is due January 15, 2027: a checklist",
+      "status": "todo"
+    },
+    {
+      "date": "2026-12-11",
+      "hub": "ai-accounting",
+      "path": "/ai-accounting/ai-for-contractors-job-costing/",
+      "title": "AI for contractors: job costing and materials tracking",
+      "status": "todo"
+    },
+    {
+      "date": "2026-12-14",
+      "hub": "ai-accounting",
+      "path": "/ai-accounting/ai-for-real-estate-agents/",
+      "title": "AI for real estate agents: commissions and expenses",
+      "status": "todo"
+    },
+    {
+      "date": "2026-12-16",
+      "hub": "ai-accounting",
+      "path": "/ai-accounting/ai-for-content-creators/",
+      "title": "AI for content creators: sponsorships, 1099s and expenses",
+      "status": "todo"
+    },
+    {
+      "date": "2026-12-18",
+      "hub": "ai-accounting",
+      "path": "/ai-accounting/ai-bookkeeping-mistakes/",
+      "title": "Common AI bookkeeping mistakes, and how to catch them",
+      "status": "todo"
+    },
+    {
+      "date": "2026-12-21",
+      "hub": "ai-accounting",
+      "path": "/ai-accounting/bookkeeping-routine-sop-with-ai/",
+      "title": "How to write a bookkeeping routine (SOP) with AI",
+      "status": "todo"
+    },
+    {
+      "date": "2026-12-23",
+      "hub": "ai-accounting",
+      "path": "/ai-accounting/ai-for-online-sellers-payouts/",
+      "title": "AI for online sellers: reconciling platform payouts",
+      "status": "todo"
+    },
+    {
+      "date": "2026-12-25",
+      "hub": "ai-accounting",
+      "path": "/ai-accounting/ai-duplicate-charges-subscriptions/",
+      "title": "How to use AI to spot duplicate charges and subscription creep",
+      "status": "todo"
+    },
+    {
+      "date": "2026-12-28",
+      "hub": "bookkeeping",
+      "path": "/bookkeeping/monthly-close-checklist-ai/",
+      "title": "A monthly close checklist, with AI prompts",
+      "status": "todo"
+    },
+    {
+      "date": "2026-12-30",
+      "hub": "deductions",
+      "path": "/deductions/send-1099-nec-by-january-31/",
+      "title": "How to send 1099-NECs to your contractors by January 31",
+      "status": "todo"
+    },
+    {
+      "date": "2027-01-01",
+      "hub": "ai-accounting",
+      "path": "/ai-accounting/organize-tax-documents-with-ai/",
+      "title": "How to use AI to organize your tax documents",
+      "status": "todo"
+    },
+    {
+      "date": "2027-01-04",
+      "hub": "ai-accounting",
+      "path": "/ai-accounting/ai-for-rideshare-delivery-drivers/",
+      "title": "AI for rideshare and delivery drivers",
+      "status": "todo"
+    },
+    {
+      "date": "2027-01-06",
+      "hub": "ai-accounting",
+      "path": "/ai-accounting/should-you-trust-ai-with-taxes/",
+      "title": "Should you trust AI with your taxes?",
+      "status": "todo"
+    },
+    {
+      "date": "2027-01-08",
+      "hub": "ai-accounting",
+      "path": "/ai-accounting/ai-vs-bookkeeper-vs-diy/",
+      "title": "AI, a bookkeeper, or doing it yourself: time and cost compared",
+      "status": "todo"
+    },
+    {
+      "date": "2027-01-11",
+      "hub": "deductions",
+      "path": "/deductions/tax-documents-checklist-2026/",
+      "title": "Tax documents checklist: what to gather before filing your 2026 return",
+      "status": "todo"
+    }
+  ]
 }

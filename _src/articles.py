@@ -1110,4 +1110,84 @@ AI returns 24 accounts. Three come back flagged: &ldquo;Laptop: expense or equip
   ("IRS: How long should I keep records?","https://www.irs.gov/businesses/small-businesses-self-employed/how-long-should-i-keep-records"),
   ("CDTFA: Obtaining a seller's permit","https://cdtfa.ca.gov/taxes-and-fees/faqseller.htm")],
  "chart-of-accounts-with-ai"),
+article("/ai-accounting/quickbooks-chatgpt-claude-invoices/","/ai-accounting/","AI for Accounting",
+ "QuickBooks in ChatGPT or Claude: check invoices first",
+ "QuickBooks in ChatGPT or Claude: check invoices first",
+ "How to connect QuickBooks to ChatGPT or Claude, draft an invoice from a chat, and check it in QuickBooks before it goes to your customer.",
+ "2026-11-10",
+ "You finish a job, open ChatGPT or Claude, and type &ldquo;invoice Acme for the logo work.&rdquo; Seconds later there&rsquo;s an invoice. It feels like magic, until you wonder what it just wrote into your books.",
+ '''<div class="callout"><b>Quick answer:</b> as of November 10, 2026, Intuit says invoicing through QuickBooks in ChatGPT and Claude is generally available, for US QuickBooks customers on Simple Start through Advanced. The connectors themselves are still labeled beta. <b>An invoice the chatbot creates is a real invoice in QuickBooks right away.</b> Open it in QuickBooks and check the customer, items, amounts, tax, terms and due date before you send it.</div>
+
+<h2>You typed a sentence, and now there&rsquo;s an invoice in your books</h2>
+<p>Intuit&rsquo;s Claude help page says every invoice Claude creates lands in QuickBooks right away. There is no draft folder in the chat. The record exists the moment it&rsquo;s made.</p>
+<p><b>The chat is the shortcut. QuickBooks is still the record.</b></p>
+
+<h2>And you can&rsquo;t see what it guessed</h2>
+<p>A chatbot fills gaps. If two customers have similar names, it may pick the wrong one. If you said &ldquo;the usual rate,&rdquo; it has to decide what that means. If you didn&rsquo;t give a due date, it uses something. None of that is obvious from a one-line reply in the chat window.</p>
+
+<h2>What a wrong invoice costs you</h2>
+<ul>
+<li><b>Wrong numbers in your reports.</b> An invoice adds to what customers owe you. A wrong amount or a duplicate inflates your income and receivables until someone finds it.</li>
+<li><b>An awkward customer email.</b> A wrong name, rate or due date that reaches the customer has to be voided and explained.</li>
+<li><b>Weak backup for your return.</b> The IRS lists invoices among the documents that support your gross receipts. An invoice that doesn&rsquo;t match the work is poor support.</li>
+<li><b>Records you must keep.</b> The IRS says to keep supporting records until the period of limitations ends, generally 3 years after you file, and longer in some cases.</li>
+</ul>
+
+<h2>Picture invoicing in two minutes</h2>
+<p>You finish a job and ask the chatbot for the invoice. You open the link in QuickBooks, compare it to your estimate, fix one line, and send. At month-end, your open invoices match what customers really owe.</p>
+<p><b>The AI does the typing. You keep the judgment.</b></p>
+
+<h2>Who can use QuickBooks in ChatGPT or Claude?</h2>
+<table>
+<tr><th></th><th>Claude connector</th><th>ChatGPT plugin</th></tr>
+<tr><td>QuickBooks plans</td><td colspan="2">Simple Start through Advanced, per Intuit&rsquo;s fall 2026 release</td></tr>
+<tr><td>Where</td><td>US customers only</td><td>US QuickBooks Online customers</td></tr>
+<tr><td>Chatbot account</td><td>An active Claude account</td><td>A ChatGPT account; Intuit&rsquo;s page names no plan</td></tr>
+<tr><td>What Intuit lists</td><td colspan="2">Create, update and send invoices, reminders for overdue invoices, estimates and payment links. The Claude page also lists importing transactions and P&amp;L and cash flow reports.</td></tr>
+</table>
+<p>Intuit notes that the AI platform itself may need a paid subscription. Some features, such as payment links, require QuickBooks Payments, and collecting estimate deposits does too.</p>
+
+<h2>The connect, draft, check, send method</h2>
+<ol>
+<li><b>Connect with the fewest permissions you need.</b> In Claude, go to <b>Customize</b>, then <b>Connectors</b>, find <b>QuickBooks</b> and select <b>Connect</b>. Sign in to Intuit, pick the company and choose which permissions to grant. A checkmark shows it worked. In ChatGPT, open <b>Plugins</b>, search &ldquo;Intuit QuickBooks,&rdquo; select <b>Connect Intuit QuickBooks</b>, sign in, then select <b>Start chat</b>.</li>
+<li><b>Give the chatbot everything, so it guesses nothing.</b> Use the exact customer name as it appears in QuickBooks, each item or service, quantity, rate, date and terms. Use this prompt:</li>
+</ol>
+<div class="callout"><b>Prompt.</b> Create one invoice in QuickBooks. Don&rsquo;t send it. Customer: [exact customer name]. Invoice date: [date]. Terms: [Net 15, Net 30]. Lines: [product or service, quantity, rate] for each. If the customer, any product or the tax setting doesn&rsquo;t match an existing record exactly, stop and ask me instead of creating anything. When you&rsquo;re done, list the invoice number, total, due date and a link to open it in QuickBooks.</div>
+<ol start="3">
+<li><b>Open it in QuickBooks, not just in the chat.</b> Compare it line by line to the estimate, contract or job notes.</li>
+<li><b>Only then ask it to send.</b> Intuit says nothing sends until you approve it. Read the email and the reminder text before you say yes.</li>
+<li><b>Tie any number it quotes back to QuickBooks.</b> If it tells you your profit for October, run the profit and loss report for the same dates and make sure the totals agree. Our guide to <a href="/ai-accounting/read-profit-and-loss-with-ai/">reading your profit and loss with AI</a> shows what to look for.</li>
+</ol>
+
+<div class="callout"><b>Example (made-up data).</b> A one-person design studio types: &ldquo;Invoice Acme Co for the October logo project.&rdquo; The chatbot creates invoice #1051 for $1,800, due on receipt. The check in QuickBooks finds three problems:<br>
+&middot; The customer is <b>Acme Corp</b>, a different client. The right record is <b>Acme Co (Riverside)</b>.<br>
+&middot; The estimate says $1,500 for the logo plus $300 for a brand sheet, as two lines. The invoice shows one $1,800 line.<br>
+&middot; The contract says Net 15, not due on receipt.<br>
+Fix: delete the wrong invoice (the chatbot asks you to confirm deletions first), rerun the prompt with the exact name, two lines and Net 15, recheck, then send.</div>
+
+<h2>How to check a QuickBooks invoice from ChatGPT or Claude</h2>
+<ol>
+<li><b>Customer:</b> the exact record, with the right email address.</li>
+<li><b>Lines:</b> each product or service, quantity and rate match the estimate or contract.</li>
+<li><b>Sales tax:</b> taxable lines marked as taxable, others not.</li>
+<li><b>Dates and terms:</b> invoice date, terms and due date match your agreement.</li>
+<li><b>No duplicates:</b> filter open invoices by that customer. One job, one invoice.</li>
+<li><b>Reminders:</b> read each one before it goes. Don&rsquo;t remind a customer who already paid.</li>
+</ol>
+<div class="callout"><b>State note.</b> Sales tax on invoices depends on your state and what you sell. In California, the CDTFA says a charge for a service alone is generally not taxable, but if you regularly sell goods to customers you generally need a seller&rsquo;s permit. Check your state&rsquo;s rules before you set tax on a product.</div>
+
+<h2>Is it safe to connect QuickBooks to a chatbot?</h2>
+<p>The connection signs in through Intuit, and Intuit&rsquo;s Claude page says QuickBooks data isn&rsquo;t used to train Claude. Still, you are giving a chat tool the power to change your books. Grant only what you&rsquo;ll use, and read our guide to <a href="/ai-accounting/financial-data-safety-ai/">keeping financial data safe with AI</a> first.</p>
+<p>To stop, disconnect. In Claude, go to <b>Settings</b>, then <b>Connectors</b>. In ChatGPT, use the plugins list.</p>
+<p><b>Limits:</b> the chatbot doesn&rsquo;t know your deal unless you tell it. It doesn&rsquo;t replace matching payments to invoices or reconciling your bank. For that, see <a href="/ai-accounting/quickbooks-ai-banking-suggestions/">QuickBooks AI banking suggestions</a> and our <a href="/ai-accounting/ai-invoices-payment-reminders/">guide to AI for invoices and payment reminders</a>.</p>
+<p>You don&rsquo;t need to be technical. If you can write one clear sentence and compare two documents, you can use this. More in our <a href="/bookkeeping/">bookkeeping guides</a>.</p>
+<p>Rather have someone check every invoice and reconcile every month?</p>''',
+ 'Want the checking done for you? At <a href="CTAURL">Computatio</a>, AI does the first pass and an accountant reviews every account each month, including what your customers owe you. Monthly Books is $500 a month.',
+ [("Intuit QuickBooks: Use Claude to enter transactions and get insights in QuickBooks","https://quickbooks.intuit.com/learn-support/en-us/help-article/accounting-bookkeeping/use-quickbooks-connector-claude/L3YBlo6Ht_US_en_US"),
+  ("Intuit QuickBooks: Connect QuickBooks Online to ChatGPT","https://quickbooks.intuit.com/learn-support/en-us/help-article/mobile-and-apps/connect-quickbooks-online-chatgpt/L0RDe9RPd_US_en_US"),
+  ("Intuit QuickBooks: What's new in QuickBooks, Fall 2026 release","https://quickbooks.intuit.com/r/product-update/whats-new-quickbooks-fall-2026/"),
+  ("IRS: Publication 583, Starting a Business and Keeping Records","https://www.irs.gov/publications/p583"),
+  ("IRS: Topic no. 305, Recordkeeping","https://www.irs.gov/taxtopics/tc305"),
+  ("CDTFA: Tax Guide for Home-Based Businesses","https://cdtfa.ca.gov/industry/home-based-businesses/industry-topics.htm")],
+ "quickbooks-chatgpt-claude-invoices"),
 ]
