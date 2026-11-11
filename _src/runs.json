@@ -190,5 +190,17 @@
   "linkedin_post": true,
   "drive_copy": false,
   "note": "On schedule. GA status, plans (Simple Start through Advanced), US-only, Claude and ChatGPT click paths confirmed on Intuit pages; IRS Pub 583 and Topic 305, CDTFA fetched this run. ChatGPT plan left unnamed (no Intuit page says). Pages deploy succeeded; site search didn't return the page yet, so live_verified is false. Drive copy not uploaded: the upload needs an approval this unattended run can't give."
+ },
+ {
+  "date": "2026-11-11",
+  "at": "2026-11-11T05:55:30-08:00",
+  "result": "published",
+  "path": "/ai-accounting/catch-up-bookkeeping-with-ai/",
+  "facts_checked": 12,
+  "removed": 0,
+  "live_verified": false,
+  "linkedin_post": true,
+  "drive_copy": false,
+  "note": "On schedule. Facts confirmed on IRS (Pub 583, recordkeeping FAQ, 2026 Form 1040-ES) and California FTB 2026 Form 540-ES instructions fetched this run. Pages deploy succeeded; site search didn't return the page yet, so live_verified is false. Drive copy not uploaded: the .docx base64 has to be passed inline and was not retyped by hand."
  }
 ]
