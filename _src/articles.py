@@ -1190,4 +1190,71 @@ Fix: delete the wrong invoice (the chatbot asks you to confirm deletions first),
   ("IRS: Topic no. 305, Recordkeeping","https://www.irs.gov/taxtopics/tc305"),
   ("CDTFA: Tax Guide for Home-Based Businesses","https://cdtfa.ca.gov/industry/home-based-businesses/industry-topics.htm")],
  "quickbooks-chatgpt-claude-invoices"),
+article("/ai-accounting/catch-up-bookkeeping-with-ai/","/ai-accounting/","AI for Accounting",
+ "How to Catch Up on Months of Bookkeeping With AI",
+ "How to catch up on months of bookkeeping with AI",
+ "Catch up on months of bookkeeping with AI: gather statements, sort transactions in batches, reconcile each month, and check the work before taxes.",
+ "2026-11-11",
+ "You meant to do the books every month. Then a busy season hit, and now it&rsquo;s November. The bank statements pile up, and every week behind makes the job feel bigger.",
+ '''<div class="callout"><b>Quick answer:</b> To catch up on bookkeeping with AI, work one month at a time, oldest first. Download each month&rsquo;s bank and card statements, ask AI to sort the transactions into your chart of accounts in batches, flag anything unclear, then reconcile that month to the statement before you move on. AI speeds up the sorting. <b>You still match every month to the bank and keep the receipts and invoices behind the numbers.</b></div>
+
+<h2>You&rsquo;re months behind and don&rsquo;t know where to start</h2>
+<p>Hundreds of transactions. Three accounts. A shoebox of receipts. Opening the software feels like opening a bill.</p>
+<p><b>The hard part isn&rsquo;t the work. It&rsquo;s not having an order to do it in.</b></p>
+
+<h2>And taxes won&rsquo;t wait for you to catch up</h2>
+<p>Your books feed your quarterly estimates and your return. If they&rsquo;re months stale, you&rsquo;re guessing at what you owe, and the year is almost over.</p>
+
+<h2>What falling behind on bookkeeping costs you</h2>
+<ul>
+<li><b>A deadline is close.</b> The IRS 2026 Form 1040-ES lists January 15, 2027 as the last estimated payment for 2026. You can skip it only if you file your 2026 return by February 1, 2027 and pay the full balance with it.</li>
+<li><b>Late or short payments can cost you.</b> The same form says the underpayment penalty runs on each shortfall for the number of days it stays unpaid. Without current books, it&rsquo;s hard to know if you paid enough.</li>
+<li><b>Deductions need proof.</b> The IRS says small business owners must be able to prove expenses to deduct them. Publication 583 adds that proof of payment alone doesn&rsquo;t show you&rsquo;re entitled to a deduction; keep invoices or receipts that show what the cost was.</li>
+<li><b>The records stay with you.</b> The IRS general rule is to keep records about three years, depending on the item, and employment tax records at least four. Catch-up work you skip now is harder to rebuild later.</li>
+</ul>
+
+<h2>Picture this instead</h2>
+<p>Every month this year is matched to the bank. Your profit and loss shows real numbers, so your last estimate is based on facts. A short list of open questions sits in one place, not in your head.</p>
+<p><b>You go into tax season checking, not digging.</b></p>
+
+<h2>How to catch up on bookkeeping with AI: the month-by-month method</h2>
+<p>This works in ChatGPT, Claude, Gemini or Copilot. You don&rsquo;t need to be technical. You need statements, a spreadsheet or your bookkeeping software, and a few focused hours a week.</p>
+<ol>
+<li><b>Gather the sources first.</b> Download every bank, card and payment-app statement for the missing months, plus a CSV export of the transactions if your bank offers one. Publication 583 lists the supporting documents to keep: sales slips, paid bills, invoices, receipts, deposit slips and canceled checks.</li>
+<li><b>Set your buckets.</b> If you don&rsquo;t have a clean list of accounts, build one first with our <a href="/ai-accounting/chart-of-accounts-with-ai/">chart of accounts with AI</a> guide. AI can&rsquo;t sort into categories that don&rsquo;t exist.</li>
+<li><b>Strip private details.</b> Remove full account numbers, card numbers and your Social Security number before you paste anything. Keep the date, description and amount. See <a href="/ai-accounting/financial-data-safety-ai/">how to keep your financial data safe with AI</a>.</li>
+<li><b>Sort one month at a time, oldest first.</b> Paste about 50 to 100 rows at a time with the prompt below. Smaller batches mean fewer mistakes and easier checks.</li>
+<li><b>Reconcile before you move on.</b> Your ending balance in the books must match the statement for that month. Only then start the next month. Our <a href="/ai-accounting/ai-bank-reconciliation/">AI bank reconciliation</a> guide walks through it.</li>
+<li><b>Keep one questions list.</b> Every charge AI flags goes on it. Answer them from receipts, email and calendar, not from memory alone.</li>
+</ol>
+
+<div class="callout"><b>Prompt you can copy:</b><br>&ldquo;I&rsquo;m catching up on bookkeeping for a sole proprietor who [what you do]. Here is my chart of accounts: [paste list]. Below are transactions from [month, year] for [account type, e.g. business checking]. For each row, return a table with date, description, amount, the account it belongs in, and a confidence of high, medium or low. Mark transfers between my own accounts as transfers, not income or expenses. Mark anything that looks personal as owner draw for me to review. Don&rsquo;t guess: if a row could fit two accounts, mark it low and say what you&rsquo;d need to know. At the end, total each account and list every low-confidence row.&rdquo;</div>
+
+<div class="callout"><b>Example (made-up data).</b> A freelance photographer is six months behind on one checking account and one card. She starts with May: 84 checking rows.<br>
+AI sorts 71 rows as high confidence. It flags 13: four transfers to her card (marked transfers), three grocery-store charges (marked owner draw, to review), a $640 camera-store charge (&ldquo;equipment or supplies? check the receipt&rdquo;), and five payment-app deposits it can&rsquo;t tie to a client.<br>
+She matches the five deposits to invoices, confirms two grocery charges were props for a shoot, and finds the camera receipt. Then she reconciles: her books show $4,212.30 at May 31, the statement shows $4,262.30. The $50 gap is a refund AI read as an expense. She fixes it, the balances match, and she moves to June.<br>
+<b>Result:</b> one month done and matched, with 13 questions answered and none left to memory.</div>
+
+<h2>How to check AI bookkeeping catch-up work</h2>
+<ol>
+<li><b>The balance test.</b> Each month&rsquo;s ending balance matches the statement. If it doesn&rsquo;t, stop and find the gap before moving on.</li>
+<li><b>The transfer test.</b> Money moved between your own accounts should net to zero. A card payment counted as an expense counts the same costs twice.</li>
+<li><b>The income test.</b> Total deposits classed as income should tie to your invoices and payment-processor reports, not include loans, refunds or owner contributions.</li>
+<li><b>The proof test.</b> Pick 10 random expenses and find the receipt or invoice for each. Missing ones go on your questions list. Our <a href="/ai-accounting/ai-receipt-scanning/">AI receipt scanning</a> guide helps you file them.</li>
+<li><b>The personal test.</b> Review every owner-draw row yourself. See <a href="/ai-accounting/separate-business-personal-expenses-ai/">how to separate business and personal expenses</a>.</li>
+</ol>
+
+<div class="callout"><b>State note.</b> California sets its own estimated payment schedule. The FTB&rsquo;s 2026 Form 540-ES instructions put 30% of the year&rsquo;s required amount on April 15, 40% on June 15, nothing on September 15, and 30% on January 15, 2027. Catching up your books before January helps you size that last payment. More in our <a href="/estimated-taxes/quarterly-estimated-taxes-california/">California quarterly estimated taxes</a> guide. Other states differ; check your state&rsquo;s tax agency.</div>
+
+<h2>Is it safe and accurate to use AI for catch-up bookkeeping?</h2>
+<p><b>Safe enough, if you strip identifiers.</b> Dates, descriptions and amounts are all AI needs to sort. Account numbers and passwords never go in a chat.</p>
+<p><b>Accurate enough to draft, not to trust blindly.</b> AI misreads refunds, transfers and vague merchant names. That&rsquo;s why the method reconciles every month before moving on: the bank statement catches what AI misses.</p>
+<p><b>What AI can&rsquo;t do:</b> it can&rsquo;t find receipts you never kept or know the business reason for a charge. The IRS says you can use any recordkeeping system that clearly shows your income and expenses; it&rsquo;s still your job to back up what&rsquo;s in it, and your responsibility for what goes on your return.</p>
+<p>Once you&rsquo;re caught up, stay caught up with <a href="/ai-accounting/ai-prompts-categorize-transactions/">AI prompts to categorize transactions</a> each month, or read <a href="/bookkeeping/do-your-own-bookkeeping/">how to do your own bookkeeping</a>. Rather hand the whole backlog to someone else?</p>''',
+ 'Hand us the backlog and the months ahead. At <a href="CTAURL">Computatio</a>, AI does the bookkeeping and an accountant reviews every account, every month. Monthly Books is $500 a month.',
+ [("IRS: Publication 583, Starting a Business and Keeping Records","https://www.irs.gov/publications/p583"),
+  ("IRS: Common questions about recordkeeping for small businesses","https://www.irs.gov/newsroom/common-questions-about-recordkeeping-for-small-businesses"),
+  ("IRS: 2026 Form 1040-ES, Estimated Tax for Individuals","https://www.irs.gov/pub/irs-pdf/f1040es.pdf"),
+  ("California FTB: 2026 Instructions for Form 540-ES","https://www.ftb.ca.gov/forms/2026/2026-540-es-instructions.html")],
+ "catch-up-bookkeeping-with-ai"),
 ]
