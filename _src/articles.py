@@ -1257,4 +1257,80 @@ She matches the five deposits to invoices, confirms two grocery charges were pro
   ("IRS: 2026 Form 1040-ES, Estimated Tax for Individuals","https://www.irs.gov/pub/irs-pdf/f1040es.pdf"),
   ("California FTB: 2026 Instructions for Form 540-ES","https://www.ftb.ca.gov/forms/2026/2026-540-es-instructions.html")],
  "catch-up-bookkeeping-with-ai"),
+article("/ai-accounting/quickbooks-report-insights-reconciliation-ai/","/ai-accounting/","AI for Accounting",
+ "QuickBooks AI report insights: use them before month-end",
+ "QuickBooks AI report insights: use them before month-end",
+ "How to run QuickBooks AI report insights on your P&amp;L and Balance Sheet, check each flag yourself, and use AI reconciliation without skipping the statement.",
+ "2026-11-12",
+ "Month-end comes, and you open your profit and loss report. The numbers look about right. But you have a nagging feeling something is off, and no idea where to start looking.",
+ '''<div class="callout"><b>Quick answer:</b> as of November 13, 2026, Intuit&rsquo;s help pages say QuickBooks Online Plus, Advanced and Intuit Enterprise Suite can run AI report insights on the Profit and Loss and Balance Sheet. Go to <b>Reports &gt; Standard reports</b>, open either report, select the <b>Insights</b> icon, then <b>Analyze Books with Accounting AI</b>. It flags possible duplicates, miscategorized items, receivables and payables aging, and income that may need deferring. <b>Treat every flag as a question, not an answer:</b> open the transaction and check it against the receipt or bank line before you change anything. Simple Start and Essentials don&rsquo;t get these two features.</div>
+
+<h2>&ldquo;Something&rsquo;s off in my P&amp;L, but where?&rdquo;</h2>
+<p>A report can look fine and still be wrong. A charge entered twice, or a transfer to yourself filed as an expense, hides inside a total. You only notice when profit looks low and you can&rsquo;t explain why.</p>
+<p><b>A clean-looking report is not the same as a correct one.</b></p>
+
+<h2>And reconciling feels like a guessing game</h2>
+<p>When the bank balance and your books don&rsquo;t match, you scroll through dozens of lines hunting for the gap. It&rsquo;s slow, and it&rsquo;s easy to give up and &ldquo;fix&rdquo; it with an adjustment you can&rsquo;t explain later.</p>
+
+<h2>What a missed error costs you</h2>
+<ul>
+<li><b>Wrong profit.</b> A duplicate expense lowers profit. A missed sale raises it. Either way, the number you plan with, and the one your tax return starts from, is off.</li>
+<li><b>Personal costs on a business form.</b> The IRS Schedule C instructions say personal, living and family expenses don&rsquo;t belong among business expenses. An owner draw filed as &ldquo;office expense&rdquo; is exactly that mistake.</li>
+<li><b>Weak backup.</b> The IRS lists sales slips, paid bills, invoices, receipts, deposit slips and canceled checks as the documents that support your entries. An entry nobody can match to a document is a problem if you&rsquo;re ever asked.</li>
+<li><b>A slower close every month.</b> Errors you don&rsquo;t catch this month become a tangle next month.</li>
+</ul>
+
+<h2>Picture this instead</h2>
+<p>It&rsquo;s the first week of the month. You open the P&amp;L, click one icon, and get a short list of things worth a second look. You check each one in a few minutes, fix the two that are real, note why, and reconcile. Your report now matches your bank, and you know why every number is there.</p>
+
+<h2>What QuickBooks AI report insights do</h2>
+<p>Intuit describes report insights as a supplemental review that helps you close your books. Here is what its help pages say, in plain words:</p>
+<ul>
+<li><b>Which reports:</b> the Profit and Loss and the Balance Sheet. The help page says it covers most accounts on those reports, but not all of them.</li>
+<li><b>What it looks for:</b> trends and anomalies, such as a sudden drop in profit or unusual spending, plus possible bookkeeping errors. Intuit names duplicates, miscategorized transactions, receivables and payables aging, and income that should have been deferred among the top issues.</li>
+<li><b>How far back:</b> up to 15 months of transactions.</li>
+<li><b>What you get:</b> a short summary with a root-cause explanation, and a <b>Download detailed report</b> option for a PDF.</li>
+</ul>
+<p>Separately, <b>AI-powered reconciliation</b> helps you find possible issues while you reconcile a bank account, explains each one and suggests how to resolve it. Both features need Plus, Advanced or Intuit Enterprise Suite.</p>
+
+<h2>The flag-check-fix method for QuickBooks AI report insights</h2>
+<ol>
+<li><b>Categorize first.</b> Clear your bank feed so the report reflects every transaction. Our <a href="/ai-accounting/quickbooks-ai-banking-suggestions/">QuickBooks AI banking suggestions</a> guide covers that step.</li>
+<li><b>Run the insights.</b> Go to Reports &gt; Standard reports &gt; Profit and Loss (or Balance Sheet). Select the Insights icon above the report, then Analyze Books with Accounting AI. It takes a few seconds.</li>
+<li><b>Open each flag.</b> Select &ldquo;Accounting AI reviewed&rdquo; under an insight to read the root cause. Download the PDF if you want a record of what it found.</li>
+<li><b>Check it against a source.</b> For each flag, open the transactions it names. Compare them to the receipt, invoice or bank line. Decide yourself whether it&rsquo;s an error.</li>
+<li><b>Fix with a note.</b> If it&rsquo;s real, fix it in QuickBooks and add a dated memo saying what you changed and why. If it isn&rsquo;t, leave it and note that you checked.</li>
+<li><b>Reconcile to the statement.</b> Reconcile each bank and card account to its statement. Use the AI reconciliation explanations to find gaps faster, but the statement balance is the test. See <a href="/ai-accounting/ai-bank-reconciliation/">AI bank reconciliation</a> for the full routine.</li>
+</ol>
+
+<div class="callout"><b>A prompt for the flags you&rsquo;re unsure about.</b> Paste the flag text and the transaction details (date, payee, amount, category, memo; no account numbers) into any AI chat:<br><br><i>&ldquo;QuickBooks flagged this as a possible issue: [paste flag]. Here are the transactions: [paste]. Explain in plain words what might be wrong, what document would prove it either way, and what entry would fix it if it is an error. Don&rsquo;t assume it is an error. List the questions I should answer first.&rdquo;</i></div>
+
+<h3>Example (made-up data)</h3>
+<p>A design studio runs insights on its October P&amp;L. Two flags come back:</p>
+<table>
+<tr><th>Flag</th><th>What the check showed</th><th>Fix</th></tr>
+<tr><td>Possible duplicate: two $89.00 charges to a software vendor on Oct 3</td><td>The bank statement shows only one charge. One entry was imported twice.</td><td>Delete the duplicate, memo &ldquo;dup import, one charge on Oct stmt.&rdquo;</td></tr>
+<tr><td>Possible miscategorization: $1,500 transfer to owner&rsquo;s personal account filed as Office Expense</td><td>The owner moved money to herself. No receipt, no business purchase.</td><td>Recategorize to Owner Draw. Profit rises by $1,500.</td></tr>
+</table>
+<p>Without the fixes, October&rsquo;s expenses were overstated by $1,589. With them, the P&amp;L matches what really happened.</p>
+
+<h2>How do you know the AI flags are right?</h2>
+<p><b>You don&rsquo;t, until you check.</b> The insights point to where to look; they don&rsquo;t prove anything. Three habits keep you safe:</p>
+<ul>
+<li><b>Never accept a fix you can&rsquo;t match to a document.</b> The receipt, invoice or statement decides, not the explanation.</li>
+<li><b>No flags doesn&rsquo;t mean no errors.</b> Intuit says the review doesn&rsquo;t cover every account. A missing sale or a wrong loan balance can slip past it.</li>
+<li><b>Reconciling still comes first.</b> IRS Publication 583 recommends reconciling your business checking account every month. AI helps you find gaps; the statement proves you closed them.</li>
+</ul>
+<p><b>Not technical?</b> You don&rsquo;t need to be. It&rsquo;s one icon and a list. The judgment part, matching flags to documents, is the same work you&rsquo;d do by hand, just pointed at the right lines. Add it to your <a href="/bookkeeping/monthly-close-checklist-ai/">monthly close checklist</a>.</p>
+
+<div class="callout"><b>State note.</b> If you sell physical products in California, the CDTFA generally requires a seller&rsquo;s permit (it charges no fee for one). Keep the sales tax you collect in its own liability account, not in sales. If insights flag a jump in income, check that collected sales tax wasn&rsquo;t booked as sales. Other states have their own rules; check your state&rsquo;s tax agency.</div>
+
+<p>Would you rather someone else ran this check, and every other one, each month?</p>''',
+ 'Get the month-end review done for you. At <a href="CTAURL">Computatio</a>, AI does the bookkeeping and an accountant reviews every account, every month. Monthly Books is $500 a month.',
+ [("Intuit QuickBooks: Learn about Accounting AI features","https://quickbooks.intuit.com/learn-support/en-us/help-article/bank-transactions/accounting-agent-features/L6pl9rv94_US_en_US"),
+  ("Intuit QuickBooks: AI-powered Report Insights","https://quickbooks.intuit.com/learn-support/en-us/help-article/business-reports/ai-powered-report-insights/L2jZq6tfM_US_en_US"),
+  ("IRS: Publication 583, Starting a Business and Keeping Records","https://www.irs.gov/publications/p583"),
+  ("IRS: Instructions for Schedule C (Form 1040) (2025)","https://www.irs.gov/instructions/i1040sc"),
+  ("CDTFA: Obtaining a Seller's Permit","https://cdtfa.ca.gov/taxes-and-fees/faqseller.htm")],
+ "quickbooks-report-insights-reconciliation-ai"),
 ]

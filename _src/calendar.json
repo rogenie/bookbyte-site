@@ -189,7 +189,7 @@
    "hub": "ai-accounting",
    "path": "/ai-accounting/quickbooks-report-insights-reconciliation-ai/",
    "title": "QuickBooks AI report insights: use them before month-end",
-   "status": "todo",
+   "status": "published",
    "kind": "ai-update",
    "brief": {
     "news": "QuickBooks' Accounting AI help page (updated Oct 26) describes report insights on the P&L and Balance Sheet that flag possible issues such as duplicates, miscategorized items, AR/AP aging and income that may need deferring, plus AI-powered reconciliation that explains possible issues while you reconcile.",
@@ -204,7 +204,8 @@
      "/ai-accounting/quickbooks-ai-banking-suggestions/",
      "/bookkeeping/monthly-close-checklist-ai/"
     ]
-   }
+   },
+   "url": "https://bookbytellc.com/ai-accounting/quickbooks-report-insights-reconciliation-ai/"
   },
   {
    "date": "2026-11-13",
