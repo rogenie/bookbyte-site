@@ -1333,4 +1333,86 @@ article("/ai-accounting/quickbooks-report-insights-reconciliation-ai/","/ai-acco
   ("IRS: Instructions for Schedule C (Form 1040) (2025)","https://www.irs.gov/instructions/i1040sc"),
   ("CDTFA: Obtaining a Seller's Permit","https://cdtfa.ca.gov/taxes-and-fees/faqseller.htm")],
  "quickbooks-report-insights-reconciliation-ai"),
+article("/ai-accounting/read-profit-and-loss-with-ai/","/ai-accounting/","AI for Accounting",
+ "How to use AI to read your profit and loss statement",
+ "How to use AI to read your profit and loss statement",
+ "Use AI to read your profit and loss statement: a copy-paste prompt, a made-up example, and the checks that catch errors before they reach your taxes.",
+ "2026-11-13",
+ "You run the profit and loss report. It&rsquo;s a column of numbers with a total at the bottom. You know it matters. You&rsquo;re just not sure what it&rsquo;s telling you.",
+ '''<div class="callout"><b>Quick answer:</b> to read your profit and loss statement with AI, export the report (no account numbers), paste it into any AI chat, and ask it to explain income, expenses and net profit in plain words, compare against last month, and list lines that look unusual. <b>Then check every flagged line against your books and bank statement yourself.</b> AI explains the report; it can&rsquo;t tell you whether the report is right.</div>
+
+<h2>&ldquo;I have the report. I don&rsquo;t know what it means.&rdquo;</h2>
+<p>A profit and loss statement (P&amp;L) lists money in, money out, and what&rsquo;s left. That&rsquo;s the whole idea. But the labels, the subtotals and the month-to-month swings make it hard to read if nobody ever showed you how.</p>
+<p><b>If you can&rsquo;t read your P&amp;L, you&rsquo;re running the business on your bank balance.</b></p>
+
+<h2>And you can&rsquo;t tell if the numbers are wrong</h2>
+<p>Even when you follow the totals, you don&rsquo;t know whether a big expense line is real or a mistake. Was that jump in office expense a new laptop, or a transfer to yourself filed in the wrong place? The report won&rsquo;t say.</p>
+
+<h2>What misreading your P&amp;L costs you</h2>
+<ul>
+<li><b>Your tax return starts here.</b> For a sole proprietor, the year&rsquo;s P&amp;L becomes Schedule C. Its net profit, line 31, goes on Schedule 1 (Form 1040) line 3 and on Schedule SE line 2.</li>
+<li><b>Profit drives self-employment tax.</b> The IRS sets it at 15.3% (12.4% Social Security, 2.9% Medicare) on most of your net earnings, and you generally owe it once net earnings reach $400. A wrong profit means a wrong tax set-aside.</li>
+<li><b>Personal costs don&rsquo;t belong.</b> The Schedule C instructions say personal, living and family expenses aren&rsquo;t business expenses. Money you pay yourself is a draw, not an expense.</li>
+<li><b>Bad decisions.</b> Cut the wrong cost, or raise prices you didn&rsquo;t need to, because the report misled you.</li>
+</ul>
+
+<h2>Picture this instead</h2>
+<p>Once a month you paste your P&amp;L into an AI chat. Two minutes later you have a plain-English summary: what you earned, where it went, what changed, and three lines worth a closer look. You check those three, fix one, and you know your real profit. You plan from facts instead of gut feel.</p>
+
+<h2>How to read a profit and loss statement: the basic parts</h2>
+<table>
+<tr><th>Part</th><th>What it means</th></tr>
+<tr><td>Income (revenue, sales)</td><td>What customers paid or owe you for the period. Loans and money you put in yourself aren&rsquo;t income.</td></tr>
+<tr><td>Cost of goods sold</td><td>What the products you sold cost you. Only businesses that sell goods have it.</td></tr>
+<tr><td>Expenses</td><td>The costs of running the business: software, advertising, contractors, supplies.</td></tr>
+<tr><td>Net profit (or loss)</td><td>Income minus cost of goods sold minus expenses. What&rsquo;s left for you, and for taxes.</td></tr>
+</table>
+
+<h2>The explain-compare-question method to read your P&amp;L with AI</h2>
+<ol>
+<li><b>Reconcile first.</b> Make sure your bank and card accounts match their statements for the month. IRS Publication 583 recommends reconciling your business checking account every month. A P&amp;L built on unreconciled books just explains the errors.</li>
+<li><b>Export the report.</b> Run the P&amp;L for this month and last month (or a &ldquo;compare to previous period&rdquo; view) and export it to a spreadsheet or copy the text.</li>
+<li><b>Strip identifiers.</b> Remove account numbers and customer names you don&rsquo;t need. Category names and amounts are enough. Our <a href="/ai-accounting/financial-data-safety-ai/">data safety guide</a> explains what to leave out.</li>
+<li><b>Paste it with the prompt below.</b></li>
+<li><b>Check every flagged line.</b> Open the transactions behind it. Match them to receipts, invoices and the bank statement.</li>
+<li><b>Fix and rerun.</b> Correct real errors in your books, not in the chat. Then rerun the report and the prompt.</li>
+</ol>
+
+<div class="callout"><b>The prompt.</b> Works in ChatGPT, Claude, Gemini or Copilot:<br><br><i>&ldquo;Here is my small business profit and loss statement for [month] and the month before: [paste]. 1) Explain in plain words what I earned, what I spent and my net profit, and my profit as a percentage of income. 2) List the three biggest changes from last month, with the dollar change. 3) List any lines that look unusual for a business like mine ([one-line description]) and why, such as possible duplicates, personal costs, transfers or owner draws in expense categories, or income that may be a loan or refund. 4) For each, tell me which transactions or documents to check. Show your math. Don&rsquo;t assume anything is an error, and don&rsquo;t give tax advice.&rdquo;</i></div>
+
+<h3>Example (made-up data)</h3>
+<p>A one-person marketing studio pastes its October P&amp;L:</p>
+<table>
+<tr><th>Line</th><th>October</th></tr>
+<tr><td>Income</td><td>$9,400</td></tr>
+<tr><td>Contract labor</td><td>$1,200</td></tr>
+<tr><td>Software</td><td>$340</td></tr>
+<tr><td>Advertising</td><td>$600</td></tr>
+<tr><td>Meals</td><td>$280</td></tr>
+<tr><td>Office expense</td><td>$2,150</td></tr>
+<tr><td>Bank fees</td><td>$45</td></tr>
+<tr><td><b>Total expenses</b></td><td><b>$4,615</b></td></tr>
+<tr><td><b>Net profit</b></td><td><b>$4,785</b></td></tr>
+</table>
+<p>The AI summary: net profit is $4,785, about 50.9% of income. Office expense jumped from a usual few hundred dollars to $2,150, the biggest change. It asks the owner to check what&rsquo;s inside that line.</p>
+<p>The owner checks. $1,500 of it was a transfer to her personal account: an owner draw, not an expense. She moves it to Owner Draw. <b>Real profit is $6,285, not $4,785.</b> Her tax set-aside should be based on the higher number.</p>
+
+<h2>How do you check what AI tells you about your P&amp;L?</h2>
+<ul>
+<li><b>Redo the math.</b> Add the expense lines yourself or in a spreadsheet. AI can misadd, especially with long reports.</li>
+<li><b>Tie the totals to your software.</b> The net profit AI quotes must match the report you exported, to the dollar.</li>
+<li><b>Treat every &ldquo;unusual&rdquo; flag as a question.</b> The receipt or bank line decides, not the AI&rsquo;s guess.</li>
+<li><b>Know what a P&amp;L hides.</b> Not every amount on it is a full deduction. For example, the IRS says that in most cases you can deduct only 50% of business meals. Your books record the full cost; the limit applies on your return.</li>
+</ul>
+<p><b>Is it safe?</b> Yes, if you remove account numbers and use a tool whose data settings you&rsquo;ve checked. <b>Not technical?</b> If you can copy and paste, you can do this. Using QuickBooks Plus or Advanced? Its built-in <a href="/ai-accounting/quickbooks-report-insights-reconciliation-ai/">AI report insights</a> do a similar first pass. Clean categories make all of this easier; see <a href="/ai-accounting/chart-of-accounts-with-ai/">chart of accounts with AI</a>.</p>
+
+<div class="callout"><b>State note.</b> If you sell physical products in California, the CDTFA generally requires a seller&rsquo;s permit. Keep collected sales tax in its own liability account so it doesn&rsquo;t show up as income on your P&amp;L. Other states have their own rules; check your state&rsquo;s tax agency.</div>
+
+<p>Next, use your profit to <a href="/ai-accounting/estimate-quarterly-taxes-with-ai/">estimate quarterly taxes with AI</a>, or build the habit with <a href="/bookkeeping/do-your-own-bookkeeping/">how to do your own bookkeeping</a>. Rather have a P&amp;L you can trust without doing the work?</p>''',
+ 'Get a reviewed P&amp;L every month. At <a href="CTAURL">Computatio</a>, AI does the bookkeeping and an accountant reviews every account, every month. Monthly Books is $500 a month.',
+ [("IRS: Instructions for Schedule C (Form 1040) (2025)","https://www.irs.gov/instructions/i1040sc"),
+  ("IRS: Topic no. 554, Self-employment tax","https://www.irs.gov/taxtopics/tc554"),
+  ("IRS: Publication 583, Starting a Business and Keeping Records","https://www.irs.gov/publications/p583"),
+  ("CDTFA: Obtaining a Seller's Permit","https://cdtfa.ca.gov/taxes-and-fees/faqseller.htm")],
+ "read-profit-and-loss-with-ai"),
 ]
