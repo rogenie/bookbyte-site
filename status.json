@@ -1,5 +1,5 @@
 {
- "built": "2026-11-13",
+ "built": "2026-11-15",
  "cadence": "Weekdays: evergreen Mon/Wed/Fri, AI updates Tue/Thu (see _src/TOPICS.md)",
  "items": [
   {
@@ -152,8 +152,18 @@
    "status": "todo"
   },
   {
+   "date": "2026-11-24",
+   "hub": "ai-accounting",
+   "status": "todo"
+  },
+  {
    "date": "2026-11-25",
    "hub": "bookkeeping",
+   "status": "todo"
+  },
+  {
+   "date": "2026-11-26",
+   "hub": "ai-accounting",
    "status": "todo"
   },
   {

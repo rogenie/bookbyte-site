@@ -289,11 +289,55 @@
    "status": "todo"
   },
   {
+   "date": "2026-11-24",
+   "hub": "ai-accounting",
+   "path": "/ai-accounting/claude-personal-finance-business-costs/",
+   "title": "Claude Personal Finance: spot business costs",
+   "status": "todo",
+   "kind": "ai-update",
+   "brief": {
+    "news": "Claude added Personal Finance (beta, Nov 5): link bank, credit card, loan and investment accounts through Plaid, see balances, spending, subscriptions and upcoming bills, and ask Claude questions about them. It is read-only.",
+    "source": "https://support.claude.com/en/articles/18185620-use-personal-finance-in-claude",
+    "source_date": "2026-11-05",
+    "who": "Claude Pro, Max and Ultra, US only, US banks only, beta rolling out gradually (release notes, Nov 5: https://support.claude.com/en/articles/12138966-release-notes). Not Free, Team or Enterprise. The help page does not say business accounts are supported; don't claim they are.",
+    "task": "Finding business expenses paid from personal accounts, and spotting recurring subscriptions, so they get recorded in the business books",
+    "angle": "A prompt to list likely business charges and subscriptions on personal cards for a month; turn the list into a reimbursement or owner-contribution entry for the books; check every line against the bank or card statement and a receipt (balances can lag a day or two and may not match the bank). Cover limits: read-only, 24 months of history, not in projects or scheduled tasks, and what Plaid can see. It is not a replacement for separate business accounts.",
+    "cta": "monthly-books",
+    "links": [
+     "/ai-accounting/separate-business-personal-expenses-ai/",
+     "/ai-accounting/financial-data-safety-ai/",
+     "/ai-accounting/ai-duplicate-charges-subscriptions/"
+    ]
+   }
+  },
+  {
    "date": "2026-11-25",
    "hub": "bookkeeping",
    "path": "/bookkeeping/year-end-bookkeeping-checklist-ai/",
    "title": "Year-end bookkeeping checklist, with AI prompts for each step",
    "status": "todo"
+  },
+  {
+   "date": "2026-11-26",
+   "hub": "ai-accounting",
+   "path": "/ai-accounting/excel-copilot-accounting-skills-reconciliation/",
+   "title": "Excel Copilot accounting skills: check a reconciliation",
+   "status": "todo",
+   "kind": "ai-update",
+   "brief": {
+    "news": "Copilot in Excel added accounting skills, including @reconciliation (match balances and transactions across ledgers and bank statements and propose corrections) and journal-entry (prepare accruals, reversals and corrections and check debits equal credits), with an optional audit trail of what Copilot changed.",
+    "source": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/what%E2%80%99s-new-in-microsoft-copilot--october-2026/4568528",
+    "source_date": "2026-11-13",
+    "who": "Microsoft's October roundup (updated Nov 13) says Frontier in October, worldwide in November. The support page (https://support.microsoft.com/en-us/excel/copilot/copilot-in-excel-built-in-skills) still says rolling out to Frontier and names no license. Confirm worldwide availability and which plans get it before publishing; if still Frontier-only, move or hold.",
+    "task": "Bank reconciliation and correcting journal entries in a spreadsheet",
+    "angle": "Put a bank statement export and a ledger export on two sheets, run @reconciliation, then review each proposed reconciling item against the statement; use journal-entry for a made-up correction and check it balances. Turn on the audit trail. Microsoft says Copilot doesn't give accounting or tax advice, so every proposed fix needs a source document before it goes in the books. What's new versus the clean-data guide: matching and entries, not formatting.",
+    "cta": "monthly-books",
+    "links": [
+     "/ai-accounting/excel-copilot-clean-data-bank-exports/",
+     "/ai-accounting/ai-bank-reconciliation/",
+     "/bookkeeping/monthly-close-checklist-ai/"
+    ]
+   }
   },
   {
    "date": "2026-11-27",
