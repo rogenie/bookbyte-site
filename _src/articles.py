@@ -43,49 +43,66 @@ ARTICLES = [
 article("/bookkeeping/do-your-own-bookkeeping/","/bookkeeping/","Bookkeeping",
  "How to Do Your Own Bookkeeping When You're Self-Employed",
  "How to do your own bookkeeping when you&rsquo;re self-employed",
- "A step-by-step bookkeeping routine for freelancers and owner-operators: separate accounts, simple categories, monthly reconciling, receipts and tax set-asides.",
+ "Do your own bookkeeping when you're self-employed: separate accounts, Schedule C categories, monthly reconciling, receipts and tax set-asides.",
  "2026-11-16",
- "Bookkeeping for a one-person business comes down to eight habits. Set them up once, spend about an hour a month, and your books will be ready when tax time comes.",
- '''<h2>1. Open a separate business account</h2>
-<p>Use one checking account and, if you need one, one credit card for business only. You don&rsquo;t need an LLC to do this; a second personal account used only for business works. Mixing business and personal spending is the most common reason books take hours to fix later.</p>
-<p>If you&rsquo;ve already mixed them, don&rsquo;t try to untangle years of history. Pick a start date, move to separate accounts from that date, and clean up only the current tax year.</p>
+ "You know you should keep books. You just don&rsquo;t know where to start, and the shoebox of receipts keeps growing.",
+ '''<div class="callout"><b>Quick answer.</b> To do your own bookkeeping when you&rsquo;re self-employed, keep business money in its own account, sort every transaction into the expense lines on Schedule C, save receipts, reconcile each account to its statement every month, and set aside money for tax. About 15 minutes a week and 30 minutes a month keeps it current.</div>
 
-<h2>2. Choose where your books live</h2>
-<p>A spreadsheet works if you have fewer than about 50 transactions a month and one or two accounts. Beyond that, bookkeeping software that imports your bank transactions saves time and mistakes. What matters most is using one system and keeping it up to date.</p>
+<h2>You&rsquo;re not sure what &ldquo;doing the books&rdquo; even means</h2>
+<p>Most freelancers and owner-operators were never taught bookkeeping. So it stays on the to-do list. Bank transactions pile up, and you tell yourself you&rsquo;ll sort it out before taxes.</p>
+<p><b>Bookkeeping is just a record of money in and money out, sorted so you can see your profit.</b> That&rsquo;s it.</p>
 
-<h2>3. Set up categories that match your tax form</h2>
-<p>Sole proprietors and single-member LLCs report business income and expenses on Schedule C. Use its expense lines as your categories, such as advertising, car and truck expenses, contract labor, insurance, office expense, supplies, travel, meals and utilities. Your books then line up with your tax return almost line for line.</p>
-<p>Add two categories that aren&rsquo;t expenses: <b>owner draws</b> (money you move to yourself) and <b>owner contributions</b> (personal money you put into the business). Neither is a deduction or income, and getting them right keeps your profit accurate.</p>
+<h2>Your business and personal money are tangled</h2>
+<p>The second problem is the mix. Coffee, client payments, software and groceries all run through one card. Every transaction becomes a question: was that business?</p>
 
-<h2>4. Record transactions every week</h2>
-<p>Once a week, categorize every new transaction. It takes about 15 minutes when it&rsquo;s a habit. Write a short note on anything unusual, such as who a payment was for or what a large purchase was, because you won&rsquo;t remember in April.</p>
+<h2>What it costs to wait until tax time</h2>
+<p>Self-employment tax alone is 15.3% (12.4% Social Security plus 2.9% Medicare), and it applies once your net earnings reach $400. Income tax comes on top. If you don&rsquo;t track profit during the year, that bill arrives as a surprise.</p>
+<p>Records matter after you file too. The IRS can generally assess more tax for 3 years after you file. That window is 6 years if you leave out income worth more than 25% of the gross income on your return. Without receipts, a deduction you really earned is hard to defend.</p>
 
-<h2>5. Keep your receipts</h2>
-<p>Keep a digital copy of receipts, invoices, 1099s and bank statements. Phone photos saved to one folder per year are enough. The IRS generally expects you to keep records for 3 years after you file, 6 years if you leave out more than 25% of your income, and 7 years if you claim a bad debt or a worthless securities loss. Keep employment tax records at least 4 years.</p>
+<h2>Picture this instead</h2>
+<p>It&rsquo;s the first week of the month. You open one account, see every transaction already sorted, and know your profit to the dollar. You move your tax money aside and close the laptop. In January, your full-year report lines up with your Schedule C, and filing takes an afternoon.</p>
 
-<h2>6. Reconcile every account each month</h2>
-<p>Reconciling means checking that your books match your bank and card statements. At the end of each month, compare the ending balance in your books with the statement. If they don&rsquo;t match, look for missing, duplicate or mistyped transactions. A month that reconciles is a month you can trust.</p>
+<h2>The one-hour bookkeeping routine for the self-employed</h2>
+<ol>
+<li><b>Open a separate business account.</b> Use one checking account, and one card if you need it, for business only. You don&rsquo;t need an LLC; a second account used only for business works. If your money is already mixed, pick a start date and separate from there. See <a href="/ai-accounting/separate-business-personal-expenses-ai/">how to separate business and personal expenses with AI</a>.</li>
+<li><b>Pick one place for your books.</b> A spreadsheet works for a few dozen transactions a month. Past that, software that imports bank transactions saves time. What matters most is one system, kept current.</li>
+<li><b>Use Schedule C lines as your categories.</b> Sole proprietors report on Schedule C, and so do most single-member LLCs unless they chose to be taxed as a corporation. Use its expense lines, such as car and truck expenses, contract labor, insurance, office expenses, supplies, travel, meals and utilities. Add two non-expense categories: <b>owner draws</b> (money you take out) and <b>owner contributions</b> (personal money you put in). Our <a href="/ai-accounting/chart-of-accounts-with-ai/">chart of accounts guide</a> has a template.</li>
+<li><b>Categorize every week.</b> Fifteen minutes. Add a short note to anything unusual, because you won&rsquo;t remember in April.</li>
+<li><b>Save receipts and documents.</b> Phone photos of receipts, invoices, 1099s and statements, in one folder per year. If you have employees, keep employment tax records at least 4 years.</li>
+<li><b>Reconcile each account monthly.</b> Compare your books&rsquo; ending balance with the bank or card statement. If they differ, look for missing, duplicate or mistyped entries. <b>A month that reconciles is a month you can trust.</b></li>
+<li><b>Check profit and set aside tax.</b> Income minus expenses, every month. Move a fixed share of each payment into savings for estimated taxes. See our <a href="/estimated-taxes/quarterly-estimated-taxes-california/">guide to quarterly estimated taxes</a>.</li>
+<li><b>Close the year in January.</b> Reconcile December, clear any uncategorized items, and list contractors you paid. For payments made in 2026, you generally file Form 1099-NEC for a contractor you paid $2,000 or more (it was $600 for earlier years).</li>
+</ol>
 
-<h2>7. Look at your profit and set aside tax</h2>
-<p>After you reconcile, check your profit for the month: income minus expenses. Self-employment tax alone is 15.3% on most of your net earnings, before federal and California income tax. Many owners move a fixed percentage of each payment into a separate savings account so the money is there when estimated taxes are due. See our <a href="/estimated-taxes/quarterly-estimated-taxes-california/">guide to quarterly estimated taxes</a>.</p>
+<div class="callout"><b>State note.</b> In California, if you sell or lease taxable physical products, you generally need a free seller&rsquo;s permit from the California Department of Tax and Fee Administration (CDTFA). Sales tax you collect isn&rsquo;t your income, so track it separately.</div>
 
-<div class="callout"><b>California note.</b> If you sell physical products in California, you generally need a seller&rsquo;s permit from the California Department of Tax and Fee Administration (CDTFA) and must track sales tax separately from your income. Sales tax you collect isn&rsquo;t your income.</div>
+<h2>Let AI do the weekly sorting</h2>
+<p>You don&rsquo;t have to be technical. Export last week&rsquo;s transactions as a spreadsheet and paste them into any AI chat tool with this prompt:</p>
+<div class="callout"><b>Prompt.</b> &ldquo;I&rsquo;m a self-employed [your work]. Sort these transactions into Schedule C expense categories, plus Owner draw, Owner contribution and Income. Return a table with date, description, amount, category and a confidence of high or low. Mark anything that could be personal as low.&rdquo;</div>
+<p><b>Example (made-up data):</b></p>
+<table>
+<tr><th>Date</th><th>Description</th><th>Amount</th><th>Category</th><th>Confidence</th></tr>
+<tr><td>Nov 3</td><td>Adobe subscription</td><td>-$59.99</td><td>Office expenses</td><td>High</td></tr>
+<tr><td>Nov 4</td><td>Client payment, Lane Studio</td><td>$1,800.00</td><td>Income</td><td>High</td></tr>
+<tr><td>Nov 5</td><td>Transfer to personal checking</td><td>-$1,000.00</td><td>Owner draw</td><td>High</td></tr>
+<tr><td>Nov 6</td><td>Costco</td><td>-$142.18</td><td>Supplies</td><td>Low</td></tr>
+</table>
+<p><b>Check the output before you save it.</b> Open every low-confidence line and decide yourself; the Costco run could be groceries. Make sure the table&rsquo;s total matches your bank&rsquo;s total for the week. Remove account numbers before you paste, and read <a href="/ai-accounting/financial-data-safety-ai/">how to keep your financial data safe when you use AI</a>. AI sorts; you still reconcile, keep receipts and own your return.</p>
 
-<h2>8. Close the year in January</h2>
-<p>In January, reconcile December, make sure every transaction has a category, and list anyone you paid as a contractor. Starting with payments made in 2026, you generally need to send a Form 1099-NEC to contractors you paid $2,000 or more during the year, up from $600. Then run a profit and loss report for the full year. That report is the starting point for your Schedule C.</p>
-
-<h2>A monthly routine that fits in an hour</h2>
+<h2>How much time does it take?</h2>
 <ul>
-<li><b>Weekly (15 minutes):</b> categorize new transactions and save receipts.</li>
-<li><b>Monthly (30 minutes):</b> reconcile each account, review profit, move money for taxes.</li>
-<li><b>Quarterly:</b> make estimated tax payments.</li>
-<li><b>Yearly:</b> close the books, send 1099s, prepare your return.</li>
-</ul>''',
+<li><b>Weekly (15 minutes):</b> categorize and save receipts.</li>
+<li><b>Monthly (30 minutes):</b> reconcile, review profit, move tax money.</li>
+<li><b>Quarterly:</b> pay estimated taxes.</li>
+<li><b>Yearly:</b> close the books, send 1099s, file.</li>
+</ul>
+<p>If your books are already behind, start with <a href="/ai-accounting/catch-up-bookkeeping-with-ai/">how to catch up on months of bookkeeping with AI</a>. Or hand the routine off entirely.</p>''',
  'If your books are already behind, or you&rsquo;d rather not spend the hour, <a href="CTAURL">Computatio</a> keeps your books current for $500 a month, with an accountant reviewing every account.',
- [("IRS: How long should I keep records?","https://www.irs.gov/businesses/small-businesses-self-employed/how-long-should-i-keep-records"),
-  ("IRS: About Schedule C (Form 1040)","https://www.irs.gov/forms-pubs/about-schedule-c-form-1040"),
-  ("Littler: 1099 reporting thresholds under the 2025 tax law","https://www.littler.com/news-analysis/asap/tax-bill-changes-1099-reporting-thresholds"),
-  ("CDTFA: Seller's permit","https://www.cdtfa.ca.gov/taxes-and-fees/sutprograms.htm")],
+ [("IRS: Topic no. 305, Recordkeeping","https://www.irs.gov/taxtopics/tc305"),
+  ("IRS: Instructions for Schedule C (Form 1040)","https://www.irs.gov/instructions/i1040sc"),
+  ("IRS: Self-employment tax (Social Security and Medicare taxes)","https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes"),
+  ("IRS: Am I required to file a Form 1099 or other information return?","https://www.irs.gov/businesses/small-businesses-self-employed/am-i-required-to-file-a-form-1099-or-other-information-return"),
+  ("CDTFA: Obtaining a seller's permit","https://cdtfa.ca.gov/taxes-and-fees/faqseller.htm")],
  "do-your-own-bookkeeping"),
 
 article("/estimated-taxes/quarterly-estimated-taxes-california/","/estimated-taxes/","Estimated taxes",
