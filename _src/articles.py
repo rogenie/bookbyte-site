@@ -1432,4 +1432,73 @@ article("/ai-accounting/read-profit-and-loss-with-ai/","/ai-accounting/","AI for
   ("IRS: Publication 583, Starting a Business and Keeping Records","https://www.irs.gov/publications/p583"),
   ("CDTFA: Obtaining a Seller's Permit","https://cdtfa.ca.gov/taxes-and-fees/faqseller.htm")],
  "read-profit-and-loss-with-ai"),
+article("/ai-accounting/chatgpt-google-sheets-expense-summary/","/ai-accounting/","AI for Accounting",
+ "ChatGPT for Google Sheets: build a monthly expense summary",
+ "ChatGPT for Google Sheets: build a monthly expense summary",
+ "Use ChatGPT for Google Sheets (or Excel) to build a monthly income and expense summary with formulas, then check every total against your books.",
+ "2026-11-17",
+ "Month-end comes around. You have a long list of transactions in a spreadsheet, and you still can&rsquo;t say what you spent on what.",
+ '''<div class="callout"><b>Quick answer:</b> as of November 17, 2026, ChatGPT works inside Google Sheets and Excel as an add-on. In Sheets, install the ChatGPT add-on from OpenAI, then choose <b>Extensions &gt; ChatGPT &gt; Open</b> and sign in with your OpenAI account. Ask it to build a summary tab that totals each category with formulas. OpenAI says both add-ons are generally available on all ChatGPT plans. <b>Then check that the summary&rsquo;s grand total equals the sum of your transaction list, to the cent.</b></div>
+
+<h2>Your transactions are in a sheet, but your totals aren&rsquo;t</h2>
+<p>You exported the month from your bank or your bookkeeping app. Now you have 80 rows and no answer to simple questions. How much went to software? Did rent go up? What was profit?</p>
+<p><b>A list of transactions is not a summary.</b> Someone still has to group it.</p>
+
+<h2>And building formulas feels like a second job</h2>
+<p>You know a SUMIFS formula could do it. You just don&rsquo;t remember the syntax, and the last time you tried, one wrong range broke the whole tab. So you copy numbers by hand, or skip the summary.</p>
+
+<h2>What a wrong summary costs you</h2>
+<ul>
+<li><b>Wrong numbers drive decisions.</b> You cut the wrong cost, or price a job off a profit figure that was never real.</li>
+<li><b>Tax-time cleanup.</b> Sole proprietors report income and expenses on Schedule C, line by line. If your categories don&rsquo;t map to those lines, someone sorts it all again in March.</li>
+<li><b>Records still matter later.</b> The IRS says to keep income tax records for 3 years in most cases, and 6 years if you leave out income worth more than 25% of the gross income on your return. A summary is only useful if it ties back to those records.</li>
+</ul>
+
+<h2>Picture this instead</h2>
+<p>On the first of the month you paste last month&rsquo;s export into one tab. You open the ChatGPT sidebar and paste one prompt. A minute later there&rsquo;s a summary tab with income, each expense category, and net profit, all as live formulas. <b>You spend your time checking the numbers, not building them.</b></p>
+
+<h2>What is ChatGPT for Google Sheets and Excel?</h2>
+<p>OpenAI launched ChatGPT for Excel in beta on March 5, 2026, and added Google Sheets in April. On May 5, OpenAI said both were generally available on all plans. It runs in a sidebar next to your sheet. You ask in plain words, and it builds or updates formulas, tables and tabs.</p>
+<p>Two details matter for your books. OpenAI says the Excel version links its answers to the cells it used and <b>asks permission before it edits</b>, so you can review and undo. The Sheets add-on, published by OpenAI on the Google Workspace Marketplace, asks to view and manage the spreadsheets you install it in. That is real access to your data, so choose what goes in the file.</p>
+
+<h2>The 4-step method for a monthly expense summary in Google Sheets</h2>
+<ol>
+<li><b>Start from clean data.</b> Use an export from your bookkeeping app or a reconciled bank download, one row per transaction, with Date, Description, Category and Amount columns. Income positive, expenses negative. If your categories are a mess, <a href="/ai-accounting/ai-prompts-categorize-transactions/">sort them with AI first</a>.</li>
+<li><b>Strip what ChatGPT doesn&rsquo;t need.</b> Delete account numbers and client names. Use &ldquo;Client A&rdquo; instead. Our <a href="/ai-accounting/financial-data-safety-ai/">guide to keeping financial data safe with AI</a> lists what to remove.</li>
+<li><b>Open the sidebar.</b> In Sheets: <b>Extensions &gt; ChatGPT &gt; Open</b>. In Excel, open the ChatGPT add-in from your add-ins.</li>
+<li><b>Paste the prompt below.</b> Approve each change only after you read what it plans to do.</li>
+</ol>
+
+<div class="callout"><b>Prompt to copy:</b><br>
+Using the Transactions tab, create a new tab called &ldquo;October summary.&rdquo; List every unique value in the Category column. Next to each, add a SUMIFS formula that totals the Amount column for that category and for dates in October 2026. Add rows for total income, total expenses and net profit. Use formulas only, no typed numbers. Then add a check cell that subtracts the sum of the whole Amount column for October from net profit, and tell me if it isn&rsquo;t zero. Do not change the Transactions tab.</div>
+
+<div class="callout"><b>Example (made-up data).</b> A one-person design studio has 11 October rows.<br>
+<b>Income:</b> Client A $2,400, Client B $1,850, Client C $900. Total $5,150.<br>
+<b>Expenses:</b> design software $59.99, bookkeeping app $30.00, printer paper $42.18, coworking desk $350.00, client lunch $86.40, freelance illustrator $600.00, internet $79.99, business insurance $48.00. Total $1,296.56.<br>
+<b>First result:</b> the summary shows expenses of $1,216.57, and the check cell shows $79.99.<br>
+<b>What went wrong:</b> the internet row was tagged &ldquo;Utilities &rdquo; with a trailing space, so it became its own category and the formula skipped it. After fixing the label, expenses total $1,296.56 and net profit is $3,853.44. The check cell reads zero.</div>
+
+<h2>How to check a ChatGPT expense summary before you trust it</h2>
+<ol>
+<li><b>Tie the grand total.</b> Net profit on the summary must equal the sum of the month&rsquo;s Amount column. A check cell of zero is the goal.</li>
+<li><b>Count the categories.</b> Look for near-duplicates (&ldquo;Software&rdquo; and &ldquo;software&rdquo;, or a trailing space). Each one hides money.</li>
+<li><b>Recalculate one category by hand.</b> Filter the Transactions tab to that category and compare the total.</li>
+<li><b>Click into the formulas.</b> Confirm the date range covers the whole month, and that no cell holds a typed number.</li>
+<li><b>Compare with your books.</b> The totals should match the same month&rsquo;s <a href="/ai-accounting/read-profit-and-loss-with-ai/">profit and loss report</a>. If they don&rsquo;t, find the difference before you use either number.</li>
+</ol>
+
+<h2>Will this sort my expenses into Schedule C lines?</h2>
+<p>It can, if you tell it the mapping. The 2025 Schedule C instructions list lines such as contract labor (line 11), insurance other than health (line 15), office expense (line 18), supplies (line 22), deductible meals (line 24b) and utilities (line 25). Ask ChatGPT to add a &ldquo;Schedule C line&rdquo; column next to your category list, then review every row yourself.</p>
+<p><b>Record the full amount in your books, even when the deduction is smaller.</b> Business meals, for example, are generally 50% deductible on the return. The $86.40 lunch stays $86.40 in the books; the limit is applied at tax time.</p>
+
+<h2>What ChatGPT in your spreadsheet can&rsquo;t do</h2>
+<p>OpenAI says complex formulas and edge cases may still need manual work, so verify results before you rely on them. It only sees what&rsquo;s in the sheet. It can&rsquo;t tell you a charge was personal, find a missing receipt, or <a href="/ai-accounting/ai-bank-reconciliation/">reconcile your bank account</a> for you. You&rsquo;re still responsible for your return.</p>
+<p>Not a formula person? You don&rsquo;t have to be. Your job is to read the plan, approve it, and run the five checks. For more spreadsheet tasks, see <a href="/ai-accounting/ai-excel-google-sheets-bookkeeping/">AI for Excel and Google Sheets bookkeeping</a>.</p>
+<p>A summary is only as good as the transactions under it. Want those handled?</p>''',
+ 'Want the monthly summary done for you? At <a href="CTAURL">Computatio</a>, AI does the first pass and an accountant reviews and reconciles every account each month, then you get a clear profit and loss. Monthly Books is $500 a month.',
+ [("OpenAI: Introducing ChatGPT for Excel (updated May 5, 2026)","https://openai.com/index/chatgpt-for-excel/"),
+  ("Google Workspace Marketplace: ChatGPT for Google Sheets (OpenAI)","https://workspace.google.com/marketplace/app/chatgpt/870214997678"),
+  ("IRS: 2025 Instructions for Schedule C (Form 1040)","https://www.irs.gov/instructions/i1040sc"),
+  ("IRS: How long should I keep records?","https://www.irs.gov/businesses/small-businesses-self-employed/how-long-should-i-keep-records")],
+ "chatgpt-google-sheets-expense-summary"),
 ]

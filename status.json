@@ -1,5 +1,5 @@
 {
- "built": "2026-11-16",
+ "built": "2026-11-17",
  "cadence": "Weekdays: evergreen Mon/Wed/Fri, AI updates Tue/Thu (see _src/TOPICS.md)",
  "items": [
   {
@@ -131,7 +131,9 @@
   {
    "date": "2026-11-17",
    "hub": "ai-accounting",
-   "status": "todo"
+   "status": "written",
+   "title": "ChatGPT for Google Sheets: build a monthly expense summary",
+   "url": "https://bookbytellc.com/ai-accounting/chatgpt-google-sheets-expense-summary/"
   },
   {
    "date": "2026-11-18",
@@ -176,6 +178,11 @@
   {
    "date": "2026-11-30",
    "hub": "deductions",
+   "status": "todo"
+  },
+  {
+   "date": "2026-12-01",
+   "hub": "ai-accounting",
    "status": "todo"
   },
   {
