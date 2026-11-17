@@ -238,5 +238,29 @@
   "linkedin_post": true,
   "drive_copy": false,
   "note": "Published from an interactive session at Rogenie's request after the 5:48 AM run and a 6:03 AM re-run each ended in about a minute without publishing. Restructured to the direct-response format; replaced the Littler source with the IRS 1099 page; dropped the unconfirmed 'advertising' line name. Pages deploy succeeded; live fetch not possible from this session. Drive copy not uploaded (file reference refused)."
+ },
+ {
+  "date": "2026-11-17",
+  "at": "2026-11-17T05:54:35-08:00",
+  "result": "held",
+  "path": "/ai-accounting/gemini-small-business-finance-tools/",
+  "facts_checked": 0,
+  "removed": 0,
+  "live_verified": false,
+  "linkedin_post": false,
+  "drive_copy": false,
+  "note": "Moved to 2026-12-01: Google's Oct 20 post (fetched this run) still says the business hub and finance tools roll out 'in the coming days', and Gemini release notes still end at 2026.10.13. Substitute published today."
+ },
+ {
+  "date": "2026-11-17",
+  "at": "2026-11-17T05:54:35-08:00",
+  "result": "published",
+  "path": "/ai-accounting/chatgpt-google-sheets-expense-summary/",
+  "facts_checked": 13,
+  "removed": 0,
+  "live_verified": false,
+  "linkedin_post": true,
+  "drive_copy": false,
+  "note": "Substitute for 'Gemini's new small-business finance tools: what to check' (moved to 2026-12-01, not confirmed live). Facts confirmed on openai.com, the Google Workspace Marketplace listing, IRS 2025 Schedule C instructions and IRS record-retention page fetched this run; help.openai.com and Microsoft Marketplace failed to fetch, so Excel steps kept general. Pages deploy succeeded; site search didn't return the page yet, so live_verified is false. Drive copy not uploaded: the .docx base64 has to be passed inline and was not retyped by hand."
  }
 ]
