@@ -487,12 +487,12 @@ Oct 25 &middot; ADOBE *CREATIVE CLD &middot; $59.99 &rarr; Software &middot; gre
   ("IRS: Publication 583, Starting a Business and Keeping Records","https://www.irs.gov/publications/p583")],
  "quickbooks-ai-banking-suggestions"),
 article("/ai-accounting/ai-bank-reconciliation/","/ai-accounting/","AI for Accounting",
- "AI Bank Reconciliation: How to Reconcile With AI",
- "AI bank reconciliation: how to do it and what AI can&rsquo;t do",
- "Use AI for bank reconciliation: copy-paste prompts to match your books to your statement, find missing and duplicate lines, and check the result yourself.",
+ "AI Reconciliation: How to Reconcile Your Bank Account With AI",
+ "AI reconciliation: how to reconcile your bank account with AI",
+ "AI reconciliation in plain English: free prompts to match your bank statement to your books, find missing and duplicate lines, and check the result.",
  "2026-10-28",
  "Your bank says one number. Your books say another. You scroll both lists line by line, trying to spot the $43.17 that doesn&rsquo;t match, and an hour later you still can&rsquo;t find it.",
- '''<div class="callout"><b>Quick answer:</b> AI bank reconciliation works best as a <b>matching assistant, not a calculator</b>. Export your bank statement and your book entries for the same month, remove account numbers, and ask the AI to pair each statement line with a book line and list everything left over. Then fix those items in your bookkeeping software and let the software confirm that the adjusted bank balance equals your book balance. The IRS recommends reconciling your checking account every month.</div>
+ '''<div class="callout"><b>Quick answer:</b> AI reconciliation means using an AI chat such as ChatGPT, Claude or Gemini to match each line on your bank statement to a line in your books and explain whatever is left over, while your bookkeeping software, not the AI, confirms that the balances agree. Export both lists for the same month, remove account numbers, run the two prompts below, fix the leftovers in your software, and finish the reconciliation there.</div>
 
 <h2>You can&rsquo;t find why the balances don&rsquo;t match</h2>
 <p>Two lists, a few hundred lines each, and a gap you can&rsquo;t explain. Is it a missing entry? A typo? A charge you recorded twice?</p>
@@ -565,10 +565,24 @@ Sep 28 &middot; CHECK 1042 &middot; $400.00 &rarr; only in books &middot; &ldquo
 <li><b>It can be confidently wrong.</b> Two $15 charges in one month may be a duplicate, or two real purchases. Only the statement and receipts settle it.</li>
 </ul>
 <p>Using QuickBooks? Its banking page can match transactions for you; see <a href="/ai-accounting/quickbooks-ai-banking-suggestions/">how to review QuickBooks AI banking suggestions</a>. Still sorting categories first? Start with our <a href="/ai-accounting/ai-prompts-categorize-transactions/">AI prompts to categorize transactions</a>, then come back here. For the whole monthly routine, read <a href="/ai-accounting/how-to-use-ai-for-bookkeeping/">how to use AI for bookkeeping</a>.</p>
+<h2>AI reconciliation FAQ</h2>
+<dl class="faq">
+<dt>Can AI reconcile my bank account by itself?</dt>
+<dd>No. AI can match lines and suggest why the rest don&rsquo;t match, but it can&rsquo;t see your bank or sign off. The reconciliation is done when your bookkeeping software shows the adjusted bank balance equal to your book balance.</dd>
+<dt>Is it safe to paste a bank statement into ChatGPT or Claude?</dt>
+<dd>Remove full account and card numbers first and keep only the date, description and amount. Our <a href="/ai-accounting/financial-data-safety-ai/">data safety guide</a> covers which settings to check before you paste anything.</dd>
+<dt>How often should I reconcile my bank account?</dt>
+<dd>Every month. The IRS recommends reconciling your checking account each month.</dd>
+<dt>Does QuickBooks Online use AI for reconciliation?</dt>
+<dd>QuickBooks Online&rsquo;s banking page uses AI suggestions to match and categorize downloaded transactions, which you still review and accept. See <a href="/ai-accounting/quickbooks-ai-banking-suggestions/">how to review QuickBooks AI banking suggestions</a>.</dd>
+<dt>Does this work for a credit card account?</dt>
+<dd>Yes. Use the card statement as List A and your card entries as List B, and run the same two prompts. Check refunds and the payments you made to the card closely, since they are easy to leave out of the books.</dd>
+</dl>
 <p>Rather have someone else tie out every account each month?</p>''',
  'Want reconciliation done for you? At <a href="CTAURL">Computatio</a>, AI does the matching and an accountant reviews and reconciles every account each month. Monthly Books is $500 a month.',
  [("IRS: Publication 583, Starting a Business and Keeping Records","https://www.irs.gov/publications/p583"),
-  ("IRS: How long should I keep records?","https://www.irs.gov/businesses/small-businesses-self-employed/how-long-should-i-keep-records")],
+  ("IRS: How long should I keep records?","https://www.irs.gov/businesses/small-businesses-self-employed/how-long-should-i-keep-records"),
+  ("Intuit QuickBooks: How AI suggestions help match and categorize bank transactions","https://quickbooks.intuit.com/learn-support/en-us/help-article/bank-transactions/ai-suggestions-help-match-categorize-bank/L8FHOh4AD_US_en_US")],
  "ai-bank-reconciliation"),
 article("/ai-accounting/irs-iris-1099-e-filing-fire-retiring/","/ai-accounting/","AI for Accounting",
  "IRS FIRE is closing: e-file 1099s with IRIS instead",
@@ -897,6 +911,8 @@ article("/ai-accounting/google-sheets-canvas-cash-flow-planner/","/ai-accounting
  "A client says they&rsquo;ll pay &ldquo;next month.&rdquo; Sales feel slower. A tax payment is due in January. You want to know one thing: will there be enough in the bank?",
  '''<div class="callout"><b>Quick answer:</b> as of November 5, 2026, Gemini in Google Sheets can turn a sheet into an interactive mini-app called a <b>canvas</b>. Open your cash flow sheet and choose <b>Insert &gt; Create a canvas</b>, then ask for sliders on sales, costs and payment timing. Google lists it for Google AI Pro and Ultra, Workspace Business and Enterprise Standard and Plus, and Google AI Pro for Education, in English, on the web. <b>Start from your reconciled bank balance, and check that the canvas&rsquo;s base case matches the sheet.</b></div>
 
+<div class="callout"><b>Free template:</b> <a href="https://docs.google.com/spreadsheets/d/1OIZtlGhlFjDiZveyY3-qLRgf49LUe6qs323MVRW89pI/copy" rel="noopener">make a copy of our 13-week cash flow sheet</a> in Google Sheets. It has the one-tab layout this guide uses: your inputs in blue, every total as a formula, a low-cash warning and a check that the weeks tie out. The example numbers are made up; replace them with yours.</div>
+
 <h2>You&rsquo;re guessing at next month&rsquo;s bank balance</h2>
 <p>Your profit and loss shows what happened. It doesn&rsquo;t show when cash will land or leave. Income can look fine while the account runs thin, because a client pays late or a big bill hits in the same week.</p>
 <p><b>Profit is not cash.</b> A cash flow forecast fills that gap, week by week.</p>
@@ -921,7 +937,7 @@ article("/ai-accounting/google-sheets-canvas-cash-flow-planner/","/ai-accounting
 <h2>The 13-week method for a Google Sheets canvas cash flow tool</h2>
 <ol>
 <li><b>Reconcile first.</b> <a href="/ai-accounting/ai-bank-reconciliation/">Reconcile your business bank account</a> through the last statement. That ending balance is your opening cash. Not the bank app&rsquo;s number today, and not a guess.</li>
-<li><b>Build one tab.</b> Canvas reads one tab, so put everything there: a row of assumptions at the top (weekly sales, weekly costs, sales change %, weeks the big client is late), then 13 rows, one per week, with cash in, cash out and ending balance as formulas. Add fixed items on their dates: rent, loan payments, and the January 15 estimated tax payments. If your forecast is in Excel, use File &gt; Save as Google Sheets first.</li>
+<li><b>Build one tab, or start from <a href="https://docs.google.com/spreadsheets/d/1OIZtlGhlFjDiZveyY3-qLRgf49LUe6qs323MVRW89pI/copy" rel="noopener">our free template</a>.</b> Canvas reads one tab, so put everything there: a row of assumptions at the top (weekly sales, weekly costs, sales change %, weeks the big client is late), then 13 rows, one per week, with cash in, cash out and ending balance as formulas. Add fixed items on their dates: rent, loan payments, and the January 15 estimated tax payments. If your forecast is in Excel, use File &gt; Save as Google Sheets first.</li>
 <li><b>Work on a copy.</b> Because the canvas writes to the sheet, make a copy of the file to experiment in. Keep the original as your base case.</li>
 <li><b>Open canvas.</b> Choose <b>Insert &gt; Create a canvas</b>. Google&rsquo;s help page also lists Tools &gt; Create canvas and the Canvas menu in the bottom bar.</li>
 <li><b>Paste the prompt below,</b> then refine it with follow-up prompts.</li>

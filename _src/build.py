@@ -30,6 +30,9 @@ def layout(p):
         ld.append({"@context":"https://schema.org","@type":"Article","headline":p["h1"],"description":p["desc"],
                    "author":{"@type":"Organization","name":SITE["author"],"url":"https://computatio.io/"},"publisher":{"@type":"Organization","name":SITE["name"]},
                    "datePublished":p["published"],"dateModified":p.get("reviewed",p["published"]),"mainEntityOfPage":url})
+    fq = faq_ld(p["body"])
+    if fq:
+        ld.append(fq)
     nav = "".join(f'<a href="{h}"{" aria-current=\"page\"" if p["path"].startswith(h) else ""}>{esc(n)}</a>' for h,n in SITE["nav"])
     robots = '<meta name="robots" content="noindex">' if p.get("noindex") else ""
     return f'''<!doctype html>
@@ -88,7 +91,29 @@ def card_list(arts):
     return '<div class="cards">' + "".join(
         f'<a class="card" href="{a["path"]}"><h3>{a["h1"]}</h3><p>{a["desc"]}</p></a>' for a in arts) + '</div>'
 
+# Guides revised after publishing: path -> date of the substantive update.
+# Shown as "Updated <date>" in the byline and used as dateModified.
+UPDATED = {
+    "/ai-accounting/ai-bank-reconciliation/": "2026-11-17",
+    "/ai-accounting/google-sheets-canvas-cash-flow-planner/": "2026-11-17",
+}
+
+def faq_ld(body):
+    """FAQPage JSON-LD from a <dl class="faq"> block, if the page has one."""
+    m = re.search(r'<dl class="faq">(.*?)</dl>', body, re.S)
+    if not m:
+        return None
+    strip = lambda h: html.unescape(re.sub(r"<[^>]+>", "", h)).strip()
+    pairs = re.findall(r"<dt>(.*?)</dt>\s*<dd>(.*?)</dd>", m.group(1), re.S)
+    return {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+        {"@type":"Question","name":strip(q),"acceptedAnswer":{"@type":"Answer","text":strip(a)}} for q,a in pairs]}
+
 def main():
+    for a in ARTICLES:
+        d = UPDATED.get(a["path"])
+        if d and d > a["published"]:
+            a["reviewed"] = d
+            a["body"] = a["body"].replace(f'Last reviewed {a["published"]}', f'Published {a["published"]} &middot; Updated {d}', 1)
     live = sorted([a for a in ARTICLES if a["published"] <= TODAY], key=lambda a: a["published"], reverse=True)
     live_paths = {a["path"] for a in live}
     all_paths = {a["path"] for a in ARTICLES}

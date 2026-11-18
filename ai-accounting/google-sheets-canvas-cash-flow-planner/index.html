@@ -25,7 +25,7 @@
 <link rel="stylesheet" href="/assets/fonts.css">
 <link rel="stylesheet" href="/assets/style.css">
 <link rel="alternate" type="application/rss+xml" title="BookByte" href="/feed.xml">
-<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://bookbytellc.com/"}, {"@type": "ListItem", "position": 2, "name": "AI for Accounting", "item": "https://bookbytellc.com/ai-accounting/"}, {"@type": "ListItem", "position": 3, "name": "Google Sheets canvas: build a cash flow what-if tool", "item": "https://bookbytellc.com/ai-accounting/google-sheets-canvas-cash-flow-planner/"}]}, {"@context": "https://schema.org", "@type": "Article", "headline": "Google Sheets canvas: build a cash flow what-if tool", "description": "Use Google Sheets canvas to turn a 13-week cash flow sheet into a what-if tool with sliders, then check it against your reconciled bank balance.", "author": {"@type": "Organization", "name": "Computatio", "url": "https://computatio.io/"}, "publisher": {"@type": "Organization", "name": "BookByte"}, "datePublished": "2026-11-05", "dateModified": "2026-11-05", "mainEntityOfPage": "https://bookbytellc.com/ai-accounting/google-sheets-canvas-cash-flow-planner/"}]</script>
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://bookbytellc.com/"}, {"@type": "ListItem", "position": 2, "name": "AI for Accounting", "item": "https://bookbytellc.com/ai-accounting/"}, {"@type": "ListItem", "position": 3, "name": "Google Sheets canvas: build a cash flow what-if tool", "item": "https://bookbytellc.com/ai-accounting/google-sheets-canvas-cash-flow-planner/"}]}, {"@context": "https://schema.org", "@type": "Article", "headline": "Google Sheets canvas: build a cash flow what-if tool", "description": "Use Google Sheets canvas to turn a 13-week cash flow sheet into a what-if tool with sliders, then check it against your reconciled bank balance.", "author": {"@type": "Organization", "name": "Computatio", "url": "https://computatio.io/"}, "publisher": {"@type": "Organization", "name": "BookByte"}, "datePublished": "2026-11-05", "dateModified": "2026-11-17", "mainEntityOfPage": "https://bookbytellc.com/ai-accounting/google-sheets-canvas-cash-flow-planner/"}]</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -38,10 +38,12 @@
 <p class="eyebrow"><a href="/ai-accounting/" style="color:inherit;text-decoration:none">AI for Accounting</a></p>
 <h1>Google Sheets canvas: build a cash flow what-if tool</h1>
 <p class="lede">A client says they&rsquo;ll pay &ldquo;next month.&rdquo; Sales feel slower. A tax payment is due in January. You want to know one thing: will there be enough in the bank?</p>
-<p class="muted" style="color:#bbb">By: Computatio &middot; Last reviewed 2026-11-05</p>
+<p class="muted" style="color:#bbb">By: Computatio &middot; Published 2026-11-05 &middot; Updated 2026-11-17</p>
 </div></section>
 <section><div class="wrap narrow prose">
 <div class="callout"><b>Quick answer:</b> as of November 5, 2026, Gemini in Google Sheets can turn a sheet into an interactive mini-app called a <b>canvas</b>. Open your cash flow sheet and choose <b>Insert &gt; Create a canvas</b>, then ask for sliders on sales, costs and payment timing. Google lists it for Google AI Pro and Ultra, Workspace Business and Enterprise Standard and Plus, and Google AI Pro for Education, in English, on the web. <b>Start from your reconciled bank balance, and check that the canvas&rsquo;s base case matches the sheet.</b></div>
+
+<div class="callout"><b>Free template:</b> <a href="https://docs.google.com/spreadsheets/d/1OIZtlGhlFjDiZveyY3-qLRgf49LUe6qs323MVRW89pI/copy" rel="noopener">make a copy of our 13-week cash flow sheet</a> in Google Sheets. It has the one-tab layout this guide uses: your inputs in blue, every total as a formula, a low-cash warning and a check that the weeks tie out. The example numbers are made up; replace them with yours.</div>
 
 <h2>You&rsquo;re guessing at next month&rsquo;s bank balance</h2>
 <p>Your profit and loss shows what happened. It doesn&rsquo;t show when cash will land or leave. Income can look fine while the account runs thin, because a client pays late or a big bill hits in the same week.</p>
@@ -67,7 +69,7 @@
 <h2>The 13-week method for a Google Sheets canvas cash flow tool</h2>
 <ol>
 <li><b>Reconcile first.</b> <a href="/ai-accounting/ai-bank-reconciliation/">Reconcile your business bank account</a> through the last statement. That ending balance is your opening cash. Not the bank app&rsquo;s number today, and not a guess.</li>
-<li><b>Build one tab.</b> Canvas reads one tab, so put everything there: a row of assumptions at the top (weekly sales, weekly costs, sales change %, weeks the big client is late), then 13 rows, one per week, with cash in, cash out and ending balance as formulas. Add fixed items on their dates: rent, loan payments, and the January 15 estimated tax payments. If your forecast is in Excel, use File &gt; Save as Google Sheets first.</li>
+<li><b>Build one tab, or start from <a href="https://docs.google.com/spreadsheets/d/1OIZtlGhlFjDiZveyY3-qLRgf49LUe6qs323MVRW89pI/copy" rel="noopener">our free template</a>.</b> Canvas reads one tab, so put everything there: a row of assumptions at the top (weekly sales, weekly costs, sales change %, weeks the big client is late), then 13 rows, one per week, with cash in, cash out and ending balance as formulas. Add fixed items on their dates: rent, loan payments, and the January 15 estimated tax payments. If your forecast is in Excel, use File &gt; Save as Google Sheets first.</li>
 <li><b>Work on a copy.</b> Because the canvas writes to the sheet, make a copy of the file to experiment in. Keep the original as your base case.</li>
 <li><b>Open canvas.</b> Choose <b>Insert &gt; Create a canvas</b>. Google&rsquo;s help page also lists Tools &gt; Create canvas and the Canvas menu in the bottom bar.</li>
 <li><b>Paste the prompt below,</b> then refine it with follow-up prompts.</li>

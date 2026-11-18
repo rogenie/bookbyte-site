@@ -372,6 +372,14 @@
    "status": "todo"
   },
   {
+   "date": "2026-12-03",
+   "hub": "ai-accounting",
+   "path": "/ai-accounting/credit-card-reconciliation-ai/",
+   "title": "AI credit card reconciliation: match your card statement to your books",
+   "status": "todo",
+   "note": "Evergreen follow-up to /ai-accounting/ai-bank-reconciliation/ (added 2026-11-17 to build the 'ai reconciliation' cluster Search Console shows impressions for). Same match-and-explain method for a credit card: statement as List A, card entries as List B; cover refunds and credits, payments to the card (a transfer, not an expense), interest and fees, charges posted after the closing date, and personal charges on a business card. Made-up example. Check with the statement balance and the software's reconcile screen. Link the bank reconciliation guide, the data safety guide and QuickBooks AI banking suggestions. Sources: IRS Publication 583 and the bookkeeping software vendor's own credit card reconciliation help page, both opened in the run."
+  },
+  {
    "date": "2026-12-04",
    "hub": "ai-accounting",
    "path": "/ai-accounting/ai-mileage-logs/",

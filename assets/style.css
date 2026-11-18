@@ -97,3 +97,5 @@ footer.site .legal a{display:inline;margin:0;color:#ccc}
 .dfy-more{font-size:14px;color:var(--muted)!important;margin:16px 0 0}
 .dfy-more a{color:var(--gold-dark,#8A6508)}
 @media(max-width:820px){.dfy-grid{grid-template-columns:1fr}}
+
+dl.faq{margin:16px 0 24px}dl.faq dt{font-weight:700;margin-top:18px}dl.faq dd{margin:6px 0 0}
