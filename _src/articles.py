@@ -1540,4 +1540,86 @@ Using the Transactions tab, create a new tab called &ldquo;October summary.&rdqu
   ("IRS: 2025 Instructions for Schedule C (Form 1040)","https://www.irs.gov/instructions/i1040sc"),
   ("IRS: How long should I keep records?","https://www.irs.gov/businesses/small-businesses-self-employed/how-long-should-i-keep-records")],
  "chatgpt-google-sheets-expense-summary"),
+article("/ai-accounting/chatgpt-vs-claude-vs-gemini-bookkeeping/","/ai-accounting/","AI for Accounting",
+ "ChatGPT vs. Claude vs. Gemini for bookkeeping (2026)",
+ "ChatGPT vs. Claude vs. Gemini for bookkeeping (2026)",
+ "ChatGPT vs. Claude vs. Gemini for bookkeeping: compare plans, prices and privacy settings, then run a 20-minute test on made-up books to pick yours.",
+ "2026-11-18",
+ "You want AI to help with your books. Three names keep coming up, and every review says something different.",
+ '''<div class="callout"><b>Quick answer:</b> as of November 18, 2026, ChatGPT, Claude and Gemini all have a free plan and a paid plan near $20 a month (ChatGPT Plus $20, Claude Pro $20, Google AI Pro $19.99). All three can read a spreadsheet or PDF you upload. <b>No review can tell you which one gets your books right. Run the same test file through each one, score the answers against a key, and pick the tool that makes the fewest mistakes you&rsquo;d miss.</b></div>
+
+<h2>Which AI is best for bookkeeping? Everyone has a different answer</h2>
+<p>One article says ChatGPT. Another says Claude. A friend swears by Gemini. Most of those reviews test essays and code, not a month of bank transactions.</p>
+<p><b>Bookkeeping is a narrow job, so test the tool on that job.</b></p>
+
+<h2>And you don&rsquo;t know what happens to your data</h2>
+<p>Your bank export holds client names, amounts and habits. Each company handles chats differently, and the default settings on personal plans are not the most private ones. You&rsquo;d rather not find that out later.</p>
+
+<h2>What picking the wrong tool costs you</h2>
+<ul>
+<li><b>Quiet errors.</b> A wrong category doesn&rsquo;t throw an error. It sits in your books until tax time, when someone sorts it again.</li>
+<li><b>Records you still have to back up.</b> The IRS says to keep income tax records for 3 years in most cases, and 6 years if you leave out income worth more than 25% of the gross income on your return. An AI chat is not a record. Your receipts and statements are.</li>
+<li><b>Privacy you gave away by default.</b> Google says a subset of Gemini chats are read by human reviewers, and it advises against entering confidential information you wouldn&rsquo;t want a reviewer to see.</li>
+</ul>
+
+<h2>Picture this instead</h2>
+<p>You spend 20 minutes on one afternoon. You feed the same made-up month to each tool and score the answers. <b>You end up with one tool, set up with the privacy settings you chose, and a test file you can rerun when the tools change.</b></p>
+
+<h2>ChatGPT vs. Claude vs. Gemini: plans, prices and privacy</h2>
+<p>We checked each vendor&rsquo;s own pages on November 18, 2026. Prices are US monthly prices for individual plans and change often.</p>
+<table>
+<tr><th></th><th>ChatGPT</th><th>Claude</th><th>Gemini</th></tr>
+<tr><td><b>Free plan</b></td><td>Yes, with limited file uploads and data analysis</td><td>Yes</td><td>Yes</td></tr>
+<tr><td><b>Main paid plan</b></td><td>Plus, $20 a month</td><td>Pro, $20 a month ($17 a month billed yearly)</td><td>Google AI Pro, $19.99 a month</td></tr>
+<tr><td><b>Files</b></td><td>File uploads on paid plans</td><td>CSV, PDF and XLSX (XLSX needs code execution turned on)</td><td>File uploads, up to 1,500 pages</td></tr>
+<tr><td><b>Training on your chats (personal plans)</b></td><td>On unless you opt out</td><td>Controlled by the &ldquo;Help improve our AI models&rdquo; setting</td><td>Controlled by Gemini History; some chats are read by human reviewers</td></tr>
+</table>
+<p>Business plans work differently. OpenAI says its business workspaces don&rsquo;t use business content to train models. If several people share the books, compare the business tiers too.</p>
+
+<h2>Set privacy first, before any test</h2>
+<ol>
+<li><b>ChatGPT:</b> in Settings, turn off the option that lets OpenAI train on your content. OpenAI also lets you file a &ldquo;do not train on my content&rdquo; request in its privacy portal.</li>
+<li><b>Claude:</b> go to <b>Settings &gt; Privacy</b> and switch off <b>Help improve our AI models</b>. Anthropic says this applies to new chats from then on.</li>
+<li><b>Gemini:</b> turn off <b>History</b>. Google says this keeps new chats out of model training unless you send feedback. Reviewed chats can be kept for up to three years.</li>
+</ol>
+<p>Then strip the test file anyway. Our <a href="/ai-accounting/financial-data-safety-ai/">guide to keeping financial data safe with AI</a> lists what to remove.</p>
+
+<h2>The 20-minute bookkeeping bake-off</h2>
+<p>Use made-up data, the same file and the same prompt in every tool. Start a new chat each time.</p>
+<ol>
+<li><b>Build a test file.</b> Ten to fifteen rows with Date, Description and Amount. Add three traps: a personal charge, a duplicated row, and a vague payee.</li>
+<li><b>Write your answer key first.</b> Decide the right category for every row before any AI sees it.</li>
+<li><b>Upload the file and paste the prompt below.</b></li>
+<li><b>Score every row.</b> One point per correct category. One point for each trap the tool flags.</li>
+<li><b>Count the confident mistakes.</b> A wrong answer with no doubt attached is worse than a question.</li>
+</ol>
+
+<div class="callout"><b>Prompt to copy:</b><br>
+You are helping a sole proprietor with bookkeeping. For each row in the attached file, give a category from this list: Income, Advertising, Contract labor, Insurance, Office expense, Supplies, Meals, Utilities, Software, Personal (not business), Ask owner. Use Ask owner whenever you are not sure. Flag any row that looks duplicated. Return a table with Date, Description, Amount, Category, and a one-line reason. Then give total income and total business expenses, and show your math. Do not invent rows.</div>
+
+<div class="callout"><b>Example (made-up data).</b> A one-person photography business, October 2026.<br>
+<b>Rows:</b> Client A $1,800 &middot; Client B $950 &middot; editing software $54.99 &middot; memory cards $89.00 &middot; second shooter $400.00 &middot; liability insurance $42.00 &middot; client coffee $18.60 &middot; phone and internet $85.00 &middot; streaming service $15.49 &middot; editing software $54.99 (same date again) &middot; &ldquo;SQ *JM LLC&rdquo; $120.00.<br>
+<b>Answer key:</b> two Income rows; Software, Supplies, Contract labor, Insurance, Meals, Utilities; streaming is Personal; the second software row is a duplicate; &ldquo;SQ *JM LLC&rdquo; is Ask owner. Income $2,750.00. Business expenses $689.59 once the duplicate and the personal charge are left out, before you sort out the $120 payee.<br>
+<b>Scoring one sample run:</b> 9 of 11 categories right, the duplicate caught, the streaming charge called Software. That last one is a confident mistake, and it&rsquo;s the kind you&rsquo;d miss at a glance.<br>
+These rows and scores are invented to show the method. They are not results from any of the three tools.</div>
+
+<h2>How to check the winner&rsquo;s work every month</h2>
+<ul>
+<li><b>Tie the totals.</b> AI income and expense totals must match the sum of the rows in your file, to the cent.</li>
+<li><b>Map categories to Schedule C.</b> Sole proprietors report expenses by line: contract labor (line 11), insurance other than health (line 15), office expense (line 18), supplies (line 22), deductible meals (line 24b) and utilities (line 25). Check that each category lands on one line.</li>
+<li><b>Record meals in full.</b> The IRS says most business meals are only 50% deductible, but the $18.60 coffee stays $18.60 in the books. The limit is applied on the return.</li>
+<li><b>Reconcile.</b> No chat tool replaces <a href="/ai-accounting/ai-bank-reconciliation/">matching your books to the bank statement</a>.</li>
+</ul>
+
+<h2>Is ChatGPT, Claude or Gemini accurate enough for my books?</h2>
+<p>Accurate enough for a first pass, if you check the output. All three can misread a vague payee or a personal charge. The test shows you where your pick slips, so you know what to look at. For a fuller list of strengths and limits, see <a href="/ai-accounting/can-ai-do-your-accounting/">Can AI do your accounting?</a></p>
+<p>Not technical? You don&rsquo;t need to be. You upload one file, paste one prompt and compare a table with your key. Once you&rsquo;ve picked a tool, our <a href="/ai-accounting/ai-prompts-categorize-transactions/">AI prompts to categorize transactions</a> take it further.</p>
+<p>And you remain responsible for your return, whichever tool you choose. Want the checking done for you?</p>''',
+ 'Rather not referee three chatbots? At <a href="CTAURL">Computatio</a>, AI does the first pass on your transactions and an accountant reviews and reconciles every account each month. Monthly Books is $500 a month.',
+ [("OpenAI: ChatGPT plans and pricing","https://chatgpt.com/pricing/"),
+  ("Anthropic: Claude plans and pricing","https://claude.com/pricing"),
+  ("Google: Google AI Pro and Ultra plans","https://gemini.google/subscriptions/"),
+  ("IRS: How long should I keep records?","https://www.irs.gov/businesses/small-businesses-self-employed/how-long-should-i-keep-records"),
+  ("IRS: 2025 Instructions for Schedule C (Form 1040)","https://www.irs.gov/instructions/i1040sc")],
+ "chatgpt-vs-claude-vs-gemini-bookkeeping"),
 ]

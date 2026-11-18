@@ -237,8 +237,10 @@
    "date": "2026-11-18",
    "hub": "ai-accounting",
    "path": "/ai-accounting/chatgpt-vs-claude-vs-gemini-bookkeeping/",
-   "title": "ChatGPT vs. Claude vs. Gemini for bookkeeping tasks: a 2026 test",
-   "status": "todo"
+   "title": "ChatGPT vs. Claude vs. Gemini for bookkeeping (2026)",
+   "status": "published",
+   "url": "https://bookbytellc.com/ai-accounting/chatgpt-vs-claude-vs-gemini-bookkeeping/",
+   "note": "Retitled from 'ChatGPT vs. Claude vs. Gemini for bookkeeping tasks: a 2026 test' (68 chars, and implied a test we didn't run); now a test the reader runs."
   },
   {
    "date": "2026-11-19",
