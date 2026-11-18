@@ -98,6 +98,54 @@ UPDATED = {
     "/ai-accounting/google-sheets-canvas-cash-flow-planner/": "2026-11-17",
 }
 
+# Topic menus. Most guides live under /ai-accounting/ (their URL never changes), but each one
+# is also listed on every topic hub it covers, so Bookkeeping, Deductions, Estimated taxes and
+# Business structure show the AI guides that belong to them. Rules match the guide's path and
+# H1, so new guides are sorted automatically; ALSO adds hubs a rule would miss.
+HUB_RULES = [
+    ("/bookkeeping/", r"bookkeep|reconcil|categori|chart-of-accounts|bank|receipt|expense|invoice|profit-and-loss|catch-up|separate-business|month-end|monthly-close|year-end|cash-flow|ledger"),
+    ("/deductions/", r"deduct|write-off|1099|mileage|home-office|receipt|separate-business|schedule-c"),
+    ("/estimated-taxes/", r"estimated|quarterly|cash-flow|safe-harbor"),
+    ("/business-structure/", r"s-corp|llc|sole-prop|entity|business-structure|reasonable-salary"),
+]
+ALSO = {
+    "/ai-accounting/can-ai-do-your-accounting/": ["/bookkeeping/"],
+    "/ai-accounting/financial-data-safety-ai/": ["/bookkeeping/"],
+}
+# Sections on the AI for Accounting hub, first match wins; anything else goes under "More AI guides".
+AI_SECTIONS = [
+    ("Start here", r"how-to-use-ai-for-bookkeeping|can-ai-do-your-accounting|financial-data-safety"),
+    ("Taxes and IRS forms", r"1099|irs|deduct|estimated|quarterly|tax-"),
+    ("Categorize, reconcile and catch up", r"categori|reconcil|banking|chart-of-accounts|separate-business|catch-up|clean-data|month-end|monthly-close|year-end"),
+    ("Receipts, invoices and expenses", r"receipt|invoice|expense|mileage|payment-reminder"),
+    ("Reports, cash flow and planning", r"profit-and-loss|report|cash-flow|forecast|budget|job-costing"),
+    ("Compare AI tools", r"-vs-|gemini|copilot|claude|chatgpt"),
+]
+
+def hubs_for(a):
+    key = (a["path"] + " " + re.sub(r"<[^>]+>", "", a["h1"])).lower()
+    hubs = {a["hub"]} | set(ALSO.get(a["path"], []))
+    hubs |= {h for h, rx in HUB_RULES if re.search(rx, key)}
+    return hubs
+
+def ai_hub_html(arts):
+    groups, used = [], set()
+    for name, rx in AI_SECTIONS:
+        g = [a for a in arts if a["path"] not in used and re.search(rx, a["path"])]
+        if name == "Start here":  # in the order the regex lists them
+            order = rx.split("|")
+            g.sort(key=lambda a: next(i for i, k in enumerate(order) if re.search(k, a["path"])))
+        used |= {a["path"] for a in g}
+        if g:
+            groups.append((name, g))
+    rest = [a for a in arts if a["path"] not in used]
+    if rest:
+        groups.append(("More AI guides", rest))
+    nav = '<nav class="hub-jump" aria-label="Guide topics">' + "".join(
+        f'<a href="#{re.sub(r"[^a-z]+", "-", n.lower()).strip("-")}">{esc(n)} ({len(g)})</a>' for n, g in groups) + "</nav>"
+    return nav + "".join(
+        f'<h2 id="{re.sub(r"[^a-z]+", "-", n.lower()).strip("-")}">{esc(n)}</h2>' + card_list(g) for n, g in groups)
+
 def faq_ld(body):
     """FAQPage JSON-LD from a <dl class="faq"> block, if the page has one."""
     m = re.search(r'<dl class="faq">(.*?)</dl>', body, re.S)
@@ -129,8 +177,13 @@ def main():
     for p in PAGES:
         p = dict(p)
         if "<!--HUB_ARTICLES-->" in p["body"]:
-            mine = [a for a in live if a["hub"] == p["path"]]
-            p["body"] = p["body"].replace("<!--HUB_ARTICLES-->", ("<h2>Guides</h2>" + card_list(mine)) if mine else "")
+            mine = [a for a in live if p["path"] in hubs_for(a)]
+            mine.sort(key=lambda a: a["hub"] != p["path"])  # the hub's own guides first, then newest first
+            if p["path"] == "/ai-accounting/":
+                block = ai_hub_html(mine) if mine else ""
+            else:
+                block = ("<h2>Guides</h2>" + card_list(mine)) if mine else ""
+            p["body"] = p["body"].replace("<!--HUB_ARTICLES-->", block)
         if "<!--LATEST-->" in p["body"]:
             p["body"] = p["body"].replace("<!--LATEST-->", ('<section><div class="wrap"><h2>Latest guides</h2>' + card_list(live[:6]) + '</div></section>') if live else "")
         pages.append(p)
