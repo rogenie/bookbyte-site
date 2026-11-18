@@ -94,10 +94,12 @@ PAGES = [
 </div></section>'''},
  {"path":"/privacy/","title":"Privacy Policy | BookByte","h1":"Privacy policy",
   "desc":"How BookByte handles information when you visit the site.",
-  "body":'''<section class="hero small"><div class="wrap"><h1>Privacy policy</h1><p class="lede">Last updated October 29, 2026.</p></div></section>
+  "body":'''<section class="hero small"><div class="wrap"><h1>Privacy policy</h1><p class="lede">Last updated November 17, 2026.</p></div></section>
 <section><div class="wrap narrow prose">
 <h2>What we collect</h2>
-<p>BookByte has no accounts, forms or comments, and doesn&rsquo;t set its own cookies. We don&rsquo;t sell or share personal information.</p>
+<p>BookByte has no accounts or comments, and doesn&rsquo;t set its own cookies. The only form is the free template request described below. We don&rsquo;t sell or share personal information.</p>
+<h2>Free template requests</h2>
+<p>If you request a free template, the email address you type (and whether you ticked the tips box) is sent to Formspree, the form service Computatio uses, under its own privacy policy, and to Computatio, which keeps a record of who requested the template and, only if you ticked the box, uses it to send occasional bookkeeping tips. You can ask us to delete it at any time using the contact details below.</p>
 <h2>Newsletter</h2>
 <p>If you sign up for the free write-offs guide, your email address is collected by Kit, the service that runs the Computatio newsletter, under its own privacy policy, and by Computatio under the <a href="https://computatio.io/privacy/">Computatio privacy policy</a>. You can unsubscribe from any email.</p>
 <h2>Services that load with the site</h2>
