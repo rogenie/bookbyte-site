@@ -561,6 +561,18 @@
    "linkedin_post": true,
    "drive_copy": true,
    "note": "On schedule. Retitled to fit 60 characters and dropped 'a 2026 test' (no test was run; the guide teaches a reader-run test). Plans, prices and privacy settings confirmed on chatgpt.com, help.openai.com, claude.com, support/privacy.claude.com, gemini.google and Google's Gemini Privacy Hub; IRS record-retention page and 2025 Schedule C instructions fetched this run. Pages deploy succeeded; site search didn't return the page yet, so live_verified is false. Drive copy saved."
+  },
+  {
+   "date": "2026-11-19",
+   "at": "2026-11-21T14:09:20-08:00",
+   "result": "published",
+   "path": "/ai-accounting/excel-copilot-clean-data-bank-exports/",
+   "facts_checked": 11,
+   "removed": 2,
+   "live_verified": false,
+   "linkedin_post": true,
+   "drive_copy": true,
+   "note": "Catch-up on 2026-11-21 for the missed 2026-11-19 run. Skill, @clean-data invocation, issue list, on-by-default and still-rolling-out status, plan list, .xlsx and Automatic calculation, and Frontier-only accounting skills confirmed on Microsoft support pages fetched this run; IRS Topic 305 for the 3/6-year rule. Removed from the brief: 'Skills menu' invocation and 'numbers stored as text' wording (not on Microsoft's page). Pages deploy queued; site search didn't return the page yet, so live_verified is false. Drive copy saved."
   }
  ]
 }
