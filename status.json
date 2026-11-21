@@ -152,7 +152,9 @@
   {
    "date": "2026-11-20",
    "hub": "ai-accounting",
-   "status": "todo"
+   "status": "written",
+   "title": "AI for invoices and payment reminders: prompts that work",
+   "url": "https://bookbytellc.com/ai-accounting/ai-invoices-payment-reminders/"
   },
   {
    "date": "2026-11-23",

@@ -1694,4 +1694,67 @@ article("/ai-accounting/excel-copilot-clean-data-bank-exports/","/ai-accounting/
   ("Microsoft: Frequently asked questions about Copilot in Excel","https://support.microsoft.com/en-us/excel/copilot/frequently-asked-questions-about-copilot-in-excel"),
   ("IRS: Topic no. 305, Recordkeeping","https://www.irs.gov/taxtopics/tc305")],
  "excel-copilot-clean-data-bank-exports"),
+article("/ai-accounting/ai-invoices-payment-reminders/","/ai-accounting/","AI for Accounting",
+ "AI for invoices and payment reminders: prompts that work",
+ "AI for invoices and payment reminders: prompts that work",
+ "Use AI for invoices and payment reminders: clear line items, a polite reminder sequence, and a weekly unpaid list you check against your bank.",
+ "2026-11-20",
+ "You finished the work. Now you&rsquo;re chasing the money, and writing the third &ldquo;just following up&rdquo; email feels awful.",
+ '''<div class="callout"><b>Quick answer.</b> AI can draft clear invoice line items, write a polite reminder sequence (before the due date, on it, and after), and turn your invoice list into a weekly unpaid report. Give it made-up or stripped data, set the tone and dates yourself, and <b>mark an invoice paid only when the money shows up in your bank account.</b></div>
+
+<h2>Your invoices go out late, or they&rsquo;re unclear</h2>
+<p>You bill when you remember. The line says &ldquo;Services, October.&rdquo; The client&rsquo;s office has to email back to ask what it covers, and the clock stops.</p>
+<p><b>A vague invoice is easy to set aside.</b></p>
+
+<h2>And asking to be paid feels awkward</h2>
+<p>You don&rsquo;t want to sound pushy with a client you like. So you wait. One week late becomes four.</p>
+
+<h2>What late payments cost you</h2>
+<ul>
+<li><b>Cash you counted on.</b> Most self-employed people use the cash method. The IRS says that means you report income in the year you receive it. An unpaid invoice is money you can&rsquo;t spend yet.</li>
+<li><b>No tax write-off if it never comes.</b> The IRS says a cash-method taxpayer generally can&rsquo;t take a bad debt deduction for unpaid fees. A business bad debt is deductible only if the amount was already included in your income. For most freelancers, an unpaid invoice was never income, so there&rsquo;s nothing to deduct.</li>
+<li><b>Records that don&rsquo;t match.</b> The IRS can generally assess more tax for 3 years after you file. Your invoices and deposits should tell the same story.</li>
+</ul>
+
+<h2>Picture this instead</h2>
+<p>Invoices go out the day the work is done, with lines the client understands. Reminders go out on a schedule, in your voice. <b>Every Friday you see one short list: who owes what, and how late.</b></p>
+
+<h2>The 3-prompt method for AI invoices and payment reminders</h2>
+<p>These prompts work in ChatGPT, Claude, Gemini or Copilot. Before you paste anything, remove bank details, tax ID numbers and client contact details. Our <a href="/ai-accounting/financial-data-safety-ai/">guide to keeping financial data safe with AI</a> lists what to strip.</p>
+
+<h3>1. Write invoice lines a client can approve</h3>
+<div class="callout"><b>Prompt to copy:</b><br>
+Rewrite these notes as invoice line items for a client. One line per deliverable, with a short plain description, quantity, rate and amount. Do not change any number. Add a total and check that it equals the sum of the lines. Notes: [paste your notes].</div>
+
+<h3>2. Draft a reminder sequence in your voice</h3>
+<div class="callout"><b>Prompt to copy:</b><br>
+Write four short payment reminder emails for invoice [number], [amount], due [date]. Email 1: three days before the due date, friendly. Email 2: on the due date. Email 3: seven days late, direct but polite. Email 4: 21 days late, firm, and asks for a payment date. Keep each under 90 words. Restate the invoice number, amount and due date in each one. Don&rsquo;t threaten, and don&rsquo;t mention fees or legal action unless I tell you they&rsquo;re in my contract.</div>
+
+<h3>3. Turn your invoice list into an unpaid report</h3>
+<div class="callout"><b>Prompt to copy:</b><br>
+From the attached invoice list (Invoice, Client, Date sent, Due date, Amount, Date paid), list every unpaid invoice as of [today&rsquo;s date]. Group them as not yet due, 1&ndash;30 days late, 31&ndash;60 days late, and over 60 days late. Show a total for each group and a grand total. Show your math. Don&rsquo;t mark anything paid that has no Date paid.</div>
+
+<div class="callout"><b>Example (made-up data).</b> A freelance copywriter, report run November 20, 2026.<br>
+<b>Invoices:</b> #101 Client A $1,200, due Oct 15, paid Oct 14 &middot; #102 Client B $850, due Oct 31, unpaid &middot; #103 Client C $2,000, due Nov 10, unpaid &middot; #104 Client A $600, due Dec 5, unpaid.<br>
+<b>Report:</b> not yet due $600 (#104); 1&ndash;30 days late $2,850 (#102 at 20 days, #103 at 10 days). Grand total $3,450.<br>
+<b>What went wrong on the first run:</b> the AI put #102 in &ldquo;31&ndash;60 days&rdquo; by counting from the date sent. Fixed by telling it to count days late from the due date.</div>
+
+<h2>How to check AI invoices and reminders before they go out</h2>
+<ol>
+<li><b>Numbers:</b> every amount, date and invoice number matches your invoice, to the cent.</li>
+<li><b>Totals:</b> add the lines yourself or with a SUM formula.</li>
+<li><b>Paid status:</b> match each &ldquo;paid&rdquo; invoice to a deposit. Our <a href="/ai-accounting/ai-bank-reconciliation/">AI bank reconciliation guide</a> shows how.</li>
+<li><b>Tone:</b> read each reminder out loud. Would you send it to this client?</li>
+<li><b>Promises:</b> cut any late fee, discount or deadline the AI added that isn&rsquo;t in your contract.</li>
+</ol>
+
+<h2>Can AI send invoices and reminders for me?</h2>
+<p>A chat tool drafts; it doesn&rsquo;t track who paid. Many invoicing apps can send scheduled reminders, and you can paste your AI-written text into them. Either way, you stay in charge of what gets sent and what counts as paid.</p>
+<p>Keep a copy of every invoice you send. It backs up the income on your return and the deposits in your bank. When payments arrive, sort them with our <a href="/ai-accounting/ai-prompts-categorize-transactions/">AI prompts to categorize transactions</a>.</p>
+<p>Not technical? You don&rsquo;t need to be. It&rsquo;s three prompts and a five-point check. Want someone to keep the whole picture current?</p>''',
+ 'Want your books kept current while you chase new work? At <a href="CTAURL">Computatio</a>, AI does the first pass and an accountant reviews and reconciles every account each month, so you always know what&rsquo;s been paid. Monthly Books is $500 a month.',
+ [("IRS: Publication 538, Accounting Periods and Methods","https://www.irs.gov/publications/p538"),
+  ("IRS: Topic no. 453, Bad debt deduction","https://www.irs.gov/taxtopics/tc453"),
+  ("IRS: Topic no. 305, Recordkeeping","https://www.irs.gov/taxtopics/tc305")],
+ "ai-invoices-payment-reminders"),
 ]
