@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Excel Copilot clean data: fix bank exports before you sort</title>
+<meta name="description" content="Use Excel Copilot&#x27;s clean-data skill to fix bank and card exports: dates, amounts stored as text, duplicates and extra spaces. Then check the totals.">
+<link rel="canonical" href="https://bookbytellc.com/ai-accounting/excel-copilot-clean-data-bank-exports/">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="BookByte">
+<meta property="og:title" content="Excel Copilot clean data: fix bank exports before you sort">
+<meta property="og:description" content="Use Excel Copilot&#x27;s clean-data skill to fix bank and card exports: dates, amounts stored as text, duplicates and extra spaces. Then check the totals.">
+<meta property="og:url" content="https://bookbytellc.com/ai-accounting/excel-copilot-clean-data-bank-exports/">
+<meta property="og:image" content="https://bookbytellc.com/assets/og/excel-copilot-clean-data-bank-exports.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Excel Copilot clean data: fix bank exports before you sort">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Excel Copilot clean data: fix bank exports before you sort">
+<meta name="twitter:description" content="Use Excel Copilot&#x27;s clean-data skill to fix bank and card exports: dates, amounts stored as text, duplicates and extra spaces. Then check the totals.">
+<meta name="twitter:image" content="https://bookbytellc.com/assets/og/excel-copilot-clean-data-bank-exports.png">
+<meta name="theme-color" content="#111111">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/fonts.css">
+<link rel="stylesheet" href="/assets/style.css">
+<link rel="alternate" type="application/rss+xml" title="BookByte" href="/feed.xml">
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://bookbytellc.com/"}, {"@type": "ListItem", "position": 2, "name": "AI for Accounting", "item": "https://bookbytellc.com/ai-accounting/"}, {"@type": "ListItem", "position": 3, "name": "Excel Copilot clean data: fix bank exports before you sort", "item": "https://bookbytellc.com/ai-accounting/excel-copilot-clean-data-bank-exports/"}]}, {"@context": "https://schema.org", "@type": "Article", "headline": "Excel Copilot clean data: fix bank exports before you sort", "description": "Use Excel Copilot's clean-data skill to fix bank and card exports: dates, amounts stored as text, duplicates and extra spaces. Then check the totals.", "author": {"@type": "Organization", "name": "Computatio", "url": "https://computatio.io/"}, "publisher": {"@type": "Organization", "name": "BookByte"}, "datePublished": "2026-11-19", "dateModified": "2026-11-19", "mainEntityOfPage": "https://bookbytellc.com/ai-accounting/excel-copilot-clean-data-bank-exports/"}]</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site"><div class="wrap bar">
+<a class="brand" href="/"><img src="/assets/favicon.svg" alt="" width="32" height="32"><span>BookByte</span></a>
+<nav aria-label="Main"><a href="/bookkeeping/">Bookkeeping</a><a href="/estimated-taxes/">Estimated taxes</a><a href="/deductions/">Deductions</a><a href="/business-structure/">Business structure</a><a href="/about/">About</a><a class="ai-btn on" href="/ai-accounting/"><svg class="spark" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.2 6.3L20.5 10.5l-6.3 2.2L12 19l-2.2-6.3L3.5 10.5l6.3-2.2zM19 15l.9 2.1L22 18l-2.1.9L19 21l-.9-2.1L16 18l2.1-.9z" fill="currentColor"/></svg>AI for Accounting</a></nav>
+</div></header>
+<main id="main">
+<section class="hero small"><div class="wrap narrow">
+<p class="eyebrow"><a href="/ai-accounting/" style="color:inherit;text-decoration:none">AI for Accounting</a></p>
+<h1>Excel Copilot clean data: fix bank exports before you sort</h1>
+<p class="lede">You download a month of bank transactions into Excel. Your SUMIFS come back wrong, and you can&rsquo;t see why.</p>
+<p class="muted" style="color:#bbb">By: Computatio &middot; Last reviewed 2026-11-19</p>
+</div></section>
+<section><div class="wrap narrow prose">
+<div class="callout"><b>Quick answer.</b> As of November 19, 2026, Copilot in Excel has a built-in clean-data skill. Type <b>@clean-data</b> in the Copilot pane. It looks for extra spaces, inconsistent text, number and date formats, duplicate values and values stored as the wrong data type, explains what it found, and lets you pick which fixes to apply. <b>Keep the raw export on its own sheet, and check that your totals still tie to the bank statement after every fix.</b></div>
+
+<h2>Your bank export looks fine, but the formulas break</h2>
+<p>A bank CSV looks tidy. Then a SUMIFS skips rows, a PivotTable splits one payee into three, and dates sort in the wrong order.</p>
+<p><b>The problem is usually hidden: a trailing space, a date stored as text, or an amount with a dollar sign typed in.</b></p>
+
+<h2>And overlapping downloads double your expenses</h2>
+<p>You pulled the 1st to the 15th, then the 10th to the 31st. Now five days appear twice. Your expenses look higher than they are, and your reconciliation won&rsquo;t balance.</p>
+
+<h2>What messy data costs you</h2>
+<ul>
+<li><b>Wrong category totals.</b> &ldquo;Office Depot&rdquo; and &ldquo;Office Depot &rdquo; with a space are two payees to a formula. One of them drops out of your summary.</li>
+<li><b>Hours lost at month-end.</b> A reconciliation that&rsquo;s off by one duplicated week can take an evening to trace.</li>
+<li><b>Records you have to defend.</b> The IRS can generally assess more tax for 3 years after you file, or 6 years if you leave out income worth more than 25% of the gross income on your return. Clean books built on the real statement are what you show if asked.</li>
+</ul>
+
+<h2>Picture this instead</h2>
+<p>You drop in the export, run one skill, and read a short list of what&rsquo;s wrong. You approve the fixes one type at a time. <b>Ten minutes later the data sorts, sums and pivots, and the totals still match the statement.</b></p>
+
+<h2>Who gets Excel Copilot clean data?</h2>
+<p>Microsoft&rsquo;s support page says the skill is on by default in Copilot in Excel but is still rolling out, so it may not reach every customer yet. Copilot in Excel needs one of these:</p>
+<ul>
+<li>Microsoft 365 Personal or Family with an AI credits plan</li>
+<li>Microsoft 365 Premium</li>
+<li>A commercial Microsoft Copilot subscription</li>
+<li>A Microsoft 365 or Office 365 business plan that&rsquo;s eligible for Copilot Chat</li>
+</ul>
+<p>Save the file as .xlsx and set calculation to <b>Automatic</b> (Formulas &gt; Calculation Options). Microsoft says Copilot can&rsquo;t edit a workbook otherwise.</p>
+
+<h2>The keep-a-copy method: clean a bank export in 6 steps</h2>
+<ol>
+<li><b>Copy the raw data first.</b> Paste the export onto a sheet named &ldquo;Raw&rdquo; and don&rsquo;t touch it. Work on a copy named &ldquo;Clean&rdquo;.</li>
+<li><b>Write down three control numbers.</b> On the Raw sheet: row count, total deposits, total withdrawals.</li>
+<li><b>Strip what Copilot doesn&rsquo;t need.</b> Delete account number columns. Our <a href="/ai-accounting/financial-data-safety-ai/">guide to keeping financial data safe with AI</a> lists what to remove.</li>
+<li><b>Run the skill.</b> On the Clean sheet, open Copilot and paste the prompt below.</li>
+<li><b>Accept fixes one type at a time.</b> Spaces first, then dates, then amounts. Leave duplicates for last.</li>
+<li><b>Check every suspected duplicate against the statement.</b> Two $15.00 charges on the same day can be real. Delete a row only when the statement shows it once.</li>
+</ol>
+
+<div class="callout"><b>Prompt to copy:</b><br>
+@clean-data Review the table on this sheet. It is a bank export with Date, Description, Amount and Type columns. List every issue you find, grouped by type, with the cell or row numbers. Do not delete any rows. For possible duplicates, list both rows side by side so I can check them against my bank statement. Wait for me to choose which fixes to apply.</div>
+
+<div class="callout"><b>Example (made-up data).</b> A dog-walking business exports October from its bank. The Raw sheet has 48 rows, deposits $4,200.00, withdrawals $1,386.50.<br>
+<b>Issues found:</b> 14 dates written as 10/03/2026 and 9 written as 2026-10-17; three amounts stored as text like &ldquo;$1,200.00&rdquo;; trailing spaces on &ldquo;PET SUPPLY CO &rdquo;; and 6 rows from October 10&ndash;12 that appear twice, from two overlapping downloads.<br>
+<b>After checking the statement:</b> 5 of the 6 pairs were true duplicates. The sixth was two real $22.50 parking charges.<br>
+<b>Result:</b> 43 rows. Withdrawals fell by the 5 removed rows, $96.40, to $1,290.10. Deposits stayed $4,200.00. The cleaned ending balance ties to the statement.</div>
+
+<h2>How to check the cleaned bank export</h2>
+<ol>
+<li><b>Rows:</b> Clean rows + removed duplicates = Raw rows.</li>
+<li><b>Totals:</b> Clean deposits and withdrawals + the removed duplicates = Raw totals. List every removed row on a &ldquo;Removed&rdquo; sheet.</li>
+<li><b>Balance:</b> the ending balance still matches the bank statement.</li>
+<li><b>Spot-check 5 rows</b> against the statement: date, payee and amount.</li>
+<li><b>Re-sort by date.</b> If anything lands out of order, a date is still text.</li>
+</ol>
+<p><b>If the totals don&rsquo;t tie, don&rsquo;t move on.</b> Undo back to the Raw sheet and apply one fix type at a time until you find the change that moved the number.</p>
+
+<h2>What the clean-data skill won&rsquo;t do</h2>
+<p>It cleans the data. It doesn&rsquo;t categorize transactions or <a href="/ai-accounting/ai-bank-reconciliation/">reconcile your account</a>. Microsoft also lists separate accounting skills, such as reconciliation, that are rolling out to its Frontier program; this guide doesn&rsquo;t cover them. Microsoft says Copilot doesn&rsquo;t give accounting or tax advice, so you check its work before it goes into your books.</p>
+<p>Not on Copilot? The same checks work with any AI tool. See AI for Excel and Google Sheets bookkeeping. Once the data is clean, use our <a href="/ai-accounting/ai-prompts-categorize-transactions/">AI prompts to categorize transactions</a>.</p>
+<p>Clean data is step one. Want the rest of the month handled?</p>
+<div class="cta"><b>Short on time?</b> Rather skip the cleanup? At <a href="https://computatio.io/?utm_source=bookbyte&amp;utm_medium=referral&amp;utm_campaign=excel-copilot-clean-data-bank-exports">Computatio</a>, AI does the first pass on your bank and card data and an accountant reviews and reconciles every account each month. Monthly Books is $500 a month.</div>
+<div class="share" aria-label="Share this guide"><b>Share this guide:</b> <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fbookbytellc.com%2Fai-accounting%2Fexcel-copilot-clean-data-bank-exports%2F" target="_blank" rel="noopener">LinkedIn</a><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fbookbytellc.com%2Fai-accounting%2Fexcel-copilot-clean-data-bank-exports%2F" target="_blank" rel="noopener">Facebook</a><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fbookbytellc.com%2Fai-accounting%2Fexcel-copilot-clean-data-bank-exports%2F&amp;text=Excel%20Copilot%20clean%20data%3A%20fix%20bank%20exports%20before%20you%20sort" target="_blank" rel="noopener">X</a><a href="mailto:?subject=Excel%20Copilot%20clean%20data%3A%20fix%20bank%20exports%20before%20you%20sort&amp;body=https%3A%2F%2Fbookbytellc.com%2Fai-accounting%2Fexcel-copilot-clean-data-bank-exports%2F">Email</a><button type="button" data-url="https://bookbytellc.com/ai-accounting/excel-copilot-clean-data-bank-exports/" onclick="var b=this;navigator.clipboard.writeText(b.dataset.url).then(function(){b.textContent='Link copied'},function(){prompt('Copy this link:',b.dataset.url)})">Copy link</button></div>
+<div class="callout"><b>Free download:</b> <a href="https://computatio.io/free-guide/?utm_source=bookbyte&amp;utm_medium=referral&amp;utm_campaign=excel-copilot-clean-data-bank-exports">47 write-offs for the self-employed</a>, a 42-page guide with the IRS rules behind each deduction. Free when you join the Computatio newsletter.</div>
+<h2>Sources</h2><ul><li><a href="https://support.microsoft.com/en-us/excel/copilot/copilot-in-excel-built-in-skills">Microsoft: Use built-in skills with Copilot in Excel</a></li><li><a href="https://support.microsoft.com/en-us/excel/copilot/frequently-asked-questions-about-copilot-in-excel">Microsoft: Frequently asked questions about Copilot in Excel</a></li><li><a href="https://www.irs.gov/taxtopics/tc305">IRS: Topic no. 305, Recordkeeping</a></li></ul>
+<p class="fine">This guide is general information, not financial, tax or legal advice for your situation. We work hard to get it right, but we can make mistakes, and rules change. Check the official sources above before you act.</p>
+</div></section>
+</main>
+<footer class="site"><div class="wrap">
+<div class="fgrid">
+<div><b>BookByte</b><p>Plain-English bookkeeping, tax and AI accounting guides for the self-employed.</p><a href="https://computatio.io/free-guide/?utm_source=bookbyte&amp;utm_medium=referral&amp;utm_campaign=footer">Free guide: 47 write-offs</a><a href="/feed.xml">RSS feed</a></div>
+<div><b>Guides</b><a href="/ai-accounting/">AI for Accounting</a><a href="/bookkeeping/">Bookkeeping</a><a href="/estimated-taxes/">Estimated taxes</a><a href="/deductions/">Deductions</a><a href="/business-structure/">Business structure</a></div>
+<div><b>Would rather not do it yourself?</b><p><a href="https://computatio.io/?utm_source=bookbyte&amp;utm_medium=referral&amp;utm_campaign=footer">Computatio</a> keeps your books and prepares your return, with a person reviewing every account.</p></div>
+</div>
+<p class="legal">Guides are general information, not financial, tax or legal advice. We can make mistakes and rules change; check the date and sources on each guide. &middot; <a href="/about/">About</a> &middot; <a href="/privacy/">Privacy</a> &middot; &copy; 2026 BookByte</p>
+</div></footer>
+<script>window.goatcounter={path:function(p){return location.host+p}}</script>
+<script data-goatcounter="https://computatio.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>

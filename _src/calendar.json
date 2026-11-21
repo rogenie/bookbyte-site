@@ -247,7 +247,7 @@
    "hub": "ai-accounting",
    "path": "/ai-accounting/excel-copilot-clean-data-bank-exports/",
    "title": "Excel Copilot clean data: fix bank exports before you sort",
-   "status": "todo",
+   "status": "published",
    "kind": "ai-update",
    "brief": {
     "news": "Copilot in Excel now has a clean-data skill (@clean-data, or the Skills menu) that finds extra spaces, inconsistent text, number and date formats, duplicates and numbers stored as text, explains each issue and lets you pick which fixes to apply.",
@@ -262,7 +262,8 @@
      "/ai-accounting/ai-prompts-categorize-transactions/",
      "/ai-accounting/ai-bank-reconciliation/"
     ]
-   }
+   },
+   "url": "https://bookbytellc.com/ai-accounting/excel-copilot-clean-data-bank-exports/"
   },
   {
    "date": "2026-11-20",

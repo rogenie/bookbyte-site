@@ -1622,4 +1622,76 @@ These rows and scores are invented to show the method. They are not results from
   ("IRS: How long should I keep records?","https://www.irs.gov/businesses/small-businesses-self-employed/how-long-should-i-keep-records"),
   ("IRS: 2025 Instructions for Schedule C (Form 1040)","https://www.irs.gov/instructions/i1040sc")],
  "chatgpt-vs-claude-vs-gemini-bookkeeping"),
+article("/ai-accounting/excel-copilot-clean-data-bank-exports/","/ai-accounting/","AI for Accounting",
+ "Excel Copilot clean data: fix bank exports before you sort",
+ "Excel Copilot clean data: fix bank exports before you sort",
+ "Use Excel Copilot's clean-data skill to fix bank and card exports: dates, amounts stored as text, duplicates and extra spaces. Then check the totals.",
+ "2026-11-19",
+ "You download a month of bank transactions into Excel. Your SUMIFS come back wrong, and you can&rsquo;t see why.",
+ '''<div class="callout"><b>Quick answer.</b> As of November 19, 2026, Copilot in Excel has a built-in clean-data skill. Type <b>@clean-data</b> in the Copilot pane. It looks for extra spaces, inconsistent text, number and date formats, duplicate values and values stored as the wrong data type, explains what it found, and lets you pick which fixes to apply. <b>Keep the raw export on its own sheet, and check that your totals still tie to the bank statement after every fix.</b></div>
+
+<h2>Your bank export looks fine, but the formulas break</h2>
+<p>A bank CSV looks tidy. Then a SUMIFS skips rows, a PivotTable splits one payee into three, and dates sort in the wrong order.</p>
+<p><b>The problem is usually hidden: a trailing space, a date stored as text, or an amount with a dollar sign typed in.</b></p>
+
+<h2>And overlapping downloads double your expenses</h2>
+<p>You pulled the 1st to the 15th, then the 10th to the 31st. Now five days appear twice. Your expenses look higher than they are, and your reconciliation won&rsquo;t balance.</p>
+
+<h2>What messy data costs you</h2>
+<ul>
+<li><b>Wrong category totals.</b> &ldquo;Office Depot&rdquo; and &ldquo;Office Depot &rdquo; with a space are two payees to a formula. One of them drops out of your summary.</li>
+<li><b>Hours lost at month-end.</b> A reconciliation that&rsquo;s off by one duplicated week can take an evening to trace.</li>
+<li><b>Records you have to defend.</b> The IRS can generally assess more tax for 3 years after you file, or 6 years if you leave out income worth more than 25% of the gross income on your return. Clean books built on the real statement are what you show if asked.</li>
+</ul>
+
+<h2>Picture this instead</h2>
+<p>You drop in the export, run one skill, and read a short list of what&rsquo;s wrong. You approve the fixes one type at a time. <b>Ten minutes later the data sorts, sums and pivots, and the totals still match the statement.</b></p>
+
+<h2>Who gets Excel Copilot clean data?</h2>
+<p>Microsoft&rsquo;s support page says the skill is on by default in Copilot in Excel but is still rolling out, so it may not reach every customer yet. Copilot in Excel needs one of these:</p>
+<ul>
+<li>Microsoft 365 Personal or Family with an AI credits plan</li>
+<li>Microsoft 365 Premium</li>
+<li>A commercial Microsoft Copilot subscription</li>
+<li>A Microsoft 365 or Office 365 business plan that&rsquo;s eligible for Copilot Chat</li>
+</ul>
+<p>Save the file as .xlsx and set calculation to <b>Automatic</b> (Formulas &gt; Calculation Options). Microsoft says Copilot can&rsquo;t edit a workbook otherwise.</p>
+
+<h2>The keep-a-copy method: clean a bank export in 6 steps</h2>
+<ol>
+<li><b>Copy the raw data first.</b> Paste the export onto a sheet named &ldquo;Raw&rdquo; and don&rsquo;t touch it. Work on a copy named &ldquo;Clean&rdquo;.</li>
+<li><b>Write down three control numbers.</b> On the Raw sheet: row count, total deposits, total withdrawals.</li>
+<li><b>Strip what Copilot doesn&rsquo;t need.</b> Delete account number columns. Our <a href="/ai-accounting/financial-data-safety-ai/">guide to keeping financial data safe with AI</a> lists what to remove.</li>
+<li><b>Run the skill.</b> On the Clean sheet, open Copilot and paste the prompt below.</li>
+<li><b>Accept fixes one type at a time.</b> Spaces first, then dates, then amounts. Leave duplicates for last.</li>
+<li><b>Check every suspected duplicate against the statement.</b> Two $15.00 charges on the same day can be real. Delete a row only when the statement shows it once.</li>
+</ol>
+
+<div class="callout"><b>Prompt to copy:</b><br>
+@clean-data Review the table on this sheet. It is a bank export with Date, Description, Amount and Type columns. List every issue you find, grouped by type, with the cell or row numbers. Do not delete any rows. For possible duplicates, list both rows side by side so I can check them against my bank statement. Wait for me to choose which fixes to apply.</div>
+
+<div class="callout"><b>Example (made-up data).</b> A dog-walking business exports October from its bank. The Raw sheet has 48 rows, deposits $4,200.00, withdrawals $1,386.50.<br>
+<b>Issues found:</b> 14 dates written as 10/03/2026 and 9 written as 2026-10-17; three amounts stored as text like &ldquo;$1,200.00&rdquo;; trailing spaces on &ldquo;PET SUPPLY CO &rdquo;; and 6 rows from October 10&ndash;12 that appear twice, from two overlapping downloads.<br>
+<b>After checking the statement:</b> 5 of the 6 pairs were true duplicates. The sixth was two real $22.50 parking charges.<br>
+<b>Result:</b> 43 rows. Withdrawals fell by the 5 removed rows, $96.40, to $1,290.10. Deposits stayed $4,200.00. The cleaned ending balance ties to the statement.</div>
+
+<h2>How to check the cleaned bank export</h2>
+<ol>
+<li><b>Rows:</b> Clean rows + removed duplicates = Raw rows.</li>
+<li><b>Totals:</b> Clean deposits and withdrawals + the removed duplicates = Raw totals. List every removed row on a &ldquo;Removed&rdquo; sheet.</li>
+<li><b>Balance:</b> the ending balance still matches the bank statement.</li>
+<li><b>Spot-check 5 rows</b> against the statement: date, payee and amount.</li>
+<li><b>Re-sort by date.</b> If anything lands out of order, a date is still text.</li>
+</ol>
+<p><b>If the totals don&rsquo;t tie, don&rsquo;t move on.</b> Undo back to the Raw sheet and apply one fix type at a time until you find the change that moved the number.</p>
+
+<h2>What the clean-data skill won&rsquo;t do</h2>
+<p>It cleans the data. It doesn&rsquo;t categorize transactions or <a href="/ai-accounting/ai-bank-reconciliation/">reconcile your account</a>. Microsoft also lists separate accounting skills, such as reconciliation, that are rolling out to its Frontier program; this guide doesn&rsquo;t cover them. Microsoft says Copilot doesn&rsquo;t give accounting or tax advice, so you check its work before it goes into your books.</p>
+<p>Not on Copilot? The same checks work with any AI tool. See <a href="/ai-accounting/ai-excel-google-sheets-bookkeeping/">AI for Excel and Google Sheets bookkeeping</a>. Once the data is clean, use our <a href="/ai-accounting/ai-prompts-categorize-transactions/">AI prompts to categorize transactions</a>.</p>
+<p>Clean data is step one. Want the rest of the month handled?</p>''',
+ 'Rather skip the cleanup? At <a href="CTAURL">Computatio</a>, AI does the first pass on your bank and card data and an accountant reviews and reconciles every account each month. Monthly Books is $500 a month.',
+ [("Microsoft: Use built-in skills with Copilot in Excel","https://support.microsoft.com/en-us/excel/copilot/copilot-in-excel-built-in-skills"),
+  ("Microsoft: Frequently asked questions about Copilot in Excel","https://support.microsoft.com/en-us/excel/copilot/frequently-asked-questions-about-copilot-in-excel"),
+  ("IRS: Topic no. 305, Recordkeeping","https://www.irs.gov/taxtopics/tc305")],
+ "excel-copilot-clean-data-bank-exports"),
 ]
