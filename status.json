@@ -575,6 +575,18 @@
    "linkedin_post": true,
    "drive_copy": true,
    "note": "Catch-up on 2026-11-21 for the missed 2026-11-19 run. Skill, @clean-data invocation, issue list, on-by-default and still-rolling-out status, plan list, .xlsx and Automatic calculation, and Frontier-only accounting skills confirmed on Microsoft support pages fetched this run; IRS Topic 305 for the 3/6-year rule. Removed from the brief: 'Skills menu' invocation and 'numbers stored as text' wording (not on Microsoft's page). Pages deploy queued; site search didn't return the page yet, so live_verified is false. Drive copy saved."
+  },
+  {
+   "date": "2026-11-20",
+   "at": "2026-11-21T14:10:02-08:00",
+   "result": "published",
+   "path": "/ai-accounting/ai-invoices-payment-reminders/",
+   "facts_checked": 6,
+   "removed": 0,
+   "live_verified": false,
+   "linkedin_post": true,
+   "drive_copy": true,
+   "note": "Catch-up on 2026-11-21 for the missed 2026-11-20 run. Retitled to 'AI for invoices and payment reminders: prompts that work' (path unchanged; guide was not live). Cash vs. accrual timing (IRS Pub 538), cash-method bad debt limit and the included-in-income rule (Topic 453), and the 3-year assessment window (Topic 305) confirmed on pages fetched this run. Pages deploy for the Nov 19 guide succeeded; this one was in progress and site search didn't return it yet, so live_verified is false. Drive copy saved."
   }
  ]
 }
