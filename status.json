@@ -591,6 +591,30 @@
    "linkedin_post": true,
    "drive_copy": true,
    "note": "Catch-up on 2026-11-21 for the missed 2026-11-20 run. Retitled to 'AI for invoices and payment reminders: prompts that work' (path unchanged; guide was not live). Cash vs. accrual timing (IRS Pub 538), cash-method bad debt limit and the included-in-income rule (Topic 453), and the 3-year assessment window (Topic 305) confirmed on pages fetched this run. Pages deploy for the Nov 19 guide succeeded; this one was in progress and site search didn't return it yet, so live_verified is false. Drive copy saved."
+  },
+  {
+   "date": "2026-11-23",
+   "at": "2026-11-24T05:55:08-08:00",
+   "result": "published",
+   "path": "/ai-accounting/ai-excel-google-sheets-bookkeeping/",
+   "facts_checked": 8,
+   "removed": 0,
+   "live_verified": false,
+   "linkedin_post": true,
+   "drive_copy": true,
+   "note": "Catch-up on 2026-11-24 for the missed 2026-11-23 run. Retention periods (Topic 305), expense-record elements, any-system and electronic-records rules, checking account as main source (IRS recordkeeping pages), mixed-use split and personal-expense rule (IRS small business FAQ) confirmed on pages fetched this run. Pages deploy succeeded; site search didn't return the page yet, so live_verified is false. Drive copy saved."
+  },
+  {
+   "date": "2026-11-24",
+   "at": "2026-11-24T05:55:08-08:00",
+   "result": "published",
+   "path": "/ai-accounting/claude-personal-finance-business-costs/",
+   "facts_checked": 17,
+   "removed": 1,
+   "live_verified": false,
+   "linkedin_post": true,
+   "drive_copy": true,
+   "note": "Beta status, Pro/Max/Ultra only, US banks only, Plaid, account types, read-only, 24 months, balance lag, double-count, surface limits, training statement and setup steps confirmed on Anthropic's help page fetched this run; IRS FAQ, records page and Topic 305 for the tax rules. Removed the Nov 5 launch date from the brief (not in the release notes fetched this run). Pages deploy succeeded; site search didn't return the page yet, so live_verified is false. Drive copy saved."
   }
  ]
 }
