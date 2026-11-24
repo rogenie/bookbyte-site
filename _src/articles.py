@@ -1757,4 +1757,71 @@ From the attached invoice list (Invoice, Client, Date sent, Due date, Amount, Da
   ("IRS: Topic no. 453, Bad debt deduction","https://www.irs.gov/taxtopics/tc453"),
   ("IRS: Topic no. 305, Recordkeeping","https://www.irs.gov/taxtopics/tc305")],
  "ai-invoices-payment-reminders"),
+article("/ai-accounting/ai-excel-google-sheets-bookkeeping/","/ai-accounting/","AI for Accounting",
+ "How to use AI in Excel or Google Sheets for bookkeeping",
+ "How to use AI in Excel or Google Sheets for bookkeeping",
+ "Use AI in Excel or Google Sheets for bookkeeping: build a transaction log, a category rules table and a monthly summary, then check it against your bank.",
+ "2026-11-23",
+ "Your books live in a spreadsheet. Every month you fight the same formulas, and you&rsquo;re never sure the totals are right.",
+ '''<div class="callout"><b>Quick answer.</b> Use AI in Excel or Google Sheets to do three jobs: set up a clean transaction log, write the formulas that categorize and total it, and explain any number you don&rsquo;t trust. Ask for formulas, not answers, so the math stays in your sheet where you can see it. <b>Then tie the totals to your bank statement before you rely on them.</b></div>
+
+<h2>You&rsquo;re stuck writing spreadsheet formulas</h2>
+<p>You know what you want: expenses by category, by month. But SUMIFS, lookups and date ranges eat your evening.</p>
+<p><b>You end up typing totals by hand, and hand-typed totals break quietly.</b></p>
+
+<h2>And you don&rsquo;t trust the numbers you get</h2>
+<p>One month the sheet says you spent $3,100 on supplies. That feels high. You can&rsquo;t tell if it&rsquo;s a bad formula, a duplicated row or a real problem.</p>
+
+<h2>What a shaky spreadsheet costs you</h2>
+<ul>
+<li><b>Records you may have to defend.</b> The IRS can generally assess more tax for 3 years after you file. That grows to 6 years if you leave out income worth more than 25% of the gross income on your return.</li>
+<li><b>Deductions you can&rsquo;t back up.</b> The IRS says expense records should show who you paid, how much, proof of payment, the date, and a description showing it was for the business. A total with no rows behind it shows none of that.</li>
+<li><b>Hours at tax time</b> rebuilding a year you could have kept current one month at a time.</li>
+</ul>
+
+<h2>Picture this instead</h2>
+<p>You paste in the month&rsquo;s bank export. A rules table sorts most rows into categories on its own. A summary tab fills in. <b>You spend your time on the few rows that need a human, not on the formulas.</b></p>
+
+<h2>Is a spreadsheet good enough for bookkeeping?</h2>
+<p>For many small businesses, yes. The IRS says you may choose any recordkeeping system suited to your business that clearly shows your income and expenses. Electronic records must meet the same rules as paper ones. The IRS also notes that for most small businesses, the business checking account is the main source for entries in the books.</p>
+<p><b>A spreadsheet is fine. A spreadsheet with no receipts and no bank tie-out is not.</b></p>
+
+<h2>The formula-first method: AI bookkeeping in Excel or Google Sheets</h2>
+<p>These steps work with the AI built into your spreadsheet or with any chat tool. Before you paste data into a chat, remove account numbers and anything you don&rsquo;t need. Our <a href="/ai-accounting/financial-data-safety-ai/">guide to keeping financial data safe with AI</a> lists what to strip.</p>
+<ol>
+<li><b>Set up three tabs.</b> &ldquo;Transactions&rdquo; (Date, Description, Amount, Category, Receipt), &ldquo;Rules&rdquo; (Keyword, Category) and &ldquo;Summary&rdquo;.</li>
+<li><b>Paste the bank export</b> into Transactions. If dates or amounts look odd, clean them first. Excel users can see our <a href="/ai-accounting/excel-copilot-clean-data-bank-exports/">Excel Copilot clean-data guide</a>.</li>
+<li><b>Build your category list once.</b> Use the categories you report on. Our <a href="/ai-accounting/chart-of-accounts-with-ai/">chart of accounts guide</a> helps.</li>
+<li><b>Ask the AI for the formulas</b> with the prompt below.</li>
+<li><b>Review every row left as &ldquo;Review&rdquo;.</b> Add a rule if the same payee keeps showing up.</li>
+<li><b>Check the totals</b> (next section) before you close the month.</li>
+</ol>
+
+<div class="callout"><b>Prompt to copy:</b><br>
+I keep my books in [Excel / Google Sheets]. Tab &ldquo;Transactions&rdquo; has Date in column A, Description in B, Amount in C (expenses negative, deposits positive) and Category in D. Tab &ldquo;Rules&rdquo; has a keyword in column A and a category in column B. Write a formula for D2 that finds the first keyword in Rules that appears in the description and returns its category, or &ldquo;Review&rdquo; if none match. Then write a formula for the Summary tab that totals each category for a month I type in cell B1. Explain each formula in plain words. Don&rsquo;t calculate totals yourself; I want formulas I can check.</div>
+
+<div class="callout"><b>Example (made-up data).</b> A home cleaning business pastes 62 October transactions.<br>
+<b>Rules:</b> &ldquo;HOME DEPOT&rdquo; &rarr; Supplies; &ldquo;SHELL&rdquo; &rarr; Car and truck; &ldquo;ADOBE&rdquo; &rarr; Software; &ldquo;STRIPE&rdquo; &rarr; Sales.<br>
+<b>Result:</b> 51 rows categorized by the rules, 11 marked Review. The owner sorts those 11 by hand and adds two new rules.<br>
+<b>What went wrong:</b> Supplies showed $3,100. Sorting by amount showed a $1,450 Home Depot charge listed twice because two bank downloads overlapped. After removing the duplicate (checked against the statement), Supplies fell to $1,650.</div>
+
+<h2>How to check AI spreadsheet bookkeeping</h2>
+<ol>
+<li><b>Bank tie-out:</b> total deposits and total withdrawals in your sheet match the bank statement for the month.</li>
+<li><b>Nothing lost:</b> the Summary grand total equals the sum of the Amount column. If not, a row has a blank or misspelled category.</li>
+<li><b>Review count is zero</b> before you close the month.</li>
+<li><b>Spot-check 5 rows</b> against the statement and a receipt: date, payee, amount.</li>
+<li><b>Mixed-use charges:</b> the IRS says you must split expenses like a car between business and personal use. Make sure the sheet records only the business part.</li>
+</ol>
+<p><b>If a total looks wrong, ask the AI to explain the formula, not to fix the number.</b> Then find the row that moved it. Our <a href="/ai-accounting/ai-bank-reconciliation/">AI bank reconciliation guide</a> walks through the full match.</p>
+
+<h2>What AI in a spreadsheet won&rsquo;t do</h2>
+<p>It won&rsquo;t keep your receipts, and it won&rsquo;t know a personal charge from a business one unless you tell it. The IRS says personal, living or family expenses are generally not deductible. You decide what counts, and you stay responsible for your return.</p>
+<p>For category ideas, see our <a href="/ai-accounting/ai-prompts-categorize-transactions/">AI prompts to categorize transactions</a>. Not technical? You don&rsquo;t need to be: you copy one prompt and run a five-point check. Want the whole month done for you?</p>''',
+ 'Rather not live in a spreadsheet? At <a href="CTAURL">Computatio</a>, AI does the first pass on your bank and card data and an accountant reviews and reconciles every account each month. Monthly Books is $500 a month.',
+ [("IRS: Topic no. 305, Recordkeeping","https://www.irs.gov/taxtopics/tc305"),
+  ("IRS: What kind of records should I keep","https://www.irs.gov/businesses/small-businesses-self-employed/what-kind-of-records-should-i-keep"),
+  ("IRS: How should I record my business transactions?","https://www.irs.gov/businesses/small-businesses-self-employed/how-should-i-record-my-business-transactions"),
+  ("IRS: Small business FAQs, Income &amp; expenses","https://www.irs.gov/faqs/small-business-self-employed-other-business/income-expenses")],
+ "ai-excel-google-sheets-bookkeeping"),
 ]
