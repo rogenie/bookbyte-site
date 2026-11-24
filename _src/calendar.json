@@ -287,7 +287,7 @@
    "hub": "ai-accounting",
    "path": "/ai-accounting/claude-personal-finance-business-costs/",
    "title": "Claude Personal Finance: spot business costs",
-   "status": "todo",
+   "status": "published",
    "kind": "ai-update",
    "brief": {
     "news": "Claude added Personal Finance (beta, Nov 5): link bank, credit card, loan and investment accounts through Plaid, see balances, spending, subscriptions and upcoming bills, and ask Claude questions about them. It is read-only.",
@@ -302,7 +302,8 @@
      "/ai-accounting/financial-data-safety-ai/",
      "/ai-accounting/ai-duplicate-charges-subscriptions/"
     ]
-   }
+   },
+   "url": "https://bookbytellc.com/ai-accounting/claude-personal-finance-business-costs/"
   },
   {
    "date": "2026-11-25",

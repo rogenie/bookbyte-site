@@ -1824,4 +1824,81 @@ I keep my books in [Excel / Google Sheets]. Tab &ldquo;Transactions&rdquo; has D
   ("IRS: How should I record my business transactions?","https://www.irs.gov/businesses/small-businesses-self-employed/how-should-i-record-my-business-transactions"),
   ("IRS: Small business FAQs, Income &amp; expenses","https://www.irs.gov/faqs/small-business-self-employed-other-business/income-expenses")],
  "ai-excel-google-sheets-bookkeeping"),
+article("/ai-accounting/claude-personal-finance-business-costs/","/ai-accounting/","AI for Accounting",
+ "Claude Personal Finance: spot business costs",
+ "Claude Personal Finance: spot business costs",
+ "Use Claude Personal Finance to find business costs and subscriptions paid from personal cards, then record them in your books and check each one.",
+ "2026-11-24",
+ "You paid for business things with your personal card again. Now they&rsquo;re scattered across three statements, and your books don&rsquo;t show them.",
+ '''<div class="callout"><b>Quick answer.</b> As of November 24, 2026, Claude Personal Finance is in beta for Pro, Max and Ultra plans in the US. You link US bank, card, loan and investment accounts through Plaid, and Claude can read up to 24 months of transactions. It can&rsquo;t move money. Ask it to list charges that look like business costs and recurring subscriptions, then <b>check every line against the statement and a receipt before anything goes into your books.</b></div>
+
+<h2>Business costs are hiding on your personal cards</h2>
+<p>A software plan here. Printer ink there. A conference ticket you bought on the wrong card because it was the one in your wallet.</p>
+<p><b>If it isn&rsquo;t in your books, it&rsquo;s easy to forget at tax time.</b></p>
+
+<h2>And subscriptions renew without you noticing</h2>
+<p>Some are business tools you still use. Some you stopped using months ago. On a personal statement, they all blend in with streaming and groceries.</p>
+
+<h2>What it costs to leave them there</h2>
+<ul>
+<li><b>Records that don&rsquo;t hold up.</b> The IRS says expense records should show who you paid, how much, proof of payment, the date, and a description showing it was for the business. A personal statement line alone shows only part of that.</li>
+<li><b>Mixed-up deductions.</b> The IRS says personal, living or family expenses are generally not deductible, and expenses used for both must be split between business and personal use.</li>
+<li><b>A long tail of exposure.</b> The IRS can generally assess more tax for 3 years after you file, so these records need to make sense years from now.</li>
+</ul>
+
+<h2>Picture this instead</h2>
+<p>Once a month you ask one question. Claude lists the charges that look like business costs. <b>You confirm the real ones in ten minutes, attach receipts, and record them in your books.</b></p>
+
+<h2>Who can use Claude Personal Finance?</h2>
+<ul>
+<li><b>Plans:</b> Pro, Max and Ultra. Not Free, Team or Enterprise, and you need a personal account.</li>
+<li><b>Where:</b> US only, US banks only. Anthropic says it&rsquo;s rolling out gradually, so you may not see it yet.</li>
+<li><b>Apps:</b> Claude on the web, Claude Desktop, and the iOS and Android apps.</li>
+<li><b>Accounts:</b> bank accounts, credit cards, loans, and investment and retirement accounts, linked through Plaid. Plaid handles your bank sign-in, so Claude doesn&rsquo;t see your bank password.</li>
+</ul>
+<p>Anthropic&rsquo;s help page doesn&rsquo;t say business accounts are supported. This guide is about business costs that landed on personal accounts.</p>
+
+<h2>The monthly sweep: find business costs with Claude Personal Finance</h2>
+<ol>
+<li><b>Turn it on.</b> Open Personal Finance in the side menu (look under More if you don&rsquo;t see it), select Get started, then Link accounts with Plaid. Choose your bank and only the accounts you need.</li>
+<li><b>Pick one month.</b> Work a closed month, so the statement is final.</li>
+<li><b>Run the prompt below</b> in the Personal Finance hub.</li>
+<li><b>Mark each line</b> business, personal or split.</li>
+<li><b>Find the receipt</b> for every business line. No receipt, no entry until you find one. Our <a href="/ai-accounting/ai-receipt-scanning/">AI receipt scanning guide</a> helps.</li>
+<li><b>Record it in your books</b> (see the example).</li>
+</ol>
+
+<div class="callout"><b>Prompt to copy:</b><br>
+Look at my linked card and checking transactions for [month and year]. I run a [type of business]. List every charge that could be a business expense, with date, merchant and amount, and a one-line reason. Make a second list of recurring charges and subscriptions, with how often each one repeats. Mark anything you&rsquo;re unsure of as &ldquo;Ask me.&rdquo; Don&rsquo;t guess categories for tax purposes, and total each list.</div>
+
+<div class="callout"><b>Example (made-up data).</b> A freelance web designer runs the prompt for October 2026 on a personal card.<br>
+<b>Claude&rsquo;s list:</b> design software $59.99; cloud storage $9.99; stock-photo plan $29.00; domain renewal $22.00; coworking day pass $35.00; office supply store $48.17 (&ldquo;Ask me&rdquo;). Total $204.15.<br>
+<b>Subscriptions flagged:</b> design software, cloud storage, and the stock-photo plan the owner forgot about.<br>
+<b>After checking:</b> the office supply charge was school supplies, so it&rsquo;s personal. The stock-photo plan is business but unused, so the owner cancels it. Business total for the books: $155.98.<br>
+<b>Entry:</b> each expense goes to its category, and the offset is the owner paying for the business, often recorded as an owner contribution for a sole proprietor. If you have a corporation, ask your bookkeeper how reimbursements should work.</div>
+
+<h2>How to check Claude Personal Finance output</h2>
+<ol>
+<li><b>Statement match:</b> every line matches the card statement to the cent. Anthropic says balances can be a day or two old, so trust the statement.</li>
+<li><b>Totals:</b> add the list yourself or with a SUM formula.</li>
+<li><b>Double counts:</b> an account linked through two logins can show up twice. Check for repeated rows.</li>
+<li><b>Receipts:</b> one for every business line, saved with your records.</li>
+<li><b>Splits:</b> for mixed-use items, record only the business part.</li>
+</ol>
+
+<h2>Limits to know before you rely on it</h2>
+<ul>
+<li><b>Read-only.</b> It can&rsquo;t move, manage or invest money.</li>
+<li><b>24 months</b> of transaction history, at most.</li>
+<li><b>Not in scheduled tasks, Cowork or Claude Code,</b> and it may not work in a project.</li>
+<li><b>Privacy.</b> Anthropic says chats in the Personal Finance hub aren&rsquo;t used to train its models. Plaid handles bank data under its own terms. Read our <a href="/ai-accounting/financial-data-safety-ai/">guide to keeping financial data safe with AI</a> first.</li>
+</ul>
+<p>It doesn&rsquo;t replace a separate business account. The IRS calls separate business and personal accounts a good idea because they make records easier. Our <a href="/ai-accounting/separate-business-personal-expenses-ai/">guide to separating business and personal expenses</a> shows how. For subscriptions, see <a href="/ai-accounting/ai-duplicate-charges-subscriptions/">how to spot duplicate charges and subscription creep</a>.</p>
+<p>Finding the costs is step one. Want them recorded and reconciled every month?</p>''',
+ 'Want the sweep done for you? At <a href="CTAURL">Computatio</a>, AI does the first pass on your bank and card data and an accountant reviews and reconciles every account each month. Monthly Books is $500 a month.',
+ [("Anthropic: Use Personal Finance in Claude","https://support.claude.com/en/articles/18185620-use-personal-finance-in-claude"),
+  ("IRS: Small business FAQs, Income &amp; expenses","https://www.irs.gov/faqs/small-business-self-employed-other-business/income-expenses"),
+  ("IRS: What kind of records should I keep","https://www.irs.gov/businesses/small-businesses-self-employed/what-kind-of-records-should-i-keep"),
+  ("IRS: Topic no. 305, Recordkeeping","https://www.irs.gov/taxtopics/tc305")],
+ "claude-personal-finance-business-costs"),
 ]
