@@ -1901,4 +1901,81 @@ Look at my linked card and checking transactions for [month and year]. I run a [
   ("IRS: What kind of records should I keep","https://www.irs.gov/businesses/small-businesses-self-employed/what-kind-of-records-should-i-keep"),
   ("IRS: Topic no. 305, Recordkeeping","https://www.irs.gov/taxtopics/tc305")],
  "claude-personal-finance-business-costs"),
+article("/bookkeeping/year-end-bookkeeping-checklist-ai/","/bookkeeping/","Bookkeeping",
+ "Year-end bookkeeping checklist with AI prompts",
+ "Year-end bookkeeping checklist with AI prompts",
+ "A year-end bookkeeping checklist for small businesses: 7 steps to close 2026, an AI prompt for each, and the January deadlines to plan for.",
+ "2026-11-25",
+ "December is here, and your books are a few months behind. You know January brings forms and deadlines, but you&rsquo;re not sure what to do first.",
+ '''<div class="callout"><b>Quick answer.</b> A year-end bookkeeping checklist has 7 steps: reconcile every account through December 31, clear uncategorized items, match receipts, list contractors you paid, review assets, compare the year to last year, and save the records. Use AI to sort, compare and draft lists, one prompt per step. <b>Plan for two January dates: the Q4 estimated payment is due January 15, 2027, and Form 1099-NEC must be filed with the IRS by January 31, 2027.</b></div>
+
+<h2>Your books are behind, and the year is ending</h2>
+<p>A few months slipped by. Now there&rsquo;s a pile of uncategorized charges, a stack of receipts, and a tax deadline coming.</p>
+<p><b>The longer you wait, the harder each month is to rebuild.</b></p>
+
+<h2>And you don&rsquo;t know what &ldquo;done&rdquo; looks like</h2>
+<p>Is it enough to have every charge in a category? Do you need to count anything? Which contractors need a form? Without a list, year-end turns into guesswork.</p>
+
+<h2>What a messy year-end costs you</h2>
+<ul>
+<li><b>Missed forms.</b> For payments made after December 31, 2025, the IRS threshold for reporting nonemployee pay on Form 1099-NEC is $2,000 (it was $600). You must file the form with the IRS on or before January 31.</li>
+<li><b>Missed payments.</b> The fourth 2026 estimated tax payment, covering September through December, is due January 15, 2027.</li>
+<li><b>Weak records.</b> The IRS says expense records should show who you paid, how much, proof of payment, the date, and a description showing it was for the business. A bank line alone often isn&rsquo;t enough.</li>
+<li><b>A long tail.</b> The IRS can generally assess more tax for 3 years after you file, or 6 years if you leave out income worth more than 25% of the gross income on your return.</li>
+</ul>
+
+<h2>Picture this instead</h2>
+<p>It&rsquo;s early January. Every account ties to its December statement. Your contractor list is ready. <b>You hand your tax preparer clean numbers instead of a shoebox.</b></p>
+
+<h2>The 7-step year-end bookkeeping checklist</h2>
+<p>Work the steps in order. Each one has a prompt you can paste into any AI chat tool. Before you paste data, remove account numbers and anything you don&rsquo;t need. Our <a href="/ai-accounting/financial-data-safety-ai/">guide to keeping financial data safe with AI</a> lists what to strip.</p>
+<ol>
+<li><b>Reconcile every account through December 31.</b> Bank, credit cards, loans and payment apps. Your ending balance in the books must equal the statement. Our <a href="/ai-accounting/ai-bank-reconciliation/">AI bank reconciliation guide</a> walks through the match.</li>
+<li><b>Clear the &ldquo;uncategorized&rdquo; pile.</b> Every transaction gets a category, or a note saying why it&rsquo;s personal.</li>
+<li><b>Match receipts to expenses.</b> Flag any business expense with no receipt or invoice, and find it now while you still remember.</li>
+<li><b>List the contractors you paid.</b> Total 2026 payments per person for services. Leave out payments made by credit card or through payment apps: the IRS says those are reported on Form 1099-K by the payment company, not on Form 1099-NEC.</li>
+<li><b>Review assets.</b> For equipment you bought or sold, keep records of when and how you got it, what you paid, improvements, how you used it, and when and how you got rid of it.</li>
+<li><b>Compare 2026 to 2025.</b> Big jumps or drops by category are where mistakes hide.</li>
+<li><b>Save the year.</b> Export reports and statements to one folder. The IRS says electronic records must meet the same rules as paper ones.</li>
+</ol>
+
+<div class="callout"><b>Prompts to copy, one per step:</b><br>
+<b>Step 2:</b> Here are my uncategorized transactions for 2026 (date, payee, amount). I run a [type of business]. Suggest a category from my list [paste categories] for each one, and mark anything that could be personal as &ldquo;Ask me.&rdquo; Don&rsquo;t guess.<br>
+<b>Step 3:</b> Here is my list of 2026 expenses and a list of receipt file names. List every expense over $[amount] with no matching receipt.<br>
+<b>Step 4:</b> Here are my 2026 payments to people and companies, with payment method. Total them by payee. Put card and payment-app payments in a separate list. Show the math.<br>
+<b>Step 6:</b> Here are my 2025 and 2026 totals by category. List every category that changed by more than 20% and suggest one question I should ask about each. Don&rsquo;t explain the change for me.</div>
+
+<div class="callout"><b>Example (made-up data).</b> A solo marketing consultant runs step 4 on 2026 payments.<br>
+<b>AI&rsquo;s list:</b> designer, $3,400 by bank transfer; copy editor, $1,850 by bank transfer; video editor, $2,600 by payment app.<br>
+<b>After checking:</b> the designer is over $2,000, so a 1099-NEC is likely needed. The copy editor is under $2,000. The video editor was paid through an app, so that payment belongs on the app&rsquo;s 1099-K, not the consultant&rsquo;s 1099-NEC.<br>
+<b>What went wrong:</b> the AI first listed the designer at $3,900. One $500 payment was a refund the designer sent back. The owner caught it by checking the bank statement.</div>
+
+<h2>How to check your year-end bookkeeping</h2>
+<ol>
+<li><b>Statement tie-out:</b> every account&rsquo;s December 31 balance in the books equals the statement.</li>
+<li><b>Zero left:</b> no uncategorized or &ldquo;Ask me&rdquo; items.</li>
+<li><b>Math check:</b> add up AI totals yourself or with a SUM formula. Never copy an AI total straight into a tax form.</li>
+<li><b>Spot-check 5 expenses</b> against the receipt and the statement.</li>
+<li><b>Contractor check:</b> each payee total matches the bank or card records.</li>
+</ol>
+<p><b>AI drafts the lists. You confirm every number.</b> AI doesn&rsquo;t replace reconciling or keeping receipts, and you stay responsible for your return.</p>
+
+<h2>What deadlines follow the year-end close?</h2>
+<ul>
+<li><b>January 15, 2027:</b> fourth 2026 estimated tax payment. See our <a href="/estimated-taxes/q4-estimated-payment-january-15-2027/">Q4 estimated payment checklist</a>.</li>
+<li><b>January 31, 2027:</b> file Form 1099-NEC with the IRS. See <a href="/deductions/1099-nec-2000-threshold/">the new $2,000 1099-NEC threshold, explained</a>.</li>
+<li><b>Keep records:</b> generally 3 years after you file. If you have employees, keep employment tax records at least 4 years after the tax is due or paid, whichever is later.</li>
+</ul>
+<div class="callout"><b>State note.</b> California splits estimated tax unevenly: 30% of the year&rsquo;s estimate in April, 40% in June, nothing in September, and the last 30% on January 15, 2027. If you file your 2026 California return by January 31, 2027 and pay the full balance, you can skip that last payment. Other states have their own schedules.</div>
+
+<h2>Behind on more than a few months?</h2>
+<p>If whole months are missing, catch those up first. Our <a href="/ai-accounting/catch-up-bookkeeping-with-ai/">guide to catch-up bookkeeping with AI</a> shows how, and <a href="/ai-accounting/read-profit-and-loss-with-ai/">reading your profit and loss with AI</a> helps with step 6. Next year, a <a href="/bookkeeping/monthly-close-checklist-ai/">monthly close checklist</a> keeps December short.</p>
+<p>Not technical? You don&rsquo;t need to be: one prompt per step, and a five-point check. Rather hand the whole year off?</p>''',
+ 'Want a clean year-end without the work? At <a href="CTAURL">Computatio</a>, AI does the first pass on your bank and card data and an accountant reviews and reconciles every account each month. Monthly Books is $500 a month.',
+ [("IRS: Instructions for Forms 1099-MISC and 1099-NEC (12/2026)","https://www.irs.gov/instructions/i1099mec"),
+  ("IRS: Estimated tax FAQs","https://www.irs.gov/faqs/estimated-tax"),
+  ("IRS: Topic no. 305, Recordkeeping","https://www.irs.gov/taxtopics/tc305"),
+  ("IRS: What kind of records should I keep","https://www.irs.gov/businesses/small-businesses-self-employed/what-kind-of-records-should-i-keep"),
+  ("California FTB: 2026 Instructions for Form 540-ES","https://www.ftb.ca.gov/forms/2026/2026-540-es-instructions.html")],
+ "year-end-bookkeeping-checklist-ai"),
 ]
