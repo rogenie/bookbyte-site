@@ -358,5 +358,17 @@
   "linkedin_post": true,
   "drive_copy": true,
   "note": "Substitute for 'Excel Copilot accounting skills: check a reconciliation' (moved to 2026-12-08, still Frontier-only); pulled forward from 2026-11-27, which is now empty. Late run (about 10:40 PM PT). SE tax 15.3%/12.4%/2.9% and $400 (IRS SE tax page, Topic 554), half-SE-tax deduction (Topic 554), personal expenses not deductible and mixed-use split (IRS income & expenses FAQ), 2026 mileage 72.5 cents (IR-2025-128), home office regular/exclusive, principal place, Form 8829, $5/sq ft up to 300 sq ft (Topic 509, simplified-option page), 1040-X 3-year/2-year refund window (Topic 308) confirmed on pages fetched this run. Pages deploy succeeded; site search didn't return the page yet, so live_verified is false. Drive copy saved."
+ },
+ {
+  "date": "2026-11-27",
+  "at": "2026-11-27T05:54:15-08:00",
+  "result": "published",
+  "path": "/deductions/business-meal-deduction-ai/",
+  "facts_checked": 16,
+  "removed": 0,
+  "live_verified": false,
+  "linkedin_post": true,
+  "drive_copy": true,
+  "note": "Substitute for the empty 2026-11-27 slot (its item, 'How to use AI to find missed deductions, and verify them', was pulled forward to 2026-11-26); new evergreen topic. 50% limit incl. tax/tip, transport excluded, present/not lavish/business-contact conditions, entertainment disallowance and separately-stated food rule, $75 receipt rule (non-lodging), timely records, restaurant receipt contents, holiday party/meals sold/wages exceptions and DOT 80% (Pub 463 2025, Schedule C 2025 instructions), line 24a/24b, 100% restaurant rule for 2021-2022 (Notice 2021-25) and CA nonconformity (FTB 2021 Schedule CA (540NR) instructions) confirmed on pages fetched this run. Sources are 2025-year guidance; article says so. Pages deploy succeeded; site search didn't return the page yet, so live_verified is false. Drive copy saved."
  }
 ]
