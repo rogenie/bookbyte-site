@@ -324,6 +324,15 @@
    "note": "Substitute for the 2026-11-26 Excel Copilot accounting skills guide (moved to 2026-12-08, still Frontier-only). Pulled forward from 2026-11-27; that slot is now empty."
   },
   {
+   "date": "2026-11-27",
+   "hub": "deductions",
+   "path": "/deductions/business-meal-deduction-ai/",
+   "title": "Business meal deduction: track meals with AI",
+   "status": "published",
+   "note": "Substitute for the empty 2026-11-27 slot (its item, 'How to use AI to find missed deductions, and verify them', was pulled forward to 2026-11-26). New evergreen topic, not previously on the calendar.",
+   "url": "https://bookbytellc.com/deductions/business-meal-deduction-ai/"
+  },
+  {
    "date": "2026-11-30",
    "hub": "deductions",
    "path": "/deductions/1099-nec-2000-threshold/",

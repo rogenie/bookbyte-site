@@ -2056,4 +2056,92 @@ Ask me yes-or-no questions, one at a time, about costs self-employed people ofte
   ("IRS: Topic no. 554, Self-employment tax","https://www.irs.gov/taxtopics/tc554"),
   ("IRS: Topic no. 308, Amended returns","https://www.irs.gov/taxtopics/tc308")],
  "find-missed-deductions-with-ai"),
+article("/deductions/business-meal-deduction-ai/","/deductions/","Deductions",
+ "Business meal deduction: track meals with AI",
+ "Business meal deduction: track meals with AI",
+ "The business meal deduction is generally 50%. Use AI to sort meal charges, log who and why, and catch entertainment before it lands in your books.",
+ "2026-11-27",
+ "You buy a client lunch, pay with your card and move on. In April you stare at a pile of restaurant charges and can&rsquo;t remember which ones were business.",
+ '''<div class="callout"><b>Quick answer.</b> For 2025 returns, the IRS says you can generally deduct only <b>50%</b> of business meal costs, including tax and tip. You (or your employee) must be at the meal, it can&rsquo;t be lavish, and it must be with a business contact such as a client or customer. Entertainment isn&rsquo;t deductible. <b>AI can sort your restaurant charges and draft the log. You confirm every meal.</b></div>
+
+<h2>Your restaurant charges are a mystery</h2>
+<p>Coffee with a prospect. A team lunch. A Friday dinner with your family. On a card statement they all look the same.</p>
+<p><b>A meal you can&rsquo;t explain is a meal you can&rsquo;t defend.</b></p>
+
+<h2>And the business meal rules feel fuzzy</h2>
+<p>Is a client golf outing a meal? Is the full bill deductible or half? Old articles still say 100%. That was a temporary rule for restaurant meals paid in 2021 and 2022, and it&rsquo;s over.</p>
+
+<h2>What sloppy meal records cost you</h2>
+<ul>
+<li><b>The wrong amount.</b> Record a meal at full cost on your return and you overstate the deduction. The 50% limit applies to the meal, the tax and the tip.</li>
+<li><b>Entertainment mixed in.</b> The IRS says expenses for entertainment, amusement or recreation are no longer deductible. Food at a game or show counts only if it was bought separately or listed separately on the bill.</li>
+<li><b>No proof when asked.</b> The IRS generally wants documentary evidence, such as receipts, for expenses of $75 or more. And it says records made at or near the time carry more weight than notes made later.</li>
+</ul>
+
+<h2>Picture this instead</h2>
+<p>Every restaurant charge in your books has a category, a name and a reason. Personal meals sit in owner draws. Client meals sit in their own &ldquo;Meals&rdquo; account. <b>At tax time, your total is one number you trust.</b></p>
+
+<h2>The 3-pass meal log method with AI</h2>
+<p>This works in ChatGPT, Claude, Gemini or Copilot. Before you paste, remove card numbers and anything you don&rsquo;t need. Our <a href="/ai-accounting/financial-data-safety-ai/">guide to financial data safety with AI</a> lists what to strip.</p>
+<ol>
+<li><b>Pass 1: pull the restaurant charges.</b> Export a month of bank and card transactions (date, payee, amount). Ask the AI to list only food and drink charges.</li>
+<li><b>Pass 2: sort them.</b> The AI asks you about each one and drafts a log line. It never guesses business purpose.</li>
+<li><b>Pass 3: check and record.</b> Match each line to a receipt and your calendar. Then record it in your books.</li>
+</ol>
+
+<div class="callout"><b>Prompt you can copy:</b><br>
+&ldquo;Below are my business and personal card transactions for [month]. List only charges at restaurants, cafes, bars or food delivery. For each one, ask me: was this business or personal? If business, who was there and what business did we discuss? Was it tied to entertainment, like a game or show? Then build a table: date, payee, amount, who was present, business purpose, receipt yes/no, and a category of Meals, Entertainment (not deductible), or Personal. Don&rsquo;t fill in a purpose I didn&rsquo;t give you. Flag any charge of $75 or more without a receipt.&rdquo;</div>
+
+<div class="callout"><b>Example (made-up data).</b> A freelance web designer runs the prompt on October charges.<br>
+Oct 3 &middot; CORNER CAFE &middot; $18.40 &rarr; Meals &middot; with prospect J. Lee, website quote &middot; receipt yes<br>
+Oct 9 &middot; HARBOR GRILL &middot; $142.75 &rarr; Meals &middot; with client A. Park, redesign kickoff &middot; <b>flagged: no receipt, $75 or more</b><br>
+Oct 17 &middot; STADIUM CONCESSIONS &middot; $36.00 &rarr; Entertainment (not deductible) &middot; snacks at a game with a client, not billed separately from the tickets<br>
+Oct 24 &middot; PIZZA PLACE &middot; $54.10 &rarr; Personal &middot; family dinner<br>
+<b>What she did next:</b> asked Harbor Grill for a copy of the receipt, moved the pizza to owner draws, and kept the stadium charge out of Meals.</div>
+
+<h2>How to check the AI&rsquo;s meal log</h2>
+<ol>
+<li><b>Match every line to the statement.</b> Same date, same payee, same amount. AI sometimes merges or repeats charges.</li>
+<li><b>Match the receipt.</b> The IRS says a restaurant receipt should show the restaurant&rsquo;s name and location, the number of people served, and the date and amount.</li>
+<li><b>Check the purpose came from you.</b> If the AI wrote a reason you never gave, delete it.</li>
+<li><b>Record the full cost.</b> Your books hold what you paid. The 50% limit is applied on your return, not by cutting the expense in half in your books.</li>
+<li><b>Add the total yourself.</b> Use a SUM formula on the Meals account. Don&rsquo;t copy an AI total onto a tax form.</li>
+</ol>
+<p><b>AI drafts the log. You supply the facts and the proof.</b> It doesn&rsquo;t replace receipts, reconciling or your responsibility for your return.</p>
+
+<h2>Which business meals are deductible?</h2>
+<p>Per the IRS 2025 guidance, a business meal is generally deductible at 50% when:</p>
+<ul>
+<li>It&rsquo;s an ordinary and necessary business cost.</li>
+<li>You or your employee is present.</li>
+<li>It isn&rsquo;t lavish or extravagant (reasonable for the facts).</li>
+<li>It&rsquo;s with a current or potential customer, client, consultant or similar business contact.</li>
+</ul>
+<p>Meals while traveling away from home overnight for business also fall under the 50% limit. Transportation to and from a meal isn&rsquo;t part of the meal&rsquo;s cost.</p>
+
+<h2>Are any business meals fully deductible?</h2>
+<p>The IRS lists exceptions to the 50% limit. A few that come up for small businesses:</p>
+<table>
+<tr><th>Situation</th><th>Rule (2025 IRS guidance)</th></tr>
+<tr><td>Holiday party or summer picnic for employees</td><td>Not subject to the 50% limit</td></tr>
+<tr><td>You sell meals to the public</td><td>Not subject to the 50% limit</td></tr>
+<tr><td>Meals treated as wages to an employee</td><td>Not subject to the 50% limit</td></tr>
+<tr><td>Workers under Department of Transportation hours-of-service limits</td><td>80% instead of 50%</td></tr>
+</table>
+<p>Exceptions have conditions. Read the Pub. 463 section before you rely on one.</p>
+
+<h2>Where do meals go on Schedule C?</h2>
+<p>Sole proprietors put deductible business meals on Schedule C, line 24b, separate from travel on line 24a. Entertainment goes on neither line. Keep a separate Meals account in your books so the limit is easy to apply. Our <a href="/ai-accounting/chart-of-accounts-with-ai/">chart of accounts guide</a> shows how, and our <a href="/ai-accounting/ai-prompts-categorize-transactions/">transaction categorizing prompts</a> already include a Meals category.</p>
+
+<div class="callout"><b>State note.</b> States don&rsquo;t always follow federal rules. California, for example, didn&rsquo;t adopt the temporary federal 100% restaurant meal deduction for 2021 and 2022. Check your state tax agency&rsquo;s instructions before you file.</div>
+
+<h2>Make it a monthly habit</h2>
+<p>Run the prompt once a month, not once a year. Snap each receipt the same day and note who you met, as our <a href="/ai-accounting/ai-receipt-scanning/">AI receipt scanning guide</a> shows. Fifteen minutes a month beats a weekend of guessing in April.</p>
+<p>Not technical? If you can export a statement and paste it, you can do this. Rather have someone else keep the log for you?</p>''',
+ 'Want your meals and every other expense categorized and checked each month? <a href="CTAURL">Computatio Monthly Books</a> is $500 a month. AI does the work and an accountant reviews every account.',
+ [("IRS: Publication 463 (2025), Travel, Gift, and Car Expenses","https://www.irs.gov/publications/p463"),
+  ("IRS: Instructions for Schedule C (Form 1040) (2025)","https://www.irs.gov/instructions/i1040sc"),
+  ("IRS: Notice 2021-25, temporary 100% deduction for business meals","https://www.irs.gov/pub/irs-drop/n-21-25.pdf"),
+  ("California FTB: 2021 Instructions for Schedule CA (540NR)","https://www.ftb.ca.gov/forms/2021/2021-540nr-ca-instructions.html")],
+ "business-meal-deduction-ai"),
 ]
