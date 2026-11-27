@@ -631,6 +631,30 @@
    "linkedin_post": true,
    "drive_copy": true,
    "note": "Retitled to 'Year-end bookkeeping checklist with AI prompts' (original was 61 chars; path unchanged). $2,000 1099-NEC threshold (was $600) and Jan 31 IRS filing date, 1099-K for card/app payments (IRS FAQ and 12/2026 1099-MISC/NEC instructions), Q4 due Jan 15, 2027 (IRS estimated tax FAQ), 3/6/4-year retention (Topic 305), expense-record elements, asset records and electronic-records rule (IRS records page), CA 30/40/0/30 schedule and Jan 31, 2027 early-filing rule (FTB 2026 540-ES instructions) confirmed on pages fetched this run. Removed for lack of a confirmed source: federal January-payment exception date, recipient-copy deadline, and W-9 as the general TIN form. Pages deploy succeeded; site search didn't return the page yet, so live_verified is false. Drive copy saved."
+  },
+  {
+   "date": "2026-11-26",
+   "at": "2026-11-26T22:42:12-08:00",
+   "result": "held",
+   "path": "/ai-accounting/excel-copilot-accounting-skills-reconciliation/",
+   "facts_checked": 0,
+   "removed": 0,
+   "live_verified": false,
+   "linkedin_post": false,
+   "drive_copy": false,
+   "note": "Moved to 2026-12-08: Microsoft's built-in skills support page (updated 2026-11-26) and the Nov 24 Excel blog still say accounting skills are Frontier-only; the Oct roundup's 'worldwide in November' isn't confirmed. Substitute published today."
+  },
+  {
+   "date": "2026-11-26",
+   "at": "2026-11-26T22:42:12-08:00",
+   "result": "published",
+   "path": "/ai-accounting/find-missed-deductions-with-ai/",
+   "facts_checked": 11,
+   "removed": 0,
+   "live_verified": false,
+   "linkedin_post": true,
+   "drive_copy": true,
+   "note": "Substitute for 'Excel Copilot accounting skills: check a reconciliation' (moved to 2026-12-08, still Frontier-only); pulled forward from 2026-11-27, which is now empty. Late run (about 10:40 PM PT). SE tax 15.3%/12.4%/2.9% and $400 (IRS SE tax page, Topic 554), half-SE-tax deduction (Topic 554), personal expenses not deductible and mixed-use split (IRS income & expenses FAQ), 2026 mileage 72.5 cents (IR-2025-128), home office regular/exclusive, principal place, Form 8829, $5/sq ft up to 300 sq ft (Topic 509, simplified-option page), 1040-X 3-year/2-year refund window (Topic 308) confirmed on pages fetched this run. Pages deploy succeeded; site search didn't return the page yet, so live_verified is false. Drive copy saved."
   }
  ]
 }
