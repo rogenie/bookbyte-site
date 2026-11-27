@@ -1978,4 +1978,82 @@ article("/bookkeeping/year-end-bookkeeping-checklist-ai/","/bookkeeping/","Bookk
   ("IRS: What kind of records should I keep","https://www.irs.gov/businesses/small-businesses-self-employed/what-kind-of-records-should-i-keep"),
   ("California FTB: 2026 Instructions for Form 540-ES","https://www.ftb.ca.gov/forms/2026/2026-540-es-instructions.html")],
  "year-end-bookkeeping-checklist-ai"),
+article("/ai-accounting/find-missed-deductions-with-ai/","/ai-accounting/","AI for Accounting",
+ "How to use AI to find missed deductions, and verify them",
+ "How to use AI to find missed deductions, and verify them",
+ "Use AI to find missed business deductions in your bank and card data, then verify each one against IRS rules and receipts before you claim it.",
+ "2026-11-26",
+ "You paid for software, mileage and a home office all year. You&rsquo;re not sure all of it made it onto your return.",
+ '''<div class="callout"><b>Quick answer.</b> To find missed deductions with AI, export a year of bank and card transactions, ask the AI to list business-looking charges you haven&rsquo;t categorized, and compare them to your books. Then verify each one: it must be a business cost, you need a receipt, and mixed-use items must be split. <b>AI finds candidates. You decide what you can claim.</b></div>
+
+<h2>You think you&rsquo;re missing deductions</h2>
+<p>Business costs hide in personal accounts. A software plan on your personal card. Parking at a client meeting. A phone you use for both.</p>
+<p><b>A cost you never recorded can&rsquo;t reduce your tax.</b></p>
+
+<h2>And you&rsquo;re afraid to claim the wrong ones</h2>
+<p>The internet is full of &ldquo;write off everything&rdquo; advice. You don&rsquo;t want to claim groceries and hope. So you leave real costs out instead.</p>
+
+<h2>What missed deductions cost you</h2>
+<ul>
+<li><b>More self-employment tax.</b> Self-employment tax is 15.3% (12.4% Social Security plus 2.9% Medicare) once your net earnings reach $400. Every real expense you skip leaves your net earnings, and that tax, higher.</li>
+<li><b>Lost money from past years.</b> To claim a refund on an amended return, the IRS says you must file within 3 years after you filed the original return or 2 years after you paid the tax, whichever is later.</li>
+<li><b>Risk the other way.</b> The IRS says personal, living or family expenses are generally not deductible. Claiming them because a tool suggested it is still your mistake.</li>
+</ul>
+
+<h2>Picture this instead</h2>
+<p>It&rsquo;s January. You have a short list of extra business costs you found in your own data. Each one has a receipt, a business reason and a category. <b>You hand your preparer facts, not guesses.</b></p>
+
+<h2>The find-and-verify method for missed deductions with AI</h2>
+<p>This works in any AI chat tool. Before you paste anything, remove account numbers and anything you don&rsquo;t need. Our <a href="/ai-accounting/financial-data-safety-ai/">guide to keeping financial data safe with AI</a> lists what to strip.</p>
+<ol>
+<li><b>Export a full year.</b> Download 12 months of transactions from every account you might have used for business, including personal cards. Keep date, payee and amount.</li>
+<li><b>Export your books.</b> Pull the same year&rsquo;s categorized expenses from your bookkeeping tool or spreadsheet.</li>
+<li><b>Ask the AI to find candidates.</b> Use the first prompt below. It compares the two lists and flags business-looking charges missing from your books.</li>
+<li><b>Ask the AI to check common gaps.</b> Use the second prompt. It asks you questions instead of assuming.</li>
+<li><b>Verify every candidate.</b> Run the checks in the next section before anything goes in your books.</li>
+<li><b>Record what passes.</b> Add each verified expense to your books with its category and a note. Our <a href="/ai-accounting/ai-prompts-categorize-transactions/">prompts to categorize transactions</a> help here.</li>
+</ol>
+
+<div class="callout"><b>Prompt 1: find candidates.</b><br>
+I run a [type of business]. List A is every transaction from my bank and card accounts for [year] (date, payee, amount). List B is the expenses already in my books. Find charges in List A that are not in List B and could be business costs for my kind of business. For each one, give the date, payee, amount, a possible category, and one question I must answer to confirm it&rsquo;s business. Don&rsquo;t decide for me. Mark anything that looks personal as &ldquo;Likely personal.&rdquo;</div>
+
+<div class="callout"><b>Prompt 2: check common gaps.</b><br>
+Ask me yes-or-no questions, one at a time, about costs self-employed people often forget: business driving, a home office, software and subscriptions, phone and internet, bank and payment fees, supplies, and professional fees. After each &ldquo;yes,&rdquo; tell me what record I need to support it. Don&rsquo;t estimate amounts.</div>
+
+<div class="callout"><b>Example (made-up data).</b> A freelance designer runs Prompt 1 on 2026 data.<br>
+<b>AI&rsquo;s candidates:</b> a design-font subscription, $180 on a personal card; parking near a client office, $42; a streaming service, $96; a laptop stand, $65.<br>
+<b>After checking:</b> the font plan is used only for client work and has an emailed receipt, so it goes in the books. Parking matches a client meeting on her calendar. The laptop stand has a receipt and sits on her work desk.<br>
+<b>What she rejected:</b> the streaming service. The AI called it &ldquo;research.&rdquo; She watches it for fun, so it&rsquo;s personal.</div>
+
+<h2>How to verify a deduction AI found</h2>
+<p>Run each candidate through these checks. If it fails one, leave it out.</p>
+<ol>
+<li><b>Is it a business cost?</b> It must be a cost of running your business. The IRS says personal, living or family expenses generally aren&rsquo;t deductible.</li>
+<li><b>Do you have proof?</b> Find the receipt or invoice and the bank or card line. No proof, no claim.</li>
+<li><b>Is it mixed use?</b> The IRS says when an expense like your vehicle is for both business and personal use, you must divide it between the two. Claim only the business part.</li>
+<li><b>Did you already claim it?</b> Search your books for the same amount and date. AI lists often repeat a charge that was recorded under a different name.</li>
+<li><b>Check the math yourself.</b> Add totals with a SUM formula. Never copy an AI total onto a tax form.</li>
+</ol>
+<p><b>AI finds candidates. You confirm every one.</b> AI doesn&rsquo;t replace receipts or reconciling, and you stay responsible for your return.</p>
+
+<h2>Which deductions do self-employed people miss most?</h2>
+<p>These are common places to look. Each has its own rules, so check them before you claim.</p>
+<ul>
+<li><b>Business driving.</b> For 2026, the IRS business standard mileage rate is 72.5 cents per mile. You need a log of business trips. See our <a href="/ai-accounting/ai-mileage-logs/">AI mileage log guide</a>.</li>
+<li><b>Home office.</b> The space must be used regularly and exclusively for business, and generally be your principal place of business. The IRS simplified method is $5 per square foot of the business space, up to 300 square feet. The regular method uses Form 8829.</li>
+<li><b>Half of self-employment tax.</b> When figuring adjusted gross income, you can deduct one-half of your self-employment tax. Tax software usually figures it, but check it&rsquo;s there.</li>
+<li><b>Costs on the wrong card.</b> Business costs paid from a personal account are easy to miss. Our <a href="/ai-accounting/separate-business-personal-expenses-ai/">guide to separating business and personal expenses</a> helps stop this next year.</li>
+</ul>
+<div class="callout"><b>State note.</b> Your state return may not follow every federal rule. Before claiming a deduction on a state return, including in California, check your state tax agency&rsquo;s instructions.</div>
+
+<h2>What if you find deductions from a past year?</h2>
+<p>If you missed a real deduction on a return you already filed, the fix is an amended return, Form 1040-X. Watch the refund window above. Bring your verified list and receipts to whoever prepares your return. Our <a href="/ai-accounting/tax-appointment-prep-with-ai/">guide to preparing for your tax appointment with AI</a> shows how to package it.</p>
+<p>Not technical? You don&rsquo;t need to be: two prompts and a five-point check. Rather have someone else check the list and file?</p>''',
+ 'Want a return built on verified deductions? At <a href="CTAURL">Computatio</a>, we prepare returns from your records and check each deduction against them. Simple Return $350, Self-Employed Return $600.',
+ [("IRS: Small business FAQ, income and expenses","https://www.irs.gov/faqs/small-business-self-employed-other-business/income-expenses"),
+  ("IRS: 2026 business standard mileage rate","https://www.irs.gov/newsroom/irs-sets-2026-business-standard-mileage-rate-at-725-cents-per-mile-up-25-cents"),
+  ("IRS: Topic no. 509, Business use of home","https://www.irs.gov/taxtopics/tc509"),
+  ("IRS: Topic no. 554, Self-employment tax","https://www.irs.gov/taxtopics/tc554"),
+  ("IRS: Topic no. 308, Amended returns","https://www.irs.gov/taxtopics/tc308")],
+ "find-missed-deductions-with-ai"),
 ]

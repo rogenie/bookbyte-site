@@ -317,31 +317,11 @@
   {
    "date": "2026-11-26",
    "hub": "ai-accounting",
-   "path": "/ai-accounting/excel-copilot-accounting-skills-reconciliation/",
-   "title": "Excel Copilot accounting skills: check a reconciliation",
-   "status": "todo",
-   "kind": "ai-update",
-   "brief": {
-    "news": "Copilot in Excel added accounting skills, including @reconciliation (match balances and transactions across ledgers and bank statements and propose corrections) and journal-entry (prepare accruals, reversals and corrections and check debits equal credits), with an optional audit trail of what Copilot changed.",
-    "source": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/what%E2%80%99s-new-in-microsoft-copilot--october-2026/4568528",
-    "source_date": "2026-11-13",
-    "who": "Microsoft's October roundup (updated Nov 13) says Frontier in October, worldwide in November. The support page (https://support.microsoft.com/en-us/excel/copilot/copilot-in-excel-built-in-skills) still says rolling out to Frontier and names no license. Confirm worldwide availability and which plans get it before publishing; if still Frontier-only, move or hold.",
-    "task": "Bank reconciliation and correcting journal entries in a spreadsheet",
-    "angle": "Put a bank statement export and a ledger export on two sheets, run @reconciliation, then review each proposed reconciling item against the statement; use journal-entry for a made-up correction and check it balances. Turn on the audit trail. Microsoft says Copilot doesn't give accounting or tax advice, so every proposed fix needs a source document before it goes in the books. What's new versus the clean-data guide: matching and entries, not formatting.",
-    "cta": "monthly-books",
-    "links": [
-     "/ai-accounting/excel-copilot-clean-data-bank-exports/",
-     "/ai-accounting/ai-bank-reconciliation/",
-     "/bookkeeping/monthly-close-checklist-ai/"
-    ]
-   }
-  },
-  {
-   "date": "2026-11-27",
-   "hub": "ai-accounting",
    "path": "/ai-accounting/find-missed-deductions-with-ai/",
    "title": "How to use AI to find missed deductions, and verify them",
-   "status": "todo"
+   "status": "published",
+   "url": "https://bookbytellc.com/ai-accounting/find-missed-deductions-with-ai/",
+   "note": "Substitute for the 2026-11-26 Excel Copilot accounting skills guide (moved to 2026-12-08, still Frontier-only). Pulled forward from 2026-11-27; that slot is now empty."
   },
   {
    "date": "2026-11-30",
@@ -401,6 +381,29 @@
    "path": "/ai-accounting/tax-appointment-prep-with-ai/",
    "title": "How to prepare for your tax appointment with AI",
    "status": "todo"
+  },
+  {
+   "date": "2026-12-08",
+   "hub": "ai-accounting",
+   "path": "/ai-accounting/excel-copilot-accounting-skills-reconciliation/",
+   "title": "Excel Copilot accounting skills: check a reconciliation",
+   "status": "todo",
+   "kind": "ai-update",
+   "brief": {
+    "news": "Copilot in Excel added accounting skills, including @reconciliation (match balances and transactions across ledgers and bank statements and propose corrections) and journal-entry (prepare accruals, reversals and corrections and check debits equal credits), with an optional audit trail of what Copilot changed.",
+    "source": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/what%E2%80%99s-new-in-microsoft-copilot--october-2026/4568528",
+    "source_date": "2026-11-13",
+    "who": "Microsoft's October roundup (updated Nov 13) says Frontier in October, worldwide in November. The support page (https://support.microsoft.com/en-us/excel/copilot/copilot-in-excel-built-in-skills) still says rolling out to Frontier and names no license. Confirm worldwide availability and which plans get it before publishing; if still Frontier-only, move or hold.",
+    "task": "Bank reconciliation and correcting journal entries in a spreadsheet",
+    "angle": "Put a bank statement export and a ledger export on two sheets, run @reconciliation, then review each proposed reconciling item against the statement; use journal-entry for a made-up correction and check it balances. Turn on the audit trail. Microsoft says Copilot doesn't give accounting or tax advice, so every proposed fix needs a source document before it goes in the books. What's new versus the clean-data guide: matching and entries, not formatting.",
+    "cta": "monthly-books",
+    "links": [
+     "/ai-accounting/excel-copilot-clean-data-bank-exports/",
+     "/ai-accounting/ai-bank-reconciliation/",
+     "/bookkeeping/monthly-close-checklist-ai/"
+    ]
+   },
+   "note": "Moved from 2026-11-26: Microsoft's support page (updated 2026-11-26) and the Nov 24 Excel blog still say accounting skills are rolling out to / available through the Frontier program only; the Oct roundup's 'worldwide in November' is not confirmed. Re-check before publishing."
   },
   {
    "date": "2026-12-09",
